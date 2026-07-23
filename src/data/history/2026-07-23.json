@@ -1,230 +1,211 @@
 {
   "date": "2026-07-23",
-  "generatedAt": "2026-07-23T15:05:22.726Z",
-  "status": "rule",
-  "statusNote": "未配置 API key 或 AI 增强失败，使用规则摘要。",
+  "generatedAt": "2026-07-23T08:51:06.527Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "2026-07-23：今日信号集中在「模型」「Agent」方向，共筛选 12 条；热度最高的是「Upstage 发布开源 Agentic 基础模型 Solar Open 2」。",
+    "verdict": "今日信号：中美AI模型争议与安全事件密集，开源与商业模型对垒加剧，算力投资回报获正面验证。",
     "keywords": [
       "开源",
       "Agent",
       "Claude"
     ],
-    "heatIndex": 77,
-    "sourceCount": 3
+    "heatIndex": 62,
+    "sourceCount": 4
   },
   "topStoryIds": [
+    "n43",
     "n1",
     "n2",
     "n26"
   ],
   "items": [
     {
+      "id": "n43",
+      "title": "Arcee, a US open source AI lab, says Chinese models are not inherently dangerous",
+      "category": "开源",
+      "summary": "美国开源AI实验室Arcee表示，中国AI模型本身并不危险，反驳了部分安全担忧。",
+      "whyItMatters": "为中美AI技术交流提供理性声音，减少无根据的安全恐慌。",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/07/22/arcee-a-us-open-source-ai-lab-says-chinese-models-are-not-inherently-dangerous/",
+      "publishedAt": "2026-07-22T16:24:08.000Z",
+      "impactScore": 67,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true
+    },
+    {
       "id": "n1",
-      "title": "Upstage 发布开源 Agentic 基础模型 Solar Open 2",
-      "category": "模型",
-      "summary": "Upstage 发布开源 Agentic 基础模型 Solar Open 2",
-      "whyItMatters": "涉及Agent的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Upstage",
-      "sourceDisplayName": "Upstage",
-      "sourceUrl": "https://upstage.ai/blog/en/solar-open-2",
+      "title": "橘鸦 Juya AI 日报 · 2026-07-23 期",
+      "category": "商业",
+      "summary": "本日报汇总：Upstage发布开源Agentic模型Solar Open 2，微软发布开源图像模型Mage Flow等。",
+      "whyItMatters": "开源生态持续丰富，Agent和图像生成领域有新基座可选。",
+      "sourceName": "橘鸦 Juya AI 日报",
+      "sourceUrl": "https://daily.juya.uk/issues/2026-07-23/",
       "publishedAt": "2026-07-23T02:23:32.000Z",
       "impactScore": 90,
       "confidence": "high",
       "tags": [
-        "Agent",
-        "开源"
+        "OpenAI",
+        "Claude",
+        "Anthropic",
+        "Kimi"
       ],
-      "aiEnhanced": false
+      "aiEnhanced": true
+    },
+    {
+      "id": "n11",
+      "title": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
+      "category": "产品",
+      "summary": "Nunchaku 4-bit扩散模型推理方法集成至Diffusers，实现高效低比特图像生成。",
+      "whyItMatters": "降低扩散模型推理成本，推动移动端和边缘部署。",
+      "sourceName": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/nunchaku-diffusers",
+      "publishedAt": "2026-07-23T00:00:00.000Z",
+      "impactScore": 62,
+      "confidence": "low",
+      "tags": [],
+      "aiEnhanced": true
+    },
+    {
+      "id": "n23",
+      "title": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
+      "category": "产品",
+      "summary": "谷歌承诺4000万美元AI计算资源支持Genesis Mission，加速科学发现。",
+      "whyItMatters": "大厂以实物投入科研，AI基础设施成为科研新引擎。",
+      "sourceName": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
+      "publishedAt": "2026-07-22T13:38:54.000Z",
+      "impactScore": 62,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": true
     },
     {
       "id": "n2",
-      "title": "微软发布开源图像模型家族 Mage-Flow",
-      "category": "模型",
-      "summary": "微软发布开源图像模型家族 Mage-Flow",
-      "whyItMatters": "涉及微软的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/microsoft/Mage-Flow",
-      "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 89,
-      "confidence": "high",
-      "tags": [
-        "微软",
-        "开源"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n26",
-      "title": "Poolside 发布开源模型 Laguna S 2.1，称编程能力可比肩数十倍大模型",
-      "category": "模型",
-      "summary": "Poolside 发布开源模型 Laguna S 2.1，称编程能力可比肩数十倍大模型",
-      "whyItMatters": "涉及开源的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Poolside",
-      "sourceDisplayName": "Poolside",
-      "sourceUrl": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+      "title": "橘鸦 Juya AI 日报 · 2026-07-22 期",
+      "category": "开源",
+      "summary": "日报汇总：Google发布Gemini 3.6 Flash与3.5 Flash Lite，Gemini 3.5 Pro正与合作伙伴测试。",
+      "whyItMatters": "Gemini系列快速迭代，Flash型号主打性价比，竞争加剧。",
+      "sourceName": "橘鸦 Juya AI 日报",
+      "sourceUrl": "https://daily.juya.uk/issues/2026-07-22/",
       "publishedAt": "2026-07-22T02:06:58.000Z",
-      "impactScore": 81,
-      "confidence": "high",
-      "tags": [
-        "开源"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n4",
-      "title": "Anthropic 为 Claude Code 推出 Claude Security 插件 Beta 版",
-      "category": "Agent",
-      "summary": "Anthropic 为 Claude Code 推出 Claude Security 插件 Beta 版",
-      "whyItMatters": "Claude相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://claude.com/product/claude-security",
-      "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 80,
-      "confidence": "high",
-      "tags": [
-        "Claude",
-        "Anthropic"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n5",
-      "title": "Cursor 推出智能模型路由器 Cursor Router",
-      "category": "Agent",
-      "summary": "Cursor 推出智能模型路由器 Cursor Router",
-      "whyItMatters": "Cursor相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "Cursor",
-      "sourceDisplayName": "Cursor",
-      "sourceUrl": "https://cursor.com/blog/router",
-      "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 79,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n21",
-      "title": "Google 发布 Gemini 3.6 Flash 与 Gemini 3.5 Flash-Lite",
-      "category": "模型",
-      "summary": "Google 发布 Gemini 3.6 Flash 与 Gemini 3.5 Flash-Lite",
-      "whyItMatters": "涉及Google的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Google",
-      "sourceDisplayName": "Google",
-      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
-      "publishedAt": "2026-07-22T02:06:58.000Z",
-      "impactScore": 79,
+      "impactScore": 62,
       "confidence": "high",
       "tags": [
         "Google",
-        "Gemini"
+        "Gemini",
+        "Qwen",
+        "开源"
       ],
-      "aiEnhanced": false
+      "aiEnhanced": true
     },
     {
-      "id": "n28",
-      "title": "MindLab Research 发布 Macaron-V1 系列开源模型",
-      "category": "模型",
-      "summary": "MindLab Research 发布 Macaron-V1 系列开源模型",
-      "whyItMatters": "涉及开源的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/mindlab-research/Macaron-V1-Venti",
-      "publishedAt": "2026-07-22T02:06:58.000Z",
-      "impactScore": 79,
-      "confidence": "high",
+      "id": "n35",
+      "title": "ServiceNow bets $40 million on Indian banking software specialist to expand its financial services push",
+      "category": "安全",
+      "summary": "ServiceNow投资4000万美元于印度银行软件公司BusinessNext，拓展AI金融软件全球业务。",
+      "whyItMatters": "AI平台厂商垂直深耕金融行业，收购/投资加速落地。",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/07/22/servicenow-bets-40m-on-indian-firm-businessnext-at-700m-valuation-to-deepen-banking-ai-push/",
+      "publishedAt": "2026-07-23T06:09:13.000Z",
+      "impactScore": 60,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true
+    },
+    {
+      "id": "n36",
+      "title": "After shocking quarter, IBM insists that AI isn’t killing the mainframe",
+      "category": "产品",
+      "summary": "IBM股价因大型机销量预警暴跌，CEO解释AI并未杀死大型机，但企业硬件支出被AI服务挤压。",
+      "whyItMatters": "AI对传统硬件市场冲击显现，企业预算迁移至云和AI。",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/07/22/after-shocking-quarter-ibm-insists-that-ai-isnt-killing-the-mainframe/",
+      "publishedAt": "2026-07-22T23:47:54.000Z",
+      "impactScore": 60,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true
+    },
+    {
+      "id": "n37",
+      "title": "Google justifies its massive AI spending with a booming cloud business",
+      "category": "算力",
+      "summary": "谷歌云业务增长强劲，得益于企业采用其AI及AI基础设施服务，证明大规模AI投入有效。",
+      "whyItMatters": "算力投入被云计算收入验证，商业模式闭环形成。",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/07/22/google-justifies-its-massive-ai-spending-with-a-booming-cloud-business/",
+      "publishedAt": "2026-07-22T22:01:52.000Z",
+      "impactScore": 60,
+      "confidence": "medium",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": true
+    },
+    {
+      "id": "n38",
+      "title": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic’s Fable",
+      "category": "产品",
+      "summary": "白宫称Moonshot蒸馏了Anthropic的Fable模型，美国财政部威胁制裁，引发对中国开源模型涌入的辩论。",
+      "whyItMatters": "模型蒸馏争议升级为贸易制裁，中美AI技术壁垒加深。",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/07/22/treasury-threatens-sanctions-after-white-house-claims-moonshot-distilled-anthropics-fable/",
+      "publishedAt": "2026-07-22T20:49:03.000Z",
+      "impactScore": 60,
+      "confidence": "medium",
+      "tags": [
+        "Anthropic",
+        "Moonshot"
+      ],
+      "aiEnhanced": true
+    },
+    {
+      "id": "n39",
+      "title": "How OpenAI’s human mistake led to the AI-powered hack on Hugging Face",
+      "category": "产品",
+      "summary": "OpenAI因配置错误导致“高度隔离”测试环境被攻破，引发Hugging Face上AI驱动的黑客事件。",
+      "whyItMatters": "人因失误暴露AI基础设施安全短板，提示隔离措施需更严格。",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/07/22/how-an-openais-human-mistake-led-to-the-ai-powered-hack-on-hugging-face/",
+      "publishedAt": "2026-07-22T19:11:46.000Z",
+      "impactScore": 60,
+      "confidence": "medium",
       "tags": [
         "开源"
       ],
-      "aiEnhanced": false
+      "aiEnhanced": true
     },
     {
-      "id": "n22",
-      "title": "Gemini 3.5 Pro 正与合作伙伴测试并将很快发布， Gemini 4 已启动预训练",
-      "category": "模型",
-      "summary": "Gemini 3.5 Pro 正与合作伙伴测试并将很快发布， Gemini 4 已启动预训练",
-      "whyItMatters": "涉及Gemini的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/OfficialLoganK/status/2079594867161022817",
-      "publishedAt": "2026-07-22T02:06:58.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [
-        "Gemini"
-      ],
-      "aiEnhanced": false
+      "id": "n40",
+      "title": "Travis Kalanick’s robotics company raises $1.7B, led by a16z",
+      "category": "商业",
+      "summary": "Travis Kalanick的机器人公司Atoms获17亿美元融资，a16z领投，Uber跟投，声称用工业AI建模。",
+      "whyItMatters": "巨头押注工业AI+机器人，Uber前CEO新项目获顶级VC背书。",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
+      "publishedAt": "2026-07-22T18:50:44.000Z",
+      "impactScore": 60,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true
     },
     {
-      "id": "n8",
-      "title": "腾讯AI创意智能体Miora全量上线 支持多Agent协作",
-      "category": "产品",
-      "summary": "腾讯AI创意智能体Miora全量上线 支持多Agent协作",
-      "whyItMatters": "Agent的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "Miora",
-      "sourceDisplayName": "Miora",
-      "sourceUrl": "https://miora.design",
-      "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "Agent"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n24",
-      "title": "千问团队发布 Qwen-Image-3.0图像生成模型",
-      "category": "模型",
-      "summary": "千问团队发布 Qwen-Image-3.0图像生成模型",
-      "whyItMatters": "涉及Qwen的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Qwen",
-      "sourceDisplayName": "Qwen",
-      "sourceUrl": "https://qwenlm.github.io/zh/blog/qwen-image-3.0/",
-      "publishedAt": "2026-07-22T02:06:58.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "Qwen"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n9",
-      "title": "Anthropic 为 Claude 上线 Anthropic Economic Index connector",
-      "category": "产品",
-      "summary": "Anthropic 为 Claude 上线 Anthropic Economic Index connector",
-      "whyItMatters": "Claude的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://www.anthropic.com/news/anthropic-economic-index-connector",
-      "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "Claude",
-        "Anthropic"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n3",
-      "title": "KIMI 订阅开放预约申请 审核条件与时长未知",
-      "category": "Agent",
-      "summary": "KIMI 订阅开放预约申请 审核条件与时长未知",
-      "whyItMatters": "Kimi相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://linux.do/t/topic/2634643",
-      "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [
-        "Kimi"
-      ],
-      "aiEnhanced": false
+      "id": "n41",
+      "title": "Yope raises $12.3M to build a private social network without algorithms or ads",
+      "category": "商业",
+      "summary": "私密社交应用Yope获1230万美元种子轮融资，主打无算法、无广告的亲友群组社交。",
+      "whyItMatters": "反算法趋势获资本认可，AI时代的人机社交新方向。",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/07/22/yope-raises-12-3m-to-build-a-private-social-network-without-algorithms-or-ads/",
+      "publishedAt": "2026-07-22T18:13:58.000Z",
+      "impactScore": 60,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true
     }
   ],
   "sources": [
@@ -238,9 +219,8 @@
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
-      "ok": false,
-      "itemCount": 0,
-      "note": "fetch failed"
+      "ok": true,
+      "itemCount": 831
     },
     {
       "name": "Google DeepMind Blog",
