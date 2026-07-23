@@ -1,6 +1,6 @@
 {
   "date": "2026-07-23",
-  "generatedAt": "2026-07-23T05:41:18.841Z",
+  "generatedAt": "2026-07-23T07:48:26.955Z",
   "status": "rule",
   "statusNote": "未配置 API key 或 AI 增强失败，使用规则摘要。",
   "overview": {
@@ -10,17 +10,17 @@
       "OpenAI",
       "Anthropic"
     ],
-    "heatIndex": 60,
-    "sourceCount": 3
+    "heatIndex": 62,
+    "sourceCount": 4
   },
   "topStoryIds": [
-    "n30",
+    "n43",
     "n1",
     "n11"
   ],
   "items": [
     {
-      "id": "n30",
+      "id": "n43",
       "title": "Arcee, a US open source AI lab, says Chinese models are not inherently dangerous",
       "category": "开源",
       "summary": "As Chinese AI models grow in capability and popularity among U.S.",
@@ -54,6 +54,20 @@
     },
     {
       "id": "n11",
+      "title": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
+      "category": "产品",
+      "summary": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
+      "whyItMatters": "面向用户的产品变化，可能改变日常使用 AI 的方式。",
+      "sourceName": "Hugging Face Blog",
+      "sourceUrl": "https://huggingface.co/blog/nunchaku-diffusers",
+      "publishedAt": "2026-07-23T00:00:00.000Z",
+      "impactScore": 62,
+      "confidence": "low",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n23",
       "title": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
       "category": "产品",
       "summary": "Google commits $40M in AI tokens and credits for the Genesis Mission",
@@ -88,7 +102,21 @@
       "aiEnhanced": false
     },
     {
-      "id": "n23",
+      "id": "n35",
+      "title": "ServiceNow bets $40 million on Indian banking software specialist to expand its financial services push",
+      "category": "安全",
+      "summary": "ServiceNow's investment gives BusinessNext a strategic partner to expand its AI-powered banking software globally.",
+      "whyItMatters": "安全与监管动态，影响 AI 产品的可用边界与合规成本。",
+      "sourceName": "TechCrunch AI",
+      "sourceUrl": "https://techcrunch.com/2026/07/22/servicenow-bets-40m-on-indian-firm-businessnext-at-700m-valuation-to-deepen-banking-ai-push/",
+      "publishedAt": "2026-07-23T06:09:13.000Z",
+      "impactScore": 60,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n36",
       "title": "After shocking quarter, IBM insists that AI isn’t killing the mainframe",
       "category": "产品",
       "summary": "After IBM's stock crashed last week on warnings of poor mainframe sales, the CEO explained that AI wrecked corporate har…",
@@ -102,7 +130,7 @@
       "aiEnhanced": false
     },
     {
-      "id": "n24",
+      "id": "n37",
       "title": "Google justifies its massive AI spending with a booming cloud business",
       "category": "算力",
       "summary": "Google's cloud business is thriving, as companies adopting its AI and AI infrastructure services help the tech giant to…",
@@ -118,7 +146,7 @@
       "aiEnhanced": false
     },
     {
-      "id": "n25",
+      "id": "n38",
       "title": "Treasury threatens sanctions after White House claims Moonshot distilled Anthropic’s Fable",
       "category": "产品",
       "summary": "The episode has also intensified a broader debate in Washington over the influx of Chinese open models.",
@@ -135,7 +163,7 @@
       "aiEnhanced": false
     },
     {
-      "id": "n26",
+      "id": "n39",
       "title": "How OpenAI’s human mistake led to the AI-powered hack on Hugging Face",
       "category": "产品",
       "summary": "OpenAI made a mistake setting up what it called a “highly isolated” testing environment and sandbox.",
@@ -151,7 +179,7 @@
       "aiEnhanced": false
     },
     {
-      "id": "n27",
+      "id": "n40",
       "title": "Travis Kalanick’s robotics company raises $1.7B, led by a16z",
       "category": "商业",
       "summary": "Uber is also investing in Travis Kalanick's company Atoms, which has made gauzy claims about using industrial AI to mode…",
@@ -165,7 +193,7 @@
       "aiEnhanced": false
     },
     {
-      "id": "n28",
+      "id": "n41",
       "title": "Yope raises $12.3M to build a private social network without algorithms or ads",
       "category": "商业",
       "summary": "Yope, a fast-growing social app focused on private groups of friends and family, has raised $12.3 million in seed fundin…",
@@ -173,34 +201,6 @@
       "sourceName": "TechCrunch AI",
       "sourceUrl": "https://techcrunch.com/2026/07/22/yope-raises-12-3m-to-build-a-private-social-network-without-algorithms-or-ads/",
       "publishedAt": "2026-07-22T18:13:58.000Z",
-      "impactScore": 60,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n29",
-      "title": "Monday.com lays off hundreds to focus on AI",
-      "category": "产品",
-      "summary": "The company said it is reducing its headcount by 20%, or about 630 staff, to \"support a leaner, more focused operating m…",
-      "whyItMatters": "面向用户的产品变化，可能改变日常使用 AI 的方式。",
-      "sourceName": "TechCrunch AI",
-      "sourceUrl": "https://techcrunch.com/2026/07/22/monday-com-lays-off-hundreds-to-focuses-on-ai/",
-      "publishedAt": "2026-07-22T17:54:14.000Z",
-      "impactScore": 60,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n31",
-      "title": "Substack’s new tool tells you who’s been writing their newsletters with AI",
-      "category": "产品",
-      "summary": "Substack is giving readers a way to estimate how much of a newsletter was written by AI, signaling a broader shift towar…",
-      "whyItMatters": "面向用户的产品变化，可能改变日常使用 AI 的方式。",
-      "sourceName": "TechCrunch AI",
-      "sourceUrl": "https://techcrunch.com/2026/07/22/substacks-new-tool-tells-you-whos-been-writing-their-newsletters-with-ai/",
-      "publishedAt": "2026-07-22T16:23:09.000Z",
       "impactScore": 60,
       "confidence": "medium",
       "tags": [],
@@ -217,9 +217,8 @@
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
-      "ok": false,
-      "itemCount": 0,
-      "note": "fetch failed"
+      "ok": true,
+      "itemCount": 831
     },
     {
       "name": "Google DeepMind Blog",
