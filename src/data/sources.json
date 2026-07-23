@@ -1,0 +1,29 @@
+{
+  "comment": "每日新闻来源列表。Juya RSS 为默认首选来源；可自由增删，update 脚本会逐个抓取，单个失败不影响整体。",
+  "sources": [
+    {
+      "name": "橘鸦 Juya AI 日报",
+      "url": "https://daily.juya.uk/rss.xml",
+      "homepage": "https://daily.juya.uk",
+      "weight": 12
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "homepage": "https://huggingface.co/blog",
+      "weight": 8
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "homepage": "https://deepmind.google/discover/blog/",
+      "weight": 8
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "homepage": "https://techcrunch.com/category/artificial-intelligence/",
+      "weight": 6
+    }
+  ]
+}

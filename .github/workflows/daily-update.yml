@@ -1,0 +1,75 @@
+name: Daily Update
+
+# 每天北京时间 08:30 自动运行（GitHub Actions cron 使用 UTC：北京时间 08:30 = UTC 00:30）
+# 也可以在仓库 Actions 页面手动 Run workflow
+on:
+  schedule:
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # 回写 daily.json 到仓库
+  pages: write      # 部署到 GitHub Pages
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 抓取 RSS 并生成 daily.json
+        # 没有配置任何 API key 也会正常执行（规则模式）；
+        # 在仓库 Settings -> Secrets 配置 KIMI_API_KEY / OPENAI_API_KEY 后自动启用 AI 增强
+        run: npm run update
+        env:
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+
+      - name: 回写更新后的数据
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/daily.json src/data/history 2>/dev/null || git add src/data/daily.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(data): daily update $(date -u +%F)"
+            git push || echo "push 失败，不影响本次部署"
+          else
+            echo "数据无变化，跳过提交"
+          fi
+
+      - name: 构建静态网页
+        run: npm run build
+
+      - name: 配置 Pages
+        uses: actions/configure-pages@v4
+
+      - name: 上传构建产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

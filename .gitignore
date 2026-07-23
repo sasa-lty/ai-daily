@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+Thumbs.db
+
+# 本地环境变量（API key 绝不入库，GitHub 上通过 Secrets 配置）
+.env
+.env.*
+!.env.example

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* 首屏背景，避免加载时白闪 */
+html {
+  background-color: #0b0e13;
+}
+
+body {
+  @apply bg-[#0b0e13] text-zinc-200 antialiased;
+}
+
+/* 细滚动条，贴合情报台风格 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3342;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a465a;
+}
+
+::selection {
+  background: rgba(251, 191, 36, 0.25);
+}

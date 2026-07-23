@@ -1,0 +1,47 @@
+{
+  "updatedAt": "2026-07-20",
+  "dimensions": ["编码能力", "网页生成", "多模态", "科学/数学推理", "Agent 工具使用", "长上下文", "性价比"],
+  "overallDiagnosis": "闭源旗舰在推理与 Agent 任务上仍领先，国产开源模型以性价比和长上下文见长；没有单一模型全面胜出，按使用场景选型即可。",
+  "models": [
+    {
+      "name": "GPT-5",
+      "vendor": "OpenAI",
+      "scores": [92, 90, 92, 94, 90, 85, 62],
+      "diagnosis": "长板是推理与多模态的稳定性，几乎没有短板；价格是主要门槛。",
+      "source": "manual",
+      "note": "人工评分：基于公开 benchmark 与官方模型卡综合整理，非实时榜单数据。"
+    },
+    {
+      "name": "Claude Sonnet 4.5",
+      "vendor": "Anthropic",
+      "scores": [95, 88, 84, 88, 93, 82, 66],
+      "diagnosis": "编码与 Agent 工具使用是明显长板，适合 Coding 工作流；多模态与性价比一般。",
+      "source": "manual",
+      "note": "人工评分：基于公开 benchmark 与官方模型卡综合整理，非实时榜单数据。"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "vendor": "Google",
+      "scores": [88, 86, 94, 91, 84, 96, 74],
+      "diagnosis": "长上下文与多模态是长板，适合大文档与视频理解；Agent 链路略逊于前两者。",
+      "source": "manual",
+      "note": "人工评分：基于公开 benchmark 与官方模型卡综合整理，非实时榜单数据。"
+    },
+    {
+      "name": "Kimi K2",
+      "vendor": "Moonshot AI",
+      "scores": [85, 82, 78, 84, 86, 90, 88],
+      "diagnosis": "开源权重 + 长上下文 + 高性价比，Agent 任务表现扎实；多模态是短板。",
+      "source": "manual",
+      "note": "人工评分：基于公开 benchmark 与官方模型卡综合整理，非实时榜单数据。"
+    },
+    {
+      "name": "DeepSeek-V3.2",
+      "vendor": "DeepSeek",
+      "scores": [86, 80, 72, 88, 80, 85, 95],
+      "diagnosis": "性价比全场最高，数学推理强；多模态能力有限，适合文本与代码为主的场景。",
+      "source": "manual",
+      "note": "人工评分：基于公开 benchmark 与官方模型卡综合整理，非实时榜单数据。"
+    }
+  ]
+}
