@@ -1,0 +1,596 @@
+{
+  "updatedAt": "2026-07-23T14:30:32.565Z",
+  "status": "cache",
+  "statusNote": "部分榜单（6 个）抓取失败，使用缓存数据。",
+  "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+  "boards": [
+    {
+      "config": "text_style_control",
+      "dim": "text",
+      "label": "综合文本",
+      "publishDate": "2026-07-21",
+      "models": [
+        {
+          "name": "claude-fable-5",
+          "organization": "anthropic",
+          "rank": 1,
+          "score": 1507,
+          "ciLower": 1501,
+          "ciUpper": 1514,
+          "voteCount": 14646
+        },
+        {
+          "name": "claude-opus-4-6-thinking",
+          "organization": "anthropic",
+          "rank": 2,
+          "score": 1505,
+          "ciLower": 1501,
+          "ciUpper": 1509,
+          "voteCount": 63191
+        },
+        {
+          "name": "claude-opus-4-7-thinking",
+          "organization": "anthropic",
+          "rank": 3,
+          "score": 1502,
+          "ciLower": 1498,
+          "ciUpper": 1506,
+          "voteCount": 50683
+        },
+        {
+          "name": "claude-opus-4-6",
+          "organization": "anthropic",
+          "rank": 4,
+          "score": 1498,
+          "ciLower": 1494,
+          "ciUpper": 1501,
+          "voteCount": 67037
+        },
+        {
+          "name": "muse-spark-1.1",
+          "organization": "meta",
+          "rank": 5,
+          "score": 1495,
+          "ciLower": 1488,
+          "ciUpper": 1502,
+          "voteCount": 7927
+        },
+        {
+          "name": "claude-opus-4-7",
+          "organization": "anthropic",
+          "rank": 6,
+          "score": 1494,
+          "ciLower": 1489,
+          "ciUpper": 1498,
+          "voteCount": 51788
+        },
+        {
+          "name": "muse-spark",
+          "organization": "meta",
+          "rank": 7,
+          "score": 1488,
+          "ciLower": 1482,
+          "ciUpper": 1493,
+          "voteCount": 13565
+        },
+        {
+          "name": "gemini-3.1-pro-preview",
+          "organization": "google",
+          "rank": 8,
+          "score": 1486,
+          "ciLower": 1482,
+          "ciUpper": 1489,
+          "voteCount": 84631
+        },
+        {
+          "name": "gemini-3-pro",
+          "organization": "google",
+          "rank": 9,
+          "score": 1486,
+          "ciLower": 1482,
+          "ciUpper": 1490,
+          "voteCount": 41268
+        },
+        {
+          "name": "kimi-k3",
+          "organization": "moonshot",
+          "rank": 10,
+          "score": 1486,
+          "ciLower": 1476,
+          "ciUpper": 1496,
+          "voteCount": 3619
+        }
+      ]
+    },
+    {
+      "config": "agent",
+      "dim": "agent",
+      "label": "Agent 执行",
+      "publishDate": "2026-07-21",
+      "models": [
+        {
+          "name": "Claude Fable 5 (High)",
+          "organization": "anthropic",
+          "rank": 1,
+          "score": 0.127,
+          "ciLower": 0.107,
+          "ciUpper": 0.147,
+          "voteCount": 831160
+        },
+        {
+          "name": "GPT 5.6 Sol (xHigh)",
+          "organization": "openai",
+          "rank": 2,
+          "score": 0.101,
+          "ciLower": 0.084,
+          "ciUpper": 0.118,
+          "voteCount": 1199345
+        },
+        {
+          "name": "Claude Opus 4.8 (Thinking)",
+          "organization": "anthropic",
+          "rank": 3,
+          "score": 0.097,
+          "ciLower": 0.084,
+          "ciUpper": 0.111,
+          "voteCount": 1470606
+        },
+        {
+          "name": "Kimi K3",
+          "organization": "moonshot",
+          "rank": 4,
+          "score": 0.097,
+          "ciLower": 0.082,
+          "ciUpper": 0.112,
+          "voteCount": 710567
+        },
+        {
+          "name": "Claude Sonnet 5 (High)",
+          "organization": "anthropic",
+          "rank": 5,
+          "score": 0.087,
+          "ciLower": 0.068,
+          "ciUpper": 0.105,
+          "voteCount": 2170947
+        },
+        {
+          "name": "GPT 5.5 (xHigh)",
+          "organization": "openai",
+          "rank": 6,
+          "score": 0.084,
+          "ciLower": 0.075,
+          "ciUpper": 0.093,
+          "voteCount": 1577365
+        },
+        {
+          "name": "Claude Opus 4.7 (Thinking)",
+          "organization": "anthropic",
+          "rank": 7,
+          "score": 0.079,
+          "ciLower": 0.067,
+          "ciUpper": 0.092,
+          "voteCount": 1206630
+        },
+        {
+          "name": "Claude Opus 4.7",
+          "organization": "anthropic",
+          "rank": 8,
+          "score": 0.077,
+          "ciLower": 0.064,
+          "ciUpper": 0.089,
+          "voteCount": 1293392
+        },
+        {
+          "name": "GPT 5.5 (High)",
+          "organization": "openai",
+          "rank": 9,
+          "score": 0.076,
+          "ciLower": 0.068,
+          "ciUpper": 0.084,
+          "voteCount": 1838053
+        },
+        {
+          "name": "GLM 5.2 (Max)",
+          "organization": "zai",
+          "rank": 10,
+          "score": 0.065,
+          "ciLower": 0.055,
+          "ciUpper": 0.075,
+          "voteCount": 1493408
+        }
+      ]
+    },
+    {
+      "config": "webdev",
+      "dim": "webdev",
+      "label": "WebDev/编码",
+      "publishDate": "2026-07-21",
+      "models": [
+        {
+          "name": "kimi-k3",
+          "organization": "moonshot",
+          "rank": 1,
+          "score": 1678,
+          "ciLower": 1661,
+          "ciUpper": 1695,
+          "voteCount": 1828
+        },
+        {
+          "name": "claude-fable-5",
+          "organization": "anthropic",
+          "rank": 2,
+          "score": 1634,
+          "ciLower": 1621,
+          "ciUpper": 1646,
+          "voteCount": 3021
+        },
+        {
+          "name": "gpt-5.6-sol-xhigh (codex-harness)",
+          "organization": "openai",
+          "rank": 3,
+          "score": 1630,
+          "ciLower": 1619,
+          "ciUpper": 1641,
+          "voteCount": 4063
+        },
+        {
+          "name": "glm-5.2 (max)",
+          "organization": "zai",
+          "rank": 4,
+          "score": 1592,
+          "ciLower": 1583,
+          "ciUpper": 1602,
+          "voteCount": 5362
+        },
+        {
+          "name": "claude-opus-4-8-thinking",
+          "organization": "anthropic",
+          "rank": 5,
+          "score": 1565,
+          "ciLower": 1557,
+          "ciUpper": 1574,
+          "voteCount": 7978
+        },
+        {
+          "name": "claude-opus-4-7-thinking",
+          "organization": "anthropic",
+          "rank": 6,
+          "score": 1559,
+          "ciLower": 1552,
+          "ciUpper": 1566,
+          "voteCount": 11161
+        },
+        {
+          "name": "grok-4.5",
+          "organization": "xai",
+          "rank": 7,
+          "score": 1557,
+          "ciLower": 1545,
+          "ciUpper": 1569,
+          "voteCount": 2887
+        },
+        {
+          "name": "claude-opus-4-7",
+          "organization": "anthropic",
+          "rank": 8,
+          "score": 1556,
+          "ciLower": 1549,
+          "ciUpper": 1563,
+          "voteCount": 10596
+        },
+        {
+          "name": "claude-sonnet-5-high",
+          "organization": "anthropic",
+          "rank": 9,
+          "score": 1544,
+          "ciLower": 1533,
+          "ciUpper": 1554,
+          "voteCount": 3554
+        },
+        {
+          "name": "claude-opus-4-6-thinking",
+          "organization": "anthropic",
+          "rank": 10,
+          "score": 1542,
+          "ciLower": 1536,
+          "ciUpper": 1548,
+          "voteCount": 13522
+        }
+      ]
+    },
+    {
+      "config": "vision_style_control",
+      "dim": "vision",
+      "label": "视觉理解",
+      "publishDate": "2026-07-21",
+      "models": [
+        {
+          "name": "claude-fable-5",
+          "organization": "anthropic",
+          "rank": 1,
+          "score": 1318,
+          "ciLower": 1308,
+          "ciUpper": 1327,
+          "voteCount": 7411
+        },
+        {
+          "name": "claude-opus-4-7-thinking",
+          "organization": "anthropic",
+          "rank": 2,
+          "score": 1306,
+          "ciLower": 1299,
+          "ciUpper": 1313,
+          "voteCount": 19381
+        },
+        {
+          "name": "claude-opus-4-6-thinking",
+          "organization": "anthropic",
+          "rank": 3,
+          "score": 1299,
+          "ciLower": 1292,
+          "ciUpper": 1306,
+          "voteCount": 19223
+        },
+        {
+          "name": "claude-opus-4-7",
+          "organization": "anthropic",
+          "rank": 4,
+          "score": 1298,
+          "ciLower": 1291,
+          "ciUpper": 1305,
+          "voteCount": 19867
+        },
+        {
+          "name": "claude-opus-4-6",
+          "organization": "anthropic",
+          "rank": 5,
+          "score": 1295,
+          "ciLower": 1288,
+          "ciUpper": 1301,
+          "voteCount": 23584
+        },
+        {
+          "name": "muse-spark",
+          "organization": "meta",
+          "rank": 6,
+          "score": 1294,
+          "ciLower": 1285,
+          "ciUpper": 1304,
+          "voteCount": 5625
+        },
+        {
+          "name": "gemini-3-pro",
+          "organization": "google",
+          "rank": 7,
+          "score": 1289,
+          "ciLower": 1281,
+          "ciUpper": 1297,
+          "voteCount": 13183
+        },
+        {
+          "name": "gemini-3.5-flash-medium",
+          "organization": "google",
+          "rank": 8,
+          "score": 1287,
+          "ciLower": 1276,
+          "ciUpper": 1298,
+          "voteCount": 4232
+        },
+        {
+          "name": "gpt-5.5",
+          "organization": "openai",
+          "rank": 9,
+          "score": 1286,
+          "ciLower": 1279,
+          "ciUpper": 1293,
+          "voteCount": 17412
+        },
+        {
+          "name": "claude-opus-4-8-thinking",
+          "organization": "anthropic",
+          "rank": 10,
+          "score": 1286,
+          "ciLower": 1277,
+          "ciUpper": 1294,
+          "voteCount": 9956
+        }
+      ]
+    },
+    {
+      "config": "document_style_control",
+      "dim": "document",
+      "label": "文档理解",
+      "publishDate": "2026-07-21",
+      "models": [
+        {
+          "name": "claude-fable-5",
+          "organization": "anthropic",
+          "rank": 1,
+          "score": 1508,
+          "ciLower": 1499,
+          "ciUpper": 1517,
+          "voteCount": 5565
+        },
+        {
+          "name": "claude-opus-4-7",
+          "organization": "anthropic",
+          "rank": 2,
+          "score": 1500,
+          "ciLower": 1492,
+          "ciUpper": 1507,
+          "voteCount": 18738
+        },
+        {
+          "name": "claude-opus-4-7-thinking",
+          "organization": "anthropic",
+          "rank": 3,
+          "score": 1497,
+          "ciLower": 1490,
+          "ciUpper": 1504,
+          "voteCount": 18522
+        },
+        {
+          "name": "claude-opus-4-6-thinking",
+          "organization": "anthropic",
+          "rank": 4,
+          "score": 1495,
+          "ciLower": 1488,
+          "ciUpper": 1503,
+          "voteCount": 24739
+        },
+        {
+          "name": "claude-opus-4-6",
+          "organization": "anthropic",
+          "rank": 5,
+          "score": 1494,
+          "ciLower": 1488,
+          "ciUpper": 1501,
+          "voteCount": 37118
+        },
+        {
+          "name": "claude-opus-4-8-thinking",
+          "organization": "anthropic",
+          "rank": 6,
+          "score": 1486,
+          "ciLower": 1478,
+          "ciUpper": 1494,
+          "voteCount": 8117
+        },
+        {
+          "name": "claude-opus-4-8",
+          "organization": "anthropic",
+          "rank": 7,
+          "score": 1480,
+          "ciLower": 1472,
+          "ciUpper": 1489,
+          "voteCount": 7874
+        },
+        {
+          "name": "gpt-5.5-high",
+          "organization": "openai",
+          "rank": 8,
+          "score": 1480,
+          "ciLower": 1472,
+          "ciUpper": 1487,
+          "voteCount": 16584
+        },
+        {
+          "name": "claude-sonnet-5-high",
+          "organization": "anthropic",
+          "rank": 9,
+          "score": 1479,
+          "ciLower": 1468,
+          "ciUpper": 1490,
+          "voteCount": 3290
+        },
+        {
+          "name": "claude-sonnet-4-6",
+          "organization": "anthropic",
+          "rank": 10,
+          "score": 1478,
+          "ciLower": 1471,
+          "ciUpper": 1484,
+          "voteCount": 54339
+        }
+      ]
+    },
+    {
+      "config": "search_style_control",
+      "dim": "search",
+      "label": "搜索研究",
+      "publishDate": "2026-07-21",
+      "models": [
+        {
+          "name": "claude-fable-5",
+          "organization": "anthropic",
+          "rank": 1,
+          "score": 1237,
+          "ciLower": 1229,
+          "ciUpper": 1245,
+          "voteCount": 20630
+        },
+        {
+          "name": "gpt-5.5-search",
+          "organization": "openai",
+          "rank": 2,
+          "score": 1223,
+          "ciLower": 1218,
+          "ciUpper": 1229,
+          "voteCount": 67573
+        },
+        {
+          "name": "claude-opus-4-6-search",
+          "organization": "anthropic",
+          "rank": 3,
+          "score": 1223,
+          "ciLower": 1218,
+          "ciUpper": 1228,
+          "voteCount": 112201
+        },
+        {
+          "name": "claude-opus-4-7",
+          "organization": "anthropic",
+          "rank": 4,
+          "score": 1211,
+          "ciLower": 1206,
+          "ciUpper": 1216,
+          "voteCount": 68515
+        },
+        {
+          "name": "gemini-3.1-pro-grounding",
+          "organization": "google",
+          "rank": 5,
+          "score": 1210,
+          "ciLower": 1204,
+          "ciUpper": 1215,
+          "voteCount": 89973
+        },
+        {
+          "name": "grok-4.20-multi-agent-beta-0309",
+          "organization": "xai",
+          "rank": 6,
+          "score": 1207,
+          "ciLower": 1202,
+          "ciUpper": 1212,
+          "voteCount": 87118
+        },
+        {
+          "name": "gemini-3-pro-grounding",
+          "organization": "google",
+          "rank": 7,
+          "score": 1201,
+          "ciLower": 1196,
+          "ciUpper": 1207,
+          "voteCount": 37255
+        },
+        {
+          "name": "claude-sonnet-4-6-search",
+          "organization": "anthropic",
+          "rank": 8,
+          "score": 1200,
+          "ciLower": 1195,
+          "ciUpper": 1205,
+          "voteCount": 111959
+        },
+        {
+          "name": "grok-4.20-beta1",
+          "organization": "xai",
+          "rank": 9,
+          "score": 1198,
+          "ciLower": 1191,
+          "ciUpper": 1204,
+          "voteCount": 53877
+        },
+        {
+          "name": "claude-opus-4-8",
+          "organization": "anthropic",
+          "rank": 10,
+          "score": 1196,
+          "ciLower": 1190,
+          "ciUpper": 1202,
+          "voteCount": 48610
+        }
+      ]
+    }
+  ]
+}

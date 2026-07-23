@@ -1,10 +1,17 @@
 # AI Daily Radar · 个人 AI 情报台
 
-每天打开一次，3 分钟看完 AI 圈重点：今日三件事、热点列表、模型雷达图、热点梯度图。
+每天打开一次，3 分钟看完 AI 圈重点。两个一级视图：
+
+- **今日热点**（`#/news`）：今日总览、今日三件事、热点列表、新闻来源
+- **模型洞察**（`#/models`）：LMArena 六维榜单、综合比较散点、模型画像、数据来源
+
+核心特性：
 
 - 纯静态网页，**不需要服务器、不需要数据库**
-- 由 GitHub Actions 每天**北京时间 08:30** 自动抓取 RSS 并更新
-- **不配置任何 API key 也能正常运行**（规则摘要模式）；配置 `KIMI_API_KEY` 或 `OPENAI_API_KEY` 后自动升级为 AI 增强摘要
+- GitHub Actions 每天**北京时间 08:30** 自动更新新闻与榜单
+- **不配置任何 API key 也能正常运行**（规则摘要模式）；配置 `KIMI_API_KEY` 或 `OPENAI_API_KEY` 后自动升级为 AI 增强（中文标题、关键事实、具体影响、LLM 评选三件事）
+- 日报型来源（如 Juya）会被拆解成单条新闻并标注原始发布方，日报容器不会出现在列表里
+- 模型数据来自 LMArena 官方数据集（每日刷新），不做手工评分
 - 更新失败时自动显示上一次成功的数据，页面永远不会空白
 
 ---
@@ -23,27 +30,29 @@
 
 ### 2. 启动网页
 
-在本项目文件夹的地址栏输入 `cmd` 回车（会在当前目录打开命令行），然后依次执行：
+在本项目文件夹的地址栏输入 `cmd` 回车，然后依次执行：
 
 ```
 npm install
 npm run dev
 ```
 
-看到 `Local: http://localhost:5173/` 后，用浏览器打开 **http://localhost:5173/** 即可看到页面。
+看到 `Local: http://localhost:5173/` 后，用浏览器打开 **http://localhost:5173/** 即可。
 按 `Ctrl + C` 可以停止。
 
-### 3. 手动抓取一次最新新闻（可选）
+### 3. 手动更新数据（可选）
 
 ```
-npm run update
+npm run update         # 抓取新闻 RSS -> src/data/daily.json
+npm run update:arena   # 拉取 Arena 榜单 -> src/data/arena-leaderboard.json
+npm run update:all     # 两条都跑
 ```
 
-会重新抓取 RSS，生成/更新 `src/data/daily.json`。没有任何 API key 也能成功。
+没有任何 API key 也能成功；数据源失败时自动保留上一次缓存。
 
 ---
 
-## 二、部署到 GitHub Pages（以后每天自动更新，手机上也能看）
+## 二、部署到 GitHub Pages（每天自动更新，手机上也能看）
 
 只需要做一次，大约 10 分钟。
 
@@ -80,21 +89,22 @@ git push -u origin main
 
 ### 第 4 步：打开你的网页
 
-地址是：
-
 ```
 https://你的用户名.github.io/ai-daily/
 ```
 
-（仓库名不同则替换 `ai-daily`。）以后每天北京时间 08:30 会自动更新，你只管用浏览器打开看。
-
-> 如果 Actions 页面提示 "Workflows aren't being run on this repository"，按提示点一次启用即可。
+以后每天北京时间 08:30 自动更新。两个视图可以直接收藏：`#/news` 和 `#/models`。
 
 ---
 
-## 三、可选：开启 AI 摘要增强（文字更自然）
+## 三、可选：开启 AI 摘要增强（推荐）
 
-不配也能用；配了之后，摘要、"为什么重要"、今日总评会由大模型改写，页面状态显示「AI 增强」。
+不配也能用；配了之后变化明显：
+
+- 标题改写为自然中文（不保留截断英文）
+- 每条输出 70-120 字摘要 + 2-3 条关键事实 + 具体影响
+- 今日三件事由 LLM 综合行业影响、新鲜度、可靠性重新评选（不再是分数前三）
+- 页面状态显示「AI 增强」
 
 ### 在 GitHub 上配置（推荐）
 
@@ -107,38 +117,42 @@ https://你的用户名.github.io/ai-daily/
 
 把 `.env.example` 复制一份改名为 `.env`，填入 key，再运行 `npm run update`。
 
-> 换模型/换接口：可用 `LLM_BASE_URL`、`LLM_MODEL` 两个变量覆盖默认值（支持任何 OpenAI 兼容接口，如 DeepSeek）。
-> API 失败时会自动回退到规则摘要，不会导致更新失败。
+> 换模型/换接口：用 `LLM_BASE_URL`、`LLM_MODEL` 两个变量覆盖默认值（支持任何 OpenAI 兼容接口）。
+> API 失败时自动回退规则模式，不会导致更新失败。密钥只放 Secrets / 本地 .env，绝不写进代码。
 
 ---
 
-## 四、想改内容，只动这两个文件
+## 四、想改内容，只动这一个文件
 
 | 想改什么 | 改哪里 | 说明 |
 |---|---|---|
-| 新闻来源 | `src/data/sources.json` | 数组里增删 RSS 即可，单个源失败不影响整体 |
-| 模型雷达图 | `src/data/model-scores.json` | 模型名单、7 个维度分数（0-100）、一句话诊断；`source` 字段标注来源，人工评分写 `manual` |
+| 新闻来源 | `src/data/sources.json` | `type=rss` 普通来源；`type=digest` 日报型来源（自动拆解，容器不进列表）。单个源失败不影响整体 |
 
-改完 `git add . && git commit -m "update" && git push`，Actions 会自动重新部署。
+模型榜单**不需要手动维护**：每天自动从 LMArena 官方数据集（https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset ）拉取六个维度（综合文本 / Agent 执行 / WebDev编码 / 视觉理解 / 文档理解 / 搜索研究）的最新排名，含置信区间与票数。
+
+> 「本站综合指数」说明：不同榜单量纲不同，页面先把每个模型在各榜内按名次转为百分位，再按所选权重预设（综合 / 编程 Agent / 搜索研究 / 多模态）加权，权重公开展示；该指数是本站的计算结果，不是 Arena 官方总分。覆盖不足 3 个维度的模型不参与综合排名。
 
 ---
 
 ## 五、常见问题
 
 **Q：今天页面没更新？**
-A：仓库 → **Actions** → **Daily Update** → **Run workflow** 手动跑一次。定时任务用的是 UTC `30 0 * * *`，对应北京时间 08:30，偶尔会有几分钟延迟。
+A：仓库 → **Actions** → **Daily Update** → **Run workflow** 手动跑一次。定时任务用 UTC `30 0 * * *`（北京时间 08:30），偶尔有几分钟延迟。
 
 **Q：Actions 显示红色叉？**
-A：点进去看日志。多半是某个 RSS 源临时故障——只要不是全部失败，更新仍会成功；全部失败时页面自动显示上一次的数据（顶部状态会显示「使用缓存」或「更新失败」），不用处理。
+A：点进去看日志。多半是某个 RSS 源或榜单接口临时故障——只要不是全部失败，更新仍会成功；全部失败时页面自动显示上一次的数据（新闻区显示「使用缓存」，榜单区显示缓存日期），不用处理。
 
 **Q：页面顶部的状态标签是什么意思？**
-A：`AI 增强` = 摘要经过大模型改写；`规则整理` = 未配置 key 或 AI 失败，使用规则摘要；`使用缓存` = 本次抓取失败，显示上次数据；`更新失败` = 抓取失败且无缓存，显示标注 sample 的示例数据。
+A：`AI 增强` = 摘要经过大模型改写；`规则整理` = 未配置 key 或 AI 失败；`使用缓存` = 本次抓取失败，显示上次数据；`更新失败` = 抓取失败且无缓存，显示标注 sample 的示例数据。
+
+**Q：为什么看不到"某某日报 · 某日期"这样的条目？**
+A：日报型来源（如 Juya）只作编辑参考，脚本会把每期拆解成单条新闻并链接到原始发布方；无法可靠识别原始出处时标注「综合来源」，不伪造来源。
 
 **Q：要花多少钱？**
-A：GitHub Pages 和 Actions（公开仓库）免费。不配 API key 则零费用；配了 key 每天一次调用的费用约几分钱。
+A：GitHub Pages 和 Actions（公开仓库）免费。不配 API key 零费用；配了 key 每天一次调用约几分钱。
 
 **Q：手机上能看吗？**
-A：能，页面是响应式的，手机端自动切换为单列。
+A：能，两个视图都是响应式的，手机端自动切换为单列。
 
 ---
 
@@ -146,24 +160,30 @@ A：能，页面是响应式的，手机端自动切换为单列。
 
 ```
 src/
-  App.tsx               页面组装
-  components/           状态栏 / 总览 / 三件事 / 列表 / 雷达图 / 热力图 / 来源说明
+  App.tsx                 hash 路由入口（#/news、#/models）
+  views/
+    NewsView.tsx          今日热点：总览 + 三件事 + 列表 + 来源（桌面双栏仪表盘）
+    ModelsView.tsx        模型洞察：分维度排名 + 综合比较 + 模型画像 + 数据来源
+  components/             状态栏 / 卡片 / 榜单图 / 散点 / 迷你雷达等
   data/
-    daily.json          每日新闻数据（脚本生成，勿手改）
-    model-scores.json   模型评分（手动维护）
-    sources.json        RSS 来源列表
-  lib/                  类型与 UI 常量
+    daily.json            每日新闻（脚本生成，勿手改）
+    arena-leaderboard.json Arena 榜单（脚本生成，勿手改）
+    sources.json          新闻来源配置
+  lib/
+    arena.ts              名称归一 / 百分位 / 本站综合指数与权重预设
+    types.ts ui.ts useHashRoute.ts
 scripts/
-  update-daily.ts       抓取 RSS → 去重 → 分类评分 → 生成 JSON
-  enhance-with-llm.ts   可选 AI 增强（无 key 自动跳过，失败自动回退）
+  update-daily.ts         抓取 RSS/日报拆解 -> 去重 -> 分类评分 -> 可选 LLM 增强
+  enhance-with-llm.ts     严格 JSON 协议（三件事评选/中文标题/关键事实/具体影响）
+  update-arena.ts         拉取 Arena 官方数据集 latest 快照，失败回退缓存
 .github/workflows/
-  daily-update.yml      每天 08:30（北京时间）自动更新并部署
+  daily-update.yml        每天 08:30（北京时间）更新新闻 + 榜单并部署
 ```
 
 技术栈：Vite + React + TypeScript + Tailwind CSS + ECharts。
 
 ## 七、内容来源与边界
 
-- 新闻来自 `sources.json` 中的公开 RSS，每条真实新闻均附原文链接。
-- 文字风格学习自橘鸦 Juya（信息密度高、出处清晰），**未抓取或复制其微信正文**；Juya 公开 RSS（https://daily.juya.uk/rss.xml ）是默认来源之一。
-- 雷达图表达方式参考图灵坐标/浪浪妈（结论先行、指出长短板），**评分数据未取自其视频**，当前为人工整理评分（`manual`），口径见 `model-scores.json`。
+- 新闻来自 `sources.json` 中的公开 RSS，每条真实新闻均附原始链接；日报型来源仅学习其编辑判断与文字风格，**不复制其原文**，日报容器不作为新闻展示。
+- 模型数据来自 LMArena 官方 Hugging Face 数据集，页面展示发布日期、置信区间与票数；不使用任何手工评分，不使用未确认来源的数据。
+- 雷达图表达方式（模型画像）参考图灵坐标/浪浪妈的"单模型多边形 + 指出长短板"思路，**评分数据未取自其视频**。

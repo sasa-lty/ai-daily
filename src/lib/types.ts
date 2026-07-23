@@ -56,6 +56,12 @@ export interface NewsItem {
   aiEnhanced: boolean
   /** 示例数据标记，页面上会显示 sample 角标 */
   isSample?: boolean
+  /** 关键事实（2-3 条短句，AI 增强时生成） */
+  keyFacts?: string[]
+  /** 展示用来源名：原始发布方；无法可靠识别时为“综合来源” */
+  sourceDisplayName?: string
+  /** 置信依据，如“官方发布 / 多来源验证 / 单一来源” */
+  confidenceReason?: string
 }
 
 export interface SourceStat {
@@ -101,26 +107,61 @@ export function signalLevelOf(score: number): SignalLevel {
   return '扫过'
 }
 
-/* ---------- 模型评分 ---------- */
+/* ---------- Arena 官方榜单 ---------- */
 
-export interface ModelScore {
-  name: string
-  vendor: string
-  /** 各维度得分 0-100，顺序与 dimensions 一致 */
-  scores: number[]
-  /** 一句话诊断：长板短板 */
-  diagnosis: string
-  /** 评分来源；人工评分必须为 "manual" */
-  source: string
-  /** 补充说明（如数据口径） */
-  note?: string
+/** 六个能力维度（对应 Arena 榜单 config） */
+export type ArenaDim = 'text' | 'agent' | 'webdev' | 'vision' | 'document' | 'search'
+
+export const ARENA_DIMS: ArenaDim[] = ['text', 'agent', 'webdev', 'vision', 'document', 'search']
+
+export const ARENA_DIM_LABEL: Record<ArenaDim, string> = {
+  text: '综合文本',
+  agent: 'Agent 执行',
+  webdev: 'WebDev/编码',
+  vision: '视觉理解',
+  document: '文档理解',
+  search: '搜索研究',
 }
 
-export interface ModelScoresFile {
+/** Arena config -> 本站维度 */
+export const ARENA_CONFIG_TO_DIM: Record<string, ArenaDim> = {
+  text_style_control: 'text',
+  agent: 'agent',
+  webdev: 'webdev',
+  vision_style_control: 'vision',
+  document_style_control: 'document',
+  search_style_control: 'search',
+}
+
+export interface ArenaModelEntry {
+  /** 模型名（Arena 官方数据中的 model_name） */
+  name: string
+  organization: string
+  rank: number
+  /** Arena 原始评分（Elo 体系，不同榜单量纲不同，不可跨榜平均） */
+  score: number
+  /** 95% 置信区间下/上限 */
+  ciLower: number
+  ciUpper: number
+  voteCount: number
+}
+
+export interface ArenaBoardData {
+  /** Arena config 名，如 text_style_control */
+  config: string
+  dim: ArenaDim
+  label: string
+  /** Arena 官方榜单发布日期 */
+  publishDate: string
+  models: ArenaModelEntry[]
+}
+
+export interface ArenaFile {
+  /** 本文件生成/抓取时间 ISO */
   updatedAt: string
-  /** 能力维度，例如 编码能力 / 网页生成 / 多模态 ... */
-  dimensions: string[]
-  /** 总评一句话诊断 */
-  overallDiagnosis: string
-  models: ModelScore[]
+  /** ok=本次抓取成功；cache=抓取失败，使用缓存数据 */
+  status: 'ok' | 'cache'
+  statusNote?: string
+  sourceUrl: string
+  boards: ArenaBoardData[]
 }

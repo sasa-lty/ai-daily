@@ -25,6 +25,36 @@ export const STATUS_STYLE: Record<DataStatus, { badge: string; dot: string }> = 
   error: { badge: 'border-red-400/30 bg-red-400/10 text-red-300', dot: 'bg-red-400' },
 }
 
+/** 机构配色（模型散点图/标签） */
+const ORG_COLORS: Record<string, string> = {
+  anthropic: '#fbbf24',
+  openai: '#34d399',
+  google: '#38bdf8',
+  meta: '#a78bfa',
+  moonshot: '#f472b6',
+  zai: '#a3e635',
+  xai: '#fb923c',
+  deepseek: '#22d3ee',
+  alibaba: '#f87171',
+  mistral: '#e879f9',
+}
+
+export function orgColor(org: string): string {
+  return ORG_COLORS[org.toLowerCase()] ?? '#94a3b8'
+}
+
+/** 模型名截断（图表轴标签用） */
+export function shortenName(name: string, max = 24): string {
+  return name.length > max ? `${name.slice(0, max - 1)}…` : name
+}
+
+/** 票数紧凑格式：1200 -> 1.2k */
+export function formatVotes(v: number): string {
+  if (v >= 1_000_000) return `${(v / 1_000_000).toFixed(1)}M`
+  if (v >= 1_000) return `${(v / 1_000).toFixed(1)}k`
+  return String(v)
+}
+
 /** 格式化为北京时间 HH:mm */
 export function formatTime(iso: string): string {
   const d = new Date(iso)

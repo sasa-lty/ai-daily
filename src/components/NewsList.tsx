@@ -117,7 +117,9 @@ export default function NewsList({ items }: { items: NewsItem[] }) {
                     >
                       {item.title}
                     </a>
-                    <p className="mt-1 text-[13px] leading-6 text-zinc-400">{item.summary}</p>
+                    {item.summary !== item.title && (
+                      <p className="mt-1 text-[13px] leading-6 text-zinc-400">{item.summary}</p>
+                    )}
                   </div>
                   <div className="shrink-0 text-right">
                     <p className="font-mono text-base text-amber-300">{item.impactScore}</p>
@@ -127,7 +129,20 @@ export default function NewsList({ items }: { items: NewsItem[] }) {
 
                 {expanded && (
                   <div className="mt-2.5 rounded-md border border-zinc-800 bg-[#0b0e13] p-3">
-                    <p className="text-[11px] text-zinc-500">为什么重要</p>
+                    {item.keyFacts && item.keyFacts.length > 0 && (
+                      <>
+                        <p className="text-[11px] text-zinc-500">关键事实</p>
+                        <ul className="mt-1 space-y-1">
+                          {item.keyFacts.map((fact, i) => (
+                            <li key={i} className="flex gap-1.5 text-[12px] leading-5 text-zinc-400">
+                              <span className="text-amber-400/80">▸</span>
+                              <span>{fact}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                    <p className="mt-2 text-[11px] text-zinc-500">为什么重要</p>
                     <p className="mt-0.5 text-[13px] leading-5 text-zinc-300">
                       {item.whyItMatters}
                     </p>
@@ -143,20 +158,23 @@ export default function NewsList({ items }: { items: NewsItem[] }) {
                         ))}
                       </div>
                     )}
-                    <a
-                      href={item.sourceUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-2 inline-block text-xs text-amber-300/90 hover:text-amber-300"
-                    >
-                      阅读原文（{item.sourceName}）→
-                    </a>
+                    <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-zinc-500">
+                      {item.confidenceReason && <span>置信依据：{item.confidenceReason}</span>}
+                      <a
+                        href={item.sourceUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-amber-300/90 hover:text-amber-300"
+                      >
+                        阅读原文（{item.sourceDisplayName ?? item.sourceName}）→
+                      </a>
+                    </div>
                   </div>
                 )}
 
                 <div className="mt-2 flex items-center justify-between text-[11px] text-zinc-500">
                   <span>
-                    {item.sourceName} · {formatDateTime(item.publishedAt)}
+                    {item.sourceDisplayName ?? item.sourceName} · {formatDateTime(item.publishedAt)}
                   </span>
                   <button
                     onClick={() => setExpandedId(expanded ? null : item.id)}

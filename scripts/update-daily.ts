@@ -1,8 +1,15 @@
 /**
- * 每日更新脚本：RSS 抓取 -> 去重 -> 规则分类/评分 -> 可选 LLM 增强 -> 生成 JSON
+ * 每日更新脚本 v2：RSS 抓取 -> 日报拆解 -> 去重 -> 规则分类/评分 -> 可选 LLM 增强 -> 生成 JSON
  *
  * 运行方式：npm run update
  * 输出：src/data/daily.json + src/data/history/YYYY-MM-DD.json
+ *
+ * v2 变化：
+ * - 支持日报型来源（type=digest，如 Juya）：把每一期拆解成单条新闻候选信号，
+ *   从链接推断原始发布方；日报容器本身不会进入新闻列表/今日三件事。
+ * - 日报纯文本作为 LLM 的 editorialReference（仅参考，禁止复制）。
+ * - LLM 按严格 JSON 协议返回 title/summary/keyFacts/whyItMatters/sourceDisplayName/
+ *   confidenceReason 与 topStoryIds；失败回退规则模式。
  *
  * 设计原则：
  * - 没有任何 API key 也能成功运行（规则模式）。
@@ -28,11 +35,13 @@ const SOURCES_PATH = path.join(ROOT, 'src', 'data', 'sources.json')
 
 const FETCH_TIMEOUT_MS = 15_000
 const MAX_ITEMS_PER_SOURCE = 12
-const MAX_SELECTED = 12 // 今日三件事 3 条 + 热点列表 9 条
+const MAX_DIGEST_ENTRIES = 24
+const MAX_SELECTED = 12 // 今日三件事 + 热点列表
 const DATE_LOCALE_OPTS = { timeZone: 'Asia/Shanghai' } as const
 
 interface SourceDef {
   name: string
+  type?: 'rss' | 'digest'
   url: string
   homepage?: string
   weight?: number
@@ -83,6 +92,14 @@ interface RawEntry {
   link: string
   publishedAt: string
   summary: string
+  /** 原始 HTML（仅日报型来源用于二次解析） */
+  html?: string
+  /** 日报编辑给定的分类（优先于关键词分类） */
+  categoryHint?: Category
+  /** 从链接推断的原始发布方 */
+  publisher?: string
+  /** 在日报中的编辑排序（1 起，越小越靠前） */
+  editorRank?: number
 }
 
 /** XML 解析结果是松散结构，统一归一化为对象数组 */
@@ -108,11 +125,13 @@ function parseFeed(xml: string): RawEntry[] {
   const channel = doc.rss?.channel as Record<string, any> | undefined
   if (channel) {
     for (const item of arrayify(channel.item)) {
+      const rawHtml = asText(item['content:encoded']) || asText(item.description)
       entries.push({
         title: cleanText(asText(item.title)),
         link: asText(item.link) || asText(item.guid),
         publishedAt: asText(item.pubDate) || asText(item['dc:date']),
-        summary: cleanText(asText(item.description) || asText(item['content:encoded'])),
+        summary: cleanText(asText(item.description) || rawHtml),
+        html: rawHtml,
       })
     }
     return entries
@@ -125,16 +144,179 @@ function parseFeed(xml: string): RawEntry[] {
       const links = arrayify(entry.link)
       const alt: Record<string, any> =
         links.find((l) => l['@_rel'] === 'alternate') ?? links[0] ?? {}
+      const rawHtml = asText(entry.content) || asText(entry.summary)
       entries.push({
         title: cleanText(asText(entry.title)),
         link: typeof alt['@_href'] === 'string' ? alt['@_href'] : '',
         publishedAt: asText(entry.published) || asText(entry.updated),
-        summary: cleanText(asText(entry.summary) || asText(entry.content)),
+        summary: cleanText(asText(entry.summary) || rawHtml),
+        html: rawHtml,
       })
     }
   }
   return entries
 }
+
+/* ---------------- 日报型来源拆解 ---------------- */
+
+/** Juya 等日报的 h3 栏目 -> 本站分类 */
+const DIGEST_SECTION_CATEGORY: Array<{ pattern: RegExp; category: Category }> = [
+  { pattern: /模型发布|新模型/, category: '模型' },
+  { pattern: /开源/, category: '开源' },
+  { pattern: /开发生态|开发者|工具链|Agent/i, category: 'Agent' },
+  { pattern: /产品应用|产品|应用/, category: '产品' },
+  { pattern: /技术|洞察|研究|论文/, category: '研究' },
+  { pattern: /行业动态|行业|融资|商业/, category: '商业' },
+  { pattern: /算力|芯片|基础设施/, category: '算力' },
+  { pattern: /安全|政策|监管|合规/, category: '安全' },
+]
+
+const AGGREGATOR_DOMAINS = new Set([
+  'x.com', 'twitter.com', 't.co', 'linux.do', 'reddit.com', 'weibo.com',
+  'zhihu.com', 'mp.weixin.qq.com', 't.me', 'discord.com', 'news.ycombinator.com',
+  'bilibili.com', 'youtube.com', 'youtu.be',
+])
+
+/** 已知域名 -> 原始发布方（含逐级后缀匹配） */
+const DOMAIN_PUBLISHER: Record<string, string> = {
+  'openai.com': 'OpenAI',
+  'anthropic.com': 'Anthropic',
+  'claude.com': 'Anthropic',
+  'google.com': 'Google',
+  'blog.google': 'Google',
+  'deepmind.google': 'Google DeepMind',
+  'microsoft.com': 'Microsoft',
+  'meta.com': 'Meta',
+  'mistral.ai': 'Mistral AI',
+  'x.ai': 'xAI',
+  'moonshot.cn': 'Moonshot AI',
+  'moonshot.ai': 'Moonshot AI',
+  'kimi.com': 'Kimi',
+  'deepseek.com': 'DeepSeek',
+  'alibaba.com': '阿里巴巴',
+  'aliyun.com': '阿里云',
+  'qwen.ai': 'Qwen',
+  'bytedance.com': '字节跳动',
+  'tencent.com': '腾讯',
+  'qq.com': '腾讯',
+  'baidu.com': '百度',
+  'apple.com': 'Apple',
+  'amazon.com': 'Amazon',
+  'nvidia.com': 'NVIDIA',
+  'amd.com': 'AMD',
+  'intel.com': 'Intel',
+  'huggingface.co': 'Hugging Face',
+  'github.com': 'GitHub',
+  'arxiv.org': 'arXiv',
+  'cursor.com': 'Cursor',
+  'cognition.ai': 'Cognition',
+  'perplexity.ai': 'Perplexity',
+  'manus.im': 'Manus',
+  'cohere.com': 'Cohere',
+  'stability.ai': 'Stability AI',
+  'midjourney.com': 'Midjourney',
+  'runwayml.com': 'Runway',
+  'luma.ai': 'Luma',
+  'suno.com': 'Suno',
+  'elevenlabs.io': 'ElevenLabs',
+  'scale.com': 'Scale AI',
+  'upstage.ai': 'Upstage',
+  'replit.com': 'Replit',
+  'vercel.com': 'Vercel',
+  'cloudflare.com': 'Cloudflare',
+  'notion.so': 'Notion',
+  'figma.com': 'Figma',
+  'adobe.com': 'Adobe',
+  'salesforce.com': 'Salesforce',
+  'oracle.com': 'Oracle',
+  'databricks.com': 'Databricks',
+  'techcrunch.com': 'TechCrunch',
+  'theverge.com': 'The Verge',
+  'wired.com': 'Wired',
+  'arstechnica.com': 'Ars Technica',
+  'reuters.com': 'Reuters',
+  'bloomberg.com': 'Bloomberg',
+  'ft.com': 'Financial Times',
+  'wsj.com': 'WSJ',
+  'nature.com': 'Nature',
+  'science.org': 'Science',
+  'mit.edu': 'MIT',
+  'stanford.edu': 'Stanford',
+  '36kr.com': '36氪',
+  'jiqizhixin.com': '机器之心',
+  'qbitai.com': '量子位',
+  'infoq.cn': 'InfoQ',
+  'miora.design': 'Miora',
+  'qwenlm.github.io': 'Qwen',
+  'github.io': 'GitHub Pages',
+}
+
+/** 从链接推断原始发布方；无法可靠识别时返回“综合来源”，不伪造 */
+export function publisherFromUrl(url: string): string {
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, '').toLowerCase()
+    const parts = host.split('.')
+    for (let i = 0; i < parts.length - 1; i++) {
+      const suffix = parts.slice(i).join('.')
+      if (DOMAIN_PUBLISHER[suffix]) return DOMAIN_PUBLISHER[suffix]
+    }
+    const root2 = parts.slice(-2).join('.')
+    if (AGGREGATOR_DOMAINS.has(host) || AGGREGATOR_DOMAINS.has(root2)) return '综合来源'
+    // 未知名站：用根域名首字母大写作展示名（域名即出处，不算伪造）
+    const root = parts[parts.length - 2] ?? parts[0]
+    return root.charAt(0).toUpperCase() + root.slice(1)
+  } catch {
+    return '综合来源'
+  }
+}
+
+/** 把一期日报 HTML 拆解成单条新闻候选信号 */
+function parseDigestEntries(issue: RawEntry): RawEntry[] {
+  if (!issue.html) return []
+  const html = decodeEntities(issue.html)
+
+  // 只取“概览”栏目（若无则整篇），避免视频链接等干扰
+  const overviewMatch = html.match(/<h2[^>]*>\s*概览\s*<\/h2>([\s\S]*?)(?:<h2|$)/i)
+  const scope = overviewMatch ? overviewMatch[1] : html
+
+  const out: RawEntry[] = []
+  const sectionRe = /<h3[^>]*>([\s\S]*?)<\/h3>\s*<ul[^>]*>([\s\S]*?)<\/ul>/gi
+  let section: RegExpExecArray | null
+  let rank = 0
+
+  while ((section = sectionRe.exec(scope)) !== null) {
+    const sectionName = cleanText(section[1])
+    const ul = section[2]
+    const hint = DIGEST_SECTION_CATEGORY.find((s) => s.pattern.test(sectionName))?.category
+
+    const liRe = /<li[^>]*>([\s\S]*?)<\/li>/gi
+    let li: RegExpExecArray | null
+    while ((li = liRe.exec(ul)) !== null) {
+      const liHtml = li[1].replace(/<code[\s\S]*?<\/code>/g, '')
+      const hrefMatch = liHtml.match(/href="([^"]+)"/i)
+      const link = hrefMatch?.[1] ?? ''
+      // 去掉锚点标签后剩余的纯文本即编辑拟好的标题
+      const title = cleanText(liHtml.replace(/<a[\s\S]*?<\/a>/gi, ''))
+      if (!title || title.length < 6 || !link.startsWith('http')) continue
+      if (link.includes('juya.uk')) continue
+
+      rank += 1
+      out.push({
+        title,
+        link,
+        publishedAt: issue.publishedAt,
+        summary: title,
+        categoryHint: hint,
+        publisher: publisherFromUrl(link),
+        editorRank: rank,
+      })
+      if (out.length >= MAX_DIGEST_ENTRIES) return out
+    }
+  }
+  return out
+}
+
+/* ---------------- 抓取 ---------------- */
 
 async function fetchSource(source: SourceDef): Promise<{ entries: RawEntry[]; stat: SourceStat }> {
   const controller = new AbortController()
@@ -143,13 +325,30 @@ async function fetchSource(source: SourceDef): Promise<{ entries: RawEntry[]; st
     const res = await fetch(source.url, {
       signal: controller.signal,
       headers: {
-        'User-Agent': 'ai-daily-radar/1.0 (+https://github.com/) RSS reader',
+        'User-Agent': 'ai-daily-radar/2.0 (+https://github.com/) RSS reader',
         Accept: 'application/rss+xml, application/atom+xml, application/xml, text/xml, */*',
       },
     })
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     const xml = await res.text()
-    const entries = parseFeed(xml).filter((e) => e.title && e.link)
+    const rawItems = parseFeed(xml)
+
+    if (source.type === 'digest') {
+      // 日报型：只取最近 2 期，拆解成单条新闻；容器本身被丢弃
+      const entries = rawItems.slice(0, 2).flatMap(parseDigestEntries)
+      return {
+        entries,
+        stat: {
+          name: source.name,
+          url: source.homepage ?? source.url,
+          ok: true,
+          itemCount: entries.length,
+          note: `日报型来源，已拆解 ${rawItems.length > 0 ? Math.min(rawItems.length, 2) : 0} 期`,
+        },
+      }
+    }
+
+    const entries = rawItems.filter((e) => e.title && e.link)
     return {
       entries: entries.slice(0, MAX_ITEMS_PER_SOURCE),
       stat: { name: source.name, url: source.homepage ?? source.url, ok: true, itemCount: entries.length },
@@ -209,15 +408,14 @@ function extractTags(text: string, max = 4): string[] {
 const HOT_PATTERN =
   /重磅|首发|突破|超越|最强|刷新|SOTA|开源|发布|推出|上线|宣布|融资|收购|release[sd]?|launch(?:es|ed)?|announce[sd]?|unveil|open[- ]?source|breakthrough/i
 
-function scoreEntry(
-  entry: RawEntry,
-  sourceWeight: number,
-  now: number
-): { score: number; confidence: Confidence } {
+function scoreEntry(entry: RawEntry, sourceWeight: number, now: number): number {
   let score = 42 + sourceWeight
 
   const hotHits = (entry.title.match(new RegExp(HOT_PATTERN.source, 'gi')) ?? []).length
   score += Math.min(hotHits * 7, 21)
+
+  // 日报编辑排序加权：编辑越靠前的条目越重要
+  if (entry.editorRank) score += Math.max(0, 11 - entry.editorRank)
 
   const ts = Date.parse(entry.publishedAt)
   if (!Number.isNaN(ts)) {
@@ -227,26 +425,46 @@ function scoreEntry(
     else if (hours <= 96) score += 4
     else score -= 6
   }
-
-  const confidence: Confidence =
-    sourceWeight >= 8 && entry.summary.length > 30
-      ? 'high'
-      : entry.summary.length > 10
-        ? 'medium'
-        : 'low'
-
-  return { score: Math.max(20, Math.min(100, Math.round(score))), confidence }
+  return Math.max(20, Math.min(100, Math.round(score)))
 }
 
-const WHY_TEMPLATES: Record<Category, string> = {
-  模型: '模型能力边界的变化，直接影响选型、成本与应用可行性评估。',
-  Agent: 'Agent 工具链的新进展，关系到自动化工作流能否真正落地。',
-  产品: '面向用户的产品变化，可能改变日常使用 AI 的方式。',
-  开源: '开源释放权重或代码，意味着可以自部署、低成本复现与二次开发。',
-  研究: '研究信号通常领先产品落地数月，值得提前跟踪方向。',
-  算力: '算力供给变化决定模型的训练成本、推理价格与可用性。',
-  商业: '商业化信号反映 AI 行业的真实需求与竞争格局。',
-  安全: '安全与监管动态，影响 AI 产品的可用边界与合规成本。',
+function confidenceOf(entry: RawEntry, sourceWeight: number): Confidence {
+  if (sourceWeight >= 8 && entry.summary.length > 20) return 'high'
+  if (entry.summary.length > 10) return 'medium'
+  return 'low'
+}
+
+/** 规则版“为什么重要”：引用具体主体与决策点，不使用空泛模板话 */
+function whyFor(category: Category, tags: string[], publisher?: string): string {
+  const subject = tags[0] ?? publisher ?? '相关方'
+  switch (category) {
+    case '模型':
+      return `涉及${subject}的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。`
+    case 'Agent':
+      return `${subject}相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。`
+    case '产品':
+      return `${subject}的功能变化直接影响现有使用流程与替代方案评估。`
+    case '开源':
+      return `权重或代码开放意味着可自部署与二次开发，直接影响私有化成本与技术选型。`
+    case '研究':
+      return `该结果指向${subject}方向的技术走向，通常领先产品化数月，用于判断投入方向。`
+    case '算力':
+      return `算力供给与合作变化会传导至${subject}相关模型的训练成本与推理价格。`
+    case '商业':
+      return `该交易明确了${subject}方向的资金规模与估值锚点，影响对赛道空间的判断。`
+    case '安全':
+      return `该动态划定了${subject}相关产品的合规边界与潜在限制，影响可用性预期。`
+  }
+}
+
+/* ---------------- 包装名清洗（防御层） ---------------- */
+
+const BANNED_TITLE = /橘鸦|juya|AI ?日报|AI ?早报|\d{4}-\d{2}-\d{2}\s*期/i
+const BANNED_SOURCE = /橘鸦|juya|日报|早报/i
+
+function sanitizeSourceName(name: string | undefined, fallback: string): string {
+  if (!name || BANNED_SOURCE.test(name)) return '综合来源'
+  return name
 }
 
 /* ---------------- 示例数据（全部来源失败且无缓存时使用） ---------------- */
@@ -257,7 +475,7 @@ function buildSampleItems(dateStr: string): NewsItem[] {
     title: string,
     category: Category,
     impactScore: number,
-    sourceName: string,
+    sourceDisplayName: string,
     sourceUrl: string,
     tags: string[]
   ): NewsItem => ({
@@ -265,8 +483,9 @@ function buildSampleItems(dateStr: string): NewsItem[] {
     title,
     category,
     summary: '示例摘要：这里是该条新闻的一句话概括，真实数据会在下次成功抓取后自动替换。',
-    whyItMatters: WHY_TEMPLATES[category],
-    sourceName,
+    whyItMatters: whyFor(category, tags, sourceDisplayName),
+    sourceName: sourceDisplayName,
+    sourceDisplayName,
     sourceUrl,
     publishedAt: `${dateStr}T08:00:00+08:00`,
     impactScore,
@@ -274,6 +493,8 @@ function buildSampleItems(dateStr: string): NewsItem[] {
     tags,
     aiEnhanced: false,
     isSample: true,
+    keyFacts: ['示例关键事实 1', '示例关键事实 2'],
+    confidenceReason: '单一来源（示例）',
   })
   return [
     mk('sample-1', '示例：某前沿实验室发布新一代旗舰模型', '模型', 88, 'OpenAI', 'https://openai.com', ['OpenAI', 'GPT']),
@@ -283,17 +504,11 @@ function buildSampleItems(dateStr: string): NewsItem[] {
     mk('sample-5', '示例：AI 应用产品更新，集成更多办公场景', '产品', 64, 'TechCrunch AI', 'https://techcrunch.com/category/artificial-intelligence/', ['产品']),
     mk('sample-6', '示例：芯片厂商公布新一代 AI 加速卡规格', '算力', 61, 'NVIDIA', 'https://www.nvidia.com', ['NVIDIA', '算力']),
     mk('sample-7', '示例：某 AI 公司完成新一轮融资，估值上调', '商业', 58, 'TechCrunch AI', 'https://techcrunch.com/category/artificial-intelligence/', ['融资']),
-    mk('sample-8', '示例：监管机构就生成式 AI 合规发布新指引', '安全', 52, 'TechCrunch AI', 'https://techcrunch.com/category/artificial-intelligence/', ['安全']),
+    mk('sample-8', '示例：监管机构就生成式 AI 合规发布新指引', '安全', 52, '综合来源', 'https://techcrunch.com/category/artificial-intelligence/', ['安全']),
   ]
 }
 
 /* ---------------- 主流程 ---------------- */
-
-/** 日报类 RSS（如 Juya）的标题只是日期，补充来源名便于扫读 */
-function normalizeTitle(title: string, sourceName: string): string {
-  if (/^\d{4}-\d{2}-\d{2}$/.test(title)) return `${sourceName} · ${title} 期`
-  return title
-}
 
 function dedupe(items: NewsItem[]): NewsItem[] {
   const seenTitles = new Set<string>()
@@ -361,34 +576,39 @@ async function main() {
     console.log(`  - ${s.ok ? 'OK ' : 'FAIL'} ${s.name}：${s.itemCount} 条${s.note ? `（${s.note}）` : ''}`)
   }
 
-  // 汇总 + 结构化
+  // 汇总 + 结构化（日报容器已在 fetch 阶段被拆解，不会进入候选）
   const all: NewsItem[] = []
   let seq = 0
   for (let i = 0; i < results.length; i++) {
     const weight = sources[i].weight ?? 5
     for (const entry of results[i].entries) {
       const text = `${entry.title} ${entry.summary}`
-      const category = categorize(text)
-      const { score, confidence } = scoreEntry(entry, weight, now)
+      const category = entry.categoryHint ?? categorize(text)
       const ts = Date.parse(entry.publishedAt)
+      const tags = extractTags(text)
+      const publisher = entry.publisher ?? publisherFromUrl(entry.link)
       all.push({
         id: `n${++seq}`,
-        title: normalizeTitle(entry.title, sources[i].name),
+        title: entry.title,
         category,
         summary: truncateSummary(entry.summary || entry.title),
-        whyItMatters: WHY_TEMPLATES[category],
-        sourceName: sources[i].name,
+        whyItMatters: whyFor(category, tags, publisher),
+        sourceName: sanitizeSourceName(publisher, sources[i].name),
+        sourceDisplayName: sanitizeSourceName(publisher, sources[i].name),
         sourceUrl: entry.link,
         publishedAt: Number.isNaN(ts) ? generatedAt : new Date(ts).toISOString(),
-        impactScore: score,
-        confidence,
-        tags: extractTags(text),
+        impactScore: scoreEntry(entry, weight, now),
+        confidence: confidenceOf(entry, weight),
+        tags,
         aiEnhanced: false,
       })
     }
   }
 
-  const selected = dedupe(all)
+  // 防御层：任何形似“日报容器”的条目都不得进入最终列表
+  const candidates = dedupe(all).filter((it) => !BANNED_TITLE.test(it.title))
+
+  const selected = candidates
     .sort((a, b) => b.impactScore - a.impactScore || b.publishedAt.localeCompare(a.publishedAt))
     .slice(0, MAX_SELECTED)
 
@@ -423,19 +643,35 @@ async function main() {
     return
   }
 
+  // 编辑参考文本：取第一个日报型来源最新一期的纯文本概览（仅供 LLM 参考，不展示）
+  let editorialReference: string | undefined
+  const digestIdx = sources.findIndex((s) => s.type === 'digest')
+  if (digestIdx >= 0 && results[digestIdx].entries.length > 0) {
+    editorialReference = results[digestIdx].entries
+      .slice(0, 15)
+      .map((e) => `- ${e.title}`)
+      .join('\n')
+      .slice(0, 2000)
+  }
+
   // 可选 LLM 增强：无 key 或失败都自动回退规则模式
   let status: DailyData['status'] = 'rule'
-  const enhanced = await enhanceWithLLM(selected, dateStr)
+  let topStoryIds = selected.slice(0, 3).map((i) => i.id)
+  const enhanced = await enhanceWithLLM(selected, dateStr, editorialReference)
   if (enhanced) {
     const byId = new Map(enhanced.items.map((it) => [it.id, it]))
     for (const item of selected) {
       const e = byId.get(item.id)
-      if (e) {
-        item.summary = e.summary
-        item.whyItMatters = e.whyItMatters
-        item.aiEnhanced = true
-      }
+      if (!e) continue
+      item.title = e.title
+      item.summary = e.summary
+      item.keyFacts = e.keyFacts
+      item.whyItMatters = e.whyItMatters
+      item.sourceDisplayName = sanitizeSourceName(e.sourceDisplayName, item.sourceName)
+      item.confidenceReason = e.confidenceReason
+      item.aiEnhanced = true
     }
+    if (enhanced.topStoryIds.length > 0) topStoryIds = enhanced.topStoryIds
     status = 'ai'
   }
 
@@ -449,14 +685,14 @@ async function main() {
     statusNote:
       status === 'ai' ? '摘要与总评已由 AI 改写。' : '未配置 API key 或 AI 增强失败，使用规则摘要。',
     overview,
-    topStoryIds: selected.slice(0, 3).map((i) => i.id),
+    topStoryIds,
     items: selected,
     sources: sourceStats,
   }
 
   writeOutputs(data)
   console.log(
-    `[update] 完成：${selected.length} 条新闻，状态=${status}，已写入 src/data/daily.json 与 history/${dateStr}.json`
+    `[update] 完成：${selected.length} 条新闻，三件事 ${topStoryIds.length} 条，状态=${status}`
   )
 }
 

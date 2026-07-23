@@ -47,11 +47,15 @@ jobs:
           LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
           LLM_MODEL: ${{ vars.LLM_MODEL }}
 
+      - name: 更新 Arena 官方榜单
+        # 失败时自动回退到上次缓存，不会导致工作流失败
+        run: npm run update:arena
+
       - name: 回写更新后的数据
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/daily.json src/data/history 2>/dev/null || git add src/data/daily.json
+          git add src/data/daily.json src/data/arena-leaderboard.json src/data/history 2>/dev/null || git add src/data
           if ! git diff --cached --quiet; then
             git commit -m "chore(data): daily update $(date -u +%F)"
             git push || echo "push 失败，不影响本次部署"

@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "update": "tsx scripts/update-daily.ts"
+    "update": "tsx scripts/update-daily.ts",
+    "update:arena": "tsx scripts/update-arena.ts",
+    "update:all": "tsx scripts/update-daily.ts && tsx scripts/update-arena.ts"
   },
   "dependencies": {
     "echarts": "^5.6.0",
