@@ -1,35 +1,35 @@
 {
   "date": "2026-07-24",
-  "generatedAt": "2026-07-23T16:06:12.274Z",
+  "generatedAt": "2026-07-24T03:55:13.217Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "今日AI领域密集发布模型与工具：Google推出轻量级Gemini 3.6系列，千问发布图像生成模型，Cursor推出智能路由，开发效率与多模态能力持续提升。",
+    "verdict": "模型密集发布：Grok 4.5 全平台上线、FLUX 3 多模态发布、ChatGPT 桌面语音 Agent 功能落地，Agent 与多模态成今日焦点。",
     "keywords": [
-      "开源",
       "Agent",
-      "Claude"
+      "开源",
+      "微软"
     ],
-    "heatIndex": 79,
+    "heatIndex": 80,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n21",
-    "n5",
-    "n24"
+    "n8",
+    "n1",
+    "n3"
   ],
   "items": [
     {
-      "id": "n1",
+      "id": "n20",
       "title": "Upstage 发布开源 Agentic 基础模型 Solar Open 2",
       "category": "模型",
-      "summary": "韩国AI公司Upstage发布开源Agentic基础模型Solar Open 2，支持自主规划和工具调用，旨在降低构建智能体应用的门槛。开发者可从官网免费下载使用。",
-      "whyItMatters": "为开发者提供免费、可自定义的智能体基座模型，加速Agent应用开发与部署，减少对商业闭源模型的依赖。",
+      "summary": "Upstage 发布开源 Agentic 基础模型 Solar Open 2，该模型专为智能体场景设计，支持工具调用与多步推理，已开放权重供社区使用。",
+      "whyItMatters": "开源 Agent 模型为社区提供了可定制的基础设施，降低自研 Agent 系统的开发成本，可能促进更多垂直领域 Agent 应用的涌现。",
       "sourceName": "Upstage",
       "sourceDisplayName": "Upstage",
       "sourceUrl": "https://upstage.ai/blog/en/solar-open-2",
       "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 90,
+      "impactScore": 86,
       "confidence": "high",
       "tags": [
         "Agent",
@@ -37,23 +37,46 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "开源Agentic基础模型",
-        "支持自主规划和工具调用",
-        "可免费下载使用"
+        "Solar Open 2 为开源 Agentic 基础模型",
+        "由 Upstage 发布",
+        "支持工具调用与多步推理"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n2",
+      "id": "n6",
+      "title": "KwaiKAT 发布 KAT-Coder-V2.5-Dev 开源权重",
+      "category": "模型",
+      "summary": "KwaiKAT 在 Hugging Face 上发布 KAT-Coder-V2.5-Dev 开源权重，这是一个代码生成模型的开发版，面向开发者提供更强的代码理解与生成能力。",
+      "whyItMatters": "开源代码模型为开发者提供了可自主部署的代码辅助工具，降低了对商业模型的依赖，可能加速本地化代码生成应用的发展。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "KwaiKAT",
+      "sourceUrl": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "publishedAt": "2026-07-24T01:43:37.000Z",
+      "impactScore": 85,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "KAT-Coder-V2.5-Dev 为代码生成模型",
+        "开源权重已上传至 Hugging Face",
+        "由 KwaiKAT 发布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n21",
       "title": "微软发布开源图像模型家族 Mage-Flow",
       "category": "模型",
-      "summary": "微软在Hugging Face发布开源图像模型家族Mage-Flow，涵盖文本到图像生成、图像编辑等多任务，基于扩散架构并支持灵活部署。开发者可自由使用。",
-      "whyItMatters": "丰富开源图像生成生态，为研究人员和开发者提供高性能可定制基座，降低商业化应用门槛。",
+      "summary": "微软在 Hugging Face 上发布开源图像模型家族 Mage-Flow，涵盖多个尺寸与任务类型，为图像生成与编辑提供灵活的预训练模型选择。",
+      "whyItMatters": "开源图像模型家族丰富了开发者工具箱，不同规模的模型可适配从边缘端到云端的部署场景，加速图像生成技术的行业渗透。",
       "sourceName": "Hugging Face",
-      "sourceDisplayName": "微软",
+      "sourceDisplayName": "Microsoft",
       "sourceUrl": "https://huggingface.co/microsoft/Mage-Flow",
       "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 89,
+      "impactScore": 85,
       "confidence": "high",
       "tags": [
         "微软",
@@ -61,207 +84,160 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "开源图像模型家族",
-        "支持文生图、图像编辑",
-        "基于扩散架构"
+        "微软发布开源图像模型家族 Mage-Flow",
+        "模型涵盖多种尺寸与任务",
+        "权重已开源至 Hugging Face"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n26",
-      "title": "Poolside 发布开源模型 Laguna S 2.1，称编程能力可比肩数十倍大模型",
-      "category": "模型",
-      "summary": "框架公司Poolside发布开源编程模型Laguna S 2.1，声称其编程能力可比肩参数规模大数十倍的模型。该模型面向代码生成与理解任务，已开放下载。",
-      "whyItMatters": "挑战‘规模即性能’范式，为资源有限的团队提供高效编程AI选项，可能推动小模型在代码场景的采用。",
-      "sourceName": "Poolside",
-      "sourceDisplayName": "Poolside",
-      "sourceUrl": "https://poolside.ai/blog/introducing-laguna-s-2-1",
-      "publishedAt": "2026-07-22T02:06:58.000Z",
-      "impactScore": 81,
+      "id": "n1",
+      "title": "ChatGPT 桌面应用推出 ChatGPT Voice，支持语音控制电脑并协调多个 Agent",
+      "category": "Agent",
+      "summary": "OpenAI 在 ChatGPT 桌面应用中推出 Voice 功能，用户可通过语音指令操控电脑，并协调多个 AI Agent 协同工作。该功能将语音交互与 Agent 编排深度结合，提升桌面端自动化效率。",
+      "whyItMatters": "对桌面用户而言，语音控制与多 Agent 编排降低了操作门槛，加速了 AI 助手从对话工具向系统级控制中心的进化，推动 Agent 应用在个人场景的落地。",
+      "sourceName": "Chatgpt",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://learn.chatgpt.com/docs/features/voice",
+      "publishedAt": "2026-07-24T01:43:37.000Z",
+      "impactScore": 83,
       "confidence": "high",
       "tags": [
-        "开源"
+        "GPT",
+        "Agent",
+        "语音"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "开源编程模型",
-        "宣称以较小参数量达到大模型级别编程能力",
-        "面向代码生成与理解"
+        "ChatGPT 桌面应用新增 Voice 语音控制功能",
+        "支持通过语音协调多个 Agent 协同任务",
+        "原文来自 OpenAI 官方文档"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n8",
+      "title": "xAI 宣布 Grok 4.5 模型全面上线多平台",
+      "category": "模型",
+      "summary": "xAI 正式宣布 Grok 4.5 模型全平台上线，用户可在多个渠道使用该最新版本。Grok 4.5 在推理、对话持度和多模态理解上均有显著提升。",
+      "whyItMatters": "作为 xAI 的旗舰模型，Grok 4.5 全平台部署意味着更广泛的用户触达，对聊天机器人市场形成直接竞争，同时也为开发者提供了新的 API 选择。",
+      "sourceName": "xAI",
+      "sourceDisplayName": "xAI",
+      "sourceUrl": "https://x.ai/news/grok-4-5-everywhere",
+      "publishedAt": "2026-07-24T01:43:37.000Z",
+      "impactScore": 83,
+      "confidence": "high",
+      "tags": [
+        "xAI",
+        "Grok"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Grok 4.5 全面上线多平台",
+        "由 xAI 发布，原文来自 x.ai",
+        "模型在推理与多模态能力上提升"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "Black Forest Labs 发布 FLUX 3 多模态模型",
+      "category": "模型",
+      "summary": "Black Forest Labs 正式发布 FLUX 3 多模态模型，支持图像生成与理解等多模态任务。该模型在生成质量与多模态对齐能力上实现突破，进一步推动开源多模态生态发展。",
+      "whyItMatters": "对创作者和研究机构，FLUX 3 提供了更强的多模态基础能力，可加速图像生成、视觉问答等应用的迭代，并促进开源多模态模型竞争。",
+      "sourceName": "Bfl",
+      "sourceDisplayName": "Black Forest Labs",
+      "sourceUrl": "https://bfl.ai/blog/flux-3",
+      "publishedAt": "2026-07-24T01:43:37.000Z",
+      "impactScore": 81,
+      "confidence": "high",
+      "tags": [
+        "多模态"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "FLUX 3 为多模态模型，支持图文生成与理解",
+        "由 Black Forest Labs 发布",
+        "原文来自官方博客"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n4",
-      "title": "Anthropic 为 Claude Code 推出 Claude Security 插件 Beta 版",
-      "category": "Agent",
-      "summary": "Anthropic发布Claude Security插件Beta版，集成到Claude Code中，提供代码安全扫描、漏洞检测与修复建议，帮助开发者在编码阶段发现安全问题。",
-      "whyItMatters": "将AI代码助手与安全防护结合，减少开发中引入漏洞的风险，提升企业级采用安全性。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://claude.com/product/claude-security",
-      "publishedAt": "2026-07-23T02:23:32.000Z",
+      "title": "Ant Ling 发布 Ling-3.0-flash 模型，多平台限时免费开放",
+      "category": "模型",
+      "summary": "Ant Ling 发布 Ling-3.0-flash 模型，并在多个平台开启限时免费使用。该模型主打快速推理能力，吸引开发者和企业进行低成本试用与集成。",
+      "whyItMatters": "限时免费策略降低了模型试用门槛，使中小开发者和企业能在低成本下评估模型性能，可能加速其在快速推理场景的采纳。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Ant Ling",
+      "sourceUrl": "https://x.com/AntLingAGI/status/2080351022028095681",
+      "publishedAt": "2026-07-24T01:43:37.000Z",
       "impactScore": 80,
       "confidence": "high",
-      "tags": [
-        "Claude",
-        "Anthropic"
-      ],
+      "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "集成到Claude Code",
-        "提供代码安全扫描与修复建议",
-        "Beta阶段"
+        "Ant Ling 发布 Ling-3.0-flash 模型",
+        "限时免费开放，支持多平台",
+        "原文来自 Ant Ling 官方 X 账号"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n5",
-      "title": "Cursor 推出智能模型路由器 Cursor Router",
-      "category": "Agent",
-      "summary": "编程工具Cursor推出智能模型路由器Cursor Router，可根据任务类型（代码生成、解释、调试等）自动选择最优模型，提升响应速度与准确性。",
-      "whyItMatters": "优化开发者使用AI的体验，降低手动切换模型成本，提高编码效率，可能成为AI开发工具的标准功能。",
-      "sourceName": "Cursor",
-      "sourceDisplayName": "Cursor",
-      "sourceUrl": "https://cursor.com/blog/router",
-      "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 79,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "智能路由不同模型",
-        "根据任务自动选择最优模型",
-        "提升响应速度与准确性"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n21",
-      "title": "Google 发布 Gemini 3.6 Flash 与 Gemini 3.5 Flash-Lite",
+      "title": "inclusionAI 发布 LLaDA2.2-flash 面向 Agent 的扩散语言模型",
       "category": "模型",
-      "summary": "Google发布轻量级多模态模型Gemini 3.6 Flash和Gemini 3.5 Flash-Lite，前者针对速度和性价比优化，后者为更轻量级版本，均通过API提供。",
-      "whyItMatters": "为开发者提供高性能低成本的模型选项，适用于实时应用和高吞吐量场景，加速AI落地。",
-      "sourceName": "Google",
-      "sourceDisplayName": "Google",
-      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
-      "publishedAt": "2026-07-22T02:06:58.000Z",
-      "impactScore": 79,
-      "confidence": "high",
-      "tags": [
-        "Google",
-        "Gemini"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "轻量级多模态模型",
-        "Gemini 3.6 Flash优化速度和性价比",
-        "Gemini 3.5 Flash-Lite更轻量"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n28",
-      "title": "MindLab Research 发布 Macaron-V1 系列开源模型",
-      "category": "模型",
-      "summary": "研究机构MindLab Research在Hugging Face发布Macaron-V1系列开源模型，包括多个参数版本，面向自然语言处理通用任务，已开放社区使用。",
-      "whyItMatters": "丰富开源模型生态，为中小团队提供多样化基座选择，促进社区研究和应用创新。",
+      "summary": "inclusionAI 发布 LLaDA2.2-flash，一个针对 Agent 场景优化的扩散语言模型。该模型采用扩散架构，专为多步推理与工具调用设计，已在 Hugging Face 开源权重。",
+      "whyItMatters": "扩散语言模型在 Agent 任务中的应用尚属前沿，该模型为研究人员提供了一个新的基线，可能推动 Agent 推理效率的提升。",
       "sourceName": "Hugging Face",
-      "sourceDisplayName": "MindLab Research",
-      "sourceUrl": "https://huggingface.co/mindlab-research/Macaron-V1-Venti",
-      "publishedAt": "2026-07-22T02:06:58.000Z",
+      "sourceDisplayName": "inclusionAI",
+      "sourceUrl": "https://huggingface.co/inclusionAI/LLaDA2.2-flash",
+      "publishedAt": "2026-07-24T01:43:37.000Z",
       "impactScore": 79,
-      "confidence": "high",
-      "tags": [
-        "开源"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "开源NLP模型系列",
-        "包含多个参数版本",
-        "面向通用任务"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n22",
-      "title": "Gemini 3.5 Pro 正与合作伙伴测试并将很快发布，Gemini 4 已启动预训练",
-      "category": "模型",
-      "summary": "据社交媒体消息，Google正与合作伙伴测试Gemini 3.5 Pro，预计很快发布；同时Gemini 4已启动预训练。该信息未经官方确认。",
-      "whyItMatters": "若属实，表明Google迭代速度加快，下一代模型预训练已启动，将对行业竞争节奏产生实质性影响。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/OfficialLoganK/status/2079594867161022817",
-      "publishedAt": "2026-07-22T02:06:58.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [
-        "Gemini"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Gemini 3.5 Pro正在测试",
-        "Gemini 4已开始预训练",
-        "来源为社交媒体，未官方确认"
-      ],
-      "confidenceReason": "传闻待证"
-    },
-    {
-      "id": "n8",
-      "title": "腾讯AI创意智能体Miora全量上线 支持多Agent协作",
-      "category": "产品",
-      "summary": "腾讯AI创意智能体Miora全量上线，支持多个AI智能体协同完成创意任务，如文案生成、设计提案等，面向创意工作者提供集成化工具。",
-      "whyItMatters": "拓展AI在创意领域的协作模式，多Agent协同可提升复杂任务效率，推动AI从辅助到共创的转变。",
-      "sourceName": "Miora",
-      "sourceDisplayName": "腾讯",
-      "sourceUrl": "https://miora.design",
-      "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 76,
       "confidence": "high",
       "tags": [
         "Agent"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "腾讯AI创意智能体",
-        "支持多Agent协作",
-        "面向创意工作者"
+        "面向 Agent 的扩散语言模型 LLaDA2.2-flash",
+        "开源权重发布于 Hugging Face",
+        "针对多步推理与工具调用优化"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n24",
-      "title": "千问团队发布 Qwen-Image-3.0 图像生成模型",
+      "id": "n7",
+      "title": "PaddlePaddle 发布 HPD-Parsing 模型，主打高吞吐文档解析",
       "category": "模型",
-      "summary": "阿里千问团队发布Qwen-Image-3.0图像生成模型，支持文本到高分辨率图像生成、图像编辑、风格迁移等功能，已开源并开放API。",
-      "whyItMatters": "增强中文语境下的图像生成能力，为国内开发者和企业提供可定制、高质量的开源图像模型选项。",
-      "sourceName": "Qwen",
-      "sourceDisplayName": "千问团队",
-      "sourceUrl": "https://qwenlm.github.io/zh/blog/qwen-image-3.0/",
-      "publishedAt": "2026-07-22T02:06:58.000Z",
-      "impactScore": 76,
+      "summary": "PaddlePaddle 推出 HPD-Parsing 模型，专注于高吞吐量的文档解析任务，可快速处理大量结构化与非结构化文档，适用于企业文档自动化场景。",
+      "whyItMatters": "对企业文档处理部门，该模型能显著提升批量解析效率，减少人工干预，为 RPA 和文档管理系统的升级提供基础能力。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "PaddlePaddle",
+      "sourceUrl": "https://huggingface.co/PaddlePaddle/HPD-Parsing",
+      "publishedAt": "2026-07-24T01:43:37.000Z",
+      "impactScore": 77,
       "confidence": "high",
-      "tags": [
-        "Qwen"
-      ],
+      "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "文本到图像生成",
-        "支持编辑和风格迁移",
-        "开源并开放API"
+        "HPD-Parsing 主打高吞吐文档解析",
+        "由 PaddlePaddle 发布",
+        "适用于企业文档自动化"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n9",
-      "title": "Anthropic 为 Claude 上线 Anthropic Economic Index connector",
-      "category": "产品",
-      "summary": "Anthropic为Claude推出经济指数连接器，允许用户通过Claude查询和分析Anthropic经济指数数据，帮助研究AI对劳动力市场的影响。",
-      "whyItMatters": "为政策制定者和研究人员提供便捷的AI经济影响数据访问方式，推动基于数据的决策。",
+      "id": "n23",
+      "title": "Anthropic 为 Claude Code 推出 Claude Security 插件 Beta 版",
+      "category": "Agent",
+      "summary": "Anthropic 发布 Claude Security 插件 Beta 版，专为 Claude Code 设计，提供代码安全审查、威胁分析等功能，帮助开发者在使用 AI 编码时保障代码安全。",
+      "whyItMatters": "插件直接回应 AI 编码中的安全顾虑，对开发团队而言，可以在不离开 Claude Code 环境的情况下进行安全检测，提升开发流程的安全性。",
       "sourceName": "Anthropic",
       "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+      "sourceUrl": "https://claude.com/product/claude-security",
       "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 75,
+      "impactScore": 76,
       "confidence": "high",
       "tags": [
         "Claude",
@@ -269,34 +245,59 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Claude可查询经济指数",
-        "数据来源Anthropic经济指数",
-        "支持AI劳动力市场研究"
+        "Claude Security 插件 Beta 版发布",
+        "专为 Claude Code 提供安全审查功能",
+        "由 Anthropic 推出"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n3",
-      "title": "KIMI 订阅开放预约申请 审核条件与时长未知",
-      "category": "Agent",
-      "summary": "月之暗面旗下KIMI开放订阅预约申请，但具体审核条件、等待时长及付费方案尚未公布。消息源自Linux.do论坛，非官方渠道。",
-      "whyItMatters": "若正式推出付费订阅，可能改变KIMI目前的免费模式，影响用户量和商业模式；但目前信息不透明。",
+      "id": "n2",
+      "title": "Anthropic 更新 Claude 语音模式，支持更强模型并可调用第三方应用",
+      "category": "模型",
+      "summary": "Anthropic 为 Claude 升级语音模式，新版语音支持更强大的底层模型，并新增调用第三方应用的能力，用户可通过语音指令直接操作外部服务。",
+      "whyItMatters": "语音交互能力扩展至第三方应用调用，使 Claude 从对话助手向执行平台进化，对开发者和企业用户意味着更高效的多步骤任务自动化。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://linux.do/t/topic/2634643",
-      "publishedAt": "2026-07-23T02:23:32.000Z",
-      "impactScore": 74,
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://x.com/claudeai/status/2080376094939603366",
+      "publishedAt": "2026-07-24T01:43:37.000Z",
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
-        "Kimi"
+        "Claude",
+        "Anthropic",
+        "语音"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "开放订阅预约申请",
-        "审核条件与时长未公布",
-        "信息来自论坛，非官方确认"
+        "Claude 语音模式升级至更强模型",
+        "新增调用第三方应用的功能",
+        "原文来自 Claude 官方 X 账号"
       ],
-      "confidenceReason": "传闻待证"
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n9",
+      "title": "微软宣布 MAI-Image-2.5-Pro 与 MAI-Voice-2-Flash 进入公测阶段",
+      "category": "模型",
+      "summary": "微软宣布其图像生成模型 MAI-Image-2.5-Pro 与语音模型 MAI-Voice-2-Flash 进入公开测试阶段，开发者可通过 Azure 平台试用。",
+      "whyItMatters": "微软加速多模态模型产品化，公测阶段允许开发者和企业提前适配，可能推动图像与语音生成在企业级应用中的采纳。",
+      "sourceName": "Microsoft",
+      "sourceDisplayName": "Microsoft",
+      "sourceUrl": "https://microsoft.ai/news/introducing-mai-image-2-5-pro-and-mai-voice-2-flash/",
+      "publishedAt": "2026-07-24T01:43:37.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "微软"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "MAI-Image-2.5-Pro 进入公测",
+        "MAI-Voice-2-Flash 进入公测",
+        "通过 Azure 平台开放试用"
+      ],
+      "confidenceReason": "官方发布"
     }
   ],
   "sources": [
@@ -304,7 +305,7 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 44,
+      "itemCount": 39,
       "note": "日报型来源，已拆解 2 期"
     },
     {
