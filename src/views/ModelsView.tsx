@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { ArenaFile } from '../lib/types'
-import { buildProfiles, rankByPreset, WEIGHT_PRESETS } from '../lib/arena'
+import { buildArenaModel, rankByPreset, WEIGHT_PRESETS } from '../lib/arena'
 import { formatDateTime } from '../lib/ui'
 import SectionTitle from '../components/SectionTitle'
 import BoardRankChart from '../components/BoardRankChart'
@@ -15,8 +15,8 @@ export default function ModelsView() {
   const [presetId, setPresetId] = useState('comprehensive')
   const preset = WEIGHT_PRESETS.find((p) => p.id === presetId) ?? WEIGHT_PRESETS[0]
 
-  const profiles = useMemo(() => buildProfiles(arena), [])
-  const topByPreset = useMemo(() => rankByPreset(profiles, preset), [profiles, preset])
+  const { profiles, priors } = useMemo(() => buildArenaModel(arena), [])
+  const topByPreset = useMemo(() => rankByPreset(profiles, preset, priors), [profiles, preset, priors])
 
   const latestPublishDate = useMemo(
     () => arena.boards.map((b) => b.publishDate).sort().at(-1) ?? '未知',
@@ -71,7 +71,7 @@ export default function ModelsView() {
             <SectionTitle
               index="02"
               title="综合比较"
-              extra="先转百分位再加权，不平均原始分"
+              extra="按榜内 σ 标定得分再加权，不平均原始分"
             />
             <div className="mb-3 flex flex-wrap items-center gap-1.5">
               <span className="mr-1 text-[11px] text-zinc-500">权重预设</span>
@@ -94,7 +94,7 @@ export default function ModelsView() {
               })}
               <span className="ml-1 text-[11px] text-zinc-500">{preset.note}</span>
             </div>
-            <CompositePanel profiles={profiles} preset={preset} />
+            <CompositePanel profiles={profiles} preset={preset} priors={priors} />
           </section>
 
           {/* 模型画像：每模型一张独立迷你雷达 */}
@@ -106,7 +106,7 @@ export default function ModelsView() {
             />
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {topByPreset.slice(0, 6).map((r) => (
-                <ModelProfileCard key={r.profile.key} profile={r.profile} />
+                <ModelProfileCard key={r.profile.key} profile={r.profile} priors={priors} />
               ))}
             </div>
           </section>

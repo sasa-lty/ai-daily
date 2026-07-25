@@ -29,7 +29,8 @@ const DATASET = 'lmarena-ai/leaderboard-dataset'
 const API_BASE = 'https://datasets-server.huggingface.co/rows'
 const SOURCE_URL = `https://huggingface.co/datasets/${DATASET}`
 const FETCH_TIMEOUT_MS = 20_000
-const TOP_N = 10
+/** 抓取深度：更深的池子让 σ 标定与缺失维度先验更稳；图表只显示前 10 */
+const TOP_N = 25
 
 interface ArenaRow {
   model_name?: string

@@ -4,13 +4,16 @@ import type { ArenaBoardData } from '../lib/types'
 import { formatVotes, shortenName } from '../lib/ui'
 import EChart from './EChart'
 
+const CHART_TOP_N = 10
+
 /**
  * 单维度横向排名图：展示该榜单前 10 名。
  * 每条显示排名、模型、机构、原始分数；tooltip 含置信区间与票数。
  */
 export default function BoardRankChart({ board }: { board: ArenaBoardData }) {
   const option = useMemo<echarts.EChartsOption>(() => {
-    const models = board.models
+    // 数据池可能有 25 名，图表只画前 10（更深的池子只服务于 σ 标定与先验）
+    const models = board.models.slice(0, CHART_TOP_N)
     const isDecimal = models.some((m) => m.score < 10)
     const fmt = (v: number) => (isDecimal ? v.toFixed(3) : String(Math.round(v)))
 
