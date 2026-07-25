@@ -59,11 +59,11 @@ export default function CompositePanel({ profiles, preset, priors }: CompositePa
 
     return {
       backgroundColor: 'transparent',
-      grid: { left: 8, right: 16, top: 26, bottom: 8, containLabel: true },
+      grid: { left: 8, right: 16, top: 26, bottom: 16, containLabel: true },
       xAxis: {
         name: '综合指数（六维等权）',
         nameLocation: 'middle',
-        nameGap: 26,
+        nameGap: 32,
         nameTextStyle: { color: '#71717a', fontSize: 11 },
         min: axisMin(xs),
         max: axisMax(xs),
