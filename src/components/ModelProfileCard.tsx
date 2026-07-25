@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import type * as echarts from 'echarts'
-import type { ArenaPriors, ModelProfile } from '../lib/arena'
+import type { ArenaPriors, ModelProfile, RadarBounds } from '../lib/arena'
+import { computeRadarBounds, SCORE_FLOOR } from '../lib/arena'
 import { ARENA_DIMS, ARENA_DIM_LABEL } from '../lib/types'
 import { orgColor } from '../lib/ui'
 import EChart from './EChart'
@@ -8,6 +9,10 @@ import EChart from './EChart'
 interface ModelProfileCardProps {
   profile: ModelProfile
   priors: ArenaPriors
+  /** 全量模型列表，用于计算雷达轴边界（p75 自动超界设计）。可选：不传时退回固定轴 */
+  profiles?: ModelProfile[]
+  /** 预计算的轴边界，优先级高于 profiles */
+  radarBounds?: RadarBounds
 }
 
 /**
@@ -15,8 +20,15 @@ interface ModelProfileCardProps {
  * - 实线 + 实心点：该维度上榜，值为 σ 标定得分；未上榜的轴用估算值占位以保持多边形闭合。
  * - 虚线 + 极淡填充：缺失维度用该维度池内中位数补齐，说明「不知道」而不是「等于 0」。
  */
-export default function ModelProfileCard({ profile, priors }: ModelProfileCardProps) {
+export default function ModelProfileCard({ profile, priors, profiles, radarBounds: radarBoundsProp }: ModelProfileCardProps) {
   const missingCount = 6 - profile.dimCount
+
+  // 优先用外部传入的边界；否则从 profiles 计算；最后退回固定轴 [SCORE_FLOOR, 90]
+  const bounds: RadarBounds = useMemo(() => {
+    if (radarBoundsProp) return radarBoundsProp
+    if (profiles && profiles.length > 0) return computeRadarBounds(profiles)
+    return { byDim: Object.fromEntries(ARENA_DIMS.map((d) => [d, { min: SCORE_FLOOR, max: 90 }])) as RadarBounds['byDim'] }
+  }, [radarBoundsProp, profiles])
 
   const option = useMemo<echarts.EChartsOption>(() => {
     const color = orgColor(profile.organization)
@@ -27,7 +39,13 @@ export default function ModelProfileCard({ profile, priors }: ModelProfileCardPr
     return {
       backgroundColor: 'transparent',
       radar: {
-        indicator: ARENA_DIMS.map((d) => ({ name: ARENA_DIM_LABEL[d], max: 100, min: 0 })),
+        // max = p75 全量模型得分：顶级模型在强项上自然超界，均衡模型各轴比例仍均衡
+        // min = SCORE_FLOOR：避免弱模型缩成一个点（坐标轴从得分下限起算）
+        indicator: ARENA_DIMS.map((d) => ({
+          name: ARENA_DIM_LABEL[d],
+          max: bounds.byDim[d]?.max ?? 90,
+          min: bounds.byDim[d]?.min ?? SCORE_FLOOR,
+        })),
         radius: '62%',
         center: ['50%', '54%'],
         axisName: { color: '#71717a', fontSize: 9 },
@@ -79,7 +97,7 @@ export default function ModelProfileCard({ profile, priors }: ModelProfileCardPr
         },
       ],
     }
-  }, [profile, priors])
+  }, [profile, priors, bounds])
 
   const rankText = ARENA_DIMS.map((d) => {
     const stat = profile.dims[d]

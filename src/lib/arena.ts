@@ -183,6 +183,38 @@ export function buildArenaModel(file: ArenaFile): ArenaModel {
 }
 
 /**
+ * 雷达图各轴边界。
+ *
+ * min = SCORE_FLOOR（让轴从得分下限出发，避免弱模型缩成一个点）。
+ * max = 各维度得分的 75 分位数（p75）——该值略低于顶尖水平，
+ *       使最强模型在擅长维度「超出边界线」，视觉上体现其领先；
+ *       本身均衡的模型各轴相对边界线的比例也保持均衡，
+ *       不会因为绝对值接近而看起来偏科。
+ */
+export interface RadarBounds {
+  byDim: Partial<Record<ArenaDim, { min: number; max: number }>>
+}
+
+export function computeRadarBounds(profiles: ModelProfile[]): RadarBounds {
+  const byDim: Partial<Record<ArenaDim, { min: number; max: number }>> = {}
+  for (const dim of ARENA_DIMS) {
+    const vals = profiles
+      .map((p) => p.dims[dim]?.dimScore)
+      .filter((v): v is number => v !== undefined)
+    if (vals.length === 0) {
+      byDim[dim] = { min: SCORE_FLOOR, max: 90 }
+      continue
+    }
+    const sorted = [...vals].sort((a, b) => a - b)
+    // p75：第 75 百分位；至少留 10 分的可视范围
+    const idx = Math.floor(sorted.length * 0.75)
+    const p75 = sorted[Math.min(idx, sorted.length - 1)]
+    byDim[dim] = { min: SCORE_FLOOR, max: Math.max(p75, SCORE_FLOOR + 10) }
+  }
+  return { byDim }
+}
+
+/**
  * 先验 = 「一个上榜模型的典型水平」。
  * global：池内所有维度得分的中位数，用于综合指数向下收缩；
  * byDim：各维度得分的中位数，用于雷达图虚线补齐缺失维度。
