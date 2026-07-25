@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { ArenaFile } from '../lib/types'
-import { buildArenaModel, computeRadarBounds, rankByPreset, WEIGHT_PRESETS } from '../lib/arena'
+import { buildArenaModel, rankByPreset, WEIGHT_PRESETS } from '../lib/arena'
 import { formatDateTime } from '../lib/ui'
 import SectionTitle from '../components/SectionTitle'
 import BoardRankChart from '../components/BoardRankChart'
@@ -16,7 +16,6 @@ export default function ModelsView() {
   const preset = WEIGHT_PRESETS.find((p) => p.id === presetId) ?? WEIGHT_PRESETS[0]
 
   const { profiles, priors } = useMemo(() => buildArenaModel(arena), [])
-  const radarBounds = useMemo(() => computeRadarBounds(profiles), [profiles])
   const topByPreset = useMemo(() => rankByPreset(profiles, preset, priors), [profiles, preset, priors])
 
   const latestPublishDate = useMemo(
@@ -53,10 +52,24 @@ export default function ModelsView() {
         </p>
       ) : (
         <>
-          {/* 综合比较：权重预设 + 散点 + 综合指数排名 */}
+          {/* 维度排名：六张独立横向排名图 */}
           <section>
             <SectionTitle
               index="01"
+              title="分维度排名"
+              extra="各榜 Top 10 · 原始分数与置信区间见悬浮提示"
+            />
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+              {arena.boards.map((board) => (
+                <BoardRankChart key={board.config} board={board} />
+              ))}
+            </div>
+          </section>
+
+          {/* 综合比较：权重预设 + 散点 + 综合指数排名 */}
+          <section>
+            <SectionTitle
+              index="02"
               title="综合比较"
               extra="按榜内 σ 标定得分再加权，不平均原始分"
             />
@@ -87,27 +100,13 @@ export default function ModelsView() {
           {/* 模型画像：每模型一张独立迷你雷达 */}
           <section>
             <SectionTitle
-              index="02"
+              index="03"
               title="模型画像"
               extra={`当前预设（${preset.label}）下综合指数前 ${Math.min(6, topByPreset.length)} 名 · 单模型多边形`}
             />
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {topByPreset.slice(0, 6).map((r) => (
-                <ModelProfileCard key={r.profile.key} profile={r.profile} priors={priors} radarBounds={radarBounds} />
-              ))}
-            </div>
-          </section>
-
-          {/* 维度排名：六张独立横向排名图 */}
-          <section>
-            <SectionTitle
-              index="03"
-              title="分维度排名"
-              extra="各榜 Top 10 · 原始分数与置信区间见悬浮提示"
-            />
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-              {arena.boards.map((board) => (
-                <BoardRankChart key={board.config} board={board} />
+                <ModelProfileCard key={r.profile.key} profile={r.profile} priors={priors} />
               ))}
             </div>
           </section>

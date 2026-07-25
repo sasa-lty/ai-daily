@@ -59,22 +59,22 @@ export default function CompositePanel({ profiles, preset, priors }: CompositePa
 
     return {
       backgroundColor: 'transparent',
-      grid: { left: 12, right: 16, top: 26, bottom: 12, containLabel: true },
+      grid: { left: 8, right: 16, top: 26, bottom: 8, containLabel: true },
       xAxis: {
         name: '综合指数（六维等权）',
         nameLocation: 'middle',
-        nameGap: 30,
+        nameGap: 26,
         nameTextStyle: { color: '#71717a', fontSize: 11 },
         min: axisMin(xs),
         max: axisMax(xs),
-        axisLabel: { color: '#71717a', fontSize: 10, margin: 6 },
+        axisLabel: { color: '#71717a', fontSize: 10 },
         splitLine: { lineStyle: { color: '#1f2632' } },
         axisLine: { show: false },
       },
       yAxis: {
         name: 'Agent 执行得分',
         nameLocation: 'middle',
-        nameGap: 42,
+        nameGap: 34,
         nameTextStyle: { color: '#71717a', fontSize: 11 },
         min: axisMin(ys),
         max: axisMax(ys),
