@@ -1,6 +1,7 @@
 {
-  "updatedAt": "2026-09-04T05:03:33.415Z",
-  "status": "ok",
+  "updatedAt": "2026-09-05T04:51:21.941Z",
+  "status": "cache",
+  "statusNote": "部分榜单（2 个）抓取失败，使用缓存数据。",
   "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
   "boards": [
     {
