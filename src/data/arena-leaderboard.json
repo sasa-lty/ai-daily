@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T06:21:08.653Z",
+  "updatedAt": "2026-10-08T06:32:25.755Z",
   "status": "ok",
   "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
   "boards": [
@@ -473,16 +473,16 @@
       "config": "webdev",
       "dim": "webdev",
       "label": "WebDev/编码",
-      "publishDate": "2026-10-01",
+      "publishDate": "2026-10-06",
       "models": [
         {
           "name": "claude-opus-5.5-max",
           "organization": "anthropic",
           "rank": 1,
-          "score": 1815,
-          "ciLower": 1799,
-          "ciUpper": 1831,
-          "voteCount": 2062
+          "score": 1814,
+          "ciLower": 1798,
+          "ciUpper": 1829,
+          "voteCount": 2229
         },
         {
           "name": "gpt-6-astra-max",
@@ -490,215 +490,215 @@
           "rank": 2,
           "score": 1788,
           "ciLower": 1777,
-          "ciUpper": 1798,
-          "voteCount": 6123
+          "ciUpper": 1799,
+          "voteCount": 5057
         },
         {
           "name": "claude-sonnet-5.5-xhigh",
           "organization": "anthropic",
           "rank": 3,
-          "score": 1786,
-          "ciLower": 1768,
-          "ciUpper": 1804,
-          "voteCount": 1531
+          "score": 1773,
+          "ciLower": 1757,
+          "ciUpper": 1788,
+          "voteCount": 2150
         },
         {
           "name": "gpt-6.1-sol-max",
           "organization": "openai",
           "rank": 4,
-          "score": 1758,
-          "ciLower": 1741,
-          "ciUpper": 1775,
-          "voteCount": 1620
+          "score": 1757,
+          "ciLower": 1742,
+          "ciUpper": 1773,
+          "voteCount": 1965
         },
         {
           "name": "claude-fable-5.1-max",
           "organization": "anthropic",
           "rank": 5,
-          "score": 1749,
-          "ciLower": 1740,
-          "ciUpper": 1759,
-          "voteCount": 6318
+          "score": 1745,
+          "ciLower": 1735,
+          "ciUpper": 1754,
+          "voteCount": 6521
         },
         {
           "name": "claude-sonnet-5.5-high",
           "organization": "anthropic",
           "rank": 6,
-          "score": 1715,
-          "ciLower": 1702,
-          "ciUpper": 1729,
-          "voteCount": 2527
+          "score": 1716,
+          "ciLower": 1705,
+          "ciUpper": 1727,
+          "voteCount": 3787
         },
         {
           "name": "claude-opus-5-max",
           "organization": "anthropic",
           "rank": 7,
-          "score": 1695,
-          "ciLower": 1689,
-          "ciUpper": 1701,
-          "voteCount": 16954
+          "score": 1692,
+          "ciLower": 1685,
+          "ciUpper": 1698,
+          "voteCount": 17162
         },
         {
           "name": "gpt-6-sol-max",
           "organization": "openai",
           "rank": 8,
-          "score": 1689,
-          "ciLower": 1678,
-          "ciUpper": 1700,
-          "voteCount": 3411
+          "score": 1687,
+          "ciLower": 1676,
+          "ciUpper": 1699,
+          "voteCount": 3221
         },
         {
           "name": "gemini-4-argon-high",
           "organization": "google",
           "rank": 9,
-          "score": 1680,
-          "ciLower": 1666,
-          "ciUpper": 1693,
-          "voteCount": 2422
+          "score": 1678,
+          "ciLower": 1663,
+          "ciUpper": 1694,
+          "voteCount": 1772
         },
         {
           "name": "qwen3.8-max",
           "organization": "alibaba",
           "rank": 10,
-          "score": 1671,
-          "ciLower": 1659,
-          "ciUpper": 1683,
-          "voteCount": 3454
+          "score": 1672,
+          "ciLower": 1660,
+          "ciUpper": 1684,
+          "voteCount": 3450
         },
         {
           "name": "qwen3.8-max-0902",
           "organization": "alibaba",
           "rank": 11,
-          "score": 1670,
-          "ciLower": 1662,
-          "ciUpper": 1678,
-          "voteCount": 9485
+          "score": 1672,
+          "ciLower": 1664,
+          "ciUpper": 1680,
+          "voteCount": 10549
         },
         {
           "name": "claude-opus-5-high",
           "organization": "anthropic",
           "rank": 12,
-          "score": 1660,
-          "ciLower": 1654,
-          "ciUpper": 1666,
-          "voteCount": 21506
-        },
-        {
-          "name": "kimi-k3-max",
-          "organization": "moonshot",
-          "rank": 13,
           "score": 1658,
-          "ciLower": 1651,
-          "ciUpper": 1664,
-          "voteCount": 16513
+          "ciLower": 1652,
+          "ciUpper": 1663,
+          "voteCount": 21992
         },
         {
           "name": "muse-spark-1.3-max",
           "organization": "meta",
-          "rank": 14,
-          "score": 1657,
+          "rank": 13,
+          "score": 1656,
           "ciLower": 1648,
-          "ciUpper": 1665,
-          "voteCount": 7249
+          "ciUpper": 1664,
+          "voteCount": 7678
+        },
+        {
+          "name": "kimi-k3-max",
+          "organization": "moonshot",
+          "rank": 14,
+          "score": 1655,
+          "ciLower": 1649,
+          "ciUpper": 1661,
+          "voteCount": 17061
         },
         {
           "name": "grok-4.7-xhigh",
           "organization": "xai",
           "rank": 15,
           "score": 1638,
-          "ciLower": 1626,
+          "ciLower": 1627,
           "ciUpper": 1649,
-          "voteCount": 3216
+          "voteCount": 3734
+        },
+        {
+          "name": "mimo-v2.6-flash",
+          "organization": "xiaomi",
+          "rank": 16,
+          "score": 1636,
+          "ciLower": 1625,
+          "ciUpper": 1646,
+          "voteCount": 3851
         },
         {
           "name": "qwen3.8-flash-next",
           "organization": "alibaba",
-          "rank": 16,
-          "score": 1637,
-          "ciLower": 1629,
-          "ciUpper": 1646,
-          "voteCount": 6193
+          "rank": 17,
+          "score": 1632,
+          "ciLower": 1624,
+          "ciUpper": 1641,
+          "voteCount": 6711
         },
         {
           "name": "hy4-preview",
           "organization": "tencent",
-          "rank": 17,
-          "score": 1633,
-          "ciLower": 1624,
-          "ciUpper": 1643,
-          "voteCount": 5088
-        },
-        {
-          "name": "claude-fable-5-high",
-          "organization": "anthropic",
           "rank": 18,
-          "score": 1625,
-          "ciLower": 1619,
-          "ciUpper": 1632,
-          "voteCount": 14126
-        },
-        {
-          "name": "muse-spark-1.3 (xHigh)",
-          "organization": "meta",
-          "rank": 19,
-          "score": 1624,
-          "ciLower": 1616,
-          "ciUpper": 1633,
-          "voteCount": 6326
-        },
-        {
-          "name": "glm-5.3-max",
-          "organization": "zai",
-          "rank": 20,
-          "score": 1623,
-          "ciLower": 1615,
-          "ciUpper": 1631,
-          "voteCount": 7658
-        },
-        {
-          "name": "deepseek-v4.1-flash-max",
-          "organization": "deepseek",
-          "rank": 21,
-          "score": 1620,
-          "ciLower": 1609,
-          "ciUpper": 1630,
-          "voteCount": 3960
-        },
-        {
-          "name": "gpt-5.6-sol-xhigh (codex-harness)",
-          "organization": "openai",
-          "rank": 22,
-          "score": 1620,
-          "ciLower": 1614,
-          "ciUpper": 1626,
-          "voteCount": 17128
-        },
-        {
-          "name": "grok-4.6-high",
-          "organization": "xai",
-          "rank": 23,
-          "score": 1620,
-          "ciLower": 1612,
-          "ciUpper": 1627,
-          "voteCount": 8315
+          "score": 1632,
+          "ciLower": 1622,
+          "ciUpper": 1641,
+          "voteCount": 4798
         },
         {
           "name": "mimo-v2.6-pro",
           "organization": "xiaomi",
-          "rank": 24,
-          "score": 1618,
-          "ciLower": 1606,
-          "ciUpper": 1631,
-          "voteCount": 2734
+          "rank": 19,
+          "score": 1630,
+          "ciLower": 1618,
+          "ciUpper": 1641,
+          "voteCount": 3415
         },
         {
-          "name": "glm-5.3-flash",
+          "name": "muse-spark-1.3 (xHigh)",
+          "organization": "meta",
+          "rank": 20,
+          "score": 1626,
+          "ciLower": 1618,
+          "ciUpper": 1635,
+          "voteCount": 6901
+        },
+        {
+          "name": "claude-fable-5-high",
+          "organization": "anthropic",
+          "rank": 21,
+          "score": 1624,
+          "ciLower": 1618,
+          "ciUpper": 1630,
+          "voteCount": 14465
+        },
+        {
+          "name": "glm-5.3-max",
           "organization": "zai",
-          "rank": 25,
-          "score": 1616,
+          "rank": 22,
+          "score": 1622,
+          "ciLower": 1614,
+          "ciUpper": 1630,
+          "voteCount": 8195
+        },
+        {
+          "name": "deepseek-v4.1-flash-max",
+          "organization": "deepseek",
+          "rank": 23,
+          "score": 1619,
           "ciLower": 1608,
-          "ciUpper": 1623,
-          "voteCount": 10355
+          "ciUpper": 1630,
+          "voteCount": 3547
+        },
+        {
+          "name": "gpt-5.6-sol-xhigh (codex-harness)",
+          "organization": "openai",
+          "rank": 24,
+          "score": 1618,
+          "ciLower": 1612,
+          "ciUpper": 1624,
+          "voteCount": 16439
+        },
+        {
+          "name": "grok-4.6-high",
+          "organization": "xai",
+          "rank": 25,
+          "score": 1617,
+          "ciLower": 1609,
+          "ciUpper": 1625,
+          "voteCount": 8750
         }
       ]
     },
