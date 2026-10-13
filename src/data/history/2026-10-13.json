@@ -1,0 +1,236 @@
+{
+  "date": "2026-10-13",
+  "generatedAt": "2026-10-13T07:00:40.809Z",
+  "status": "rule",
+  "statusNote": "未配置 API key 或 AI 增强失败，使用规则摘要。",
+  "overview": {
+    "verdict": "2026-10-13：今日信号集中在「模型」「Agent」方向，共筛选 12 条；热度最高的是「Meta 发布 Muse Wonder 模型系列」。",
+    "keywords": [
+      "Meta",
+      "Grok",
+      "GPT"
+    ],
+    "heatIndex": 76,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n1",
+    "n2",
+    "n4"
+  ],
+  "items": [
+    {
+      "id": "n1",
+      "title": "Meta 发布 Muse Wonder 模型系列",
+      "category": "模型",
+      "summary": "Meta 发布 Muse Wonder 模型系列",
+      "whyItMatters": "涉及Meta的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "Meta",
+      "sourceDisplayName": "Meta",
+      "sourceUrl": "https://research.meta.ai/blog/muse-wonder",
+      "publishedAt": "2026-10-13T01:48:17.000Z",
+      "impactScore": 83,
+      "confidence": "high",
+      "tags": [
+        "Meta"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n2",
+      "title": "The X Subscription 推出：整合Grok、Cursor 和 X Premium",
+      "category": "模型",
+      "summary": "The X Subscription 推出：整合Grok、Cursor 和 X Premium",
+      "whyItMatters": "涉及Grok的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "xAI",
+      "sourceDisplayName": "xAI",
+      "sourceUrl": "https://docs.x.ai/x-subscription/overview",
+      "publishedAt": "2026-10-13T01:48:17.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "Grok"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n4",
+      "title": "智谱推出法律模型 GLM-Legal，开放测试申请",
+      "category": "模型",
+      "summary": "智谱推出法律模型 GLM-Legal，开放测试申请",
+      "whyItMatters": "涉及Z的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "Z",
+      "sourceDisplayName": "Z",
+      "sourceUrl": "https://z.ai/blog/glm-legal",
+      "publishedAt": "2026-10-13T01:48:17.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n5",
+      "title": "OpenBMB 发布 MiniCPM-V 4.7 系列两款模型",
+      "category": "模型",
+      "summary": "OpenBMB 发布 MiniCPM-V 4.7 系列两款模型",
+      "whyItMatters": "涉及GitHub的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "GitHub",
+      "sourceUrl": "https://github.com/openbmb/MiniCPM-V",
+      "publishedAt": "2026-10-13T01:48:17.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n7",
+      "title": "阶跃 Step 5 Preview 上线 WorkBuddy，独家限免两周",
+      "category": "Agent",
+      "summary": "阶跃 Step 5 Preview 上线 WorkBuddy，独家限免两周",
+      "whyItMatters": "腾讯相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/VmJfCg7X7niy0m9JD6mCdg",
+      "publishedAt": "2026-10-13T01:48:17.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n9",
+      "title": "ZCode 推出邀请活动，奖励最高累计 100 天",
+      "category": "Agent",
+      "summary": "ZCode 推出邀请活动，奖励最高累计 100 天",
+      "whyItMatters": "腾讯相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/MFWF1gyC1Jq9FFBXZOarCA",
+      "publishedAt": "2026-10-13T01:48:17.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n3",
+      "title": "Codex 第 8 天安排：重置用量额度",
+      "category": "产品",
+      "summary": "Codex 第 8 天安排：重置用量额度",
+      "whyItMatters": "综合来源的功能变化直接影响现有使用流程与替代方案评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2109812216212099456",
+      "publishedAt": "2026-10-13T01:48:17.000Z",
+      "impactScore": 74,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n17",
+      "title": "Artificial Analysis 发布 FrontierCode 1.1 私有编码评测榜单",
+      "category": "研究",
+      "summary": "Artificial Analysis 发布 FrontierCode 1.1 私有编码评测榜单",
+      "whyItMatters": "该结果指向Artificialanalysis方向的技术走向，通常领先产品化数月，用于判断投入方向。",
+      "sourceName": "Artificialanalysis",
+      "sourceDisplayName": "Artificialanalysis",
+      "sourceUrl": "https://artificialanalysis.ai/articles/frontiercode",
+      "publishedAt": "2026-10-13T01:48:17.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n21",
+      "title": "AMD 发布新一代锐龙 AI Halo 平台",
+      "category": "商业",
+      "summary": "AMD 发布新一代锐龙 AI Halo 平台",
+      "whyItMatters": "该交易明确了AMD方向的资金规模与估值锚点，影响对赛道空间的判断。",
+      "sourceName": "AMD",
+      "sourceDisplayName": "AMD",
+      "sourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/ryzen-ai-halo.html",
+      "publishedAt": "2026-10-13T01:48:17.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n25",
+      "title": "GPT-6.1 Sol 在 Codex 中的默认上下文升至 500k",
+      "category": "模型",
+      "summary": "GPT-6.1 Sol 在 Codex 中的默认上下文升至 500k",
+      "whyItMatters": "涉及GPT的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2109430343346581527",
+      "publishedAt": "2026-10-12T00:42:00.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n6",
+      "title": "OpenCode Go 提供 80 美元 V4.1 Flash 额度",
+      "category": "Agent",
+      "summary": "OpenCode Go 提供 80 美元 V4.1 Flash 额度",
+      "whyItMatters": "综合来源相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/opencode/status/2109573342584058065",
+      "publishedAt": "2026-10-13T01:48:17.000Z",
+      "impactScore": 71,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n26",
+      "title": "Tibo 调查 Pro 用户用量偏好：周额度翻倍或取消 5 小时限制",
+      "category": "Agent",
+      "summary": "Tibo 调查 Pro 用户用量偏好：周额度翻倍或取消 5 小时限制",
+      "whyItMatters": "综合来源相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2109152716954222849",
+      "publishedAt": "2026-10-12T00:42:00.000Z",
+      "impactScore": 71,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 29,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 876
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
