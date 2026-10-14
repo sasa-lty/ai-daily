@@ -1,209 +1,288 @@
 {
-  "date": "2026-10-13",
-  "generatedAt": "2026-10-13T07:00:40.809Z",
-  "status": "rule",
-  "statusNote": "未配置 API key 或 AI 增强失败，使用规则摘要。",
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-14T05:15:40.374Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "2026-10-13：今日信号集中在「模型」「Agent」方向，共筛选 12 条；热度最高的是「Meta 发布 Muse Wonder 模型系列」。",
+    "verdict": "今日信号集中在模型发布与打包分发：Gemini 4 全球开放、Meta 与 Liquid 上新、Fish 开放权重，xAI 用订阅整合工具。",
     "keywords": [
-      "Meta",
-      "Grok",
-      "GPT"
+      "Agent",
+      "开源",
+      "Meta"
     ],
     "heatIndex": 76,
     "sourceCount": 4
   },
   "topStoryIds": [
     "n1",
-    "n2",
+    "n26",
     "n4"
   ],
   "items": [
     {
-      "id": "n1",
+      "id": "n3",
+      "title": "Cat Jam 匿名编程模型在 OpenCode 免费上线",
+      "category": "模型",
+      "summary": "匿名编程模型 Cat Jam 在编程工具 OpenCode 上免费开放使用，官方账号通过 X 发布上线消息，未披露模型参数规模、训练方与许可协议。开发者可直接在 OpenCode 中调用该模型，免费额度与功能上限均未说明。",
+      "whyItMatters": "免费匿名模型给开发者提供了零成本的编码模型选项，会挤压低价编程模型的付费空间；因来源与许可不明，企业团队引入前需先确认代码与数据合规风险。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/opencode/status/2110068008945381853",
+      "publishedAt": "2026-10-14T01:33:20.000Z",
+      "impactScore": 81,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Cat Jam 为匿名编程模型",
+        "免费上线 OpenCode",
+        "未披露开发方与许可"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n4",
+      "title": "Fish Audio 发布 Drama 3 并开放模型权重",
+      "category": "模型",
+      "summary": "Fish Audio 发布语音模型 Drama 3，并在官方博客公开模型权重，允许外部下载与部署。官方发布信息中未给出参数规模、支持语种与许可条款细节，开发者使用前需自行确认商用条件。",
+      "whyItMatters": "开放权重让语音合成能力可本地部署，降低对云端 TTS 接口的依赖，适合对数据出域敏感的团队；商用前仍需先核实许可范围。",
+      "sourceName": "Fish",
+      "sourceDisplayName": "Fish Audio",
+      "sourceUrl": "https://fish.audio/blog/fish-audio-drama-3/",
+      "publishedAt": "2026-10-14T01:33:20.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Fish Audio 发布 Drama 3",
+        "开放模型权重供下载",
+        "未披露参数与许可细节"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n17",
+      "title": "AISI 开源 Agent 评估工具 Transect",
+      "category": "研究",
+      "summary": "AISI 发布开源评估工具 Transect，支持核查 Agent 活动分类，使大规模 Agent 评测结果更易理解。工具以开源形式提供，官方博客同步说明用途，方便评测方按类别统计并复核 Agent 行为。",
+      "whyItMatters": "把 Agent 评测输出做成可分类核查的开源工具，评估机构与企业安全团队可直接复用，降低自建 Agent 行为审计流程的成本。",
+      "sourceName": "Gov",
+      "sourceDisplayName": "AISI",
+      "sourceUrl": "https://www.aisi.gov.uk/blog/transect-making-large-scale-agentic-evaluations-easier-to-understand",
+      "publishedAt": "2026-10-14T01:33:20.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "Agent",
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "AISI 开源评估工具 Transect",
+        "支持核查 Agent 活动分类",
+        "面向大规模 Agent 评测"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n23",
+      "title": "Exa 称年化收入突破 1 亿美元",
+      "category": "商业",
+      "summary": "搜索与检索服务商 Exa 宣布年化收入突破 1 亿美元，消息经 X 平台账号发布。本轮公开信息未披露收入构成、客户结构、增长率，也未说明该数字对应的统计口径与截止时间。",
+      "whyItMatters": "检索层出现亿元级年化收入样本，说明面向 Agent 与 RAG 的检索 API 已形成付费规模，采购方可据此判断该赛道供应商的稳定性。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/WilliamBryk/status/2110058915589464192",
+      "publishedAt": "2026-10-14T01:33:20.000Z",
+      "impactScore": 80,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Exa 年化收入突破 1 亿美元",
+        "消息由 X 账号发布",
+        "未披露口径与客户结构"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n5",
+      "title": "Liquid AI 发布模型 LFM2.5-24B-A2B",
+      "category": "模型",
+      "summary": "Liquid AI 在官方博客发布 LFM2.5-24B-A2B 模型，从命名看为 24B 总参数、A2B 激活的规格组合。现有信息未包含基准测试成绩、开源许可条款与部署要求，可用渠道需以官方说明为准。",
+      "whyItMatters": "低激活参数的大模型主打推理成本，若能在本地或低成本实例部署，适合需要私有化推理的团队评估替代方案。",
+      "sourceName": "Liquid",
+      "sourceDisplayName": "Liquid AI",
+      "sourceUrl": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "publishedAt": "2026-10-14T01:33:20.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Liquid AI 发布 LFM2.5-24B-A2B",
+        "命名显示 24B 参数与 A2B 激活",
+        "官方未披露基准与许可"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n25",
       "title": "Meta 发布 Muse Wonder 模型系列",
       "category": "模型",
-      "summary": "Meta 发布 Muse Wonder 模型系列",
-      "whyItMatters": "涉及Meta的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "summary": "Meta 研究团队发布 Muse Wonder 模型系列，以系列形式一次性推出多个模型。现有信息未给出模型规模、模态类型、评测结果与开放方式，是否开放权重、通过哪些渠道提供均需等待官方进一步说明。",
+      "whyItMatters": "Meta 以系列而非单模型发布，会影响开发者在开源模型选型中的候选集；在未确认许可与权重开放前，暂不宜纳入生产迁移计划。",
       "sourceName": "Meta",
       "sourceDisplayName": "Meta",
       "sourceUrl": "https://research.meta.ai/blog/muse-wonder",
       "publishedAt": "2026-10-13T01:48:17.000Z",
-      "impactScore": 83,
+      "impactScore": 79,
       "confidence": "high",
       "tags": [
         "Meta"
       ],
-      "aiEnhanced": false
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Meta 发布 Muse Wonder 模型系列",
+        "以系列形式推出多款模型",
+        "规模、模态与开放方式未披露"
+      ],
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n2",
-      "title": "The X Subscription 推出：整合Grok、Cursor 和 X Premium",
+      "id": "n6",
+      "title": "Command Code 推出 GOAT 限时额度优惠",
+      "category": "Agent",
+      "summary": "编程 Agent 产品 Command Code 通过官方 X 账号推出 GOAT 限时额度优惠，用户在活动期内可获得额外调用额度。现有信息未说明优惠幅度、有效期限与适用套餐范围，也未说明能否与其他活动叠加。",
+      "whyItMatters": "限时额度是编程 Agent 拉新的常规手段，对个人开发者意味着短期成本下降，但不构成长期价格承诺，团队选型不应以此作为采购依据。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Command Code",
+      "sourceUrl": "https://x.com/CommandCodeAI/status/2110023209416630626",
+      "publishedAt": "2026-10-14T01:33:20.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Command Code 推出 GOAT 限时额度优惠",
+        "通过官方 X 账号公布",
+        "未披露额度幅度与期限"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n26",
+      "title": "xAI 推出 X 订阅，打包 Grok、Cursor 与 X Premium",
       "category": "模型",
-      "summary": "The X Subscription 推出：整合Grok、Cursor 和 X Premium",
-      "whyItMatters": "涉及Grok的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "summary": "xAI 上线 The X Subscription 订阅，把 Grok、编程工具 Cursor 与 X Premium 打包进同一份订阅。官方文档页给出订阅概览，现有信息未披露价格、可用地区范围以及各项服务对应的具体权益额度。",
+      "whyItMatters": "把模型、编程工具与社交会员合并计费，会改变开发者与个人用户的订阅决策，企业采购需重新核算原本分散采购的账号成本与合规归属。",
       "sourceName": "xAI",
       "sourceDisplayName": "xAI",
       "sourceUrl": "https://docs.x.ai/x-subscription/overview",
       "publishedAt": "2026-10-13T01:48:17.000Z",
-      "impactScore": 82,
+      "impactScore": 78,
       "confidence": "high",
       "tags": [
         "Grok"
       ],
-      "aiEnhanced": false
+      "aiEnhanced": true,
+      "keyFacts": [
+        "xAI 推出 The X Subscription",
+        "整合 Grok、Cursor 与 X Premium",
+        "价格与地区范围未披露"
+      ],
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n4",
-      "title": "智谱推出法律模型 GLM-Legal，开放测试申请",
+      "id": "n1",
+      "title": "Google 全球开放 Gemini 4 Argon",
       "category": "模型",
-      "summary": "智谱推出法律模型 GLM-Legal，开放测试申请",
-      "whyItMatters": "涉及Z的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "summary": "Google DeepMind 发布 Gemini 4 Argon 并向全球开放，官方博客给出发布信息。现有信息未包含上下文窗口、定价、可用地区清单与基准评测成绩，开发者需以官方文档确认接入方式与配额。",
+      "whyItMatters": "全球开放意味着开发者可立即在既有 Gemini 调用链路中切换版本，模型选型与成本评估需以新版本的能力与定价为准。",
+      "sourceName": "Google DeepMind",
+      "sourceDisplayName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "publishedAt": "2026-10-14T01:33:20.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Google 全球开放 Gemini 4 Argon",
+        "由 DeepMind 官方博客发布",
+        "参数、定价与评测未披露"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n28",
+      "title": "智谱推出法律模型 GLM-Legal 并开放测试申请",
+      "category": "模型",
+      "summary": "智谱发布面向法律场景的 GLM-Legal 模型，并开放测试申请。现有信息未说明模型规模、训练数据来源、覆盖法域与评测成绩，也未给出正式商用时间与定价，申请通过后的使用条件待确认。",
+      "whyItMatters": "垂直法律模型面向律所与法务团队，测试开放后相关团队可优先验证合同审阅与检索任务效果，再决定是否替换通用模型方案。",
       "sourceName": "Z",
-      "sourceDisplayName": "Z",
+      "sourceDisplayName": "智谱",
       "sourceUrl": "https://z.ai/blog/glm-legal",
       "publishedAt": "2026-10-13T01:48:17.000Z",
-      "impactScore": 80,
+      "impactScore": 76,
       "confidence": "high",
       "tags": [],
-      "aiEnhanced": false
+      "aiEnhanced": true,
+      "keyFacts": [
+        "智谱推出法律模型 GLM-Legal",
+        "开放测试申请",
+        "未披露规模与覆盖法域"
+      ],
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n5",
+      "id": "n2",
+      "title": "OpenAI 优化 ChatGPT 桌面应用存储占用",
+      "category": "模型",
+      "summary": "OpenAI 对 ChatGPT 桌面应用的本地存储占用做了优化，相关消息通过 X 账号发布。现有信息未给出优化前后的具体体积数字、覆盖的操作系统版本与生效方式，用户是否需要更新客户端也未说明。",
+      "whyItMatters": "对长期挂载桌面客户端的用户，存储与缓存占用下降可减少磁盘压力，但需确认版本号与生效条件，本次不涉及模型能力变化。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2110151780478927344",
+      "publishedAt": "2026-10-14T01:33:20.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 优化 ChatGPT 桌面应用存储占用",
+        "消息通过 X 账号发布",
+        "未给出优化前后体积数据"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n29",
       "title": "OpenBMB 发布 MiniCPM-V 4.7 系列两款模型",
       "category": "模型",
-      "summary": "OpenBMB 发布 MiniCPM-V 4.7 系列两款模型",
-      "whyItMatters": "涉及GitHub的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "summary": "OpenBMB 在 GitHub 发布 MiniCPM-V 4.7 系列，共两款多模态模型，仓库同步提供模型文件与说明。现有信息未包含参数量、评测成绩、许可条款与部署显存要求，端侧使用前需查阅仓库文档确认。",
+      "whyItMatters": "小尺寸多模态模型是端侧与本地部署的主要候选，两款同时发布扩大了选型空间，但需先确认许可条款与端侧推理要求。",
       "sourceName": "GitHub",
-      "sourceDisplayName": "GitHub",
+      "sourceDisplayName": "OpenBMB",
       "sourceUrl": "https://github.com/openbmb/MiniCPM-V",
-      "publishedAt": "2026-10-13T01:48:17.000Z",
-      "impactScore": 79,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n7",
-      "title": "阶跃 Step 5 Preview 上线 WorkBuddy，独家限免两周",
-      "category": "Agent",
-      "summary": "阶跃 Step 5 Preview 上线 WorkBuddy，独家限免两周",
-      "whyItMatters": "腾讯相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "腾讯",
-      "sourceUrl": "https://mp.weixin.qq.com/s/VmJfCg7X7niy0m9JD6mCdg",
-      "publishedAt": "2026-10-13T01:48:17.000Z",
-      "impactScore": 77,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n9",
-      "title": "ZCode 推出邀请活动，奖励最高累计 100 天",
-      "category": "Agent",
-      "summary": "ZCode 推出邀请活动，奖励最高累计 100 天",
-      "whyItMatters": "腾讯相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "腾讯",
-      "sourceUrl": "https://mp.weixin.qq.com/s/MFWF1gyC1Jq9FFBXZOarCA",
       "publishedAt": "2026-10-13T01:48:17.000Z",
       "impactScore": 75,
       "confidence": "high",
       "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n3",
-      "title": "Codex 第 8 天安排：重置用量额度",
-      "category": "产品",
-      "summary": "Codex 第 8 天安排：重置用量额度",
-      "whyItMatters": "综合来源的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2109812216212099456",
-      "publishedAt": "2026-10-13T01:48:17.000Z",
-      "impactScore": 74,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n17",
-      "title": "Artificial Analysis 发布 FrontierCode 1.1 私有编码评测榜单",
-      "category": "研究",
-      "summary": "Artificial Analysis 发布 FrontierCode 1.1 私有编码评测榜单",
-      "whyItMatters": "该结果指向Artificialanalysis方向的技术走向，通常领先产品化数月，用于判断投入方向。",
-      "sourceName": "Artificialanalysis",
-      "sourceDisplayName": "Artificialanalysis",
-      "sourceUrl": "https://artificialanalysis.ai/articles/frontiercode",
-      "publishedAt": "2026-10-13T01:48:17.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n21",
-      "title": "AMD 发布新一代锐龙 AI Halo 平台",
-      "category": "商业",
-      "summary": "AMD 发布新一代锐龙 AI Halo 平台",
-      "whyItMatters": "该交易明确了AMD方向的资金规模与估值锚点，影响对赛道空间的判断。",
-      "sourceName": "AMD",
-      "sourceDisplayName": "AMD",
-      "sourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/ryzen-ai-halo.html",
-      "publishedAt": "2026-10-13T01:48:17.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n25",
-      "title": "GPT-6.1 Sol 在 Codex 中的默认上下文升至 500k",
-      "category": "模型",
-      "summary": "GPT-6.1 Sol 在 Codex 中的默认上下文升至 500k",
-      "whyItMatters": "涉及GPT的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2109430343346581527",
-      "publishedAt": "2026-10-12T00:42:00.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [
-        "GPT"
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenBMB 发布 MiniCPM-V 4.7 系列",
+        "共两款多模态模型",
+        "参数与许可未披露"
       ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n6",
-      "title": "OpenCode Go 提供 80 美元 V4.1 Flash 额度",
-      "category": "Agent",
-      "summary": "OpenCode Go 提供 80 美元 V4.1 Flash 额度",
-      "whyItMatters": "综合来源相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/opencode/status/2109573342584058065",
-      "publishedAt": "2026-10-13T01:48:17.000Z",
-      "impactScore": 71,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n26",
-      "title": "Tibo 调查 Pro 用户用量偏好：周额度翻倍或取消 5 小时限制",
-      "category": "Agent",
-      "summary": "Tibo 调查 Pro 用户用量偏好：周额度翻倍或取消 5 小时限制",
-      "whyItMatters": "综合来源相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2109152716954222849",
-      "publishedAt": "2026-10-12T00:42:00.000Z",
-      "impactScore": 71,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
+      "confidenceReason": "官方发布"
     }
   ],
   "sources": [
@@ -211,7 +290,7 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 29,
+      "itemCount": 48,
       "note": "日报型来源，已拆解 2 期"
     },
     {
