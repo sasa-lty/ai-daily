@@ -1,35 +1,35 @@
 {
-  "date": "2026-10-15",
-  "generatedAt": "2026-10-15T05:02:28.281Z",
+  "date": "2026-10-16",
+  "generatedAt": "2026-10-16T04:51:49.141Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "信号最密集在编程 Agent 工具链：Claude Code、OpenCode、Qoder 同日更新与调价；模型侧语音与开源新版本集中释出。",
+    "verdict": "信号集中在模型供给端：微软 2.8T 预训练、Meta 多模态开放权重、Google 把 Gemini 4 先给付费用户，开源与商业化同步加速。",
     "keywords": [
       "开源",
-      "Claude",
-      "Grok"
+      "Meta",
+      "多模态"
     ],
-    "heatIndex": 76,
+    "heatIndex": 74,
     "sourceCount": 4
   },
   "topStoryIds": [
+    "n8",
     "n4",
-    "n47",
-    "n7"
+    "n3"
   ],
   "items": [
     {
-      "id": "n6",
+      "id": "n30",
       "title": "昆仑万维发布并开源 Matrix-Game 4.0",
       "category": "模型",
-      "summary": "昆仑万维于 10 月 15 日发布并开源 Matrix-Game 4.0，官方信息通过 GitHub Pages 项目页公布。输入未披露参数规模、训练数据与开源许可细节，实际能力与部署条件需以项目页为准。这是本次候选中最新的一条国产开源模型发布。",
-      "whyItMatters": "开发者若拿到权重，可在自有环境部署该模型；但许可条款与算力门槛未明，建议先核对项目页信息，再决定是否纳入生产流程。",
+      "summary": "昆仑万维于 10 月 15 日上线 Matrix-Game 4.0 官方页面，宣布发布并开源该模型。页面未公开参数规模、训练数据与评测分数，实际能力与开放许可范围仍需查看仓库与文档确认。",
+      "whyItMatters": "游戏生成方向再增一个开源选项，开发者可直接基于权重做二次开发，选型时需核查许可条款与显存占用是否满足自有管线。",
       "sourceName": "GitHub Pages",
       "sourceDisplayName": "昆仑万维",
       "sourceUrl": "https://matrix-game-v4-0.github.io/page/",
       "publishedAt": "2026-10-15T01:55:08.000Z",
-      "impactScore": 85,
+      "impactScore": 81,
       "confidence": "high",
       "tags": [
         "开源"
@@ -37,22 +37,111 @@
       "aiEnhanced": true,
       "keyFacts": [
         "昆仑万维发布并开源 Matrix-Game 4.0",
-        "官方以 GitHub Pages 项目页公布",
-        "参数规模与开源许可未披露"
+        "官方页面于 2026-10-15 上线",
+        "输入未披露参数量与评测数据"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "官方发布（开源项目页）"
     },
     {
       "id": "n4",
-      "title": "SpaceXSI 发布端到端语音模型 Grok Voice 3.0",
+      "title": "Meta 发布多模态开放权重模型 Muse Spark Open",
+      "category": "开源",
+      "summary": "Meta 于 10 月 16 日在研究博客发布多模态开放权重模型 Muse Spark Open，模型权重对外开放。官方未在发布信息中给出参数规模、上下文长度与基准成绩，落地效果需等权重与评测复现后判断。",
+      "whyItMatters": "开放权重多模态模型多一个可选基座，自建推理的团队可评估替换闭源 API，但需先确认权重许可与硬件门槛。",
+      "sourceName": "Meta",
+      "sourceDisplayName": "Meta",
+      "sourceUrl": "https://research.meta.ai/blog/muse-spark-open",
+      "publishedAt": "2026-10-16T01:54:14.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "Meta",
+        "多模态"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Meta 发布 Muse Spark Open",
+        "定位为多模态开放权重模型",
+        "发布信息未给出参数与评测数据"
+      ],
+      "confidenceReason": "官方发布（Meta 研究博客）"
+    },
+    {
+      "id": "n7",
+      "title": "FLUX 3 Image Klein 发布并开放权重",
       "category": "模型",
-      "summary": "SpaceXSI 于 10 月 15 日发布端到端语音模型 Grok Voice 3.0，公告发布在 x.ai 的新闻页面。该模型为 Grok Voice 系列第三版，主打端到端语音处理。输入未披露延迟、语种覆盖与开放方式，接入路径与定价仍需以官方公告为准。",
-      "whyItMatters": "语音是实时 Agent 应用的关键入口，新版本直接影响开发者对语音链路的选型；是否开放 API 与定价决定它能否替换现有方案。",
+      "summary": "Black Forest Labs 于 10 月 16 日发布图像模型 FLUX 3 Image Klein，并同步开放权重。官方未披露参数量、推理成本与授权细则，团队若要替代现有出图管线，需先自行验证画质与许可条款。",
+      "whyItMatters": "图像生成可本地部署的选项增加，已有 FLUX 管线的团队需要评估升级成本与授权变化，而不是直接切换版本。",
+      "sourceName": "Bfl",
+      "sourceDisplayName": "Black Forest Labs（BFL）",
+      "sourceUrl": "https://bfl.ai/blog/flux-3-image-klein",
+      "publishedAt": "2026-10-16T01:54:14.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "FLUX 3 Image Klein 发布",
+        "同步开放模型权重",
+        "未披露参数量与授权细则"
+      ],
+      "confidenceReason": "官方发布（官方博客）"
+    },
+    {
+      "id": "n1",
+      "title": "Codex 推出 28 天活动：重置额度并增加算力投入",
+      "category": "算力",
+      "summary": "Codex 宣布开展为期 28 天的活动，重置用户使用额度，并加大算力投入。相关消息以社交平台帖子形式发布，官方未说明额度重置的适用范围、具体额度数值与算力扩容规模。",
+      "whyItMatters": "额度重置直接影响开发者日常编码用量规划；若扩容落地，高峰期限流与排队会缓解，团队可据此安排重负载任务。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2110750421367287996",
+      "publishedAt": "2026-10-16T01:54:14.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Codex 开启 28 天活动",
+        "活动期间重置额度",
+        "官方称增加算力投入"
+      ],
+      "confidenceReason": "单一来源（社交平台帖子）"
+    },
+    {
+      "id": "n8",
+      "title": "微软宣布 MAI-Base-2 完成预训练，总参数 2.8T",
+      "category": "模型",
+      "summary": "微软于 10 月 16 日宣布 MAI-Base-2 完成预训练，总参数规模为 2.8T。官方未披露激活参数、训练数据量、上下文长度与评测结果，也未说明是否对外开放权重或仅供内部使用。",
+      "whyItMatters": "微软自研基座走到万亿参数级，Azure 与 Copilot 的模型供给将更依赖自有栈，企业采购时可关注其对第三方模型的依赖变化。",
+      "sourceName": "Microsoft",
+      "sourceDisplayName": "Microsoft",
+      "sourceUrl": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+      "publishedAt": "2026-10-16T01:54:14.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "微软"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "MAI-Base-2 完成预训练",
+        "总参数规模为 2.8T",
+        "未披露激活参数与开放方式"
+      ],
+      "confidenceReason": "官方发布（微软 AI 新闻页）"
+    },
+    {
+      "id": "n28",
+      "title": "xAI 发布端到端语音模型 Grok Voice 3.0",
+      "category": "模型",
+      "summary": "xAI 于 10 月 15 日发布端到端语音模型 Grok Voice 3.0，官方新闻页已上线。发布信息未给出延迟、支持语种数量、音色数量与定价，实际接入效果需以 API 文档和实测为准。",
+      "whyItMatters": "语音交互多一个端到端方案，做实时对话的团队可在选型中比较其延迟与多语支持，但需先确认对外开放接口与配额。",
       "sourceName": "xAI",
-      "sourceDisplayName": "SpaceXSI",
+      "sourceDisplayName": "xAI",
       "sourceUrl": "https://x.ai/news/grok-voice-3",
       "publishedAt": "2026-10-15T01:55:08.000Z",
-      "impactScore": 80,
+      "impactScore": 76,
       "confidence": "high",
       "tags": [
         "Grok",
@@ -60,232 +149,146 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "SpaceXSI 发布 Grok Voice 3.0",
-        "定位为端到端语音模型",
-        "公告发布于 x.ai 官方新闻页"
+        "Grok Voice 3.0 发布",
+        "定位端到端语音模型",
+        "未披露延迟、语种与定价"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "官方发布（xAI 新闻页）"
     },
     {
-      "id": "n5",
+      "id": "n2",
+      "title": "DeepSeek 恢复服务，以赠金形式补偿 API 用户",
+      "category": "模型",
+      "summary": "DeepSeek 状态页显示服务已恢复，并以赠金形式对受影响的 API 用户进行补偿。官方未在状态页说明故障时长、影响范围、赠金金额与发放时间，用户需自行确认账户到账情况。",
+      "whyItMatters": "已把 DeepSeek 接入生产的团队，需要复核故障窗口内的失败请求与重试逻辑，并把补偿与降级方案纳入运维流程。",
+      "sourceName": "DeepSeek",
+      "sourceDisplayName": "DeepSeek",
+      "sourceUrl": "https://status.deepseek.com/incidents/7086651324287",
+      "publishedAt": "2026-10-16T01:54:14.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "DeepSeek 服务已恢复",
+        "以赠金形式补偿 API 用户",
+        "未披露故障时长与赠金金额"
+      ],
+      "confidenceReason": "官方发布（状态页公告）"
+    },
+    {
+      "id": "n9",
+      "title": "可灵 Kling 4.0 全量上线，接入 MCP 和 CLI",
+      "category": "模型",
+      "summary": "可灵 Kling 4.0 于 10 月 16 日全量上线，并同步接入 MCP 与 CLI，开发者可通过命令行与 MCP 协议调用。官方推送未给出模型版本参数、生成时长上限与计费变化，需查看文档确认。",
+      "whyItMatters": "MCP 与 CLI 接入意味着视频生成能直接进现有 Agent 与自动化管线，做内容批量生产的团队可减少一层自建封装。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "可灵 Kling",
+      "sourceUrl": "https://mp.weixin.qq.com/s?__biz=MzU5NTkwNDU2OA==&amp;mid=2247497194&amp;idx=1&amp;sn=5ad686eba90d8332d7c49025ab39468f&amp;chksm=ff6d7094465595fa40ad92cba41a893249d223c00036fc9c097d540169441abb1aba8da7ddfc#rd",
+      "publishedAt": "2026-10-16T01:54:14.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Kling 4.0 全量上线",
+        "接入 MCP 与 CLI",
+        "官方未公布计费与参数细节"
+      ],
+      "confidenceReason": "官方发布（官方公众号推送）"
+    },
+    {
+      "id": "n29",
       "title": "蚂蚁百灵开源 Ling-3.1-flash 模型",
       "category": "模型",
-      "summary": "蚂蚁百灵于 10 月 15 日开源 Ling-3.1-flash 模型，消息通过其官方 X 账号发布。该版本以 flash 命名，但输入未披露参数规模、上下文长度与许可条款。开发者需关注后续权重与开源仓库的发布情况。",
-      "whyItMatters": "轻量开源模型多用于低成本高并发推理场景，团队可将其纳入成本测算；但缺少参数与许可信息，落地前需核对权重协议。",
+      "summary": "蚂蚁百灵于 10 月 15 日通过官方账号宣布开源 Ling-3.1-flash 模型。发布信息未披露参数规模、上下文长度、推理成本与评测成绩，实际性价比需在权重与推理框架就绪后验证。",
+      "whyItMatters": "轻量开源模型再添一款，做高并发低延迟场景的团队可将其列入候选，但需实测吞吐与中文任务表现再决定去留。",
       "sourceName": "综合来源",
       "sourceDisplayName": "蚂蚁百灵",
       "sourceUrl": "https://x.com/AntLingAGI/status/2110390124743970952",
       "publishedAt": "2026-10-15T01:55:08.000Z",
-      "impactScore": 79,
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
         "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "蚂蚁百灵开源 Ling-3.1-flash",
-        "消息由官方 X 账号发布",
-        "参数规模与许可未披露"
+        "Ling-3.1-flash 开源",
+        "由蚂蚁百灵发布",
+        "未披露参数量与评测成绩"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "官方发布（官方账号）"
     },
     {
-      "id": "n7",
-      "title": "OpenCode Go 上线 Gemini 4 Argon",
-      "category": "Agent",
-      "summary": "OpenCode 于 10 月 15 日宣布 OpenCode Go 上线 Gemini 4 Argon，消息由其官方 X 账号发布。这意味着使用 OpenCode Go 的开发者可在该产品内调用 Gemini 4 Argon 模型。输入未披露定价、可用区域与上下文规格。",
-      "whyItMatters": "编程 Agent 的模型选择直接决定成本与出码质量，新增该模型后团队可做横向对比，再确定默认模型与降级策略。",
+      "id": "n3",
+      "title": "Gemini 4 Argon 向正价付费 Google AI Pro 用户开放",
+      "category": "模型",
+      "summary": "Google 于 10 月 16 日将 Gemini 4 Argon 开放给正价付费的 Google AI Pro 用户。该消息通过社交账号发布，官方未说明免费与优惠价用户何时获得、额度限制与区域覆盖范围。",
+      "whyItMatters": "付费层级先拿到新模型，企业若依赖 Gemini 能力需核对订阅类型与账号归属，避免团队因非正价订阅而无法使用。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "OpenCode",
-      "sourceUrl": "https://x.com/opencode/status/2110274311043072352",
-      "publishedAt": "2026-10-15T01:55:08.000Z",
-      "impactScore": 77,
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://x.com/antigravity/status/2110866531932316011",
+      "publishedAt": "2026-10-16T01:54:14.000Z",
+      "impactScore": 74,
       "confidence": "high",
       "tags": [
+        "Google",
         "Gemini"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "OpenCode Go 上线 Gemini 4 Argon",
-        "消息由 OpenCode 官方账号发布",
-        "定价与可用区域未披露"
+        "Gemini 4 Argon 面向付费用户开放",
+        "限定正价付费 Google AI Pro 用户",
+        "未提及免费用户时间表"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "单一来源（社交账号发布）"
     },
     {
-      "id": "n27",
-      "title": "Cat Jam 匿名编程模型免费上线 OpenCode",
+      "id": "n11",
+      "title": "PrismML 发布 Bonsai 2 系列小模型",
       "category": "模型",
-      "summary": "10 月 14 日，OpenCode 官方账号宣布名为 Cat Jam 的匿名编程模型免费上线 OpenCode。该模型未公开开发方，面向编程场景发布，用户可免费调用。输入未披露模型规模、上下文长度与免费额度上限。",
-      "whyItMatters": "免费编程模型可压低个人与小团队的试用成本，但匿名发布无法核验数据来源与合规风险，生产环境使用前需评估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "OpenCode",
-      "sourceUrl": "https://x.com/opencode/status/2110068008945381853",
-      "publishedAt": "2026-10-14T01:33:20.000Z",
-      "impactScore": 77,
+      "summary": "PrismML 于 10 月 16 日发布 Bonsai 2 系列小模型，官方新闻页已上线。发布信息未给出各型号参数量、上下文长度、量化规格与许可方式，端侧部署可行性需等规格表公布后再评估。",
+      "whyItMatters": "小模型是端侧与低成本推理的主力，选型团队需等参数量与许可明确后，再决定是否纳入本地部署清单。",
+      "sourceName": "Prismml",
+      "sourceDisplayName": "PrismML",
+      "sourceUrl": "https://prismml.com/news/bonsai-2-family",
+      "publishedAt": "2026-10-16T01:54:14.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "匿名编程模型 Cat Jam 免费上线 OpenCode",
-        "由 OpenCode 官方账号对外发布",
-        "开发方身份与规格未披露"
+        "Bonsai 2 系列小模型发布",
+        "官方新闻页已上线",
+        "未披露参数量与许可方式"
       ],
-      "confidenceReason": "单一来源"
+      "confidenceReason": "官方发布（官方新闻页）"
     },
     {
-      "id": "n1",
-      "title": "Claude Code 桌面版更新优化多会话体验",
+      "id": "n12",
+      "title": "英伟达发布 Nemotron Bolt 本地模型",
       "category": "模型",
-      "summary": "10 月 15 日，Claude Code 桌面版发布更新，重点优化多会话使用体验，消息由 Claude 官方开发者账号公布。改动面向需要同时管理多个会话的开发者工作流。输入未披露版本号、具体交互变更与推送范围。",
-      "whyItMatters": "多会话是并行开发任务的核心工作流，体验优化会影响开发者是否把多个仓库任务交给同一工具处理，进而影响工具选型。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://x.com/ClaudeDevs/status/2110445844675838148",
-      "publishedAt": "2026-10-15T01:55:08.000Z",
-      "impactScore": 76,
+      "summary": "英伟达于 10 月 16 日发布本地部署模型 Nemotron Bolt，官方研究页面路径标注为 Nemotron-3.5-Bolt-24GB。发布信息未说明参数量、量化方式、支持的推理硬件与开放许可范围。",
+      "whyItMatters": "本地模型与自家硬件绑定，采购会同时涉及显卡显存配置；24GB 规格意味着单卡即可尝试部署，利好私有化场景。",
+      "sourceName": "NVIDIA",
+      "sourceDisplayName": "NVIDIA",
+      "sourceUrl": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-24GB/",
+      "publishedAt": "2026-10-16T01:54:14.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
-        "Claude"
+        "英伟达"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Claude Code 桌面版优化多会话体验",
-        "消息由官方开发者账号发布",
-        "版本号与具体变更未披露"
+        "英伟达发布 Nemotron Bolt",
+        "页面路径标注 24GB 规格",
+        "官方未说明硬件与许可细节"
       ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n8",
-      "title": "Qoder 国际版极致档位推出夜间 2 折优惠",
-      "category": "Agent",
-      "summary": "Qoder 于 10 月 15 日宣布国际版极致档位推出夜间时段 2 折优惠，活动细则发布在官方文档站点。优惠面向使用极致档位的用户，在夜间时段按 2 折计费。输入未披露具体时段范围、活动截止时间与地区限制。",
-      "whyItMatters": "把批处理式的编码 Agent 任务排到夜间时段，可显著降低单位成本，重度用户可据此调整任务调度与预算安排。",
-      "sourceName": "Qoder",
-      "sourceDisplayName": "Qoder",
-      "sourceUrl": "http://docs.qoder.com/events/offpeakrate",
-      "publishedAt": "2026-10-15T01:55:08.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Qoder 国际版极致档位夜间 2 折",
-        "细则发布于官方文档站点",
-        "优惠时段与截止时间未披露"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n28",
-      "title": "Fish Audio 发布 Drama 3，开放模型权重",
-      "category": "模型",
-      "summary": "10 月 14 日，Fish Audio 发布 Drama 3 并开放模型权重，公告发布在 fish.audio 官方博客。开放权重意味着用户可在自有环境部署该语音模型。输入未披露参数规模、训练数据、许可条款与商用限制。",
-      "whyItMatters": "语音合成开放权重便于本地部署与定制音色，但商用许可未明，产品化前需先确认授权范围与合规要求。",
-      "sourceName": "Fish",
-      "sourceDisplayName": "Fish Audio",
-      "sourceUrl": "https://fish.audio/blog/fish-audio-drama-3/",
-      "publishedAt": "2026-10-14T01:33:20.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Fish Audio 发布 Drama 3",
-        "该版本开放模型权重",
-        "公告发布于官方博客"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n41",
-      "title": "AISI 发布开源评估工具 Transect，支持核查 Agent 活动分类",
-      "category": "研究",
-      "summary": "10 月 14 日，AISI 发布开源评估工具 Transect，用于核查并分类 Agent 的活动，官方称其目标是让大规模 Agent 评测更易理解。工具面向需要审计 Agent 行为的评测方与研究者。输入未披露支持的模型范围与指标细节。",
-      "whyItMatters": "Agent 行为审计缺少统一工具是落地的现实障碍，评测机构与企业安全团队可用其复核 Agent 动作，降低不可解释风险。",
-      "sourceName": "Gov",
-      "sourceDisplayName": "AISI",
-      "sourceUrl": "https://www.aisi.gov.uk/blog/transect-making-large-scale-agentic-evaluations-easier-to-understand",
-      "publishedAt": "2026-10-14T01:33:20.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "Agent",
-        "开源"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "AISI 发布开源评估工具 Transect",
-        "用途为核查 Agent 活动分类",
-        "目标是大规模 Agent 评测更易理解"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n47",
-      "title": "Exa 宣布年化收入突破 1 亿美元",
-      "category": "商业",
-      "summary": "10 月 14 日，Exa 宣布年化收入突破 1 亿美元，消息经 X 平台对外公布。Exa 面向 AI 应用提供搜索与检索能力，该数字反映其商业化规模。输入未披露收入口径、统计周期与客户结构。",
-      "whyItMatters": "检索层是 RAG 与 Agent 的基础设施，ARR 过亿说明付费需求成立，正在选型的团队可将其与自建检索做成本对比。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "Exa",
-      "sourceUrl": "https://x.com/WilliamBryk/status/2110058915589464192",
-      "publishedAt": "2026-10-14T01:33:20.000Z",
-      "impactScore": 76,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Exa 宣布年化收入突破 1 亿美元",
-        "消息经 X 平台对外公布",
-        "收入口径与统计周期未披露"
-      ],
-      "confidenceReason": "单一来源，公司方公布"
-    },
-    {
-      "id": "n2",
-      "title": "Claude Code 新增闲置会话自动压缩",
-      "category": "模型",
-      "summary": "10 月 15 日，Claude Code 新增闲置会话自动压缩功能，消息由相关人员账号对外公布。该机制针对长时间未使用的会话自动进行上下文压缩，以降低会话占用。输入未披露触发时长、是否可关闭及压缩对上下文保留的影响。",
-      "whyItMatters": "长会话的上下文开销是编程 Agent 的主要成本项，自动压缩会影响长任务连续性，团队需确认压缩后关键上下文是否丢失。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/lydiahallie/status/2110484840256819380",
-      "publishedAt": "2026-10-15T01:55:08.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "Claude"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Claude Code 新增闲置会话自动压缩",
-        "针对闲置会话自动触发",
-        "触发阈值与开关设置未披露"
-      ],
-      "confidenceReason": "单一来源"
-    },
-    {
-      "id": "n29",
-      "title": "Liquid AI 发布 LFM2.5-24B-A2B",
-      "category": "模型",
-      "summary": "10 月 14 日，Liquid AI 发布 LFM2.5-24B-A2B 模型，公告发布在公司官网博客。型号名显示其属于 LFM2.5 系列，规格标识为 24B-A2B。输入未披露激活参数量、上下文长度、许可与权重开放方式。",
-      "whyItMatters": "该系列面向高效推理与轻量部署，新版本会进入端侧与低成本推理的候选清单；权重开放程度未定，选型前需先确认。",
-      "sourceName": "Liquid",
-      "sourceDisplayName": "Liquid AI",
-      "sourceUrl": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
-      "publishedAt": "2026-10-14T01:33:20.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Liquid AI 发布 LFM2.5-24B-A2B",
-        "公告发布于公司官网博客",
-        "参数量与许可细节未披露"
-      ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "官方发布（研究页面）"
     }
   ],
   "sources": [
@@ -300,7 +303,7 @@
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 876
+      "itemCount": 879
     },
     {
       "name": "Google DeepMind Blog",
