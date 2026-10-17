@@ -1,58 +1,121 @@
 {
-  "date": "2026-10-16",
-  "generatedAt": "2026-10-16T04:51:49.141Z",
+  "date": "2026-10-17",
+  "generatedAt": "2026-10-17T04:53:05.403Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "信号集中在模型供给端：微软 2.8T 预训练、Meta 多模态开放权重、Google 把 Gemini 4 先给付费用户，开源与商业化同步加速。",
+    "verdict": "出口管制拟扩围，开放权重多模态模型与按次计费检索 API 同步落地，合规与成本成为选型主线。",
     "keywords": [
       "开源",
-      "Meta",
-      "多模态"
+      "OpenAI",
+      "GPT"
     ],
     "heatIndex": 74,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n8",
-    "n4",
-    "n3"
+    "n1",
+    "n28",
+    "n4"
   ],
   "items": [
     {
-      "id": "n30",
-      "title": "昆仑万维发布并开源 Matrix-Game 4.0",
+      "id": "n2",
+      "title": "Perplexity 发布并开源两款决策模型",
+      "category": "产品",
+      "summary": "Perplexity 发布并开源两款决策模型，面向决策类任务。开源将降低相关场景的模型接入门槛；开发者需自行评估模型效果、许可条款与部署成本，具体参数尚未披露。",
+      "whyItMatters": "决策模型开源后，开发者可自部署用于风控、运营等决策场景，降低对闭源 API 的依赖，并需自行承担评测与合规成本。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Perplexity",
+      "sourceUrl": "https://x.com/thsottiaux/status/2111244596131111253",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Perplexity 发布两款决策模型",
+        "两款模型同时开源"
+      ],
+      "confidenceReason": "单一来源（X 帖）"
+    },
+    {
+      "id": "n19",
+      "title": "Perplexity 发布并开源两款决策模型",
       "category": "模型",
-      "summary": "昆仑万维于 10 月 15 日上线 Matrix-Game 4.0 官方页面，宣布发布并开源该模型。页面未公开参数规模、训练数据与评测分数，实际能力与开放许可范围仍需查看仓库与文档确认。",
-      "whyItMatters": "游戏生成方向再增一个开源选项，开发者可直接基于权重做二次开发，选型时需核查许可条款与显存占用是否满足自有管线。",
-      "sourceName": "GitHub Pages",
-      "sourceDisplayName": "昆仑万维",
-      "sourceUrl": "https://matrix-game-v4-0.github.io/page/",
-      "publishedAt": "2026-10-15T01:55:08.000Z",
-      "impactScore": 81,
+      "summary": "Perplexity 发布并开源两款决策模型，开发者可获取模型用于决策类任务。开源将降低相关场景的模型接入门槛，但输入未披露参数规模、许可条款和评测结果，实际可用性仍需查看发布页。",
+      "whyItMatters": "决策模型开源后，开发者可自部署用于风控、运营等决策场景，降低对闭源 API 的依赖，并需自行承担评测与合规成本。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Perplexity",
+      "sourceUrl": "https://x.com/perplexitydevs/status/2111166029539758120",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 80,
       "confidence": "high",
       "tags": [
         "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "昆仑万维发布并开源 Matrix-Game 4.0",
-        "官方页面于 2026-10-15 上线",
-        "输入未披露参数量与评测数据"
+        "Perplexity 发布两款决策模型",
+        "两款模型均开源"
       ],
-      "confidenceReason": "官方发布（开源项目页）"
+      "confidenceReason": "单一来源"
     },
     {
-      "id": "n4",
+      "id": "n1",
+      "title": "有关部门拟增列 AI 技术进入出口管制目录",
+      "category": "产品",
+      "summary": "有关部门拟将 AI 技术增列入出口管制目录。若最终实施，涉及技术出口、跨境研发合作和模型服务的机构需重新评估许可申请与合规安排，正式目录条目和适用范围仍需以发布文本为准。",
+      "whyItMatters": "出口管制目录直接影响AI技术跨境许可、模型服务和国际合作；企业需提前梳理技术出口路径与客户范围，法务和业务决策成本上升。",
+      "sourceName": "Gov",
+      "sourceDisplayName": "商务部",
+      "sourceUrl": "https://aqygzj.mofcom.gov.cn/flzc/gzjgfxwj/art/2026/art_c99f95ca0cd043829ac9991495fc283c.html",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 76,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "拟增列 AI 技术进入出口管制目录",
+        "涉及技术出口与跨境合作合规"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n8",
+      "title": "ChatGPT 为 dot 推出 iOS 小组件与快捷指令支持",
+      "category": "产品",
+      "summary": "ChatGPT 为 dot 推出 iOS 小组件与快捷指令支持，用户可在系统桌面和快捷指令流程中直接调用相关功能。此次更新把 ChatGPT 的入口延伸到 iOS 系统层，影响用户日常调用方式和第三方应用集成体验。",
+      "whyItMatters": "入口进入 iOS 小组件和快捷指令后，用户可在系统层触发 ChatGPT，减少应用切换，也会影响工具类应用的分发与集成设计。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "ChatGPT",
+      "sourceUrl": "https://x.com/ChatGPT/status/2111210005617889406",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "ChatGPT 为 dot 推出 iOS 小组件",
+        "同时支持快捷指令调用"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n28",
       "title": "Meta 发布多模态开放权重模型 Muse Spark Open",
       "category": "开源",
-      "summary": "Meta 于 10 月 16 日在研究博客发布多模态开放权重模型 Muse Spark Open，模型权重对外开放。官方未在发布信息中给出参数规模、上下文长度与基准成绩，落地效果需等权重与评测复现后判断。",
-      "whyItMatters": "开放权重多模态模型多一个可选基座，自建推理的团队可评估替换闭源 API，但需先确认权重许可与硬件门槛。",
+      "summary": "Meta 发布多模态开放权重模型 Muse Spark Open，开发者可获取开放权重用于部署和二次开发。该模型补充了开放权重多模态供给，企业选型时可在托管 API 与自部署之间比较成本、数据控制和维护能力。",
+      "whyItMatters": "开放权重多模态模型让企业可在自有环境部署，降低对闭源 API 的依赖，同时增加模型评测、许可审查和运维投入。",
       "sourceName": "Meta",
       "sourceDisplayName": "Meta",
       "sourceUrl": "https://research.meta.ai/blog/muse-spark-open",
       "publishedAt": "2026-10-16T01:54:14.000Z",
-      "impactScore": 80,
+      "impactScore": 76,
       "confidence": "high",
       "tags": [
         "Meta",
@@ -61,234 +124,160 @@
       "aiEnhanced": true,
       "keyFacts": [
         "Meta 发布 Muse Spark Open",
-        "定位为多模态开放权重模型",
-        "发布信息未给出参数与评测数据"
+        "模型为多模态开放权重"
       ],
-      "confidenceReason": "官方发布（Meta 研究博客）"
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n7",
-      "title": "FLUX 3 Image Klein 发布并开放权重",
-      "category": "模型",
-      "summary": "Black Forest Labs 于 10 月 16 日发布图像模型 FLUX 3 Image Klein，并同步开放权重。官方未披露参数量、推理成本与授权细则，团队若要替代现有出图管线，需先自行验证画质与许可条款。",
-      "whyItMatters": "图像生成可本地部署的选项增加，已有 FLUX 管线的团队需要评估升级成本与授权变化，而不是直接切换版本。",
-      "sourceName": "Bfl",
-      "sourceDisplayName": "Black Forest Labs（BFL）",
-      "sourceUrl": "https://bfl.ai/blog/flux-3-image-klein",
-      "publishedAt": "2026-10-16T01:54:14.000Z",
-      "impactScore": 77,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "FLUX 3 Image Klein 发布",
-        "同步开放模型权重",
-        "未披露参数量与授权细则"
-      ],
-      "confidenceReason": "官方发布（官方博客）"
-    },
-    {
-      "id": "n1",
-      "title": "Codex 推出 28 天活动：重置额度并增加算力投入",
-      "category": "算力",
-      "summary": "Codex 宣布开展为期 28 天的活动，重置用户使用额度，并加大算力投入。相关消息以社交平台帖子形式发布，官方未说明额度重置的适用范围、具体额度数值与算力扩容规模。",
-      "whyItMatters": "额度重置直接影响开发者日常编码用量规划；若扩容落地，高峰期限流与排队会缓解，团队可据此安排重负载任务。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2110750421367287996",
-      "publishedAt": "2026-10-16T01:54:14.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Codex 开启 28 天活动",
-        "活动期间重置额度",
-        "官方称增加算力投入"
-      ],
-      "confidenceReason": "单一来源（社交平台帖子）"
-    },
-    {
-      "id": "n8",
-      "title": "微软宣布 MAI-Base-2 完成预训练，总参数 2.8T",
-      "category": "模型",
-      "summary": "微软于 10 月 16 日宣布 MAI-Base-2 完成预训练，总参数规模为 2.8T。官方未披露激活参数、训练数据量、上下文长度与评测结果，也未说明是否对外开放权重或仅供内部使用。",
-      "whyItMatters": "微软自研基座走到万亿参数级，Azure 与 Copilot 的模型供给将更依赖自有栈，企业采购时可关注其对第三方模型的依赖变化。",
-      "sourceName": "Microsoft",
-      "sourceDisplayName": "Microsoft",
-      "sourceUrl": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
-      "publishedAt": "2026-10-16T01:54:14.000Z",
-      "impactScore": 76,
+      "id": "n9",
+      "title": "OpenAI 上线 ChatGPT Slides",
+      "category": "产品",
+      "summary": "OpenAI 在 ChatGPT 中上线 Slides 功能，用户可在对话产品内生成演示文稿。该功能把 ChatGPT 的输出从文本扩展到演示材料，影响办公场景的初稿制作流程，也可能改变用户对演示工具的选择。",
+      "whyItMatters": "演示文稿生成进入 ChatGPT 主产品后，办公用户可减少在 PPT 工具中的初稿制作时间，演示软件需强化与 AI 生成流程的衔接。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
-        "微软"
+        "OpenAI",
+        "GPT"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "MAI-Base-2 完成预训练",
-        "总参数规模为 2.8T",
-        "未披露激活参数与开放方式"
+        "OpenAI 上线 ChatGPT Slides",
+        "功能面向 ChatGPT 用户"
       ],
-      "confidenceReason": "官方发布（微软 AI 新闻页）"
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n28",
-      "title": "xAI 发布端到端语音模型 Grok Voice 3.0",
+      "id": "n3",
+      "title": "DeepSeek 整合多支团队成立产品部",
       "category": "模型",
-      "summary": "xAI 于 10 月 15 日发布端到端语音模型 Grok Voice 3.0，官方新闻页已上线。发布信息未给出延迟、支持语种数量、音色数量与定价，实际接入效果需以 API 文档和实测为准。",
-      "whyItMatters": "语音交互多一个端到端方案，做实时对话的团队可在选型中比较其延迟与多语支持，但需先确认对外开放接口与配额。",
-      "sourceName": "xAI",
-      "sourceDisplayName": "xAI",
-      "sourceUrl": "https://x.ai/news/grok-voice-3",
-      "publishedAt": "2026-10-15T01:55:08.000Z",
-      "impactScore": 76,
-      "confidence": "high",
+      "summary": "DeepSeek 整合多支团队成立产品部，调整组织架构以集中产品职能。该动作涉及团队归并与产品职责重组，可能影响其后续产品规划、交付节奏和跨团队协作方式，具体负责人和编制未在输入中披露。",
+      "whyItMatters": "产品部成立意味着 DeepSeek 将产品规划与交付集中管理，开发者和企业客户需关注其 API、应用更新节奏及支持策略是否变化。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/oHvOQB8QfOS_FKieyPgQAg",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 74,
+      "confidence": "medium",
       "tags": [
-        "Grok",
-        "语音"
+        "DeepSeek"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Grok Voice 3.0 发布",
-        "定位端到端语音模型",
-        "未披露延迟、语种与定价"
+        "DeepSeek 整合多支团队",
+        "成立产品部"
       ],
-      "confidenceReason": "官方发布（xAI 新闻页）"
+      "confidenceReason": "单一来源（腾讯）"
     },
     {
-      "id": "n2",
-      "title": "DeepSeek 恢复服务，以赠金形式补偿 API 用户",
+      "id": "n4",
+      "title": "DeepSeek 新增搜索与抓取 API 并按次收费",
       "category": "模型",
-      "summary": "DeepSeek 状态页显示服务已恢复，并以赠金形式对受影响的 API 用户进行补偿。官方未在状态页说明故障时长、影响范围、赠金金额与发放时间，用户需自行确认账户到账情况。",
-      "whyItMatters": "已把 DeepSeek 接入生产的团队，需要复核故障窗口内的失败请求与重试逻辑，并把补偿与降级方案纳入运维流程。",
+      "summary": "DeepSeek 在 API 中新增搜索与抓取能力，并按调用次数计费。开发者可在模型调用链路中接入实时搜索和网页抓取，需要把新增调用成本纳入预算，并评估其与现有检索服务的替换关系。",
+      "whyItMatters": "搜索与抓取按次计费后，RAG 应用的成本结构更直接取决于调用量；开发者需优化检索频率和缓存策略，企业采购也要重算预算。",
       "sourceName": "DeepSeek",
       "sourceDisplayName": "DeepSeek",
-      "sourceUrl": "https://status.deepseek.com/incidents/7086651324287",
-      "publishedAt": "2026-10-16T01:54:14.000Z",
-      "impactScore": 75,
+      "sourceUrl": "https://api-docs.deepseek.com/zh-cn/guides/search/",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
         "DeepSeek"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "DeepSeek 服务已恢复",
-        "以赠金形式补偿 API 用户",
-        "未披露故障时长与赠金金额"
+        "新增搜索与抓取 API",
+        "按调用次数收费"
       ],
-      "confidenceReason": "官方发布（状态页公告）"
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n9",
-      "title": "可灵 Kling 4.0 全量上线，接入 MCP 和 CLI",
-      "category": "模型",
-      "summary": "可灵 Kling 4.0 于 10 月 16 日全量上线，并同步接入 MCP 与 CLI，开发者可通过命令行与 MCP 协议调用。官方推送未给出模型版本参数、生成时长上限与计费变化，需查看文档确认。",
-      "whyItMatters": "MCP 与 CLI 接入意味着视频生成能直接进现有 Agent 与自动化管线，做内容批量生产的团队可减少一层自建封装。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "可灵 Kling",
-      "sourceUrl": "https://mp.weixin.qq.com/s?__biz=MzU5NTkwNDU2OA==&amp;mid=2247497194&amp;idx=1&amp;sn=5ad686eba90d8332d7c49025ab39468f&amp;chksm=ff6d7094465595fa40ad92cba41a893249d223c00036fc9c097d540169441abb1aba8da7ddfc#rd",
-      "publishedAt": "2026-10-16T01:54:14.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Kling 4.0 全量上线",
-        "接入 MCP 与 CLI",
-        "官方未公布计费与参数细节"
-      ],
-      "confidenceReason": "官方发布（官方公众号推送）"
-    },
-    {
-      "id": "n29",
-      "title": "蚂蚁百灵开源 Ling-3.1-flash 模型",
-      "category": "模型",
-      "summary": "蚂蚁百灵于 10 月 15 日通过官方账号宣布开源 Ling-3.1-flash 模型。发布信息未披露参数规模、上下文长度、推理成本与评测成绩，实际性价比需在权重与推理框架就绪后验证。",
-      "whyItMatters": "轻量开源模型再添一款，做高并发低延迟场景的团队可将其列入候选，但需实测吞吐与中文任务表现再决定去留。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "蚂蚁百灵",
-      "sourceUrl": "https://x.com/AntLingAGI/status/2110390124743970952",
-      "publishedAt": "2026-10-15T01:55:08.000Z",
-      "impactScore": 75,
+      "id": "n15",
+      "title": "Perplexity 开源沙箱平台 SPACE",
+      "category": "Agent",
+      "summary": "Perplexity 开源沙箱平台 SPACE，供开发者在隔离环境中运行和测试 Agent 相关任务。开源沙箱可降低 Agent 工具链的搭建门槛，但部署者仍需自行评估安全边界、资源开销和维护成本。",
+      "whyItMatters": "开源沙箱让 Agent 开发者可自建隔离运行环境，减少从零搭建测试平台的投入，同时要承担安全隔离与运维责任。",
+      "sourceName": "Perplexity",
+      "sourceDisplayName": "Perplexity",
+      "sourceUrl": "https://perplexity.ai/hub/blog/open-sourcing-space",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
         "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Ling-3.1-flash 开源",
-        "由蚂蚁百灵发布",
-        "未披露参数量与评测成绩"
+        "Perplexity 开源沙箱平台 SPACE",
+        "面向 Agent 运行与测试"
       ],
-      "confidenceReason": "官方发布（官方账号）"
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n3",
-      "title": "Gemini 4 Argon 向正价付费 Google AI Pro 用户开放",
+      "id": "n16",
+      "title": "腾讯混元开源 Hy Memory 2.0 记忆模型、框架与应用",
       "category": "模型",
-      "summary": "Google 于 10 月 16 日将 Gemini 4 Argon 开放给正价付费的 Google AI Pro 用户。该消息通过社交账号发布，官方未说明免费与优惠价用户何时获得、额度限制与区域覆盖范围。",
-      "whyItMatters": "付费层级先拿到新模型，企业若依赖 Gemini 能力需核对订阅类型与账号归属，避免团队因非正价订阅而无法使用。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "Google",
-      "sourceUrl": "https://x.com/antigravity/status/2110866531932316011",
-      "publishedAt": "2026-10-16T01:54:14.000Z",
-      "impactScore": 74,
+      "summary": "腾讯混元开源 Hy Memory 2.0，覆盖记忆模型、框架与应用。该发布把 AI 记忆能力以开源组件形式提供，开发者可将其用于需要长期上下文和状态保持的应用，仍需自行验证效果与集成成本。",
+      "whyItMatters": "记忆能力组件化后，开发者可在客服、个人助手等场景复用长期上下文方案，减少自研记忆层投入，并关注数据存储与隐私设计。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯混元",
+      "sourceUrl": "https://memory.hunyuan.tencent.com/",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
-        "Google",
-        "Gemini"
+        "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Gemini 4 Argon 面向付费用户开放",
-        "限定正价付费 Google AI Pro 用户",
-        "未提及免费用户时间表"
+        "腾讯混元开源 Hy Memory 2.0",
+        "覆盖记忆模型、框架与应用"
       ],
-      "confidenceReason": "单一来源（社交账号发布）"
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n11",
-      "title": "PrismML 发布 Bonsai 2 系列小模型",
+      "id": "n17",
+      "title": "Beam 开放权重发布，支持跨平台部署",
       "category": "模型",
-      "summary": "PrismML 于 10 月 16 日发布 Bonsai 2 系列小模型，官方新闻页已上线。发布信息未给出各型号参数量、上下文长度、量化规格与许可方式，端侧部署可行性需等规格表公布后再评估。",
-      "whyItMatters": "小模型是端侧与低成本推理的主力，选型团队需等参数量与许可明确后，再决定是否纳入本地部署清单。",
-      "sourceName": "Prismml",
-      "sourceDisplayName": "PrismML",
-      "sourceUrl": "https://prismml.com/news/bonsai-2-family",
-      "publishedAt": "2026-10-16T01:54:14.000Z",
+      "summary": "Reflection 发布 Beam 开放权重，支持跨平台部署。开放权重让开发者可在不同平台运行和调整模型，部署方需结合硬件环境、许可条款和维护能力评估实际落地方式，具体参数规模尚未披露。",
+      "whyItMatters": "跨平台开放权重降低单一云环境锁定，企业可在本地或不同云上部署，但需自行完成性能调优、许可审查和安全维护。",
+      "sourceName": "Reflection",
+      "sourceDisplayName": "Reflection",
+      "sourceUrl": "https://reflection.ai/blog/beam-is-available",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 73,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Beam 开放权重发布",
+        "支持跨平台部署"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n18",
+      "title": "OpenMOSS 发布文生图模型 MOSS-Image",
+      "category": "模型",
+      "summary": "OpenMOSS 发布文生图模型 MOSS-Image，面向文本生成图像任务。该发布为文生图工具链增加一个新模型选项，设计、营销等内容团队可评估其生成质量、部署方式和授权条件后再决定是否接入。",
+      "whyItMatters": "文生图模型供给增加后，内容团队可在创意草稿、营销素材等环节比较不同模型；接入前需验证质量、版权与部署成本。",
+      "sourceName": "Openmoss",
+      "sourceDisplayName": "OpenMOSS",
+      "sourceUrl": "https://openmoss.ai/MOSS-Image/",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
       "impactScore": 73,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "Bonsai 2 系列小模型发布",
-        "官方新闻页已上线",
-        "未披露参数量与许可方式"
+        "OpenMOSS 发布 MOSS-Image",
+        "模型用于文生图"
       ],
-      "confidenceReason": "官方发布（官方新闻页）"
-    },
-    {
-      "id": "n12",
-      "title": "英伟达发布 Nemotron Bolt 本地模型",
-      "category": "模型",
-      "summary": "英伟达于 10 月 16 日发布本地部署模型 Nemotron Bolt，官方研究页面路径标注为 Nemotron-3.5-Bolt-24GB。发布信息未说明参数量、量化方式、支持的推理硬件与开放许可范围。",
-      "whyItMatters": "本地模型与自家硬件绑定，采购会同时涉及显卡显存配置；24GB 规格意味着单卡即可尝试部署，利好私有化场景。",
-      "sourceName": "NVIDIA",
-      "sourceDisplayName": "NVIDIA",
-      "sourceUrl": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-24GB/",
-      "publishedAt": "2026-10-16T01:54:14.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [
-        "英伟达"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "英伟达发布 Nemotron Bolt",
-        "页面路径标注 24GB 规格",
-        "官方未说明硬件与许可细节"
-      ],
-      "confidenceReason": "官方发布（研究页面）"
+      "confidenceReason": "官方发布"
     }
   ],
   "sources": [
@@ -303,7 +292,7 @@
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 879
+      "itemCount": 880
     },
     {
       "name": "Google DeepMind Blog",
