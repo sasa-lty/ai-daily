@@ -1,0 +1,317 @@
+{
+  "date": "2026-10-18",
+  "generatedAt": "2026-10-18T04:59:44.409Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "今日信号集中在两处：DeepSeek 把模型与检索接口打包成一体，监管侧拟将 AI 技术纳入出口管制目录；安全事件则提醒开发者核查自身凭证。",
+    "keywords": [
+      "DeepSeek",
+      "OpenAI",
+      "GPT"
+    ],
+    "heatIndex": 72,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n1",
+    "n6",
+    "n2"
+  ],
+  "items": [
+    {
+      "id": "n7",
+      "title": "OpenAI 宣布优化 Codex 提升用户有效使用量",
+      "category": "产品",
+      "summary": "OpenAI 宣布对 Codex 进行优化，目标是提升用户的有效使用量，官方未披露具体改动项、适用版本与生效范围；对依赖 Codex 完成编码任务的团队，实际收益需以自测的任务完成率与额度消耗为准。",
+      "whyItMatters": "对日常用 Codex 写代码的团队，这类优化直接影响可用额度与实际产出比，建议实测任务完成率后再决定是否扩大使用范围。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/thsottiaux/status/2111244596131111253",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 宣布优化 Codex",
+        "目标为提升有效使用量",
+        "未披露具体改动项"
+      ],
+      "confidenceReason": "单一来源（官方账号发布）"
+    },
+    {
+      "id": "n1",
+      "title": "DeepSeek 更新 V4.1 Flash 模型并开放搜索接口",
+      "category": "模型",
+      "summary": "DeepSeek 更新 V4.1 Flash 模型，并同步开放搜索接口，开发者可在原有 API 体系中同时调用新模型与检索能力；模型与搜索捆绑后，RAG 类应用的接入链路缩短，但检索部分按次计费，成本结构需重新核算。",
+      "whyItMatters": "对做联网问答与 RAG 的开发者，模型与检索可同源接入，减少自建爬虫和索引的工程量；但检索按次计费，选型时要把调用单价纳入预算测算。",
+      "sourceName": "DeepSeek",
+      "sourceDisplayName": "DeepSeek",
+      "sourceUrl": "https://api-docs.deepseek.com/zh-cn/news/news261017",
+      "publishedAt": "2026-10-18T01:02:10.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "更新 V4.1 Flash 模型",
+        "同步开放搜索接口",
+        "信息发布于 DeepSeek 官方文档站"
+      ],
+      "confidenceReason": "官方发布（API 文档站公告）"
+    },
+    {
+      "id": "n24",
+      "title": "Perplexity 发布并开源两款决策模型",
+      "category": "模型",
+      "summary": "Perplexity 通过开发者账号宣布发布两款决策模型并开源，披露内容未包含参数规模与许可证条款；对希望自托管推理与决策能力的团队，可据此评估替换闭源方案所需的部署与维护成本。",
+      "whyItMatters": "对需要可自托管、可审计决策能力的团队，开源模型提供了闭源 API 之外的选择，但落地前需确认许可证范围与推理硬件成本。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Perplexity",
+      "sourceUrl": "https://x.com/perplexitydevs/status/2111166029539758120",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发布两款决策模型",
+        "两款模型均开源",
+        "细节来自 Perplexity 开发者账号"
+      ],
+      "confidenceReason": "官方发布（开发者账号）"
+    },
+    {
+      "id": "n2",
+      "title": "OpenCode 披露安全事件，部分用户受影响",
+      "category": "安全",
+      "summary": "OpenCode 官方披露一起安全事件，确认部分用户受到影响，但未公布影响规模、涉及数据类型与处置进展；使用其开发工具与托管能力的团队应关注后续通告，并检查账号凭证与密钥。",
+      "whyItMatters": "对把代码与密钥托管在第三方开发平台的团队，这类事件直接触发凭证轮换与访问审计，是否继续接入要等官方说明影响面后再定。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenCode",
+      "sourceUrl": "https://x.com/opencode/status/2111519637049319818",
+      "publishedAt": "2026-10-18T01:02:10.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenCode 披露安全事件",
+        "部分用户受到影响",
+        "影响范围与细节尚未公布"
+      ],
+      "confidenceReason": "官方发布（官方账号披露）"
+    },
+    {
+      "id": "n3",
+      "title": "Codex 28 天活动第 13 天完整重置用量",
+      "category": "Agent",
+      "summary": "Codex 的 28 天用户活动进入第 13 天，官方账号宣布对用量进行完整重置，参与用户的额度回到满额；该动作属于运营激励，披露内容未涉及模型版本或计费规则变更。",
+      "whyItMatters": "对重度使用 Codex 的开发者，重置决定本周可用额度，可把大批量重构或迁移任务安排在重置后执行，避免额度中途耗尽。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/thsottiaux/status/2111566005684289735",
+      "publishedAt": "2026-10-18T01:02:10.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "活动周期为 28 天",
+        "第 13 天完整重置用量"
+      ],
+      "confidenceReason": "单一来源（官方账号发布）"
+    },
+    {
+      "id": "n4",
+      "title": "Tibo 回应产品改进建议：其中两项在做",
+      "category": "Agent",
+      "summary": "Tibo 就用户提出的产品改进建议公开回应，表示其中两项正在推进，但未说明具体功能内容与上线时间；这属于常规产品沟通，只能作为后续功能路线的前置参考，不宜当作交付承诺。",
+      "whyItMatters": "对把 Codex 纳入研发流程的团队，此类回应不构成可排期的功能承诺，工作流设计仍应以已上线能力为准。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2111339932614861298",
+      "publishedAt": "2026-10-18T01:02:10.000Z",
+      "impactScore": 73,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "回应中称两项建议在做",
+        "未给出上线时间",
+        "未说明具体功能细节"
+      ],
+      "confidenceReason": "单一来源（个人账号回应）"
+    },
+    {
+      "id": "n5",
+      "title": "WorkBuddy 国际版接入最新 DeepSeek 模型，限时免费",
+      "category": "产品",
+      "summary": "WorkBuddy 国际版宣布接入最新 DeepSeek 模型，并限时免费开放给用户使用；披露内容未给出具体模型版本号、免费期限与额度上限，用户需以产品内公告确认实际可用范围。",
+      "whyItMatters": "对想低成本试用 DeepSeek 能力的用户，第三方工具是免自建 API 的入口，但需提前确认免费期结束后的定价与数据留存条款。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "WorkBuddy",
+      "sourceUrl": "https://x.com/WorkBuddy_AI/status/2111404103402430558",
+      "publishedAt": "2026-10-18T01:02:10.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "WorkBuddy 国际版接入 DeepSeek 模型",
+        "限时免费开放",
+        "未公布免费期限"
+      ],
+      "confidenceReason": "单一来源（官方账号发布）"
+    },
+    {
+      "id": "n6",
+      "title": "有关部门拟增列 AI 技术进入出口管制目录",
+      "category": "产品",
+      "summary": "有关部门发布文件，拟将 AI 技术增列进入出口管制目录，具体技术条目与生效时间以公布文本为准；涉及算法、模型对外输出或技术授权的企业，需先核对清单，再安排合作与交付。",
+      "whyItMatters": "对做模型出海、对外技术授权或跨境联合研发的团队，管制清单直接决定哪些技术可以交付、是否需要申请许可，合规评估应提前到合同签署前。",
+      "sourceName": "Gov",
+      "sourceDisplayName": "商务部",
+      "sourceUrl": "https://aqygzj.mofcom.gov.cn/flzc/gzjgfxwj/art/2026/art_c99f95ca0cd043829ac9991495fc283c.html",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 72,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "拟增列 AI 技术进入出口管制目录",
+        "文件发布在政府主管部门官网"
+      ],
+      "confidenceReason": "官方发布（政府官网文件）"
+    },
+    {
+      "id": "n13",
+      "title": "ChatGPT 为 dot 推出 iOS 小组件与快捷指令支持",
+      "category": "产品",
+      "summary": "ChatGPT 宣布为 dot 提供 iOS 小组件与快捷指令支持，用户可在系统层直接触发相关功能，减少进入应用的操作步骤；官方未说明支持的系统版本下限与具体可用功能范围。",
+      "whyItMatters": "对在 iPhone 上高频使用 ChatGPT 的用户，系统级入口减少操作步骤，是否形成日常习惯取决于小组件可承载的功能范围。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/ChatGPT/status/2111210005617889406",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "提供 iOS 小组件",
+        "支持快捷指令调用",
+        "来源为 ChatGPT 官方账号"
+      ],
+      "confidenceReason": "官方发布（官方账号）"
+    },
+    {
+      "id": "n14",
+      "title": "OpenAI 上线 ChatGPT Slides",
+      "category": "产品",
+      "summary": "OpenAI 在 ChatGPT 发布说明中上线 Slides 功能，用户可在对话中直接生成演示文稿；官方未披露可用套餐范围、导出格式与单次生成的页数限制，实际能力需在产品内验证。",
+      "whyItMatters": "对经常做汇报材料的用户，生成式出稿可压缩初稿时间，但导出格式与页数限制决定它能否接入现有模板与协作流程。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 71,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "上线 ChatGPT Slides",
+        "功能见于官方发布说明",
+        "套餐范围未披露"
+      ],
+      "confidenceReason": "官方发布（发布说明）"
+    },
+    {
+      "id": "n8",
+      "title": "DeepSeek 整合多支团队成立产品部",
+      "category": "模型",
+      "summary": "据腾讯报道，DeepSeek 将内部多支团队整合成立产品部，产品相关职能由此集中到一个部门；该报道未提及负责人、人员规模与生效时间，公司官方渠道也未同步发布对应说明。",
+      "whyItMatters": "对关注 DeepSeek 产品化节奏的开发者和企业客户，组织集中通常意味着接口与功能迭代口径统一，采购与集成决策可据此观察后续发布节奏。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/oHvOQB8QfOS_FKieyPgQAg",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 70,
+      "confidence": "medium",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "整合多支团队成立产品部",
+        "消息来源为腾讯报道",
+        "未披露负责人与人员规模"
+      ],
+      "confidenceReason": "单一来源（媒体报道，未见官方确认）"
+    },
+    {
+      "id": "n9",
+      "title": "DeepSeek 新增搜索与抓取 API 并按次收费",
+      "category": "模型",
+      "summary": "DeepSeek 在 API 文档中新增搜索与抓取接口，采用按次计费，开发者可在调用模型之外单独购买检索与网页抓取能力，用于构建联网问答与 RAG 流程，计费从模型 token 扩展到调用次数。",
+      "whyItMatters": "对自建爬虫与索引的团队，这部分工作量可外包给接口，但成本从固定服务器支出转为随调用量波动的费用，需按业务峰值重算预算。",
+      "sourceName": "DeepSeek",
+      "sourceDisplayName": "DeepSeek",
+      "sourceUrl": "https://api-docs.deepseek.com/zh-cn/guides/search/",
+      "publishedAt": "2026-10-17T01:50:30.000Z",
+      "impactScore": 69,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "新增搜索与抓取 API",
+        "按调用次数计费",
+        "文档已上线相关指南"
+      ],
+      "confidenceReason": "官方发布（API 文档）"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 29,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 880
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
