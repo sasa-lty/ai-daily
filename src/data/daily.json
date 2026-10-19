@@ -1,290 +1,279 @@
 {
-  "date": "2026-10-18",
-  "generatedAt": "2026-10-18T04:59:44.409Z",
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19T05:08:15.832Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "今日信号集中在两处：DeepSeek 把模型与检索接口打包成一体，监管侧拟将 AI 技术纳入出口管制目录；安全事件则提醒开发者核查自身凭证。",
+    "verdict": "今日最密集的信号在治理与团队流向：Anthropic 划出 5% 股份设立公益基金，迪士尼吸纳 Character.AI 多数员工；模型侧 DeepSeek 更新 V4.1 Flash 并开放搜索接口。",
     "keywords": [
+      "Anthropic",
       "DeepSeek",
-      "OpenAI",
-      "GPT"
+      "开源"
     ],
     "heatIndex": 72,
     "sourceCount": 4
   },
   "topStoryIds": [
     "n1",
-    "n6",
-    "n2"
+    "n5",
+    "n35"
   ],
   "items": [
     {
-      "id": "n7",
-      "title": "OpenAI 宣布优化 Codex 提升用户有效使用量",
-      "category": "产品",
-      "summary": "OpenAI 宣布对 Codex 进行优化，目标是提升用户的有效使用量，官方未披露具体改动项、适用版本与生效范围；对依赖 Codex 完成编码任务的团队，实际收益需以自测的任务完成率与额度消耗为准。",
-      "whyItMatters": "对日常用 Codex 写代码的团队，这类优化直接影响可用额度与实际产出比，建议实测任务完成率后再决定是否扩大使用范围。",
+      "id": "n2",
+      "title": "Wolf 估算：开源模型累计训练算力近 10 亿美元",
+      "category": "研究",
+      "summary": "Thomas Wolf 在 X 上估算，开源模型背后累计投入的训练算力成本已接近 10 亿美元。该数字为个人估算，未拆分到具体模型或机构，也未说明测算方法。",
+      "whyItMatters": "给自研模型的团队一个成本参照：开源基座的训练投入已达十亿美元量级，预算评估不宜再按小规模实验推算。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://x.com/thsottiaux/status/2111244596131111253",
-      "publishedAt": "2026-10-17T01:50:30.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [
-        "OpenAI"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "OpenAI 宣布优化 Codex",
-        "目标为提升有效使用量",
-        "未披露具体改动项"
-      ],
-      "confidenceReason": "单一来源（官方账号发布）"
-    },
-    {
-      "id": "n1",
-      "title": "DeepSeek 更新 V4.1 Flash 模型并开放搜索接口",
-      "category": "模型",
-      "summary": "DeepSeek 更新 V4.1 Flash 模型，并同步开放搜索接口，开发者可在原有 API 体系中同时调用新模型与检索能力；模型与搜索捆绑后，RAG 类应用的接入链路缩短，但检索部分按次计费，成本结构需重新核算。",
-      "whyItMatters": "对做联网问答与 RAG 的开发者，模型与检索可同源接入，减少自建爬虫和索引的工程量；但检索按次计费，选型时要把调用单价纳入预算测算。",
-      "sourceName": "DeepSeek",
-      "sourceDisplayName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/zh-cn/news/news261017",
-      "publishedAt": "2026-10-18T01:02:10.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "DeepSeek"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "更新 V4.1 Flash 模型",
-        "同步开放搜索接口",
-        "信息发布于 DeepSeek 官方文档站"
-      ],
-      "confidenceReason": "官方发布（API 文档站公告）"
-    },
-    {
-      "id": "n24",
-      "title": "Perplexity 发布并开源两款决策模型",
-      "category": "模型",
-      "summary": "Perplexity 通过开发者账号宣布发布两款决策模型并开源，披露内容未包含参数规模与许可证条款；对希望自托管推理与决策能力的团队，可据此评估替换闭源方案所需的部署与维护成本。",
-      "whyItMatters": "对需要可自托管、可审计决策能力的团队，开源模型提供了闭源 API 之外的选择，但落地前需确认许可证范围与推理硬件成本。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "Perplexity",
-      "sourceUrl": "https://x.com/perplexitydevs/status/2111166029539758120",
-      "publishedAt": "2026-10-17T01:50:30.000Z",
-      "impactScore": 76,
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/Thom_Wolf/status/2111828314851598745",
+      "publishedAt": "2026-10-19T00:54:00.000Z",
+      "impactScore": 82,
       "confidence": "high",
       "tags": [
         "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "发布两款决策模型",
-        "两款模型均开源",
-        "细节来自 Perplexity 开发者账号"
+        "估算值为接近 10 亿美元",
+        "覆盖开源模型背后的训练算力"
       ],
-      "confidenceReason": "官方发布（开发者账号）"
+      "confidenceReason": "单一来源（个人估算）"
     },
     {
-      "id": "n2",
+      "id": "n1",
+      "title": "Anthropic 设立公益基金，承诺投入 5% 股份",
+      "category": "产品",
+      "summary": "Anthropic 在官网宣布设立公益基金（public benefit fund），承诺先投入公司 5% 的股份；TechCrunch 同日报道确认了这一比例。公告未披露基金的具体投向与治理结构。",
+      "whyItMatters": "对 AI 公司员工与投资人而言，5% 股份被锁定在公益基金，后续融资、股权稀释与治理投票都要把这块算进去。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/public-benefit-fund",
+      "publishedAt": "2026-10-19T00:54:00.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "承诺投入公司 5% 股份",
+        "官方公告与 TechCrunch 报道一致"
+      ],
+      "confidenceReason": "官方发布（官网公告）"
+    },
+    {
+      "id": "n3",
+      "title": "测试目录账号称 OpenAI 出现 3 个新模型 ID",
+      "category": "模型",
+      "summary": "有测试目录类账号称，OpenAI 出现 3 个新的模型 ID。信息未附带版本名称、能力参数或发布时间，OpenAI 官方也未确认，属于待证传闻。",
+      "whyItMatters": "对开发者和 API 使用者，模型 ID 出现通常早于正式发布，可作为版本迭代与迁移窗口的早期信号。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/testingcatalog/status/2111724606927028578",
+      "publishedAt": "2026-10-19T00:54:00.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "据称出现 3 个新模型 ID",
+        "来源为测试目录类账号，非官方"
+      ],
+      "confidenceReason": "传闻待证（非官方账号）"
+    },
+    {
+      "id": "n4",
+      "title": "报道称 Anthropic 与律所商讨 AI 代理谈判规范",
+      "category": "产品",
+      "summary": "The-decoder 报道，Anthropic 正与律师事务所商讨，为 AI 代理代替用户进行交易谈判制定公平规范。讨论发生在代理尚未大规模自主签约之前。",
+      "whyItMatters": "对做代理商务的企业，谈判规范若由模型厂商与律所先行定义，将直接约束代理在定价与条款上的自主空间。",
+      "sourceName": "The-decoder",
+      "sourceDisplayName": "The-decoder",
+      "sourceUrl": "https://the-decoder.com/anthropic-consults-law-firms-to-set-fair-negotiation-norms-before-ai-agents-start-cutting-deals/",
+      "publishedAt": "2026-10-19T00:54:00.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "商讨对象为律师事务所",
+        "议题是 AI 代理谈判的公平规范"
+      ],
+      "confidenceReason": "单一来源（媒体报道）"
+    },
+    {
+      "id": "n5",
+      "title": "DeepSeek 更新 V4.1 Flash 模型并开放搜索接口",
+      "category": "模型",
+      "summary": "DeepSeek 在 API 文档中宣布更新 V4.1 Flash 模型，并同步开放搜索接口，开发者可通过原有 API 通道调用新模型和搜索能力。更新以官方文档公告形式发布。",
+      "whyItMatters": "对调用 DeepSeek API 的开发者，搜索接口开放意味着检索与生成可在同一通道完成，减少自建检索链路的成本。",
+      "sourceName": "DeepSeek",
+      "sourceDisplayName": "DeepSeek",
+      "sourceUrl": "https://api-docs.deepseek.com/zh-cn/news/news261017",
+      "publishedAt": "2026-10-18T01:02:10.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "更新版本为 V4.1 Flash",
+        "同步开放搜索接口"
+      ],
+      "confidenceReason": "官方发布（API 文档）"
+    },
+    {
+      "id": "n6",
       "title": "OpenCode 披露安全事件，部分用户受影响",
       "category": "安全",
-      "summary": "OpenCode 官方披露一起安全事件，确认部分用户受到影响，但未公布影响规模、涉及数据类型与处置进展；使用其开发工具与托管能力的团队应关注后续通告，并检查账号凭证与密钥。",
-      "whyItMatters": "对把代码与密钥托管在第三方开发平台的团队，这类事件直接触发凭证轮换与访问审计，是否继续接入要等官方说明影响面后再定。",
+      "summary": "OpenCode 通过官方账号披露一起安全事件，确认部分用户受到影响。可见内容中未给出漏洞成因、受影响规模与修复进度，受影响范围尚待进一步说明。",
+      "whyItMatters": "对使用 OpenCode 的开发者，需核查密钥与代码访问权限；披露信息不完整会加大二次排查与轮换成本。",
       "sourceName": "综合来源",
       "sourceDisplayName": "OpenCode",
       "sourceUrl": "https://x.com/opencode/status/2111519637049319818",
       "publishedAt": "2026-10-18T01:02:10.000Z",
-      "impactScore": 75,
+      "impactScore": 71,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "OpenCode 披露安全事件",
-        "部分用户受到影响",
-        "影响范围与细节尚未公布"
-      ],
-      "confidenceReason": "官方发布（官方账号披露）"
-    },
-    {
-      "id": "n3",
-      "title": "Codex 28 天活动第 13 天完整重置用量",
-      "category": "Agent",
-      "summary": "Codex 的 28 天用户活动进入第 13 天，官方账号宣布对用量进行完整重置，参与用户的额度回到满额；该动作属于运营激励，披露内容未涉及模型版本或计费规则变更。",
-      "whyItMatters": "对重度使用 Codex 的开发者，重置决定本周可用额度，可把大批量重构或迁移任务安排在重置后执行，避免额度中途耗尽。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://x.com/thsottiaux/status/2111566005684289735",
-      "publishedAt": "2026-10-18T01:02:10.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "活动周期为 28 天",
-        "第 13 天完整重置用量"
-      ],
-      "confidenceReason": "单一来源（官方账号发布）"
-    },
-    {
-      "id": "n4",
-      "title": "Tibo 回应产品改进建议：其中两项在做",
-      "category": "Agent",
-      "summary": "Tibo 就用户提出的产品改进建议公开回应，表示其中两项正在推进，但未说明具体功能内容与上线时间；这属于常规产品沟通，只能作为后续功能路线的前置参考，不宜当作交付承诺。",
-      "whyItMatters": "对把 Codex 纳入研发流程的团队，此类回应不构成可排期的功能承诺，工作流设计仍应以已上线能力为准。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2111339932614861298",
-      "publishedAt": "2026-10-18T01:02:10.000Z",
-      "impactScore": 73,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "回应中称两项建议在做",
-        "未给出上线时间",
-        "未说明具体功能细节"
-      ],
-      "confidenceReason": "单一来源（个人账号回应）"
-    },
-    {
-      "id": "n5",
-      "title": "WorkBuddy 国际版接入最新 DeepSeek 模型，限时免费",
-      "category": "产品",
-      "summary": "WorkBuddy 国际版宣布接入最新 DeepSeek 模型，并限时免费开放给用户使用；披露内容未给出具体模型版本号、免费期限与额度上限，用户需以产品内公告确认实际可用范围。",
-      "whyItMatters": "对想低成本试用 DeepSeek 能力的用户，第三方工具是免自建 API 的入口，但需提前确认免费期结束后的定价与数据留存条款。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "WorkBuddy",
-      "sourceUrl": "https://x.com/WorkBuddy_AI/status/2111404103402430558",
-      "publishedAt": "2026-10-18T01:02:10.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [
-        "DeepSeek"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "WorkBuddy 国际版接入 DeepSeek 模型",
-        "限时免费开放",
-        "未公布免费期限"
-      ],
-      "confidenceReason": "单一来源（官方账号发布）"
-    },
-    {
-      "id": "n6",
-      "title": "有关部门拟增列 AI 技术进入出口管制目录",
-      "category": "产品",
-      "summary": "有关部门发布文件，拟将 AI 技术增列进入出口管制目录，具体技术条目与生效时间以公布文本为准；涉及算法、模型对外输出或技术授权的企业，需先核对清单，再安排合作与交付。",
-      "whyItMatters": "对做模型出海、对外技术授权或跨境联合研发的团队，管制清单直接决定哪些技术可以交付、是否需要申请许可，合规评估应提前到合同签署前。",
-      "sourceName": "Gov",
-      "sourceDisplayName": "商务部",
-      "sourceUrl": "https://aqygzj.mofcom.gov.cn/flzc/gzjgfxwj/art/2026/art_c99f95ca0cd043829ac9991495fc283c.html",
-      "publishedAt": "2026-10-17T01:50:30.000Z",
-      "impactScore": 72,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "拟增列 AI 技术进入出口管制目录",
-        "文件发布在政府主管部门官网"
-      ],
-      "confidenceReason": "官方发布（政府官网文件）"
-    },
-    {
-      "id": "n13",
-      "title": "ChatGPT 为 dot 推出 iOS 小组件与快捷指令支持",
-      "category": "产品",
-      "summary": "ChatGPT 宣布为 dot 提供 iOS 小组件与快捷指令支持，用户可在系统层直接触发相关功能，减少进入应用的操作步骤；官方未说明支持的系统版本下限与具体可用功能范围。",
-      "whyItMatters": "对在 iPhone 上高频使用 ChatGPT 的用户，系统级入口减少操作步骤，是否形成日常习惯取决于小组件可承载的功能范围。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://x.com/ChatGPT/status/2111210005617889406",
-      "publishedAt": "2026-10-17T01:50:30.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [
-        "GPT"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "提供 iOS 小组件",
-        "支持快捷指令调用",
-        "来源为 ChatGPT 官方账号"
+        "官方确认部分用户受影响",
+        "未公开漏洞成因与影响规模"
       ],
       "confidenceReason": "官方发布（官方账号）"
     },
     {
-      "id": "n14",
-      "title": "OpenAI 上线 ChatGPT Slides",
-      "category": "产品",
-      "summary": "OpenAI 在 ChatGPT 发布说明中上线 Slides 功能，用户可在对话中直接生成演示文稿；官方未披露可用套餐范围、导出格式与单次生成的页数限制，实际能力需在产品内验证。",
-      "whyItMatters": "对经常做汇报材料的用户，生成式出稿可压缩初稿时间，但导出格式与页数限制决定它能否接入现有模板与协作流程。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-      "publishedAt": "2026-10-17T01:50:30.000Z",
-      "impactScore": 71,
+      "id": "n7",
+      "title": "Codex 28 天活动第 13 天完整重置用量",
+      "category": "Agent",
+      "summary": "Codex 28 天活动进行到第 13 天，项目方账号宣布对用量做一次完整重置，此前累计的使用量被清零，参与者可重新开始计算额度。",
+      "whyItMatters": "对依赖 Codex 的开发者，重置意味着活动期内可继续排期压测，但重置节奏不确定会干扰长期用量规划。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2111566005684289735",
+      "publishedAt": "2026-10-18T01:02:10.000Z",
+      "impactScore": 70,
       "confidence": "high",
-      "tags": [
-        "OpenAI",
-        "GPT"
-      ],
+      "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "上线 ChatGPT Slides",
-        "功能见于官方发布说明",
-        "套餐范围未披露"
+        "活动进行至第 13 天",
+        "用量被完整重置"
       ],
-      "confidenceReason": "官方发布（发布说明）"
+      "confidenceReason": "单一来源（项目账号）"
     },
     {
       "id": "n8",
-      "title": "DeepSeek 整合多支团队成立产品部",
-      "category": "模型",
-      "summary": "据腾讯报道，DeepSeek 将内部多支团队整合成立产品部，产品相关职能由此集中到一个部门；该报道未提及负责人、人员规模与生效时间，公司官方渠道也未同步发布对应说明。",
-      "whyItMatters": "对关注 DeepSeek 产品化节奏的开发者和企业客户，组织集中通常意味着接口与功能迭代口径统一，采购与集成决策可据此观察后续发布节奏。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "腾讯",
-      "sourceUrl": "https://mp.weixin.qq.com/s/oHvOQB8QfOS_FKieyPgQAg",
-      "publishedAt": "2026-10-17T01:50:30.000Z",
-      "impactScore": 70,
+      "title": "Tibo 回应产品改进建议：其中两项在做",
+      "category": "Agent",
+      "summary": "Tibo 在 X 上回应外界对 Codex 产品的改进建议，表示所提建议中有两项已经在做。回应未给出这两项功能的具体内容与上线时间。",
+      "whyItMatters": "对 Codex 用户，产品负责人公开确认两项改进在做，可作为评估是否继续把工作流押在该工具链上的参考。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2111339932614861298",
+      "publishedAt": "2026-10-18T01:02:10.000Z",
+      "impactScore": 69,
       "confidence": "medium",
-      "tags": [
-        "DeepSeek"
-      ],
+      "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "整合多支团队成立产品部",
-        "消息来源为腾讯报道",
-        "未披露负责人与人员规模"
+        "回应称两项建议正在做",
+        "未给功能内容与时间表"
       ],
-      "confidenceReason": "单一来源（媒体报道，未见官方确认）"
+      "confidenceReason": "单一来源（个人账号）"
     },
     {
       "id": "n9",
-      "title": "DeepSeek 新增搜索与抓取 API 并按次收费",
-      "category": "模型",
-      "summary": "DeepSeek 在 API 文档中新增搜索与抓取接口，采用按次计费，开发者可在调用模型之外单独购买检索与网页抓取能力，用于构建联网问答与 RAG 流程，计费从模型 token 扩展到调用次数。",
-      "whyItMatters": "对自建爬虫与索引的团队，这部分工作量可外包给接口，但成本从固定服务器支出转为随调用量波动的费用，需按业务峰值重算预算。",
-      "sourceName": "DeepSeek",
-      "sourceDisplayName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/zh-cn/guides/search/",
-      "publishedAt": "2026-10-17T01:50:30.000Z",
-      "impactScore": 69,
+      "title": "WorkBuddy 国际版接入最新 DeepSeek 模型，限时免费",
+      "category": "产品",
+      "summary": "WorkBuddy 国际版宣布接入最新的 DeepSeek 模型，并以限时免费形式开放。公告未披露接入的具体模型版本号与免费截止时间，用户需在产品内查看。",
+      "whyItMatters": "对工具类产品用户，接入 DeepSeek 最新模型并限时免费，短期可低成本试用；免费结束后的成本需重新评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "WorkBuddy",
+      "sourceUrl": "https://x.com/WorkBuddy_AI/status/2111404103402430558",
+      "publishedAt": "2026-10-18T01:02:10.000Z",
+      "impactScore": 68,
       "confidence": "high",
       "tags": [
         "DeepSeek"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "新增搜索与抓取 API",
-        "按调用次数计费",
-        "文档已上线相关指南"
+        "国际版接入最新 DeepSeek 模型",
+        "以限时免费形式开放"
       ],
-      "confidenceReason": "官方发布（API 文档）"
+      "confidenceReason": "官方发布（产品账号）"
+    },
+    {
+      "id": "n34",
+      "title": "TechCrunch：Anthropic 将 5% 股份投入公益基金",
+      "category": "产品",
+      "summary": "TechCrunch 报道，Anthropic 表示将把公司 5% 的股份投入公益基金（public benefit fund）。报道引述公司说法，与 Anthropic 官网公告一致，属同一事件的两处来源。",
+      "whyItMatters": "对投资人，股份注入公益基金是股权结构层面的安排，估值与退出路径谈判需明确这部分股份的处置规则。",
+      "sourceName": "TechCrunch",
+      "sourceDisplayName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "publishedAt": "2026-10-18T20:37:40.000Z",
+      "impactScore": 60,
+      "confidence": "medium",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "股份比例为 5%",
+        "报道与官网公告相互印证"
+      ],
+      "confidenceReason": "多来源验证（与官网一致）"
+    },
+    {
+      "id": "n35",
+      "title": "迪士尼同意聘用 Character.AI 大部分员工",
+      "category": "产品",
+      "summary": "TechCrunch 援引文件报道，迪士尼同意聘用 Character.AI 的大部分员工；文件称，获得迪士尼录用邀请的 Character.AI 员工中绝大多数已接受。交易结构未在报道中展开。",
+      "whyItMatters": "对消费级 AI 应用团队，Character.AI 团队被媒体巨头吸纳，说明人才与 IP 正在流向有现金流和内容资产的一方。",
+      "sourceName": "TechCrunch",
+      "sourceDisplayName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "publishedAt": "2026-10-18T16:30:00.000Z",
+      "impactScore": 60,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "迪士尼同意聘用大部分员工",
+        "获录用邀请者中绝大多数已接受"
+      ],
+      "confidenceReason": "单一来源（援引文件）"
+    },
+    {
+      "id": "n36",
+      "title": "Meta 删除引发抓取与 AI 训练担忧的条款",
+      "category": "商业",
+      "summary": "TechCrunch 报道，Meta 删除了服务条款中涉及网页抓取与 AI 训练的表述。Meta 发言人表示，条款措辞调整不代表公司抓取网页的方式发生变化。",
+      "whyItMatters": "对内容站与数据方，条款措辞删除不等于抓取停止，robots 与授权协议仍是判断内容能否被用于训练的实际依据。",
+      "sourceName": "TechCrunch",
+      "sourceDisplayName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "impactScore": 56,
+      "confidence": "medium",
+      "tags": [
+        "Meta"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "删除了涉抓取与 AI 训练的表述",
+        "Meta 称抓取方式未变"
+      ],
+      "confidenceReason": "单一来源（公司回应）"
     }
   ],
   "sources": [
@@ -292,7 +281,7 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 29,
+      "itemCount": 9,
       "note": "日报型来源，已拆解 2 期"
     },
     {
