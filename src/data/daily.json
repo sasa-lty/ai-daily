@@ -1,279 +1,290 @@
 {
-  "date": "2026-10-19",
-  "generatedAt": "2026-10-19T05:08:15.832Z",
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-20T05:08:55.006Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "今日最密集的信号在治理与团队流向：Anthropic 划出 5% 股份设立公益基金，迪士尼吸纳 Character.AI 多数员工；模型侧 DeepSeek 更新 V4.1 Flash 并开放搜索接口。",
+    "verdict": "今日信号集中在模型发布与Agent接入：MiniMax、DeepSeek新版本同日被多工具接入；美国联邦禁令则抬高合规门槛。",
     "keywords": [
-      "Anthropic",
+      "开源",
       "DeepSeek",
-      "开源"
+      "语音"
     ],
-    "heatIndex": 72,
+    "heatIndex": 75,
     "sourceCount": 4
   },
   "topStoryIds": [
+    "n2",
     "n1",
-    "n5",
-    "n35"
+    "n8"
   ],
   "items": [
     {
-      "id": "n2",
-      "title": "Wolf 估算：开源模型累计训练算力近 10 亿美元",
-      "category": "研究",
-      "summary": "Thomas Wolf 在 X 上估算，开源模型背后累计投入的训练算力成本已接近 10 亿美元。该数字为个人估算，未拆分到具体模型或机构，也未说明测算方法。",
-      "whyItMatters": "给自研模型的团队一个成本参照：开源基座的训练投入已达十亿美元量级，预算评估不宜再按小规模实验推算。",
+      "id": "n1",
+      "title": "MiniMax 正式发布 M3.1 Flash",
+      "category": "产品",
+      "summary": "MiniMax 正式发布 M3.1 Flash 模型，官方账号公布上线信息，但未披露参数规模、价格与开放范围；发布后同日已有 Command Code 宣布接入，显示该版本正进入第三方 Agent 工具生态。",
+      "whyItMatters": "开发者可先在 Command Code 等 Agent 工具中试用 M3.1 Flash；模型选型多了一个低门槛候选，但需等官方补充分工与价格信息。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
+      "sourceDisplayName": "MiniMax",
+      "sourceUrl": "https://x.com/MiniMax_AI/status/2112150867868541221",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 83,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "MiniMax 正式发布 M3.1 Flash",
+        "同日 Command Code 宣布上线该模型",
+        "输入未披露参数规模与价格"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n5",
+      "title": "Command Code 上线 MiniMax M3.1 Flash",
+      "category": "Agent",
+      "summary": "Command Code 宣布在其产品中上线 MiniMax M3.1 Flash，使该模型在发布当日即进入第三方 Agent 调用场景。输入未说明接入价格、上下文长度或额度限制，开发者需以产品实际计费页为准。",
+      "whyItMatters": "对使用 Command Code 的开发者，可直接在现有 Agent 工作流中切换 M3.1 Flash 测试；但缺少计费与上下文信息，暂不宜据此做长期成本决策。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Command Code",
+      "sourceUrl": "https://x.com/CommandCodeAI/status/2112188292078952773",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Command Code 上线 MiniMax M3.1 Flash",
+        "与 MiniMax 发布同日接入",
+        "未披露价格与额度"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n26",
+      "title": "Wolf 估算开源模型累计训练算力近 10 亿美元",
+      "category": "研究",
+      "summary": "Thom Wolf 估算，开源模型背后的累计训练算力投入已接近 10 亿美元。该数字衡量的是算力成本量级，并非单一机构支出；输入未给出估算方法、覆盖模型范围和时间区间，引用时需注明口径。",
+      "whyItMatters": "为评估开源模型竞争成本提供量级参考；企业和研究者在判断是否自训模型时，应区分累计投入与单次训练成本，并等待口径说明。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Thom Wolf",
       "sourceUrl": "https://x.com/Thom_Wolf/status/2111828314851598745",
       "publishedAt": "2026-10-19T00:54:00.000Z",
-      "impactScore": 82,
+      "impactScore": 78,
       "confidence": "high",
       "tags": [
         "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "估算值为接近 10 亿美元",
-        "覆盖开源模型背后的训练算力"
+        "Wolf 估算开源模型累计训练算力近 10 亿美元",
+        "该估算非单一机构支出",
+        "输入未披露估算口径"
       ],
-      "confidenceReason": "单一来源（个人估算）"
-    },
-    {
-      "id": "n1",
-      "title": "Anthropic 设立公益基金，承诺投入 5% 股份",
-      "category": "产品",
-      "summary": "Anthropic 在官网宣布设立公益基金（public benefit fund），承诺先投入公司 5% 的股份；TechCrunch 同日报道确认了这一比例。公告未披露基金的具体投向与治理结构。",
-      "whyItMatters": "对 AI 公司员工与投资人而言，5% 股份被锁定在公益基金，后续融资、股权稀释与治理投票都要把这块算进去。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://www.anthropic.com/news/public-benefit-fund",
-      "publishedAt": "2026-10-19T00:54:00.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "Anthropic"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "承诺投入公司 5% 股份",
-        "官方公告与 TechCrunch 报道一致"
-      ],
-      "confidenceReason": "官方发布（官网公告）"
-    },
-    {
-      "id": "n3",
-      "title": "测试目录账号称 OpenAI 出现 3 个新模型 ID",
-      "category": "模型",
-      "summary": "有测试目录类账号称，OpenAI 出现 3 个新的模型 ID。信息未附带版本名称、能力参数或发布时间，OpenAI 官方也未确认，属于待证传闻。",
-      "whyItMatters": "对开发者和 API 使用者，模型 ID 出现通常早于正式发布，可作为版本迭代与迁移窗口的早期信号。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/testingcatalog/status/2111724606927028578",
-      "publishedAt": "2026-10-19T00:54:00.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [
-        "OpenAI"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "据称出现 3 个新模型 ID",
-        "来源为测试目录类账号，非官方"
-      ],
-      "confidenceReason": "传闻待证（非官方账号）"
-    },
-    {
-      "id": "n4",
-      "title": "报道称 Anthropic 与律所商讨 AI 代理谈判规范",
-      "category": "产品",
-      "summary": "The-decoder 报道，Anthropic 正与律师事务所商讨，为 AI 代理代替用户进行交易谈判制定公平规范。讨论发生在代理尚未大规模自主签约之前。",
-      "whyItMatters": "对做代理商务的企业，谈判规范若由模型厂商与律所先行定义，将直接约束代理在定价与条款上的自主空间。",
-      "sourceName": "The-decoder",
-      "sourceDisplayName": "The-decoder",
-      "sourceUrl": "https://the-decoder.com/anthropic-consults-law-firms-to-set-fair-negotiation-norms-before-ai-agents-start-cutting-deals/",
-      "publishedAt": "2026-10-19T00:54:00.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [
-        "Anthropic"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "商讨对象为律师事务所",
-        "议题是 AI 代理谈判的公平规范"
-      ],
-      "confidenceReason": "单一来源（媒体报道）"
-    },
-    {
-      "id": "n5",
-      "title": "DeepSeek 更新 V4.1 Flash 模型并开放搜索接口",
-      "category": "模型",
-      "summary": "DeepSeek 在 API 文档中宣布更新 V4.1 Flash 模型，并同步开放搜索接口，开发者可通过原有 API 通道调用新模型和搜索能力。更新以官方文档公告形式发布。",
-      "whyItMatters": "对调用 DeepSeek API 的开发者，搜索接口开放意味着检索与生成可在同一通道完成，减少自建检索链路的成本。",
-      "sourceName": "DeepSeek",
-      "sourceDisplayName": "DeepSeek",
-      "sourceUrl": "https://api-docs.deepseek.com/zh-cn/news/news261017",
-      "publishedAt": "2026-10-18T01:02:10.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [
-        "DeepSeek"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "更新版本为 V4.1 Flash",
-        "同步开放搜索接口"
-      ],
-      "confidenceReason": "官方发布（API 文档）"
-    },
-    {
-      "id": "n6",
-      "title": "OpenCode 披露安全事件，部分用户受影响",
-      "category": "安全",
-      "summary": "OpenCode 通过官方账号披露一起安全事件，确认部分用户受到影响。可见内容中未给出漏洞成因、受影响规模与修复进度，受影响范围尚待进一步说明。",
-      "whyItMatters": "对使用 OpenCode 的开发者，需核查密钥与代码访问权限；披露信息不完整会加大二次排查与轮换成本。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "OpenCode",
-      "sourceUrl": "https://x.com/opencode/status/2111519637049319818",
-      "publishedAt": "2026-10-18T01:02:10.000Z",
-      "impactScore": 71,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "官方确认部分用户受影响",
-        "未公开漏洞成因与影响规模"
-      ],
-      "confidenceReason": "官方发布（官方账号）"
+      "confidenceReason": "单一来源 估算待核"
     },
     {
       "id": "n7",
-      "title": "Codex 28 天活动第 13 天完整重置用量",
+      "title": "Devin 推出按使用效率自动提额机制",
       "category": "Agent",
-      "summary": "Codex 28 天活动进行到第 13 天，项目方账号宣布对用量做一次完整重置，此前累计的使用量被清零，参与者可重新开始计算额度。",
-      "whyItMatters": "对依赖 Codex 的开发者，重置意味着活动期内可继续排期压测，但重置节奏不确定会干扰长期用量规划。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2111566005684289735",
-      "publishedAt": "2026-10-18T01:02:10.000Z",
-      "impactScore": 70,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "活动进行至第 13 天",
-        "用量被完整重置"
-      ],
-      "confidenceReason": "单一来源（项目账号）"
-    },
-    {
-      "id": "n8",
-      "title": "Tibo 回应产品改进建议：其中两项在做",
-      "category": "Agent",
-      "summary": "Tibo 在 X 上回应外界对 Codex 产品的改进建议，表示所提建议中有两项已经在做。回应未给出这两项功能的具体内容与上线时间。",
-      "whyItMatters": "对 Codex 用户，产品负责人公开确认两项改进在做，可作为评估是否继续把工作流押在该工具链上的参考。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2111339932614861298",
-      "publishedAt": "2026-10-18T01:02:10.000Z",
-      "impactScore": 69,
+      "summary": "Devin 上线基于使用效率的自动提额机制，系统会根据使用情况调整额度，目的是让高效使用团队获得更多调用空间。输入未披露效率计算方式、提额幅度和适用套餐，用户需查看官方博客确认具体规则。",
+      "whyItMatters": "使用 Devin 的团队需重新评估额度管理：高效使用可能换来更多调用，但效率口径不透明会影响预算预测和采购比较。",
+      "sourceName": "Devin",
+      "sourceDisplayName": "Devin",
+      "sourceUrl": "https://devin.ai/blog/efficiency-based-cost-controls",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 77,
       "confidence": "medium",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "回应称两项建议正在做",
-        "未给功能内容与时间表"
+        "Devin 推出按使用效率自动提额",
+        "额度随使用效率调整",
+        "未披露提额幅度与套餐"
       ],
-      "confidenceReason": "单一来源（个人账号）"
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n9",
-      "title": "WorkBuddy 国际版接入最新 DeepSeek 模型，限时免费",
-      "category": "产品",
-      "summary": "WorkBuddy 国际版宣布接入最新的 DeepSeek 模型，并以限时免费形式开放。公告未披露接入的具体模型版本号与免费截止时间，用户需在产品内查看。",
-      "whyItMatters": "对工具类产品用户，接入 DeepSeek 最新模型并限时免费，短期可低成本试用；免费结束后的成本需重新评估。",
+      "id": "n8",
+      "title": "蚂蚁百灵开源 5 款 Ming-3.0 语音模型",
+      "category": "模型",
+      "summary": "蚂蚁百灵宣布开源 5 款 Ming-3.0 语音模型，覆盖语音相关能力，模型数量和版本由官方账号公布。输入未列出各模型参数、许可证、支持语言和评测结果，开发者需查看仓库与模型卡后再评估部署。",
+      "whyItMatters": "语音应用开发者可多一套可本地部署的开源候选，降低对闭源语音 API 的依赖；但缺少许可证与评测，企业选型仍需验证合规和效果。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "WorkBuddy",
-      "sourceUrl": "https://x.com/WorkBuddy_AI/status/2111404103402430558",
-      "publishedAt": "2026-10-18T01:02:10.000Z",
-      "impactScore": 68,
+      "sourceDisplayName": "蚂蚁百灵",
+      "sourceUrl": "https://x.com/AntLingAGI/status/2112210811997540475",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源",
+        "语音"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "蚂蚁百灵开源 5 款 Ming-3.0 语音模型",
+        "版本为 Ming-3.0",
+        "未披露参数与许可证"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n2",
+      "title": "美国下令联邦文职机构禁购并移除 DeepSeek",
+      "category": "模型",
+      "summary": "美国通过联邦公报发布命令，要求联邦文职机构停止采购并移除 DeepSeek。该措施针对联邦文职机构，输入未说明过渡期限、例外条件和具体执行范围，涉及政府承包商与联邦采购的团队需核对合规要求。",
+      "whyItMatters": "直接影响向美国联邦文职机构供货或提供服务的 AI 供应商；相关企业需排查产品中的 DeepSeek 组件，并调整政府项目采购与部署方案。",
+      "sourceName": "Federalregister",
+      "sourceDisplayName": "美国联邦公报",
+      "sourceUrl": "https://public-inspection.federalregister.gov/2026-21447.pdf",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
         "DeepSeek"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "国际版接入最新 DeepSeek 模型",
-        "以限时免费形式开放"
+        "美国下令联邦文职机构禁购 DeepSeek",
+        "要求移除已部署的 DeepSeek",
+        "文件来自联邦公报"
       ],
-      "confidenceReason": "官方发布（产品账号）"
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n34",
-      "title": "TechCrunch：Anthropic 将 5% 股份投入公益基金",
-      "category": "产品",
-      "summary": "TechCrunch 报道，Anthropic 表示将把公司 5% 的股份投入公益基金（public benefit fund）。报道引述公司说法，与 Anthropic 官网公告一致，属同一事件的两处来源。",
-      "whyItMatters": "对投资人，股份注入公益基金是股权结构层面的安排，估值与退出路径谈判需明确这部分股份的处置规则。",
-      "sourceName": "TechCrunch",
-      "sourceDisplayName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
-      "publishedAt": "2026-10-18T20:37:40.000Z",
-      "impactScore": 60,
-      "confidence": "medium",
-      "tags": [
-        "Anthropic"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "股份比例为 5%",
-        "报道与官网公告相互印证"
-      ],
-      "confidenceReason": "多来源验证（与官网一致）"
-    },
-    {
-      "id": "n35",
-      "title": "迪士尼同意聘用 Character.AI 大部分员工",
-      "category": "产品",
-      "summary": "TechCrunch 援引文件报道，迪士尼同意聘用 Character.AI 的大部分员工；文件称，获得迪士尼录用邀请的 Character.AI 员工中绝大多数已接受。交易结构未在报道中展开。",
-      "whyItMatters": "对消费级 AI 应用团队，Character.AI 团队被媒体巨头吸纳，说明人才与 IP 正在流向有现金流和内容资产的一方。",
-      "sourceName": "TechCrunch",
-      "sourceDisplayName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-      "publishedAt": "2026-10-18T16:30:00.000Z",
-      "impactScore": 60,
-      "confidence": "medium",
+      "id": "n9",
+      "title": "fal 上线视频模型 FLUX 3 Max",
+      "category": "模型",
+      "summary": "fal 宣布上线视频模型 FLUX 3 Max，开发者可通过 fal 平台调用该视频生成模型。输入未披露分辨率、时长、帧率、价格和开放地区，实际能力与成本需以平台模型页和计费规则为准。",
+      "whyItMatters": "视频生成开发者可在 fal 上直接调用 FLUX 3 Max；在缺少规格与价格前，团队应先做小样本测试，再决定是否替换现有视频管线。",
+      "sourceName": "Fal",
+      "sourceDisplayName": "fal",
+      "sourceUrl": "https://fal.ai/flux-3-max",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 75,
+      "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "迪士尼同意聘用大部分员工",
-        "获录用邀请者中绝大多数已接受"
+        "fal 上线视频模型 FLUX 3 Max",
+        "定位为视频生成模型",
+        "未披露时长与价格"
       ],
-      "confidenceReason": "单一来源（援引文件）"
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n36",
-      "title": "Meta 删除引发抓取与 AI 训练担忧的条款",
-      "category": "商业",
-      "summary": "TechCrunch 报道，Meta 删除了服务条款中涉及网页抓取与 AI 训练的表述。Meta 发言人表示，条款措辞调整不代表公司抓取网页的方式发生变化。",
-      "whyItMatters": "对内容站与数据方，条款措辞删除不等于抓取停止，robots 与授权协议仍是判断内容能否被用于训练的实际依据。",
-      "sourceName": "TechCrunch",
-      "sourceDisplayName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "publishedAt": "2026-10-17T21:31:32.000Z",
-      "impactScore": 56,
-      "confidence": "medium",
+      "id": "n3",
+      "title": "OpenCode 更新 DeepSeek V4.1 Flash",
+      "category": "Agent",
+      "summary": "OpenCode 宣布更新 DeepSeek V4.1 Flash，意味着该模型进入 OpenCode 的编码 Agent 场景。输入未说明更新内容、上下文长度和计费方式；结合同日 Qoder 也开放 DeepSeek 新模型，DeepSeek 新版本正被多家工具接入。",
+      "whyItMatters": "使用 OpenCode 的开发者可在编码 Agent 中切换该版本；多家工具同日接入说明新模型可用性提升，但具体能力仍需实测。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenCode",
+      "sourceUrl": "https://x.com/opencode/status/2112220734768779441",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 74,
+      "confidence": "high",
       "tags": [
-        "Meta"
+        "DeepSeek"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "删除了涉抓取与 AI 训练的表述",
-        "Meta 称抓取方式未变"
+        "OpenCode 更新 DeepSeek V4.1 Flash",
+        "版本号为 V4.1 Flash",
+        "同日 Qoder 也开放 DeepSeek 新模型"
       ],
-      "confidenceReason": "单一来源（公司回应）"
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n10",
+      "title": "Inception 发布扩散模型 Mercury 3",
+      "category": "模型",
+      "summary": "Inception 发布扩散模型 Mercury 3，官方博客介绍该版本。输入未给出参数规模、生成速度、基准分数和开放方式；若关注扩散语言模型路线，需阅读技术博客确认其与上一代的差异和可用接口。",
+      "whyItMatters": "对探索非自回归文本生成的团队，Mercury 3 提供新的扩散模型候选；在缺少基准与接口信息前，适合先跟踪而非直接替换生产模型。",
+      "sourceName": "Inceptionlabs",
+      "sourceDisplayName": "Inception",
+      "sourceUrl": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Inception 发布扩散模型 Mercury 3",
+        "属于扩散模型路线",
+        "未披露参数与基准分数"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n4",
+      "title": "Qoder 限时免费开放 DeepSeek 新模型",
+      "category": "Agent",
+      "summary": "Qoder 宣布限时免费开放 DeepSeek 新模型，面向其用户提供试用。输入未说明免费截止时间、模型完整版本号、调用额度和后续价格；开发者可借此测试，但不应把限时免费价当作长期成本假设。",
+      "whyItMatters": "Qoder 用户可零成本测试 DeepSeek 新模型在编码任务中的表现；若准备迁移，应同步确认免费期结束后的计费和额度规则。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "Qoder",
+      "sourceUrl": "https://mp.weixin.qq.com/s/ejQ3QP7WhuWcoZswlZlSag",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Qoder 限时免费开放 DeepSeek 新模型",
+        "未披露免费截止时间",
+        "未说明后续价格"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n11",
+      "title": "Decision 3.0 多模态决策模型发布",
+      "category": "模型",
+      "summary": "Decision 3.0 多模态决策模型发布，并在 Hugging Face 建立模型集合页。输入未披露参数规模、模态范围、基准成绩和许可证；关注决策智能与多模态 Agent 的开发者需查看模型卡确认输入输出与部署要求。",
+      "whyItMatters": "为多模态决策与 Agent 落地增加一个候选模型；在许可证和评测缺失时，企业应先验证可控性与合规，再考虑接入业务流程。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://huggingface.co/collections/vllm-sr/decision-30",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "多模态"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Decision 3.0 多模态决策模型发布",
+        "模型集合页位于 Hugging Face",
+        "未披露参数与许可证"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n12",
+      "title": "Xing4.0-29B-Intent 开源：同时识别意图与提取参数",
+      "category": "模型",
+      "summary": "Xing4.0-29B-Intent 在 GitHub 开源，模型同时识别用户意图并提取参数，参数规模为 29B。输入未披露许可证、训练数据、基准评测和推理硬件需求；开发者需查看仓库说明评估是否适合意图路由与工具调用。",
+      "whyItMatters": "意图识别与参数抽取合并可减少 Agent 工具调用链路；29B 规模意味着部署成本不低，团队需先核对许可证和推理资源。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "XingChen-AGI",
+      "sourceUrl": "https://github.com/XingChen-AGI/Xing4.0-29B-Intent",
+      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Xing4.0-29B-Intent 开源",
+        "参数规模为 29B",
+        "同时识别意图与提取参数"
+      ],
+      "confidenceReason": "官方发布"
     }
   ],
   "sources": [
@@ -281,14 +292,14 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 9,
+      "itemCount": 28,
       "note": "日报型来源，已拆解 2 期"
     },
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 880
+      "itemCount": 882
     },
     {
       "name": "Google DeepMind Blog",
