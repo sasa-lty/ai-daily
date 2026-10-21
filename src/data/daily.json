@@ -1,288 +1,287 @@
 {
-  "date": "2026-10-20",
-  "generatedAt": "2026-10-20T05:08:55.006Z",
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T05:11:04.078Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "今日信号集中在模型发布与Agent接入：MiniMax、DeepSeek新版本同日被多工具接入；美国联邦禁令则抬高合规门槛。",
+    "verdict": "推理基础设施开源与 TPU 软件栈同日推进，OpenAI 收购药物开发平台，AI 竞争向算力底座与垂直行业延伸。",
     "keywords": [
+      "Google",
       "开源",
-      "DeepSeek",
       "语音"
     ],
-    "heatIndex": 75,
+    "heatIndex": 76,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n2",
     "n1",
-    "n8"
+    "n6",
+    "n15"
   ],
   "items": [
     {
       "id": "n1",
-      "title": "MiniMax 正式发布 M3.1 Flash",
-      "category": "产品",
-      "summary": "MiniMax 正式发布 M3.1 Flash 模型，官方账号公布上线信息，但未披露参数规模、价格与开放范围；发布后同日已有 Command Code 宣布接入，显示该版本正进入第三方 Agent 工具生态。",
-      "whyItMatters": "开发者可先在 Command Code 等 Agent 工具中试用 M3.1 Flash；模型选型多了一个低门槛候选，但需等官方补充分工与价格信息。",
+      "title": "DeepSeek 开源内部推理框架 DeepInfer",
+      "category": "开源",
+      "summary": "DeepSeek 将内部使用的推理框架 DeepInfer 对外开源，开发者可查看其推理侧工程实现与部署方式。该框架原服务于 DeepSeek 内部，具体性能、许可证和适用硬件仍需以开源仓库说明为准。",
+      "whyItMatters": "推理框架开源后，企业可评估自建推理栈的工程路径，降低对闭源推理服务的依赖，并影响其部署成本与选型决策。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "MiniMax",
-      "sourceUrl": "https://x.com/MiniMax_AI/status/2112150867868541221",
-      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "sourceDisplayName": "DeepSeek",
+      "sourceUrl": "https://zhuanlan.zhihu.com/p/2095560295930508953",
+      "publishedAt": "2026-10-21T01:28:07.000Z",
       "impactScore": 83,
       "confidence": "high",
-      "tags": [],
+      "tags": [
+        "DeepSeek",
+        "开源"
+      ],
       "aiEnhanced": true,
       "keyFacts": [
-        "MiniMax 正式发布 M3.1 Flash",
-        "同日 Command Code 宣布上线该模型",
-        "输入未披露参数规模与价格"
+        "DeepSeek 开源内部推理框架",
+        "框架名称为 DeepInfer"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n2",
+      "title": "ChatGPT 推出锁定聊天，可用 PIN 保护",
+      "category": "模型",
+      "summary": "OpenAI 为 ChatGPT 增加锁定聊天功能，用户可用 PIN 保护指定对话，降低他人查看聊天内容的概率。该功能属于账户内隐私控制，具体覆盖范围、PIN 重置与恢复机制需参考官方帮助文档。",
+      "whyItMatters": "对共享设备或多人使用同一账户的场景，锁定聊天提供额外隐私控制，会影响企业允许员工在 ChatGPT 中处理敏感对话的意愿。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://help.openai.com/en/articles/20001411-using-locked-chats-in-chatgpt",
+      "publishedAt": "2026-10-21T01:28:07.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "ChatGPT 新增锁定聊天功能",
+        "用户可用 PIN 保护指定聊天"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n5",
-      "title": "Command Code 上线 MiniMax M3.1 Flash",
-      "category": "Agent",
-      "summary": "Command Code 宣布在其产品中上线 MiniMax M3.1 Flash，使该模型在发布当日即进入第三方 Agent 调用场景。输入未说明接入价格、上下文长度或额度限制，开发者需以产品实际计费页为准。",
-      "whyItMatters": "对使用 Command Code 的开发者，可直接在现有 Agent 工作流中切换 M3.1 Flash 测试；但缺少计费与上下文信息，暂不宜据此做长期成本决策。",
+      "id": "n20",
+      "title": "MiniMax 正式发布 M3.1 Flash",
+      "category": "产品",
+      "summary": "MiniMax 正式发布 M3.1 Flash，作为其模型产品线的新版本。官方发布信息未列出参数规模、价格与基准测试成绩，开发者和企业需通过实测确认其在延迟、成本与效果上的表现。",
+      "whyItMatters": "新模型为开发者和企业提供新的 API 选型，尤其影响对延迟与成本敏感应用的模型替换评估；缺少公开基准使选型仍需实测。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "Command Code",
-      "sourceUrl": "https://x.com/CommandCodeAI/status/2112188292078952773",
+      "sourceDisplayName": "MiniMax",
+      "sourceUrl": "https://x.com/MiniMax_AI/status/2112150867868541221",
       "publishedAt": "2026-10-20T02:26:06.000Z",
       "impactScore": 79,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "Command Code 上线 MiniMax M3.1 Flash",
-        "与 MiniMax 发布同日接入",
-        "未披露价格与额度"
+        "MiniMax 正式发布 M3.1 Flash",
+        "版本号为 M3.1 Flash"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "单一来源（官方账号）"
     },
     {
-      "id": "n26",
-      "title": "Wolf 估算开源模型累计训练算力近 10 亿美元",
-      "category": "研究",
-      "summary": "Thom Wolf 估算，开源模型背后的累计训练算力投入已接近 10 亿美元。该数字衡量的是算力成本量级，并非单一机构支出；输入未给出估算方法、覆盖模型范围和时间区间，引用时需注明口径。",
-      "whyItMatters": "为评估开源模型竞争成本提供量级参考；企业和研究者在判断是否自训模型时，应区分累计投入与单次训练成本，并等待口径说明。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "Thom Wolf",
-      "sourceUrl": "https://x.com/Thom_Wolf/status/2111828314851598745",
-      "publishedAt": "2026-10-19T00:54:00.000Z",
+      "id": "n6",
+      "title": "Google 开源原生 PyTorch 软件栈 TorchTPU",
+      "category": "Agent",
+      "summary": "Google 宣布开源 TorchTPU，使 PyTorch 可原生运行在 TPU 上。该软件栈面向 AI 基础设施，目标是减少在 TPU 上使用 PyTorch 的适配工作；具体支持版本、性能数据和可用区域需查阅官方博客。",
+      "whyItMatters": "对使用 PyTorch 的团队，TorchTPU 降低评估 TPU 的迁移成本，影响训练与推理硬件选型，并加剧与 GPU 软件生态的竞争。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google Cloud",
+      "sourceUrl": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
+      "publishedAt": "2026-10-21T01:28:07.000Z",
       "impactScore": 78,
       "confidence": "high",
       "tags": [
+        "Google",
         "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Wolf 估算开源模型累计训练算力近 10 亿美元",
-        "该估算非单一机构支出",
-        "输入未披露估算口径"
-      ],
-      "confidenceReason": "单一来源 估算待核"
-    },
-    {
-      "id": "n7",
-      "title": "Devin 推出按使用效率自动提额机制",
-      "category": "Agent",
-      "summary": "Devin 上线基于使用效率的自动提额机制，系统会根据使用情况调整额度，目的是让高效使用团队获得更多调用空间。输入未披露效率计算方式、提额幅度和适用套餐，用户需查看官方博客确认具体规则。",
-      "whyItMatters": "使用 Devin 的团队需重新评估额度管理：高效使用可能换来更多调用，但效率口径不透明会影响预算预测和采购比较。",
-      "sourceName": "Devin",
-      "sourceDisplayName": "Devin",
-      "sourceUrl": "https://devin.ai/blog/efficiency-based-cost-controls",
-      "publishedAt": "2026-10-20T02:26:06.000Z",
-      "impactScore": 77,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Devin 推出按使用效率自动提额",
-        "额度随使用效率调整",
-        "未披露提额幅度与套餐"
+        "Google 开源 TorchTPU",
+        "TorchTPU 支持原生 PyTorch",
+        "运行硬件为 TPU"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n8",
-      "title": "蚂蚁百灵开源 5 款 Ming-3.0 语音模型",
+      "title": "ElevenLabs 发布两款 Eleven Realtime 实时语音模型",
       "category": "模型",
-      "summary": "蚂蚁百灵宣布开源 5 款 Ming-3.0 语音模型，覆盖语音相关能力，模型数量和版本由官方账号公布。输入未列出各模型参数、许可证、支持语言和评测结果，开发者需查看仓库与模型卡后再评估部署。",
-      "whyItMatters": "语音应用开发者可多一套可本地部署的开源候选，降低对闭源语音 API 的依赖；但缺少许可证与评测，企业选型仍需验证合规和效果。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "蚂蚁百灵",
-      "sourceUrl": "https://x.com/AntLingAGI/status/2112210811997540475",
-      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "summary": "ElevenLabs 发布两款 Eleven Realtime 实时语音模型，面向低延迟语音交互场景。官方未在标题中给出延迟、价格与语言覆盖等指标，开发者需查看文档确认接入条件与适用场景。",
+      "whyItMatters": "实时语音模型直接服务语音 Agent、客服与交互式应用，新增选项会影响开发者在延迟、音色和成本之间的取舍。",
+      "sourceName": "ElevenLabs",
+      "sourceDisplayName": "ElevenLabs",
+      "sourceUrl": "https://elevenlabs.io/blog/realtime",
+      "publishedAt": "2026-10-21T01:28:07.000Z",
       "impactScore": 76,
       "confidence": "high",
       "tags": [
-        "开源",
         "语音"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "蚂蚁百灵开源 5 款 Ming-3.0 语音模型",
-        "版本为 Ming-3.0",
-        "未披露参数与许可证"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n2",
-      "title": "美国下令联邦文职机构禁购并移除 DeepSeek",
-      "category": "模型",
-      "summary": "美国通过联邦公报发布命令，要求联邦文职机构停止采购并移除 DeepSeek。该措施针对联邦文职机构，输入未说明过渡期限、例外条件和具体执行范围，涉及政府承包商与联邦采购的团队需核对合规要求。",
-      "whyItMatters": "直接影响向美国联邦文职机构供货或提供服务的 AI 供应商；相关企业需排查产品中的 DeepSeek 组件，并调整政府项目采购与部署方案。",
-      "sourceName": "Federalregister",
-      "sourceDisplayName": "美国联邦公报",
-      "sourceUrl": "https://public-inspection.federalregister.gov/2026-21447.pdf",
-      "publishedAt": "2026-10-20T02:26:06.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "DeepSeek"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "美国下令联邦文职机构禁购 DeepSeek",
-        "要求移除已部署的 DeepSeek",
-        "文件来自联邦公报"
+        "ElevenLabs 发布实时语音模型",
+        "产品名为 Eleven Realtime",
+        "本次共发布两款"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n9",
-      "title": "fal 上线视频模型 FLUX 3 Max",
+      "title": "Mistral AI 发布 Voxtral 3 语音模型系列及语音 Agent SDK",
       "category": "模型",
-      "summary": "fal 宣布上线视频模型 FLUX 3 Max，开发者可通过 fal 平台调用该视频生成模型。输入未披露分辨率、时长、帧率、价格和开放地区，实际能力与成本需以平台模型页和计费规则为准。",
-      "whyItMatters": "视频生成开发者可在 fal 上直接调用 FLUX 3 Max；在缺少规格与价格前，团队应先做小样本测试，再决定是否替换现有视频管线。",
-      "sourceName": "Fal",
-      "sourceDisplayName": "fal",
-      "sourceUrl": "https://fal.ai/flux-3-max",
+      "summary": "Mistral AI 发布 Voxtral 3 语音模型系列，并同步推出语音 Agent SDK。该组合覆盖语音模型与 Agent 开发工具，具体模型规模、支持语言和基准成绩需以官方文档及实测为准。",
+      "whyItMatters": "语音模型与 Agent SDK 同时发布，降低开发者搭建语音 Agent 的集成门槛，影响客服、车载和实时交互应用的供应商选择。",
+      "sourceName": "Mistral AI",
+      "sourceDisplayName": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/voxtral-3",
+      "publishedAt": "2026-10-21T01:28:07.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "Mistral",
+        "Agent",
+        "语音"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Mistral 发布 Voxtral 3 语音模型系列",
+        "同步推出语音 Agent SDK"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n24",
+      "title": "Command Code 上线 MiniMax M3.1 Flash",
+      "category": "Agent",
+      "summary": "Command Code 宣布上线 MiniMax M3.1 Flash，为其开发平台增加新的模型选项。该模型由 MiniMax 发布，Command Code 未说明可用地区、定价与调用限制，开发者需在平台内确认接入方式。",
+      "whyItMatters": "第三方开发平台接入新模型，扩大了 M3.1 Flash 的分发渠道，影响开发者按平台生态与价格选择模型的实际路径。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Command Code",
+      "sourceUrl": "https://x.com/CommandCodeAI/status/2112188292078952773",
       "publishedAt": "2026-10-20T02:26:06.000Z",
       "impactScore": 75,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "fal 上线视频模型 FLUX 3 Max",
-        "定位为视频生成模型",
-        "未披露时长与价格"
+        "Command Code 上线 MiniMax M3.1 Flash",
+        "该模型由 MiniMax 发布"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "单一来源（官方账号）"
     },
     {
       "id": "n3",
-      "title": "OpenCode 更新 DeepSeek V4.1 Flash",
+      "title": "Codex 改进计划第 15 天，Tibo 送上用量重置",
       "category": "Agent",
-      "summary": "OpenCode 宣布更新 DeepSeek V4.1 Flash，意味着该模型进入 OpenCode 的编码 Agent 场景。输入未说明更新内容、上下文长度和计费方式；结合同日 Qoder 也开放 DeepSeek 新模型，DeepSeek 新版本正被多家工具接入。",
-      "whyItMatters": "使用 OpenCode 的开发者可在编码 Agent 中切换该版本；多家工具同日接入说明新模型可用性提升，但具体能力仍需实测。",
+      "summary": "Codex 改进计划进入第 15 天，Tibo 宣布提供用量重置。该消息面向 Codex 使用者，但未说明重置覆盖的账户范围、额度数量与有效期，用户需以账户内实际显示为准。",
+      "whyItMatters": "用量重置对依赖 Codex 的开发者是短期成本缓解，但覆盖范围和有效期不明，团队仍需按账户实际额度安排开发任务。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "OpenCode",
-      "sourceUrl": "https://x.com/opencode/status/2112220734768779441",
-      "publishedAt": "2026-10-20T02:26:06.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [
-        "DeepSeek"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "OpenCode 更新 DeepSeek V4.1 Flash",
-        "版本号为 V4.1 Flash",
-        "同日 Qoder 也开放 DeepSeek 新模型"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n10",
-      "title": "Inception 发布扩散模型 Mercury 3",
-      "category": "模型",
-      "summary": "Inception 发布扩散模型 Mercury 3，官方博客介绍该版本。输入未给出参数规模、生成速度、基准分数和开放方式；若关注扩散语言模型路线，需阅读技术博客确认其与上一代的差异和可用接口。",
-      "whyItMatters": "对探索非自回归文本生成的团队，Mercury 3 提供新的扩散模型候选；在缺少基准与接口信息前，适合先跟踪而非直接替换生产模型。",
-      "sourceName": "Inceptionlabs",
-      "sourceDisplayName": "Inception",
-      "sourceUrl": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
-      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "sourceDisplayName": "Codex",
+      "sourceUrl": "https://x.com/thsottiaux/status/2112432076767289678",
+      "publishedAt": "2026-10-21T01:28:07.000Z",
       "impactScore": 74,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "Inception 发布扩散模型 Mercury 3",
-        "属于扩散模型路线",
-        "未披露参数与基准分数"
+        "Codex 改进计划进入第 15 天",
+        "Tibo 宣布提供用量重置"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "单一来源（个人账号）"
     },
     {
       "id": "n4",
-      "title": "Qoder 限时免费开放 DeepSeek 新模型",
+      "title": "OpenAI 修复约 4 万账户额度错配问题并补偿",
       "category": "Agent",
-      "summary": "Qoder 宣布限时免费开放 DeepSeek 新模型，面向其用户提供试用。输入未说明免费截止时间、模型完整版本号、调用额度和后续价格；开发者可借此测试，但不应把限时免费价当作长期成本假设。",
-      "whyItMatters": "Qoder 用户可零成本测试 DeepSeek 新模型在编码任务中的表现；若准备迁移，应同步确认免费期结束后的计费和额度规则。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "Qoder",
-      "sourceUrl": "https://mp.weixin.qq.com/s/ejQ3QP7WhuWcoZswlZlSag",
-      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "summary": "OpenAI 表示已修复约 4 万账户的额度错配问题，并向受影响用户提供补偿。该问题涉及付费账户的额度准确性，但错配原因、补偿形式与发放时间尚未在输入中说明，用户需关注账户通知。",
+      "whyItMatters": "额度错配影响付费用户对计费准确性的信任，补偿与修复进度会左右企业在采购 OpenAI 服务时的财务核对与风险控制。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/thsottiaux/status/2112592264686149749",
+      "publishedAt": "2026-10-21T01:28:07.000Z",
       "impactScore": 73,
       "confidence": "high",
       "tags": [
-        "DeepSeek"
+        "OpenAI"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Qoder 限时免费开放 DeepSeek 新模型",
-        "未披露免费截止时间",
-        "未说明后续价格"
+        "约 4 万账户出现额度错配",
+        "OpenAI 已修复并提供补偿"
+      ],
+      "confidenceReason": "单一来源（个人账号）"
+    },
+    {
+      "id": "n11",
+      "title": "Google 为 Gemini 推出小企业主新工具",
+      "category": "产品",
+      "summary": "Google 为 Gemini 推出面向小企业主的新工具，意在把 Gemini 能力嵌入小企业经营场景。官方博客未在标题中列出具体工具名称、价格与上线地区，功能细节需查看原文说明。",
+      "whyItMatters": "小企业主是 SaaS 与 AI 助手的高频用户，Gemini 增加行业工具会影响其与办公软件、财务和营销平台的集成选择。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
+      "publishedAt": "2026-10-21T01:28:07.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Google 为 Gemini 推出小企业主工具",
+        "目标用户为小企业主"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n11",
-      "title": "Decision 3.0 多模态决策模型发布",
-      "category": "模型",
-      "summary": "Decision 3.0 多模态决策模型发布，并在 Hugging Face 建立模型集合页。输入未披露参数规模、模态范围、基准成绩和许可证；关注决策智能与多模态 Agent 的开发者需查看模型卡确认输入输出与部署要求。",
-      "whyItMatters": "为多模态决策与 Agent 落地增加一个候选模型；在许可证和评测缺失时，企业应先验证可控性与合规，再考虑接入业务流程。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://huggingface.co/collections/vllm-sr/decision-30",
-      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "id": "n12",
+      "title": "Google 向安卓车载推出 Gemini 个性化功能",
+      "category": "产品",
+      "summary": "Google 向安卓车载系统推出 Gemini 个性化功能，把 Gemini 的个性化能力延伸到车内场景。该更新面向安卓车载生态，具体支持车型、上线地区和隐私设置需以车载系统更新说明为准。",
+      "whyItMatters": "车载语音助手是驾驶场景的主要交互入口，Gemini 个性化上线会影响车企与地图、娱乐及语音服务提供商的集成方案。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence/",
+      "publishedAt": "2026-10-21T01:28:07.000Z",
       "impactScore": 73,
       "confidence": "high",
       "tags": [
-        "多模态"
+        "Google",
+        "Gemini"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Decision 3.0 多模态决策模型发布",
-        "模型集合页位于 Hugging Face",
-        "未披露参数与许可证"
+        "Gemini 个性化功能进入安卓车载",
+        "发布方为 Google"
       ],
-      "confidenceReason": "单一来源"
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n12",
-      "title": "Xing4.0-29B-Intent 开源：同时识别意图与提取参数",
-      "category": "模型",
-      "summary": "Xing4.0-29B-Intent 在 GitHub 开源，模型同时识别用户意图并提取参数，参数规模为 29B。输入未披露许可证、训练数据、基准评测和推理硬件需求；开发者需查看仓库说明评估是否适合意图路由与工具调用。",
-      "whyItMatters": "意图识别与参数抽取合并可减少 Agent 工具调用链路；29B 规模意味着部署成本不低，团队需先核对许可证和推理资源。",
-      "sourceName": "GitHub",
-      "sourceDisplayName": "XingChen-AGI",
-      "sourceUrl": "https://github.com/XingChen-AGI/Xing4.0-29B-Intent",
-      "publishedAt": "2026-10-20T02:26:06.000Z",
+      "id": "n15",
+      "title": "OpenAI 收购药物开发平台 Orchestra Bio",
+      "category": "商业",
+      "summary": "OpenAI 宣布收购药物开发平台 Orchestra Bio，将 AI 能力延伸至药物研发环节。交易金额、团队规模与整合方式未在输入中披露，交易完成时间及监管审批情况需以官方后续信息为准。",
+      "whyItMatters": "收购使 OpenAI 直接进入药物开发流程，影响药企选择 AI 合作伙伴的格局，也让模型公司从工具供应转向垂直业务整合。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
+      "publishedAt": "2026-10-21T01:28:07.000Z",
       "impactScore": 73,
       "confidence": "high",
       "tags": [
-        "开源"
+        "OpenAI"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Xing4.0-29B-Intent 开源",
-        "参数规模为 29B",
-        "同时识别意图与提取参数"
+        "OpenAI 收购 Orchestra Bio",
+        "Orchestra Bio 为药物开发平台"
       ],
       "confidenceReason": "官方发布"
     }
@@ -292,14 +291,14 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 28,
+      "itemCount": 43,
       "note": "日报型来源，已拆解 2 期"
     },
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 882
+      "itemCount": 886
     },
     {
       "name": "Google DeepMind Blog",
