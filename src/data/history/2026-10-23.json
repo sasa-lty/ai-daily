@@ -1,0 +1,321 @@
+{
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T05:13:44.309Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "Agent 基础设施信号最密集：API 开放、标准移交、云托管三线并进；模型侧则向端侧、垂直与开源下沉。",
+    "keywords": [
+      "开源",
+      "Anthropic",
+      "OpenAI"
+    ],
+    "heatIndex": 74,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n1",
+    "n9",
+    "n6"
+  ],
+  "items": [
+    {
+      "id": "n10",
+      "title": "Hugging Face 开源 DNA 模型 Carbon-X",
+      "category": "模型",
+      "summary": "Hugging Face 在 GitHub 上线开源 DNA 模型 Carbon-X，代码与模型托管于 huggingface/carbon 仓库。官方未公开参数规模、训练数据来源与基准评测结果，模型能力仍待第三方复现验证。",
+      "whyItMatters": "生物序列基座开源降低了基因团队自建门槛，可在本地微调；但缺评测与数据披露意味着采用方须自行验证，短期难以替代成熟生物信息流程。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "Hugging Face",
+      "sourceUrl": "https://github.com/huggingface/carbon/tree/main",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 81,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Carbon-X 以开源形式发布",
+        "模型托管在 huggingface/carbon 仓库",
+        "未公开参数规模与评测结果"
+      ],
+      "confidenceReason": "官方发布（GitHub 仓库）"
+    },
+    {
+      "id": "n6",
+      "title": "科大讯飞发布星火 X2.6 端云一体大模型",
+      "category": "模型",
+      "summary": "科大讯飞发布星火 X2.6 端云一体大模型，主打终端与云端协同推理，可在端侧与云侧之间分配任务。官方页面未披露参数规模、端侧芯片适配清单与开放时间表；同日 GitHub 出现命名相近的 Spark-X2.6-4B 仓库。",
+      "whyItMatters": "端云一体直接影响终端厂商选型：把部分推理放在端侧可压低调用成本与延迟，但需评估端侧算力与模型体积的匹配度及 SDK 成熟度。",
+      "sourceName": "Xfyun",
+      "sourceDisplayName": "科大讯飞",
+      "sourceUrl": "https://xinghuo.xfyun.cn/sparkapi",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "讯飞发布星火 X2.6 端云一体大模型",
+        "主打端侧与云端协同推理",
+        "未公布参数规模与端侧适配清单"
+      ],
+      "confidenceReason": "官方发布（讯飞官网）"
+    },
+    {
+      "id": "n7",
+      "title": "上海人工智能实验室发布 Sage-A1.5",
+      "category": "模型",
+      "summary": "上海人工智能实验室发布 Sage-A1.5 模型，版本由此前型号迭代而来。现有信息未披露参数规模、能力侧重、开放方式与评测成绩，发布内容经微信公号渠道发出，尚待官方技术报告补充。",
+      "whyItMatters": "国内实验室模型迭代影响高校与中小团队的基座选型；缺少公开评测时，采购方更可能先做小场景验证，再决定是否替换现有模型。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "上海人工智能实验室",
+      "sourceUrl": "https://mp.weixin.qq.com/s/bI8C7L8Bb4uD81d45N1zVA",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "上海人工智能实验室推出 Sage-A1.5",
+        "版本号迭代至 A1.5",
+        "未披露参数规模与评测成绩"
+      ],
+      "confidenceReason": "单一来源（微信公号）"
+    },
+    {
+      "id": "n34",
+      "title": "Recursive 发布开源编码模型 Flint",
+      "category": "模型",
+      "summary": "Recursive 发布开源编码模型 Flint，官方更新页给出模型介绍与获取入口。页面未披露参数规模、许可证类型与编码类基准成绩，团队若要用于生产需自行测试补全质量与上下文长度表现。",
+      "whyItMatters": "编码模型多一个开源选项，压缩商业编码助手的定价空间；团队的决策关键是许可证能否商用私有部署，以及现有 IDE 工具链的适配成本。",
+      "sourceName": "Recursive",
+      "sourceDisplayName": "Recursive",
+      "sourceUrl": "https://recursive.com/updates/introducing-recursive-flint",
+      "publishedAt": "2026-10-22T01:45:45.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Recursive 发布开源编码模型 Flint",
+        "官方未公布参数规模",
+        "许可证类型尚未说明"
+      ],
+      "confidenceReason": "官方发布（公司更新页）"
+    },
+    {
+      "id": "n1",
+      "title": "OpenAI 开放 Decisions API，把决策能力做成对外接口",
+      "category": "Agent",
+      "summary": "OpenAI 开放 Decisions API，把决策能力以接口形式对外提供，开发者可在自有应用中直接调用，无需自行部署决策模型。官方页面未披露定价、调用限额与可用模型版本，接入前需确认配额与计费方式。",
+      "whyItMatters": "决策层从自建模型转向调用闭源 API，团队需重算自研与采购成本；同日 Baseten 开源同类决策模型，形成可直接对比的两条路线。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/decisions-api",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 正式开放 Decisions API",
+        "决策能力以接口形式对外提供",
+        "官方未披露定价与调用限额"
+      ],
+      "confidenceReason": "官方发布（官网页面）"
+    },
+    {
+      "id": "n8",
+      "title": "Canva 发布首款自研图像模型 Craft",
+      "category": "模型",
+      "summary": "Canva 发布首款自研图像模型 Craft，用于平台内的图像生成与编辑。官方未披露参数规模、训练数据来源及是否对外开放 API，目前主要服务 Canva 自身产品与订阅用户的设计流程。",
+      "whyItMatters": "设计工具自研图像模型可减少对第三方图像 API 的依赖与分成成本；品牌团队素材生成内嵌进流程，但商用授权与版权条款需重新确认。",
+      "sourceName": "Canva",
+      "sourceDisplayName": "Canva",
+      "sourceUrl": "https://www.canva.com/newsroom/news/canva-craft/",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Craft 为 Canva 首款自研图像模型",
+        "用于平台内图像生成与编辑",
+        "未披露参数与是否开放 API"
+      ],
+      "confidenceReason": "官方发布（官方新闻室）"
+    },
+    {
+      "id": "n35",
+      "title": "Baseten 开源 Mammoth-1 与 Elephant-1 两款决策模型",
+      "category": "模型",
+      "summary": "Baseten 开源发布 Mammoth-1 与 Elephant-1 两款决策模型，官方博客称其为当前最强的决策模型。页面未给出参数规模、训练数据与可复现基准数字，实际效果需自行评测。",
+      "whyItMatters": "与 OpenAI 开放的 Decisions API 构成开源与闭源两条路线；团队本地部署可规避调用费用与数据外流，但必须自建评测确认效果再替换。",
+      "sourceName": "Baseten",
+      "sourceDisplayName": "Baseten",
+      "sourceUrl": "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/",
+      "publishedAt": "2026-10-22T01:45:45.000Z",
+      "impactScore": 76,
+      "confidence": "medium",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "开源 Mammoth-1 与 Elephant-1",
+        "两款模型定位为决策模型",
+        "未公布参数与基准细节"
+      ],
+      "confidenceReason": "官方发布（官方博客）"
+    },
+    {
+      "id": "n37",
+      "title": "GitHub 出现 Spark-X2.6-4B 开源模型仓库",
+      "category": "模型",
+      "summary": "GitHub 出现 Spark-X2.6-4B 开源模型仓库，仓库归属 XHToken，命名显示为 4B 参数规模，与科大讯飞星火 X2.6 命名相近。两者关系、许可证类型与训练数据来源均未说明。",
+      "whyItMatters": "若确属星火 X2.6 系列的 4B 版本，端侧部署门槛会进一步下降；在归属与许可证确认前，企业不宜直接接入生产环境。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "GitHub（XHToken）",
+      "sourceUrl": "https://github.com/XHToken/Spark-X2.6",
+      "publishedAt": "2026-10-22T01:45:45.000Z",
+      "impactScore": 76,
+      "confidence": "medium",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Spark-X2.6-4B 已在 GitHub 开源",
+        "命名显示为 4B 参数规模",
+        "仓库归属 XHToken，授权未明"
+      ],
+      "confidenceReason": "单一来源（GitHub 仓库）"
+    },
+    {
+      "id": "n2",
+      "title": "Ideogram 发布矢量模型 Ideogram Vector",
+      "category": "Agent",
+      "summary": "Ideogram 发布矢量模型 Ideogram Vector，直接生成可编辑的矢量图形而非位图。官方未披露生成速度、单次输出节点数量上限与订阅档位限制，商用授权范围需查阅其条款。",
+      "whyItMatters": "矢量输出省去位图转矢量的手工环节，直接影响品牌设计与图标生产流程；设计团队需验证生成结果的节点规整度与后续编辑成本。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Ideogram",
+      "sourceUrl": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "Anthropic",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "推出矢量模型 Ideogram Vector",
+        "直接输出可编辑矢量图形",
+        "未披露速度与订阅限制"
+      ],
+      "confidenceReason": "官方发布（模型页面）"
+    },
+    {
+      "id": "n9",
+      "title": "Anthropic 将 Agent Skills 标准捐赠给 Agentic AI Foundation",
+      "category": "模型",
+      "summary": "Anthropic 宣布把 Agent Skills 标准捐赠给 Agentic AI Foundation，标准改由中立基金会维护，不再由单一厂商掌控。官方公告未披露移交时间表、已有采用方数量与后续版本兼容策略。",
+      "whyItMatters": "标准中立后，其他厂商的 Agent 运行时更易采用同一技能描述格式，降低跨平台迁移成本；开发者的技能定义可移植性优先于单一框架绑定。",
+      "sourceName": "Ideogram",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://ideogram.ai/models/vector/",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Agent Skills 标准移交中立基金会",
+        "标准不再由 Anthropic 单方主导",
+        "未披露移交时间表与采用方数量"
+      ],
+      "confidenceReason": "官方发布（公司公告）"
+    },
+    {
+      "id": "n3",
+      "title": "Google Cloud 新增 Anthropic 托管版 Claude",
+      "category": "Agent",
+      "summary": "Google Cloud 新增由 Anthropic 托管的 Claude 模型服务，企业可在 Google Cloud 内直接调用 Claude，模型运维由 Anthropic 负责。官方未披露可用版本清单、区域覆盖范围与计费方式。",
+      "whyItMatters": "企业可在既有云合同与权限体系内采购 Claude，减少跨云数据搬运与合规审批；多云采购的议价空间上升，单一云绑定成本降低。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Claude",
+        "Anthropic",
+        "Google"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude 以 Anthropic 托管形式上架",
+        "企业可在 Google Cloud 内直接调用",
+        "未披露版本清单与计费方式"
+      ],
+      "confidenceReason": "官方发布（官方资源页）"
+    },
+    {
+      "id": "n4",
+      "title": "Gemini API CLI 开放实验性预览",
+      "category": "Agent",
+      "summary": "Google 在 AI Studio 开放 Gemini API CLI 的实验性预览，开发者可在命令行内完成对 Gemini API 的调用与调试。官方标注为实验性功能，未承诺稳定性、长期维护与版本兼容保证。",
+      "whyItMatters": "命令行入口便于把 Gemini 调用写进脚本与 CI 流程，降低自动化集成门槛；实验性标注意味着生产使用仍需自行封装错误处理与版本锁定。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://aistudio.google.com/learn/introducing-the-gemini-api-cli",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Gemini API CLI 开启实验性预览",
+        "可在命令行调用与调试 API",
+        "官方标注为实验性功能"
+      ],
+      "confidenceReason": "官方发布（AI Studio）"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 48,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 889
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
