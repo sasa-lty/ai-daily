@@ -1,0 +1,306 @@
+{
+  "date": "2026-10-24",
+  "generatedAt": "2026-10-24T04:55:38.084Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "模型更新集中在多模态和端侧方向；Agent 侧重点是定时任务和免费额度，产品化明显快于基础研究。",
+    "keywords": [
+      "开源",
+      "OpenAI",
+      "Kimi"
+    ],
+    "heatIndex": 76,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n1",
+    "n7",
+    "n11"
+  ],
+  "items": [
+    {
+      "id": "n1",
+      "title": "月之暗面发布 Kimi K3.1 Pro",
+      "category": "模型",
+      "summary": "月之暗面发布 Kimi K3.1 Pro，官方博客同步上线介绍页面。作为 K 系列最新版本，该模型面向日常对话与专业任务场景，具体参数与评测数据尚未在候选信息中披露。",
+      "whyItMatters": "Kimi 主模型版本更新将影响开发者和企业选择长文本、推理类 API 的选项，需关注其定价与上下文规格。",
+      "sourceName": "Kimi",
+      "sourceDisplayName": "月之暗面",
+      "sourceUrl": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "impactScore": 83,
+      "confidence": "medium",
+      "tags": [
+        "Kimi"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "月之暗面发布 Kimi K3.1 Pro",
+        "官方博客同步上线介绍页"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "ZCode 推出限时免费 token 活动",
+      "category": "Agent",
+      "summary": "ZCode 推出限时免费 token 活动，用户可在活动期内免费调用其模型额度。活动通过微信公众号公布，具体额度上限与截止时间需以官方页面说明为准。",
+      "whyItMatters": "免费额度直接降低开发者试用编码类 Agent 的门槛，短期会拉动调用量并加剧同类工具的价格竞争。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "ZCode",
+      "sourceUrl": "https://mp.weixin.qq.com/s/HlKksm48CSf6Ed-Yo04BFg",
+      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "impactScore": 81,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "ZCode 推出限时免费 token 活动",
+        "活动信息经微信公众号发布"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n19",
+      "title": "OpenAI CEO：最强内部模型暂难开源",
+      "category": "研究",
+      "summary": "OpenAI CEO 在访谈中表示，公司最强的内部模型暂时难以开源，理由是安全与能力方面的考量。该表态明确了 OpenAI 前沿模型维持闭源路线的态度。",
+      "whyItMatters": "对依赖开源权重做二次开发的团队而言，前沿能力仍需通过闭源 API 获取，选型时要把供应锁定风险计入成本。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://www.youtube.com/watch?v=anAmTGcewX8",
+      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI CEO 称最强内部模型暂难开源",
+        "表态来自公开访谈视频"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n7",
+      "title": "OpenAI Agents API 新增定时任务能力",
+      "category": "Agent",
+      "summary": "OpenAI 在 Agents API 文档中新增 automations 会话指南，允许开发者按计划触发 Agent 任务。该能力把 Agent 从单次调用扩展为可周期执行的自动化流程。",
+      "whyItMatters": "定时触发让 Agent 可承接日报生成、监控巡检等周期任务，开发者需重新评估调度、失败重试与成本控制方案。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://developers.openai.com/api/docs/guides/agents-api/sessions/automations",
+      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Agents API 推出定时任务",
+        "官方文档新增 automations 指南"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n34",
+      "title": "Hugging Face 开源 DNA 模型 Carbon-X",
+      "category": "模型",
+      "summary": "Hugging Face 在 GitHub 发布开源 DNA 模型 Carbon-X，代码与模型仓库同步公开。该模型面向生物序列方向，供研究者在本地部署和二次训练。",
+      "whyItMatters": "生物序列模型开源后，基因研究团队可在自有数据上微调，减少对闭源生物计算平台的依赖。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "Hugging Face",
+      "sourceUrl": "https://github.com/huggingface/carbon/tree/main",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Hugging Face 发布开源 DNA 模型 Carbon-X",
+        "项目托管于 GitHub 仓库"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n2",
+      "title": "Codex 28 天改进计划更新第 18、19 天",
+      "category": "Agent",
+      "summary": "Codex 团队通过社交账号公布 28 天改进计划的第 18、19 天内容，连续披露产品迭代进展。具体改动项需查看原帖，候选信息未给出细节。",
+      "whyItMatters": "连续日更说明编码 Agent 仍在高频打磨，日常使用 Codex 的团队应关注行为变化对既有工作流的影响。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Codex",
+      "sourceUrl": "https://x.com/thsottiaux/status/2113492187770175603",
+      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Codex 28 天改进进入第 18、19 天",
+        "进展通过社交平台发布"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n9",
+      "title": "Seedance 2.5 4K 版本上线，限部分企业试用",
+      "category": "模型",
+      "summary": "Seedance 2.5 的 4K 版本上线，目前仅面向部分企业客户开放试用，尚未全面开放。更高分辨率意味着视频生成在商用素材场景的可用性提升。",
+      "whyItMatters": "4K 输出触及广告与影视预演的实际交付标准，企业客户可先评估生成时长与单条成本再决定是否替换现有流程。",
+      "sourceName": "Com",
+      "sourceDisplayName": "Seedance",
+      "sourceUrl": "https://bjnews.com.cn/detail/1792642976129728.html",
+      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Seedance 2.5 4K 上线",
+        "目前限部分企业试用"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n10",
+      "title": "NVIDIA 发布小模型 Nemotron-3.5",
+      "category": "模型",
+      "summary": "NVIDIA 在 Hugging Face 发布小模型 Nemotron-3.5，型号为 Bolt-E4B-4GB，主打小体积部署。该规格指向显存受限环境下的本地推理场景。",
+      "whyItMatters": "4GB 级模型让边缘设备和单卡工作站可本地运行，硬件厂商借此推动推理下沉，影响企业私有化部署的成本测算。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "NVIDIA",
+      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "NVIDIA"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "NVIDIA 发布 Nemotron-3.5",
+        "型号为 Bolt-E4B-4GB"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n30",
+      "title": "科大讯飞发布星火 X2.6 端云一体大模型",
+      "category": "模型",
+      "summary": "科大讯飞发布星火 X2.6 端云一体大模型，强调端侧与云端协同的部署方式。该版本通过讯飞星火开放平台提供接入，具体能力参数未在候选信息中列出。",
+      "whyItMatters": "端云一体方案面向网络不稳或数据敏感场景，政企客户选型时可比对端侧算力要求与云端调用成本的组合。",
+      "sourceName": "Xfyun",
+      "sourceDisplayName": "科大讯飞",
+      "sourceUrl": "https://xinghuo.xfyun.cn/sparkapi",
+      "publishedAt": "2026-10-23T01:23:07.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "科大讯飞发布星火 X2.6",
+        "定位端云一体大模型"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n4",
+      "title": "Qoder 模型限免再延长 7 天",
+      "category": "Agent",
+      "summary": "Qoder 宣布模型限时免费活动再延长 7 天，用户在延长期内可继续免费使用其模型能力。这是该活动此前的再次续期。",
+      "whyItMatters": "连续续期说明厂商仍在争夺编码工具的用户习惯，开发者可借窗口期完成迁移评估，但需预留后续收费预案。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "Qoder",
+      "sourceUrl": "https://mp.weixin.qq.com/s/_l2bquNPCiQ_F1hm0eNYFA",
+      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "impactScore": 73,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Qoder 模型限免再延长 7 天",
+        "活动经微信公众号公布"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n11",
+      "title": "腾讯混元开源交互式视频世界模型 Hy-Nomas",
+      "category": "模型",
+      "summary": "腾讯混元开源交互式视频世界模型 Hy-Nomas，项目页面同步上线。该模型支持交互式视频生成，权重与使用方式通过官方站点公开。",
+      "whyItMatters": "世界模型开源后，游戏与仿真团队可自建可交互环境生成管线，减少对闭源视频生成服务的依赖。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯混元",
+      "sourceUrl": "https://hy-nomas.hy.tencent.com/",
+      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "腾讯混元开源 Hy-Nomas",
+        "定位交互式视频世界模型"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n12",
+      "title": "Block 发布纯语音训练模型 Dessa",
+      "category": "模型",
+      "summary": "Block 发布纯语音训练模型 Dessa，官方页面介绍其仅以语音数据完成训练的技术路线。该模型面向语音方向，具体参数与评测结果未在候选信息中给出。",
+      "whyItMatters": "纯语音训练路线若可复现，将降低语音类模型对文本标注数据的依赖，影响语音团队的训练数据采购决策。",
+      "sourceName": "Block",
+      "sourceDisplayName": "Block",
+      "sourceUrl": "https://block.xyz/dessa",
+      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "语音"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Block 发布模型 Dessa",
+        "采用纯语音训练路线"
+      ],
+      "confidenceReason": "官方发布"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 48,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 890
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
