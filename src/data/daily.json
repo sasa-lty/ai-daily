@@ -1,285 +1,285 @@
 {
-  "date": "2026-10-25",
-  "generatedAt": "2026-10-25T05:08:32.600Z",
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T05:10:27.664Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "今日信号集中在智能体工程化与商业化：OpenAI 为 Agents API 增加定时任务，国内编程与办公智能体密集推付费、补贴；模型端 Kimi 与英伟达小模型形成两端推进。",
+    "verdict": "今日信号最密集的是模型可用性与生态接入：Kimi 限流致歉、OpenAI 配额重置、CapCut 将接入 ChatGPT，同时开源 33B 与推理机架数据披露形成补充。",
     "keywords": [
-      "OpenAI",
-      "Claude",
-      "Kimi"
+      "Anthropic",
+      "开源",
+      "Claude"
     ],
-    "heatIndex": 74,
+    "heatIndex": 73,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n11",
+    "n1",
     "n5",
-    "n1"
+    "n3"
   ],
   "items": [
     {
-      "id": "n3",
-      "title": "Claude Code 团队两名成员 Thariq 与 Anthony Morris 宣布离职",
+      "id": "n5",
+      "title": "Nanbeige 开源 33B 参数模型 Nanbeige4.3-33B",
+      "category": "模型",
+      "summary": "Nanbeige 发布并开源 33B 参数模型 Nanbeige4.3-33B，版本号延续 4.x 系列。开源权重意味着团队可在本地或私有环境部署中等规模模型，减少对闭源 API 的依赖。",
+      "whyItMatters": "对需要私有化部署的团队，33B 规模处于单机多卡可承载区间，可作为闭源 API 之外的候选基座，选型时多一个可自控选项。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Nanbeige",
+      "sourceUrl": "https://x.com/nanbeige/status/2114328933181333798",
+      "publishedAt": "2026-10-26T00:39:21.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Nanbeige 开源 33B 模型",
+        "模型版本为 Nanbeige4.3-33B"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n10",
+      "title": "Claude Code 团队两名成员 Thariq、Anthony Morris 宣布离职",
       "category": "商业",
-      "summary": "Claude Code 团队成员 Thariq 与 Anthony Morris 分别通过个人账号宣布离职。两人均为该编程智能体产品的核心团队成员，离职消息由本人对外发布，Anthropic 方面未在输入信息中给出回应或接任安排。",
-      "whyItMatters": "Claude Code 是当前编程智能体的标杆产品，核心成员连续流失会让企业客户评估其后续迭代节奏与支持连续性，也影响开发者对该工具长期路线的预期。",
+      "summary": "Claude Code 团队成员 Thariq 与 Anthony Morris 分别对外宣布离职，两人均来自该产品线。核心开发者接连离开，使外界关注 Claude Code 后续迭代节奏与团队稳定性。",
+      "whyItMatters": "依赖 Claude Code 做日常开发的团队需关注后续版本节奏与支持力度，评估是否要为关键工作流准备替代工具。",
       "sourceName": "综合来源",
       "sourceDisplayName": "综合来源",
       "sourceUrl": "https://x.com/trq212/status/2113844051938054167",
       "publishedAt": "2026-10-25T01:13:12.000Z",
-      "impactScore": 81,
+      "impactScore": 77,
       "confidence": "high",
       "tags": [
         "Claude"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Thariq 与 Anthony Morris 分别宣布离职",
-        "两人均属 Claude Code 团队",
-        "消息由本人账号发布"
-      ],
-      "confidenceReason": "单一来源"
-    },
-    {
-      "id": "n5",
-      "title": "月之暗面发布 Kimi K3.1 Pro",
-      "category": "模型",
-      "summary": "月之暗面发布 Kimi K3.1 Pro，版本信息已在其官方博客上线。这是 K3 系列的小版本升级，官方页面为唯一披露渠道，输入信息未包含参数规模、上下文长度与具体跑分。",
-      "whyItMatters": "Kimi 的迭代节奏直接影响国内开发者与企业在长文本、Agent 场景的选型；小版本升级若保持接口兼容，已接入的团队可用较低迁移成本跟进。",
-      "sourceName": "Kimi",
-      "sourceDisplayName": "Kimi",
-      "sourceUrl": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-      "publishedAt": "2026-10-24T01:28:12.000Z",
-      "impactScore": 79,
-      "confidence": "medium",
-      "tags": [
-        "Kimi"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "月之暗面发布 Kimi K3.1 Pro",
-        "版本信息发布于官方博客",
-        "为 K3 系列的小版本迭代"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n7",
-      "title": "ZCode 推出限时免费 token 活动",
-      "category": "Agent",
-      "summary": "ZCode 推出限时免费 token 活动，面向其用户发放可调用额度。活动通过腾讯平台文章公布，输入信息未给出具体额度数量、适用模型范围与截止日期，属于拉新促活性质的补贴动作。",
-      "whyItMatters": "免费额度直接降低开发者试用门槛，对正在比较编程智能体成本的团队而言，短期可零成本验证效果，但需评估活动结束后的正式定价。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "腾讯",
-      "sourceUrl": "https://mp.weixin.qq.com/s/HlKksm48CSf6Ed-Yo04BFg",
-      "publishedAt": "2026-10-24T01:28:12.000Z",
-      "impactScore": 77,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "ZCode 推出限时免费 token 活动",
-        "活动经腾讯平台文章公布",
-        "未披露额度与截止日期"
+        "Thariq 宣布离职",
+        "Anthony Morris 同样宣布离职",
+        "两人均属 Claude Code 团队"
       ],
       "confidenceReason": "单一来源"
     },
     {
       "id": "n1",
-      "title": "WorkBuddy 内测技能与专家付费功能",
-      "category": "产品",
-      "summary": "WorkBuddy 开始内测技能与专家付费功能，官方文档页披露了变现相关能力。这意味着平台从工具使用向技能、专家服务的交易环节延伸，输入信息未包含抽成比例、开放范围与上线时间表。",
-      "whyItMatters": "技能与专家可付费后，开发者与领域专家多了一条变现路径，企业采购也从买工具转向买服务，需要重新核算预算结构与供应商依赖。",
-      "sourceName": "Workbuddy",
-      "sourceDisplayName": "Workbuddy",
-      "sourceUrl": "https://open.workbuddy.cn/docs/monetization",
-      "publishedAt": "2026-10-25T01:13:12.000Z",
+      "title": "Kimi.ai 就 K3.1 Pro 限流致歉并重置用量",
+      "category": "模型",
+      "summary": "Kimi.ai 就 K3.1 Pro 出现限流公开致歉，并重置相关用量。限流说明该模型请求量超出承载，重置用量直接恢复受影响账户的可用额度。",
+      "whyItMatters": "对把 K3.1 Pro 接入生产流程的开发者，容量波动会直接影响调用稳定性，需要在配额之外准备降级或备用模型方案。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Kimi.ai",
+      "sourceUrl": "https://x.com/Kimi_Moonshot/status/2114450610724708492",
+      "publishedAt": "2026-10-26T00:39:21.000Z",
       "impactScore": 76,
       "confidence": "high",
-      "tags": [],
+      "tags": [
+        "Kimi"
+      ],
       "aiEnhanced": true,
       "keyFacts": [
-        "WorkBuddy 内测技能与专家付费",
-        "官方文档页披露变现能力",
-        "未公布抽成与开放范围"
+        "Kimi.ai 为 K3.1 Pro 限流致歉",
+        "官方重置用户用量"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n23",
-      "title": "OpenAI CEO 称最强内部模型暂难开源",
-      "category": "研究",
-      "summary": "OpenAI CEO 在访谈中表示，公司最强的内部模型短期内难以开源。该表态来自视频访谈，未涉及具体模型版本与时间点，属于对开源策略边界的公开说明。",
-      "whyItMatters": "对依赖开源权重做私有化部署的团队，这意味着最强档能力仍需走 API，架构上要保留闭源接口，并继续押注次强开源模型作为替代方案。",
+      "id": "n2",
+      "title": "OpenAI 28 天计划第 20 天执行全量重置，Tibo 称改动已传播完成",
+      "category": "产品",
+      "summary": "OpenAI 的 28 天计划进入第 20 天，进行全量重置。成员 Tibo 表示相关改动已完成传播，意味着本轮调整已覆盖到用户侧。",
+      "whyItMatters": "正在做容量规划或灰度发布的团队，需按重置后的实际状态重新核对配额与行为，避免沿用旧参数导致线上偏差。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://www.youtube.com/watch?v=anAmTGcewX8",
-      "publishedAt": "2026-10-24T01:28:12.000Z",
-      "impactScore": 76,
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/thsottiaux/status/2114237083652882932",
+      "publishedAt": "2026-10-26T00:39:21.000Z",
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
-        "OpenAI",
-        "开源"
+        "OpenAI"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "OpenAI CEO：最强内部模型暂难开源",
-        "表态来自视频访谈",
-        "未给出模型版本与时间点"
+        "28 天计划推进到第 20 天",
+        "本轮执行全量重置",
+        "Tibo 称改动已传播完成"
       ],
       "confidenceReason": "单一来源"
     },
     {
-      "id": "n2",
-      "title": "Qoder 为 1024 活动额外开启一轮补给",
-      "category": "Agent",
-      "summary": "Qoder 为 1024 活动额外开启一轮补给，在其社区页面公布。这是面向开发者的额度或权益追加，输入信息未给出补给的具体数量与领取条件。",
-      "whyItMatters": "对正在压测编程智能体成本的工作室，追加补给延长了零成本试用窗口，可作为与限免政策叠加的短期资源，但不宜写进长期预算。",
-      "sourceName": "Qoder",
-      "sourceDisplayName": "Qoder",
-      "sourceUrl": "https://qoder.com/community-boost",
-      "publishedAt": "2026-10-25T01:13:12.000Z",
-      "impactScore": 75,
+      "id": "n3",
+      "title": "CapCut 插件将接入 ChatGPT，11 月开放测试",
+      "category": "产品",
+      "summary": "CapCut 宣布其插件将接入 ChatGPT，计划于 11 月开放测试。视频剪辑能力进入对话式入口后，用户可在 ChatGPT 内触发 CapCut 的编辑流程。",
+      "whyItMatters": "做短视频批量生产的内容团队可提前评估该入口，把脚本生成与剪辑串联在同一对话流程，减少工具切换成本。",
+      "sourceName": "Capcut",
+      "sourceDisplayName": "CapCut",
+      "sourceUrl": "https://www.capcut.com/tools/capcut-x-codex",
+      "publishedAt": "2026-10-26T00:39:21.000Z",
+      "impactScore": 74,
       "confidence": "high",
-      "tags": [],
+      "tags": [
+        "GPT"
+      ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Qoder 为 1024 活动额外开启补给",
-        "信息发布于社区活动页",
-        "未披露补给数量与条件"
+        "CapCut 插件将接入 ChatGPT",
+        "11 月开放测试"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n4",
-      "title": "英国公布数亿英镑 AI 投资计划",
-      "category": "商业",
-      "summary": "英国政府公布规模达数亿英镑的 AI 投资计划，由财政大臣对外宣布。资金投向与分配细则见政府公告，输入信息未列明单项金额与执行周期。",
-      "whyItMatters": "政府级资金投放会影响本地算力、人才与公共部门采购方向，在英国设点或投标的 AI 公司需据此调整合作与合规资源的投入优先级。",
-      "sourceName": "Gov",
-      "sourceDisplayName": "英国政府",
-      "sourceUrl": "https://www.gov.uk/government/news/chancellor-unveils-britains-ambitious-plan-for-ai",
-      "publishedAt": "2026-10-25T01:13:12.000Z",
-      "impactScore": 73,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "英国公布数亿英镑 AI 投资计划",
-        "由财政大臣宣布",
-        "消息来自政府官网公告"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n11",
-      "title": "OpenAI Agents API 推出定时任务",
+      "title": "OpenCode 披露 DeepSeek 推理机架运行数据",
       "category": "Agent",
-      "summary": "OpenAI 为 Agents API 增加定时任务能力，开发者可在会话中配置自动化触发。官方文档给出的路径显示定时能力并入 Agents API 的 automations 模块，输入信息未披露计费方式与调用上限。",
-      "whyItMatters": "定时触发让 Agent 从被动调用变为常态巡检、日报类任务的执行者，开发者需重做失败重试与额度监控，否则无人值守任务会放大异常成本。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://developers.openai.com/api/docs/guides/agents-api/sessions/automations",
-      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "summary": "OpenCode 公开披露 DeepSeek 推理机架的相关运行数据，涉及推理服务的实际部署情况。此类来自第三方使用方的机架数据，为观察 DeepSeek 推理承载能力提供了参考。",
+      "whyItMatters": "对以 DeepSeek 推理服务为依赖的开发者，机架运行状况关系到延迟与吞吐预期，可用于评估高峰期调用风险。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenCode",
+      "sourceUrl": "https://x.com/thdxr/status/2114211145615626433",
+      "publishedAt": "2026-10-26T00:39:21.000Z",
       "impactScore": 73,
       "confidence": "high",
       "tags": [
-        "OpenAI",
-        "Agent"
+        "DeepSeek"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Agents API 新增定时任务能力",
-        "入口为文档中的 automations 模块",
-        "未披露计费与调用上限"
+        "OpenCode 披露推理机架运行数据",
+        "数据对象为 DeepSeek 推理服务"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n8",
+      "title": "WorkBuddy 内测技能与专家付费功能",
+      "category": "产品",
+      "summary": "WorkBuddy 开启内测，测试技能与专家两项付费功能。该动作表明产品正从免费工具转向按技能和专家能力收费，商业化路径进一步明确。",
+      "whyItMatters": "已在使用 WorkBuddy 的团队需评估付费项与现有工作流的绑定程度，提前判断预算与是否迁移到替代工具。",
+      "sourceName": "Workbuddy",
+      "sourceDisplayName": "WorkBuddy",
+      "sourceUrl": "https://open.workbuddy.cn/docs/monetization",
+      "publishedAt": "2026-10-25T01:13:12.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "内测技能付费功能",
+        "内测专家付费功能"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n6",
-      "title": "Codex 28 天改进计划进入第 18、19 天",
-      "category": "Agent",
-      "summary": "Codex 的 28 天改进计划公布第 18、19 天进展，相关更新由项目成员在社交平台连续披露。输入信息未给出具体功能清单，仅记录该连续迭代计划的日程推进。",
-      "whyItMatters": "高频小步迭代意味着行为与默认参数可能随时变化，重度使用 Codex 的团队应固定版本与回归用例，避免工作流在无感知中被打断。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2113492187770175603",
-      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "title": "Anthropic 建议企业将部分 subagent 并入主 agent 循环",
+      "category": "研究",
+      "summary": "Anthropic 发布实践建议，提出企业应把部分 subagent 合并进主 agent 循环。该建议针对多 agent 架构中调度开销与上下文割裂问题，给出结构简化方向。",
+      "whyItMatters": "正在搭多 agent 系统的团队可据此复核拆分粒度，减少不必要的子代理调用，降低延迟与调试成本。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
+      "publishedAt": "2026-10-26T00:39:21.000Z",
       "impactScore": 71,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Codex 28 天改进计划推进至第 18、19 天",
-        "进展由项目成员社交账号披露",
-        "未给出具体功能清单"
-      ],
-      "confidenceReason": "单一来源"
-    },
-    {
-      "id": "n13",
-      "title": "Seedance 2.5 4K 上线，限部分企业试用",
-      "category": "模型",
-      "summary": "Seedance 2.5 的 4K 能力上线，目前仅面向部分企业客户开放试用。报道未披露参与试用的企业名单、价格与正式开放时间，4K 输出为其主要卖点。",
-      "whyItMatters": "4K 生成进入企业试用阶段，广告与影视外包团队可提早测试素材可用性，但受限于定向开放，需通过商务渠道争取名额而非自助开通。",
-      "sourceName": "Com",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://bjnews.com.cn/detail/1792642976129728.html",
-      "publishedAt": "2026-10-24T01:28:12.000Z",
-      "impactScore": 71,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Seedance 2.5 4K 上线",
-        "目前限部分企业试用",
-        "未公布价格与正式开放时间"
-      ],
-      "confidenceReason": "单一来源"
-    },
-    {
-      "id": "n14",
-      "title": "NVIDIA 发布小模型 Nemotron-3.5",
-      "category": "模型",
-      "summary": "NVIDIA 在 Hugging Face 发布小模型 Nemotron-3.5，模型卡文件名为 Bolt-E4B-4GB，指向小体积规格。权重已公开可下载，输入信息未包含基准测试成绩与许可细节。",
-      "whyItMatters": "小体积权重可跑在边缘与单卡环境，做本地化部署的团队多了一个英伟达生态选项，选型时需自行验证其在自身任务上的效果与显存占用。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
-      "publishedAt": "2026-10-24T01:28:12.000Z",
-      "impactScore": 70,
       "confidence": "high",
       "tags": [
-        "NVIDIA"
+        "Anthropic",
+        "Agent"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "NVIDIA 发布 Nemotron-3.5 小模型",
-        "权重发布于 Hugging Face",
-        "模型卡标注 E4B、4GB 规格"
+        "建议将部分 subagent 并入主循环",
+        "面向企业 agent 架构场景"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n8",
-      "title": "Qoder 模型限免再延长 7 天",
+      "id": "n9",
+      "title": "Qoder 为 1024 活动额外开启一轮补给",
       "category": "Agent",
-      "summary": "Qoder 宣布模型限免再延长 7 天，通过腾讯平台文章对外发布。这是原有免费策略的第二次时间顺延，输入信息未说明是否调整可用模型范围或额度上限。",
-      "whyItMatters": "免费窗口被拉长，正在做编程智能体横向评测的团队可把 Qoder 纳入同期对比，但延期反复说明定价未定，采购决策仍不宜锁定单一供应商。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "腾讯",
-      "sourceUrl": "https://mp.weixin.qq.com/s/_l2bquNPCiQ_F1hm0eNYFA",
-      "publishedAt": "2026-10-24T01:28:12.000Z",
+      "summary": "Qoder 宣布在 1024 活动之外额外开启一轮补给，面向开发者追加资源发放。此举意在延长活动周期内的额度供给，缓解集中使用时的额度紧张。",
+      "whyItMatters": "活动期间集中调用 Qoder 的开发者可借追加补给继续测试，但需注意额度时效，避免把长期负载建立在临时资源上。",
+      "sourceName": "Qoder",
+      "sourceDisplayName": "Qoder",
+      "sourceUrl": "https://qoder.com/community-boost",
+      "publishedAt": "2026-10-25T01:13:12.000Z",
+      "impactScore": 71,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "额外开启一轮补给",
+        "与 1024 活动相关"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n7",
+      "title": "Elvis Presley 歌曲权利方起诉 Anthropic，索赔约 4100 万美元",
+      "category": "商业",
+      "summary": "Elvis Presley 歌曲权利方向 Anthropic 提起诉讼，索赔金额约 4100 万美元，争议围绕歌曲相关内容的使用。该案把训练与生成环节的版权责任再次推到台前。",
+      "whyItMatters": "使用生成式模型产出音乐相关内容的公司需复核授权链条，诉讼走向会影响内容平台对模型输出物的合规审查标准。",
+      "sourceName": "Billboard",
+      "sourceDisplayName": "Billboard",
+      "sourceUrl": "https://www.billboard.com/pro/elvis-presley-estate-sues-suno-anthropic/",
+      "publishedAt": "2026-10-26T00:39:21.000Z",
+      "impactScore": 70,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "原告为 Elvis Presley 歌曲权利方",
+        "被告为 Anthropic",
+        "索赔约 4100 万美元"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n11",
+      "title": "英国公布数亿英镑规模 AI 投资计划",
+      "category": "商业",
+      "summary": "英国政府公布 AI 投资计划，规模达数亿英镑，由财政大臣对外发布。资金投向覆盖国家级 AI 能力建设，属于政府层面的产业投入安排。",
+      "whyItMatters": "计划在英布局算力或申请公共 AI 项目的企业，可据此判断资金流向与申报窗口，调整本地投入节奏。",
+      "sourceName": "Gov",
+      "sourceDisplayName": "英国政府",
+      "sourceUrl": "https://www.gov.uk/government/news/chancellor-unveils-britains-ambitious-plan-for-ai",
+      "publishedAt": "2026-10-25T01:13:12.000Z",
       "impactScore": 69,
       "confidence": "medium",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "Qoder 模型限免再延长 7 天",
-        "经腾讯平台文章公布",
-        "未说明模型范围是否调整"
+        "英国公布 AI 投资计划",
+        "投资规模为数亿英镑",
+        "由财政大臣发布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n36",
+      "title": "Grok 发布 AI 生成《Odyssey》前七分钟片段",
+      "category": "模型",
+      "summary": "Grok 放出其 AI 生成作品《Odyssey》的前七分钟内容。TechCrunch 评价画面尚可，但在艺术性与人文表达上并不突出，显示当前生成视频在叙事层面仍有明显短板。",
+      "whyItMatters": "评估 AI 生成长视频可行性的制作方，可据此判断当前产出更适合概念预览而非成片交付，控制投入预期。",
+      "sourceName": "TechCrunch",
+      "sourceDisplayName": "Grok",
+      "sourceUrl": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+      "publishedAt": "2026-10-25T21:31:16.000Z",
+      "impactScore": 67,
+      "confidence": "medium",
+      "tags": [
+        "Grok"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发布《Odyssey》前七分钟",
+        "内容由 AI 生成",
+        "评论称缺乏艺术性与人文感"
       ],
       "confidenceReason": "单一来源"
     }
@@ -289,7 +289,7 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 28,
+      "itemCount": 11,
       "note": "日报型来源，已拆解 2 期"
     },
     {
