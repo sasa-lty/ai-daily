@@ -1,79 +1,79 @@
 {
-  "date": "2026-10-27",
-  "generatedAt": "2026-10-27T05:26:49.845Z",
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-28T06:07:59.400Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "今日信号最密集在模型能力与资本化：OpenAI 推电脑操作模型，Anthropic 启动 IPO，腾讯补同传模型。",
+    "verdict": "开源小模型与 OCR 工具密集发布，编程工具与智能体入口同日更新。",
     "keywords": [
-      "OpenAI",
-      "GPT",
-      "开源"
+      "开源",
+      "Google",
+      "OpenAI"
     ],
-    "heatIndex": 75,
+    "heatIndex": 77,
     "sourceCount": 4
   },
   "topStoryIds": [
     "n1",
-    "n4",
-    "n10"
+    "n5",
+    "n2"
   ],
   "items": [
     {
       "id": "n1",
-      "title": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作",
-      "category": "模型",
-      "summary": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作。该模型把任务执行从文本对话延伸到电脑界面操作，官方发布页已上线。输入未给出参数规模、接口开放范围和可用地区，开发者需以官方页面为准。",
-      "whyItMatters": "对开发者和企业选型，电脑操作型模型把自动化从对话扩展到界面任务，权限控制与流程集成将成为落地前提。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra/",
-      "publishedAt": "2026-10-27T01:28:48.000Z",
+      "title": "Google DeepMind 发布世界模型 Genie 4 研究预览，支持实时改场景",
+      "category": "研究",
+      "summary": "Google DeepMind 发布世界模型 Genie 4 研究预览，最大特点是用户可在生成过程中实时修改场景。官方未公布参数量、训练数据或开放范围等细节，产品目前处于研究预览阶段，开发者可通过 DeepMind 官方博客了解具体接口与访问方式。",
+      "whyItMatters": "世界模型能否实时交互，直接决定其在游戏、仿真训练和机器人数据生成中的可用性，研究者需要据此评估是否接入自建环境。",
+      "sourceName": "Google DeepMind",
+      "sourceDisplayName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
       "impactScore": 83,
       "confidence": "high",
       "tags": [
-        "OpenAI",
-        "GPT"
+        "Google",
+        "DeepMind"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "OpenAI 发布 GPT-6.1 Terra",
-        "主打电脑操作能力"
+        "Genie 4 属世界模型，定位研究预览",
+        "支持实时修改生成场景",
+        "细节与访问方式见官方博客"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n3",
-      "title": "OpenAI 宣布三项科学发现，邀请学界审查",
-      "category": "产品",
-      "summary": "OpenAI 宣布三项科学发现，并邀请学术界审查。官方发布页以构建科学理解为题，但输入未给出发现所属领域、论文编号、合作机构和审查时间表，外部学界反馈将影响成果可信度。",
-      "whyItMatters": "对科研机构，三项发现若通过同行审查，将影响 AI 辅助科研的评估标准；当前应先看可复现性与数据公开程度。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
-      "publishedAt": "2026-10-27T01:28:48.000Z",
-      "impactScore": 81,
+      "id": "n2",
+      "title": "Cursor 为 Design Mode 增加 Annotate 标注功能",
+      "category": "Agent",
+      "summary": "Cursor 在其 Agent 的 Design Mode 中上线 Annotate 标注功能，用户可直接在界面上对设计区域做标注，再交由智能体处理。官方文档同步更新了该模式的用法说明，功能面向使用 Cursor 编程智能体的开发者，具体权限与计费未在输入中说明。",
+      "whyItMatters": "把界面标注直接转为智能体可读指令，减少前端与设计之间的文字往返，使用 Cursor 的团队需要调整设计走查流程。",
+      "sourceName": "Cursor",
+      "sourceDisplayName": "Cursor",
+      "sourceUrl": "https://cursor.com/docs/agent/design-mode",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 82,
       "confidence": "high",
-      "tags": [
-        "OpenAI"
-      ],
+      "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "OpenAI 宣布三项科学发现",
-        "邀请学术界审查"
+        "Design Mode 新增 Annotate 标注",
+        "入口位于 Cursor Agent 模式",
+        "用法见官方文档"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n16",
-      "title": "Hugging Face 联创 Thomas Wolf 发布开源平台 Alignment Hub",
-      "category": "研究",
-      "summary": "Hugging Face 联合创始人 Thomas Wolf 发布开源平台 Alignment Hub，入口位于 Hugging Face Spaces。平台面向对齐研究协作，输入未披露模型、数据集、许可证和组织资助等细节。",
-      "whyItMatters": "对对齐研究和开源社区，Alignment Hub 提供公开协作入口，影响对齐实验的复现、审查与共享流程。",
+      "id": "n4",
+      "title": "蚂蚁百灵开源 Ling-3.1-flash-1019 及基座模型",
+      "category": "模型",
+      "summary": "蚂蚁百灵在 Hugging Face 开源 Ling-3.1-flash-1019 及其基座模型，版本号中的 1019 对应其发布批次。输入未披露参数规模、上下文长度和评测分数，开发者可直接从 Hugging Face 模型页获取权重与使用说明，用于本地部署或二次微调。",
+      "whyItMatters": "基座权重一并开放，便于企业做领域微调并自行评估合规与成本，选型时多一个国产开源候选。",
       "sourceName": "Hugging Face",
-      "sourceDisplayName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/spaces/witness-archive/alignment-hub",
-      "publishedAt": "2026-10-27T01:28:48.000Z",
+      "sourceDisplayName": "蚂蚁百灵",
+      "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
       "impactScore": 80,
       "confidence": "high",
       "tags": [
@@ -81,173 +81,46 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Thomas Wolf 发布 Alignment Hub",
-        "平台以开源形式发布",
-        "入口在 Hugging Face Spaces"
+        "开源 Ling-3.1-flash-1019",
+        "同时放出基座模型",
+        "权重托管于 Hugging Face"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n7",
-      "title": "豆包电脑版推出签到领额度活动，周一翻倍",
-      "category": "产品",
-      "summary": "豆包电脑版推出签到领额度活动，用户签到可领取使用额度，周一当天额度翻倍。活动入口位于电脑版智能体探索页，输入未给出单次额度、参与门槛和活动截止时间。",
-      "whyItMatters": "对个人用户，签到活动降低试用门槛；对豆包，借周一翻倍提升 PC 端打开频次和智能体使用率。",
-      "sourceName": "Doubao",
-      "sourceDisplayName": "豆包",
-      "sourceUrl": "https://doubao.com/pc/agent-explore",
-      "publishedAt": "2026-10-27T01:28:48.000Z",
-      "impactScore": 77,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "豆包电脑版推出签到领额度",
-        "周一签到额度翻倍",
-        "入口在智能体探索页"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n8",
-      "title": "Anthropic 发布 Claude for Nonprofits 插件，覆盖募款与招聘",
-      "category": "产品",
-      "summary": "Anthropic 发布 Claude for Nonprofits 插件，面向非营利组织覆盖募款与招聘场景。该插件把行业流程模板接入 Claude，输入未给出定价、覆盖国家、上线时间和申请条件。",
-      "whyItMatters": "对非营利组织，募款与招聘可直接在 Claude 内处理，减少多工具采购；对 Anthropic，这是行业化插件扩张。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://claude.com/resources/articles/expanding-claude-for-nonprofits",
-      "publishedAt": "2026-10-27T01:28:48.000Z",
-      "impactScore": 76,
+      "id": "n5",
+      "title": "微软发布 MAI-Image-2.7-Preview 图片编辑模型",
+      "category": "模型",
+      "summary": "微软发布 MAI-Image-2.7-Preview 图片编辑模型，版本号 2.7 属预览性质。官方新闻页未在输入中给出参数规模、支持编辑类型与开放渠道，使用者需按预览版对待，关注其后续在微软产品中的接入情况。",
+      "whyItMatters": "微软自研图像编辑模型进入预览，会影响使用其云与办公产品的团队在图片处理链路上的选型与迁移计划。",
+      "sourceName": "Microsoft",
+      "sourceDisplayName": "Microsoft",
+      "sourceUrl": "https://microsoft.ai/news/mai-image-2-7-debut/",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 79,
       "confidence": "high",
       "tags": [
-        "Claude",
-        "Anthropic"
+        "微软"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Claude for Nonprofits 覆盖募款与招聘",
-        "Anthropic 发布非营利插件"
+        "模型名 MAI-Image-2.7-Preview",
+        "定位图片编辑",
+        "当前为预览版本"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n2",
-      "title": "Tibo：Codex 改进计划第 22 天，Terra 用量为 Sol 的 2 倍",
-      "category": "产品",
-      "summary": "Tibo 公布 Codex 改进计划第 22 天进展，称 Terra 用量为 Sol 的 2 倍。该数据反映 Codex 相关模型中 Terra 的采用度，但输入未给出统计口径、时间窗口和用户范围。",
-      "whyItMatters": "对 Codex 用户和开发者，Terra 用量领先提示默认模型与配额可能向 Terra 倾斜，影响编程工作流配置。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2114588174249071102",
-      "publishedAt": "2026-10-27T01:28:48.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Codex 改进计划进入第 22 天",
-        "Terra 用量为 Sol 的 2 倍"
-      ],
-      "confidenceReason": "单一来源"
-    },
-    {
-      "id": "n9",
-      "title": "OpenAI 汇总发布说明，支持搜索和订阅",
-      "category": "产品",
-      "summary": "OpenAI 上线产品发布说明汇总页，支持搜索和订阅，便于集中查看更新记录。页面覆盖 OpenAI 产品发布信息，输入未说明搜索粒度、订阅通知渠道和更新推送频率。",
-      "whyItMatters": "对使用多款 OpenAI 产品的团队，集中追踪更新可减少版本遗漏，便于安排升级、合规审查和内部通知。",
+      "id": "n25",
+      "title": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作",
+      "category": "模型",
+      "summary": "OpenAI 发布 GPT-6.1 Terra，官方将其定位为面向电脑操作（computer use）的模型。输入未提供上下文长度、价格、基准分数与开放范围，发布页为 OpenAI 官方介绍，开发者需查阅原文确认接入方式与配额限制。",
+      "whyItMatters": "以操作电脑为核心能力的模型直接影响 RPA、桌面智能体和自动化测试方案的技术选型，团队需重新评估自建脚本与模型代操作的边界。",
       "sourceName": "OpenAI",
       "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://openai.com/products/release-notes",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra/",
       "publishedAt": "2026-10-27T01:28:48.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "OpenAI"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "OpenAI 上线发布说明汇总页",
-        "支持搜索和订阅"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n24",
-      "title": "Nanbeige 开源 33B 模型 Nanbeige4.3-33B",
-      "category": "模型",
-      "summary": "Nanbeige 开源 33B 模型 Nanbeige4.3-33B，参数规模为 33B。发布信息来自其社交账号，输入未给出训练数据、许可证、评测成绩和部署要求，开发者需自行核验。",
-      "whyItMatters": "对中文开源模型开发者，33B 开源权重增加微调与推理方案选择，影响算力预算和模型对比测试。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "Nanbeige",
-      "sourceUrl": "https://x.com/nanbeige/status/2114328933181333798",
-      "publishedAt": "2026-10-26T00:39:21.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "开源"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Nanbeige 开源 33B 模型",
-        "模型名为 Nanbeige4.3-33B"
-      ],
-      "confidenceReason": "单一来源"
-    },
-    {
-      "id": "n10",
-      "title": "腾讯混元发布同声传译模型 Hy-SimulMT",
-      "category": "模型",
-      "summary": "腾讯混元发布同声传译模型 Hy-SimulMT，定位实时同传场景。官方模型页已上线，输入未披露支持语种、延迟指标、开放接口和评测结果，落地效果需看实际测试。",
-      "whyItMatters": "对会议、直播和跨境沟通产品，专用同传模型提供新选型；语种与延迟未披露前，替换人工流程仍需测试。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "腾讯混元",
-      "sourceUrl": "https://hy.tencent.com/model/open-source-model/detail?id=hy-simulmt",
-      "publishedAt": "2026-10-27T01:28:48.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "腾讯混元发布 Hy-SimulMT",
-        "模型定位同声传译"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n4",
-      "title": "Anthropic 提交 S-1，拟在纳斯达克上市代码 ANT",
-      "category": "产品",
-      "summary": "Anthropic 提交 S-1 文件，拟在纳斯达克上市，股票代码为 ANT。该文件把公司上市进程推进到公开申报阶段，输入未给出发行规模、估值区间和具体上市时间表。",
-      "whyItMatters": "对 AI 创业公司与投资者，Anthropic 的公开申报将提供财务和治理披露，成为 AI 板块估值与合规参照。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://anthropic.com/news/s1-sec",
-      "publishedAt": "2026-10-27T01:28:48.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [
-        "Anthropic"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Anthropic 提交 S-1 文件",
-        "拟在纳斯达克上市，代码 ANT"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n11",
-      "title": "OpenAI 发布 Signals 数据，展示近 100 国 ChatGPT 工作用途",
-      "category": "研究",
-      "summary": "OpenAI 发布 Signals 数据，展示近 100 个国家的 ChatGPT 工作用途。数据用于观察不同市场的工作场景分布，输入未给出样本量、统计周期和具体国别明细。",
-      "whyItMatters": "对企业出海和产品团队，国别工作用途数据可辅助判断本地化功能、行业方案与合规重点。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/chatgpt-expanding-world-of-work",
-      "publishedAt": "2026-10-27T01:28:48.000Z",
-      "impactScore": 73,
+      "impactScore": 79,
       "confidence": "high",
       "tags": [
         "OpenAI",
@@ -255,28 +128,169 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "OpenAI 发布 Signals 数据",
-        "覆盖近 100 国 ChatGPT 工作用途"
+        "模型名 GPT-6.1 Terra",
+        "主打电脑操作能力",
+        "发布信息来自 OpenAI 官网"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n12",
-      "title": "Artificial Analysis 推出 Code2Video-AA 视频评测",
-      "category": "研究",
-      "summary": "Artificial Analysis 推出 Code2Video-AA 视频评测，面向代码生成视频任务。评测页已上线，输入未披露测试集规模、评分维度、参评模型名单和完整结果发布时间。",
-      "whyItMatters": "对视频生成模型开发者和采购方，新增代码到视频评测提供可比维度，影响模型选型与迭代验收标准。",
-      "sourceName": "Artificialanalysis",
-      "sourceDisplayName": "Artificial Analysis",
-      "sourceUrl": "https://artificialanalysis.ai/evaluations/code2video-aa",
-      "publishedAt": "2026-10-27T01:28:48.000Z",
-      "impactScore": 73,
+      "id": "n6",
+      "title": "微软经 MDASH 发布 MAI Cyber 1.1 Flash 安全模型",
+      "category": "模型",
+      "summary": "微软通过 MDASH 发布 MAI Cyber 1.1 Flash 安全模型，版本为 1.1，属 Flash 轻量系列。输入未披露参数规模、评测成绩或部署方式，安全团队需以官方页面为准确认其适用范围，不宜直接当作通用模型替代品使用。",
+      "whyItMatters": "专用安全模型进入轻量档，会影响企业安全运营中心的告警研判与自动化响应工具选型，需先验证误报率再上线。",
+      "sourceName": "Microsoft",
+      "sourceDisplayName": "Microsoft",
+      "sourceUrl": "https://microsoft.ai/news/mai-cyber-1-1-flash",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 78,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "Artificial Analysis 推出 Code2Video-AA",
-        "评测面向代码生成视频"
+        "模型名 MAI Cyber 1.1 Flash",
+        "面向安全场景",
+        "经 MDASH 渠道发布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n7",
+      "title": "商汤开源 SenseNova 6.8 Code2Video 视频模型",
+      "category": "模型",
+      "summary": "商汤在 GitHub 开源 SenseNova 6.8 Code2Video 视频生成模型，版本号 6.8，从命名看主打由代码驱动生成视频。输入未给出参数量、时长上限与评测数据，开发者可从仓库获取代码与权重说明，自行测试生成质量。",
+      "whyItMatters": "代码到视频的路径若可用，教学内容、产品演示的批量视频生产可改为脚本化流水线，制作团队需重估人力投入。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "商汤科技",
+      "sourceUrl": "https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "开源 SenseNova 6.8 Code2Video",
+        "定位代码生成视频",
+        "代码托管于 GitHub"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n27",
+      "title": "OpenAI 公布三项科学发现，邀请学界审查",
+      "category": "产品",
+      "summary": "OpenAI 宣布取得三项科学发现，并公开邀请学术界审查其方法与结论。输入未说明发现所属领域、是否经过同行评审及所用模型，官方页面强调与学术社区共同推进，外界对其结论的验证仍在进行中。",
+      "whyItMatters": "若结论经审查成立，将影响科研机构对 AI 辅助发现的采信标准；在验证完成前，研究团队不宜直接引用。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "publishedAt": "2026-10-27T01:28:48.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "公布三项科学发现",
+        "邀请学界参与审查",
+        "发布渠道为 OpenAI 官网"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n8",
+      "title": "百度开源 Unlimited OCR 2，支持长文档解析",
+      "category": "模型",
+      "summary": "百度在 GitHub 开源 Unlimited OCR 2，主打长文档解析能力，是该 OCR 系列的第二代。输入未披露模型规模、支持语种与精度指标，开发者可从仓库获取代码与使用说明，用于多页文档的批量文字提取场景。",
+      "whyItMatters": "长文档解析是合同、财报、档案数字化的关键环节，开源方案降低自建成本，企业可据此替换按页计费的商业接口。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "百度",
+      "sourceUrl": "https://github.com/baidu/Unlimited-OCR",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "开源 Unlimited OCR 2",
+        "主打长文档解析",
+        "仓库位于 GitHub"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n40",
+      "title": "Hugging Face 联创 Thomas Wolf 发布开源平台 Alignment Hub",
+      "category": "研究",
+      "summary": "Hugging Face 联合创始人 Thomas Wolf 发布开源平台 Alignment Hub，以 Hugging Face Space 形式提供访问。输入未说明平台的具体功能模块、数据来源与治理机制，用户可按 Space 页面提示试用，评估其在对齐研究与评测上的实际用途。",
+      "whyItMatters": "对齐数据的公开与可复现一直是评测难点，此类平台会影响研究团队选择在哪里沉淀对齐实验记录与对比结果。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/spaces/witness-archive/alignment-hub",
+      "publishedAt": "2026-10-27T01:28:48.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发布者 Thomas Wolf 为 HF 联创",
+        "平台名 Alignment Hub",
+        "以 Hugging Face Space 形式上线"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n9",
+      "title": "OpenBMB 开源 MiniCPM-OCR，含解析与评分两个模型",
+      "category": "模型",
+      "summary": "OpenBMB 开源 MiniCPM-OCR，包含一个 1.3B 参数的解析模型和一个 2B 参数的评分模型，形成从文字解析到质量打分的组合。输入未提供精度与语种覆盖数据，开发者可按模型卡说明分别部署两个模型，用于文档抽取与结果质检。",
+      "whyItMatters": "解析加评分的双模型组合让文档流水线可自行做质量门控，减少人工抽检，适合批量票据与档案处理场景。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenBMB",
+      "sourceUrl": "https://x.com/OpenBMB/status/2115124474882469955",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "含 1.3B 解析模型",
+        "含 2B 评分模型",
+        "两个模型均开源"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n3",
+      "title": "Google 向 Antigravity IDE 用户推送 Gemini 4 Argon",
+      "category": "Agent",
+      "summary": "Google 开始向 Antigravity IDE 用户推送 Gemini 4 Argon，属分批放量而非全量开放。输入未说明推送范围、地区限制与可用功能，用户需在 IDE 内确认是否已获得权限，官方入口为 Gemini 桌面页面。",
+      "whyItMatters": "IDE 内直接调用新模型会改变开发者的编码与重构流程，尚未收到推送的团队需按灰度节奏安排工具评估。",
+      "sourceName": "Gemini",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://gemini.google/desktop/",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "推送对象为 Antigravity IDE 用户",
+        "模型名为 Gemini 4 Argon",
+        "当前为分批推送"
       ],
       "confidenceReason": "官方发布"
     }
@@ -286,14 +300,14 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 26,
+      "itemCount": 43,
       "note": "日报型来源，已拆解 2 期"
     },
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 890
+      "itemCount": 891
     },
     {
       "name": "Google DeepMind Blog",
