@@ -1,0 +1,314 @@
+{
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T06:17:39.816Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "Google 同日推进 Gemini 4 Carbon 与 Genie 4 世界模型；OpenAI 以订阅额度向 API 导流。模型、订阅与开发者三层联动信号最密集。",
+    "keywords": [
+      "Google",
+      "Gemini",
+      "OpenAI"
+    ],
+    "heatIndex": 76,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n1",
+    "n2",
+    "n25"
+  ],
+  "items": [
+    {
+      "id": "n1",
+      "title": "Google 发布 Gemini 4 Carbon，先向部分用户开放",
+      "category": "模型",
+      "summary": "Google 通过官方博客推出 Gemini 4 Carbon，采用先向部分用户开放的分批策略，公告未披露模型参数、上下文长度与定价细节。Gemini 4 代际名称首次出现，将决定 Google 全线产品后续的默认模型替换节奏。",
+      "whyItMatters": "Gemini 4 是搜索、Workspace 与 Gemini 应用的下一代底座；已规划 Gemini 3 迁移的企业需据此判断是否推迟上线时间与预算。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "publishedAt": "2026-10-29T02:02:41.000Z",
+      "impactScore": 83,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Gemini 4 Carbon 由 Google 官方博客发布",
+        "采取先向部分用户开放的策略",
+        "未公布参数、定价与全面开放时间"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "OpenAI 员工称 ChatGPT 的 Chat 与 Work 将在今年内整合",
+      "category": "模型",
+      "summary": "OpenAI 一名员工在 X 上表示，ChatGPT 的 Chat 与 Work 两种使用形态将在今年内完成整合，用户不必在普通对话与工作任务之间切换入口。该说法未附带官方公告、具体日期或功能清单。",
+      "whyItMatters": "若整合落地，个人版与企业版的功能边界被重画，采购方需重新评估 ChatGPT Business 席位与内部工作流工具的重复投入。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2115588390414581916",
+      "publishedAt": "2026-10-29T02:02:41.000Z",
+      "impactScore": 81,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Chat 与 Work 将在今年内整合",
+        "消息来自 OpenAI 员工个人发帖",
+        "官方未发布配套公告"
+      ],
+      "confidenceReason": "单一来源（员工个人表态）"
+    },
+    {
+      "id": "n25",
+      "title": "Google DeepMind 发布世界模型 Genie 4 研究预览，可实时改场景",
+      "category": "研究",
+      "summary": "Google DeepMind 发布世界模型 Genie 4 的研究预览，可在生成过程中实时修改场景，而非只输出固定视频片段。官方以研究预览形式开放，未公布面向开发者的 API 或商用时间表。",
+      "whyItMatters": "可实时交互的世界模型关系到机器人训练与仿真数据生产；研究团队可据此重估自建仿真环境的成本与周期。",
+      "sourceName": "Google DeepMind",
+      "sourceDisplayName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "DeepMind"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Genie 4 以研究预览形式发布",
+        "支持在生成中实时修改场景"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n26",
+      "title": "Cursor Design Mode 上线 Annotate 标注功能",
+      "category": "Agent",
+      "summary": "Cursor 在 Design Mode 中上线 Annotate 标注功能，用户可在界面设计稿上直接标注修改点，供 Agent 依据标注执行改动。官方文档已更新该功能说明，未公布灰度范围与计价变化。",
+      "whyItMatters": "设计评审被转成可执行指令，前端返工环节被压缩；团队需评估标注规范与代码审查流程是否要同步调整。",
+      "sourceName": "Cursor",
+      "sourceDisplayName": "Cursor",
+      "sourceUrl": "https://cursor.com/docs/agent/design-mode",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Design Mode 新增 Annotate 标注能力",
+        "功能文档已在 Cursor 官网更新"
+      ],
+      "confidenceReason": "官方发布（产品文档）"
+    },
+    {
+      "id": "n7",
+      "title": "Gemini 应用推出沉浸式探索功能",
+      "category": "产品",
+      "summary": "Google 为 Gemini 应用推出沉浸式探索功能，并在官方博客同期介绍面向学生的 Student Hub 入口。功能在 Gemini 应用内上线，具体开放国家与语言未在公告中说明。",
+      "whyItMatters": "学生入口是 Gemini 争夺年轻用户的关键场景，教育机构与家长需关注其数据使用范围与内容边界如何设定。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/",
+      "publishedAt": "2026-10-29T02:02:41.000Z",
+      "impactScore": 77,
+      "confidence": "medium",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Gemini 应用新增沉浸式探索",
+        "同期上线面向学生的 Student Hub"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n28",
+      "title": "蚂蚁百灵开源 Ling-3.1-flash-1019 及基座模型",
+      "category": "模型",
+      "summary": "蚂蚁百灵在 Hugging Face 开源 Ling-3.1-flash-1019 及其基座模型，权重对外可下载。发布页面未给出参数量、上下文长度与评测分数，具体许可与商用条款需查看模型卡确认。",
+      "whyItMatters": "国内厂商继续用 flash 级小模型开源争取开发者，创业团队可在低成本的推理场景替换闭源 API，但需先比对许可与实测效果。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "蚂蚁百灵",
+      "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "开源 Ling-3.1-flash-1019 与基座模型",
+        "发布渠道为 Hugging Face"
+      ],
+      "confidenceReason": "官方发布（开源权重）"
+    },
+    {
+      "id": "n2",
+      "title": "OpenAI 向 ChatGPT Pro 和 Business 订阅用户发放 API 额度",
+      "category": "商业",
+      "summary": "OpenAI 通过开发者账号宣布，向 ChatGPT Pro 与 Business 订阅用户发放 API 额度，订阅用户可直接调用 API 而无需另行充值。官方帖子未披露额度数值、有效期与适用模型范围。",
+      "whyItMatters": "订阅付费被转为 API 试用入口，中小团队可能省去单独 API 预算审批；企业采购需确认额度能否用于生产环境与计费抵扣。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/OpenAIDevs/status/2115583698074755078",
+      "publishedAt": "2026-10-29T02:02:41.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "面向 Pro 与 Business 订阅用户",
+        "以 API 额度形式发放"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n9",
+      "title": "Google 与 XREAL 推出 Android XR 眼镜 AURA",
+      "category": "产品",
+      "summary": "Google 与 XREAL 联合推出 Android XR 眼镜 AURA，产品信息经 Google 官方博客发布。公告未给出售价、上市国家与具体发售日期，规格与开售信息需以官方页面为准。",
+      "whyItMatters": "Android XR 有了硬件落地样本，应用开发者需判断是否为眼镜形态单独适配，并影响其与 visionOS 生态的投入分配。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/xreal-aura/",
+      "publishedAt": "2026-10-29T02:02:41.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "产品名为 AURA",
+        "基于 Android XR 平台，与 XREAL 合作推出"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n29",
+      "title": "微软发布 MAI-Image-2.7-Preview 图片编辑模型",
+      "category": "模型",
+      "summary": "微软发布 MAI-Image-2.7-Preview 图片编辑模型，版本号显示为 2.7 的预览版，官方新闻页同步上线。公告未披露可用入口、开放区域与计费方式。",
+      "whyItMatters": "微软自研图像模型继续迭代，使用 Azure 或 Copilot 图像能力的团队需评估是否替换第三方编辑 API，以及预览版稳定性风险。",
+      "sourceName": "Microsoft",
+      "sourceDisplayName": "Microsoft",
+      "sourceUrl": "https://microsoft.ai/news/mai-image-2-7-debut/",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "微软"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "模型版本为 MAI-Image-2.7-Preview",
+        "定位为图片编辑方向"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n30",
+      "title": "微软通过 MDASH 发布 MAI Cyber 1.1 Flash 安全模型",
+      "category": "模型",
+      "summary": "微软通过 MDASH 发布安全方向模型 MAI Cyber 1.1 Flash，版本为 1.1 的 Flash 轻量档。官方新闻页已上线，未在公告中说明基准成绩、可用客户范围与部署方式。",
+      "whyItMatters": "安全运营团队多了一个专用模型选项，需比对它在告警分级与日志分析上的实测表现，再决定是否接入现有 SOC 流程。",
+      "sourceName": "Microsoft",
+      "sourceDisplayName": "Microsoft",
+      "sourceUrl": "https://microsoft.ai/news/mai-cyber-1-1-flash",
+      "publishedAt": "2026-10-28T01:24:43.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "模型名为 MAI Cyber 1.1 Flash",
+        "经 MDASH 渠道发布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n4",
+      "title": "OpenAI 员工更新 28 天计划：第 23 天重置已完成",
+      "category": "产品",
+      "summary": "OpenAI 员工 Tibo 在 X 上更新其 28 天计划的第 23 天进展，称当天主题为“重置”并已完成。该帖为个人计划打卡，未涉及产品发布、模型更新或公司决策。",
+      "whyItMatters": "属于个人进度打卡，不含产品信息；对开发者与企业采购没有可执行影响，仅可作为团队内部节奏管理的参考。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2115330127886463244",
+      "publishedAt": "2026-10-29T02:02:41.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "28 天计划进行到第 23 天",
+        "当日主题为重置，已完成"
+      ],
+      "confidenceReason": "单一来源（个人发帖）"
+    },
+    {
+      "id": "n11",
+      "title": "Claude for Legal 推出法律 Artifacts 工具库",
+      "category": "产品",
+      "summary": "Anthropic 为 Claude for Legal 推出法律场景的 Artifacts 工具库，把合同、条款等法律文书处理做成可复用工具。官方资源页已上线，未披露覆盖法域数量、计价与上线地区。",
+      "whyItMatters": "律所与法务团队可把重复文书工作固化为模板工具，采购时需确认支持法域、保密条款与人工复核责任如何划分。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+      "publishedAt": "2026-10-29T02:02:41.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Claude"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "面向 Claude for Legal 用户",
+        "以 Artifacts 工具库形式提供"
+      ],
+      "confidenceReason": "官方发布"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 48,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 891
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
