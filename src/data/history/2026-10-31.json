@@ -1,0 +1,324 @@
+{
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-31T06:09:37.707Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "今日信号集中在生态落地与成本：苹果智能在华接入千问，Anthropic 调整订阅与用量规则，商汤开源 9B 级多模态模型。",
+    "keywords": [
+      "开源",
+      "OpenAI",
+      "Agent"
+    ],
+    "heatIndex": 76,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n9",
+    "n1",
+    "n8"
+  ],
+  "items": [
+    {
+      "id": "n9",
+      "title": "苹果 Apple 智能在中国上线，首批功能接入千问",
+      "category": "商业",
+      "summary": "苹果通过中国官网新闻室宣布，首批 Apple 智能功能在中国市场推出，并接入千问。此前该功能未在中国区上线，本次公告确认落地，具体支持机型、功能清单与推送节奏以苹果官方说明为准。",
+      "whyItMatters": "中国 iPhone 用户首次获得系统级 Apple 智能，接入千问意味着在华模型合作方落定，应用开发者需按新能力做适配。",
+      "sourceName": "Com",
+      "sourceDisplayName": "苹果",
+      "sourceUrl": "https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "Apple"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "苹果官网新闻室发布中国区上线公告",
+        "首批 Apple 智能功能接入千问"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n19",
+      "title": "Herdr Labs 开源 herdr-core 并发布桌面应用 herdr-app",
+      "category": "Agent",
+      "summary": "Herdr Labs 在 GitHub 开源核心组件 herdr-core，并同步发布桌面应用 herdr-app。项目以公开仓库形式提供代码，具体功能范围、支持平台与许可协议需查阅仓库文档。",
+      "whyItMatters": "为需要自建 Agent 工具的团队提供可自托管代码库，是否采用取决于仓库文档中的能力边界与维护活跃度。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "Herdr Labs",
+      "sourceUrl": "https://github.com/herdrdev/herdr-app",
+      "publishedAt": "2026-10-30T01:23:51.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "开源核心组件 herdr-core",
+        "同步发布桌面应用 herdr-app",
+        "代码托管于 GitHub"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n12",
+      "title": "OpenAI 承诺定期发布社区安全报告，首期定于 2027 年初",
+      "category": "商业",
+      "summary": "OpenAI 宣布将定期发布社区安全报告，首期计划在 2027 年初推出，公告同时涉及面向青少年的新保护措施。报告的指标口径与发布频率未在候选信息中给出，需以官方页面为准。",
+      "whyItMatters": "首期报告要等到 2027 年初，企业与开发者的合规评估短期仍只能依赖现有披露，公开透明度提升将延后。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "承诺定期发布社区安全报告",
+        "首期报告计划 2027 年初推出",
+        "同步涉及青少年保护措施"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n6",
+      "title": "OpenAI Agents API 推出五项功能更新",
+      "category": "Agent",
+      "summary": "据开发者社区消息，OpenAI Agents API 推出五项功能更新，具体条目以官方文档为准。该消息来自社交平台帖文，候选信息中未见 OpenAI 官方页面同步说明。",
+      "whyItMatters": "用 Agents API 构建应用的团队需核对接口变更，避免升级后行为差异；官方文档确认前不宜改动生产环境。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/stevendcoffey/status/2116303789649236048",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Agents API 推出五项功能更新",
+        "消息源自社交平台帖文",
+        "候选信息未列出官方文档"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n7",
+      "title": "豆包推出新用户福利：可领 30 天订阅体验",
+      "category": "产品",
+      "summary": "豆包推出免费福利活动，新用户可领取 30 天订阅体验。活动信息通过微信公号发布，适用人群、领取方式以及体验期结束后的计费规则需查看活动页面说明。",
+      "whyItMatters": "对打算试用的个人用户是低成本入口；团队采购前应确认体验期结束后的续费与额度规则，避免预算外支出。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "豆包",
+      "sourceUrl": "https://mp.weixin.qq.com/s/SyRyGyX-5O_v--1z3msLgg",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "新用户可领 30 天订阅体验",
+        "活动信息发布于微信公号"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n17",
+      "title": "Google 宣布异步编程 agent Jules 将关停",
+      "category": "Agent",
+      "summary": "Google 在 Jules 官方文档的变更日志中宣布，异步编程 agent Jules 将停止服务。使用该工具的用户需关注停服时间点与既有任务、代码数据的处理安排，并评估替代方案。",
+      "whyItMatters": "把 Jules 接入研发流程的团队需在停服前导出代码与任务记录，并改用其他编程 agent，迁移成本落在工程侧。",
+      "sourceName": "Jules",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://jules.google/docs/changelog/2026-10-29",
+      "publishedAt": "2026-10-30T01:23:51.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Jules 为异步编程 agent",
+        "关停消息发布于官方 changelog"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n1",
+      "title": "Anthropic 更名 Claude 订阅方案，Ultra 账户五小时限制将逐步取消",
+      "category": "商业",
+      "summary": "Anthropic 更新 Claude 支持文档，对订阅方案进行更名，并计划逐步取消已验证 Ultra 账户的五小时使用限制。调整同时涉及套餐命名与用量规则，已订阅或准备升级的用户需按新名称核对权益与额度。",
+      "whyItMatters": "重度用户使用上限被放宽，但套餐命名变化会影响团队采购与额度规划，续费前需核对新方案条款。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Claude",
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude 订阅方案更名",
+        "已验证 Ultra 账户五小时限制逐步取消",
+        "说明发布于 Claude 支持文档"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n8",
+      "title": "商汤在 Hugging Face 开源 SenseNova-Loop-9B-Preview 多模态模型",
+      "category": "模型",
+      "summary": "商汤在 Hugging Face 上线 SenseNova-Loop-9B-Preview，为 9B 级别的多模态模型开源预览版。模型权重与模型卡已公开，开发者可下载评估，正式版能力范围与许可条款以官方说明为准。",
+      "whyItMatters": "中小团队可在本地或私有环境评估商汤多模态能力，为模型选型与二次开发增加一个开源备选。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "商汤",
+      "sourceUrl": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "多模态",
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "模型名为 SenseNova-Loop-9B-Preview",
+        "托管于 Hugging Face 商汤主页",
+        "属于 9B 级多模态预览版本"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n18",
+      "title": "Google Antigravity 上线插件市场 Plugin Marketplace",
+      "category": "Agent",
+      "summary": "Google 在 Antigravity 平台推出 Plugin Marketplace 插件市场，为平台提供集中的插件获取入口。官方文档已列出市场说明，插件类型、上架审核与计费方式仍需以文档为准。",
+      "whyItMatters": "在 Antigravity 上搭工作流的团队可复用现成插件降低集成成本，但需评估插件来源、权限范围与后续维护。",
+      "sourceName": "Antigravity",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://antigravity.google/docs/marketplace",
+      "publishedAt": "2026-10-30T01:23:51.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity 推出 Plugin Marketplace",
+        "相关说明发布于官方文档站"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n38",
+      "title": "腾讯混元发布 Hy-Nomas 技术报告并开源评测集",
+      "category": "研究",
+      "summary": "腾讯混元发布 Hy-Nomas 技术报告，并在 Hugging Face 开源配套评测集 Hy-Nomas-Bench。评测集供公开评估使用，任务构成与指标定义见数据集说明，报告细节需查阅原文。",
+      "whyItMatters": "研究与应用团队可用公开评测集横向对比模型，省去自建测试集成本，但需核对其任务覆盖是否匹配自身场景。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "腾讯混元",
+      "sourceUrl": "https://huggingface.co/datasets/tencent/Hy-Nomas-Bench",
+      "publishedAt": "2026-10-30T01:23:51.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发布 Hy-Nomas 技术报告",
+        "开源评测集 Hy-Nomas-Bench",
+        "托管于 Hugging Face 腾讯主页"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n2",
+      "title": "OpenCode Go 为 DeepSeek V4.1 Flash 提供每月 100 美元额度",
+      "category": "Agent",
+      "summary": "OpenCode Go 宣布为 DeepSeek V4.1 Flash 提供每月 100 美元的使用额度。消息由其社交账号发布，额度适用范围、领取条件与持续期限未在候选信息中说明，需以官方页面为准。",
+      "whyItMatters": "高频调用该模型的开发者可借此压低试用成本；额度能否长期维持未明，不宜据此制定长期预算或迁移计划。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenCode",
+      "sourceUrl": "https://x.com/opencode/status/2116209960673800474",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "每月额度为 100 美元",
+        "面向 DeepSeek V4.1 Flash 模型",
+        "消息来自 OpenCode 社交账号"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n3",
+      "title": "Anthropic 为 Claude Code 加入游戏重制限制",
+      "category": "Agent",
+      "summary": "据开发者转述，Anthropic 为 Claude Code 加入针对游戏重制内容的限制。限制条款的具体表述、触发方式与影响范围未在候选信息中给出，使用前应查阅官方使用政策。",
+      "whyItMatters": "用 Claude Code 处理游戏素材或复刻项目的团队需核对使用政策，避免生成内容触及版权与合规边界。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://x.com/addyosmani/status/2116213240363729013",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Claude",
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude Code 加入游戏重制限制",
+        "信息源自开发者社交平台转述"
+      ],
+      "confidenceReason": "单一来源"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 38,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 894
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}

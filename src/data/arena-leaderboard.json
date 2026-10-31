@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T06:18:20.464Z",
+  "updatedAt": "2026-10-31T06:10:14.588Z",
   "status": "ok",
   "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
   "boards": [
@@ -306,9 +306,27 @@
           "voteCount": 5552564
         },
         {
+          "name": "GPT-6.1 Terra (Max)",
+          "organization": "openai",
+          "rank": 8,
+          "score": 0.106,
+          "ciLower": 0.086,
+          "ciUpper": 0.125,
+          "voteCount": 1691221
+        },
+        {
+          "name": "Muse Wonder Full (Max)",
+          "organization": "meta",
+          "rank": 9,
+          "score": 0.101,
+          "ciLower": 0.091,
+          "ciUpper": 0.11,
+          "voteCount": 3922185
+        },
+        {
           "name": "Claude Fable 5 (High)",
           "organization": "anthropic",
-          "rank": 8,
+          "rank": 10,
           "score": 0.08,
           "ciLower": 0.069,
           "ciUpper": 0.091,
@@ -317,7 +335,7 @@
         {
           "name": "GPT-6 Sol (Max)",
           "organization": "openai",
-          "rank": 9,
+          "rank": 11,
           "score": 0.08,
           "ciLower": 0.063,
           "ciUpper": 0.096,
@@ -326,16 +344,25 @@
         {
           "name": "Claude Opus 5 (Max)",
           "organization": "anthropic",
-          "rank": 10,
+          "rank": 12,
           "score": 0.076,
           "ciLower": 0.063,
           "ciUpper": 0.088,
           "voteCount": 4435133
         },
         {
+          "name": "Kimi K3.1 Pro (Max)",
+          "organization": "moonshot",
+          "rank": 13,
+          "score": 0.06,
+          "ciLower": 0.044,
+          "ciUpper": 0.075,
+          "voteCount": 3350156
+        },
+        {
           "name": "GPT-5.6 Sol (xHigh)",
           "organization": "openai",
-          "rank": 11,
+          "rank": 14,
           "score": 0.048,
           "ciLower": 0.038,
           "ciUpper": 0.058,
@@ -344,7 +371,7 @@
         {
           "name": "Muse Wonder (Max)",
           "organization": "meta",
-          "rank": 12,
+          "rank": 15,
           "score": 0.031,
           "ciLower": 0.017,
           "ciUpper": 0.046,
@@ -353,7 +380,7 @@
         {
           "name": "Claude Sonnet 5 (High)",
           "organization": "anthropic",
-          "rank": 13,
+          "rank": 16,
           "score": 0.029,
           "ciLower": 0.018,
           "ciUpper": 0.041,
@@ -362,16 +389,25 @@
         {
           "name": "MiMo-V2.6-Pro",
           "organization": "xiaomi",
-          "rank": 14,
+          "rank": 17,
           "score": 0.028,
           "ciLower": 0.019,
           "ciUpper": 0.036,
           "voteCount": 4802357
         },
         {
+          "name": "DeepSeek-V4.1-Flash-20261017 (Max)",
+          "organization": "deepseek",
+          "rank": 18,
+          "score": 0.027,
+          "ciLower": 0.02,
+          "ciUpper": 0.033,
+          "voteCount": 13758007
+        },
+        {
           "name": "Gemini 3.8 Flash (High)",
           "organization": "google",
-          "rank": 15,
+          "rank": 19,
           "score": 0.026,
           "ciLower": 0.018,
           "ciUpper": 0.035,
@@ -380,7 +416,7 @@
         {
           "name": "Muse Spark 1.3 (Max)",
           "organization": "meta",
-          "rank": 16,
+          "rank": 20,
           "score": 0.026,
           "ciLower": 0.018,
           "ciUpper": 0.034,
@@ -389,7 +425,7 @@
         {
           "name": "Grok 4.7 (xHigh)",
           "organization": "xai",
-          "rank": 17,
+          "rank": 21,
           "score": 0.024,
           "ciLower": 0.009,
           "ciUpper": 0.039,
@@ -398,7 +434,7 @@
         {
           "name": "GPT-6 Luna (Max)",
           "organization": "openai",
-          "rank": 18,
+          "rank": 22,
           "score": 0.022,
           "ciLower": 0.018,
           "ciUpper": 0.026,
@@ -407,7 +443,7 @@
         {
           "name": "DeepSeek-V4.1-Flash-20260910 (Max)",
           "organization": "deepseek",
-          "rank": 19,
+          "rank": 23,
           "score": 0.019,
           "ciLower": 0.016,
           "ciUpper": 0.022,
@@ -416,7 +452,7 @@
         {
           "name": "Claude Haiku 5.5 (High)",
           "organization": "anthropic",
-          "rank": 20,
+          "rank": 24,
           "score": 0.014,
           "ciLower": 0.004,
           "ciUpper": 0.025,
@@ -425,47 +461,11 @@
         {
           "name": "GLM-5.2 (Max)",
           "organization": "zai",
-          "rank": 21,
+          "rank": 25,
           "score": 0.013,
           "ciLower": 0.005,
           "ciUpper": 0.02,
           "voteCount": 8700096
-        },
-        {
-          "name": "Hy4 preview",
-          "organization": "tencent",
-          "rank": 22,
-          "score": 0.012,
-          "ciLower": 0.005,
-          "ciUpper": 0.019,
-          "voteCount": 10555916
-        },
-        {
-          "name": "Kimi K3 (Max)",
-          "organization": "moonshot",
-          "rank": 23,
-          "score": 0.011,
-          "ciLower": 0.005,
-          "ciUpper": 0.016,
-          "voteCount": 15590153
-        },
-        {
-          "name": "MiMo-V2.6-Flash",
-          "organization": "xiaomi",
-          "rank": 24,
-          "score": 0.01,
-          "ciLower": -0.001,
-          "ciUpper": 0.021,
-          "voteCount": 2995304
-        },
-        {
-          "name": "GLM-5.3 (Max)",
-          "organization": "zai",
-          "rank": 25,
-          "score": 0.009,
-          "ciLower": 0.001,
-          "ciUpper": 0.017,
-          "voteCount": 10997629
         }
       ]
     },

@@ -1,57 +1,147 @@
 {
-  "date": "2026-10-30",
-  "generatedAt": "2026-10-30T06:17:49.015Z",
+  "date": "2026-10-31",
+  "generatedAt": "2026-10-31T06:09:37.707Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "今日信号集中在模型发布与 Agent 工程化：Gemini 4 Carbon 限量开放、Mistral 开源万亿参数模型、Factory Droid 1.0 转向程序化工具调用。",
+    "verdict": "今日信号集中在生态落地与成本：苹果智能在华接入千问，Anthropic 调整订阅与用量规则，商汤开源 9B 级多模态模型。",
     "keywords": [
       "开源",
-      "Google",
-      "OpenAI"
+      "OpenAI",
+      "Agent"
     ],
-    "heatIndex": 77,
+    "heatIndex": 76,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n25",
-    "n17",
-    "n6"
+    "n9",
+    "n1",
+    "n8"
   ],
   "items": [
     {
-      "id": "n5",
+      "id": "n9",
+      "title": "苹果 Apple 智能在中国上线，首批功能接入千问",
+      "category": "商业",
+      "summary": "苹果通过中国官网新闻室宣布，首批 Apple 智能功能在中国市场推出，并接入千问。此前该功能未在中国区上线，本次公告确认落地，具体支持机型、功能清单与推送节奏以苹果官方说明为准。",
+      "whyItMatters": "中国 iPhone 用户首次获得系统级 Apple 智能，接入千问意味着在华模型合作方落定，应用开发者需按新能力做适配。",
+      "sourceName": "Com",
+      "sourceDisplayName": "苹果",
+      "sourceUrl": "https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "Apple"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "苹果官网新闻室发布中国区上线公告",
+        "首批 Apple 智能功能接入千问"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n19",
       "title": "Herdr Labs 开源 herdr-core 并发布桌面应用 herdr-app",
       "category": "Agent",
-      "summary": "Herdr Labs 在 GitHub 发布开源 herdr-core 与桌面应用 herdr-app，前者供开发者复用 agent 核心能力，后者提供桌面端入口；输入未披露版本号、许可证、参数规模与具体功能清单，开发者需查阅仓库文档确认接入方式。",
-      "whyItMatters": "对 agent 开发者，开源核心可降低自建桌面 agent 的起步成本，但是否采用取决于仓库文档、许可证与后续维护频率。",
+      "summary": "Herdr Labs 在 GitHub 开源核心组件 herdr-core，并同步发布桌面应用 herdr-app。项目以公开仓库形式提供代码，具体功能范围、支持平台与许可协议需查阅仓库文档。",
+      "whyItMatters": "为需要自建 Agent 工具的团队提供可自托管代码库，是否采用取决于仓库文档中的能力边界与维护活跃度。",
       "sourceName": "GitHub",
       "sourceDisplayName": "Herdr Labs",
       "sourceUrl": "https://github.com/herdrdev/herdr-app",
       "publishedAt": "2026-10-30T01:23:51.000Z",
-      "impactScore": 86,
+      "impactScore": 82,
       "confidence": "high",
       "tags": [
         "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Herdr Labs 推出开源 herdr-core",
-        "同步发布桌面应用 herdr-app"
+        "开源核心组件 herdr-core",
+        "同步发布桌面应用 herdr-app",
+        "代码托管于 GitHub"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n3",
+      "id": "n12",
+      "title": "OpenAI 承诺定期发布社区安全报告，首期定于 2027 年初",
+      "category": "商业",
+      "summary": "OpenAI 宣布将定期发布社区安全报告，首期计划在 2027 年初推出，公告同时涉及面向青少年的新保护措施。报告的指标口径与发布频率未在候选信息中给出，需以官方页面为准。",
+      "whyItMatters": "首期报告要等到 2027 年初，企业与开发者的合规评估短期仍只能依赖现有披露，公开透明度提升将延后。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "承诺定期发布社区安全报告",
+        "首期报告计划 2027 年初推出",
+        "同步涉及青少年保护措施"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n6",
+      "title": "OpenAI Agents API 推出五项功能更新",
+      "category": "Agent",
+      "summary": "据开发者社区消息，OpenAI Agents API 推出五项功能更新，具体条目以官方文档为准。该消息来自社交平台帖文，候选信息中未见 OpenAI 官方页面同步说明。",
+      "whyItMatters": "用 Agents API 构建应用的团队需核对接口变更，避免升级后行为差异；官方文档确认前不宜改动生产环境。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/stevendcoffey/status/2116303789649236048",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Agents API 推出五项功能更新",
+        "消息源自社交平台帖文",
+        "候选信息未列出官方文档"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n7",
+      "title": "豆包推出新用户福利：可领 30 天订阅体验",
+      "category": "产品",
+      "summary": "豆包推出免费福利活动，新用户可领取 30 天订阅体验。活动信息通过微信公号发布，适用人群、领取方式以及体验期结束后的计费规则需查看活动页面说明。",
+      "whyItMatters": "对打算试用的个人用户是低成本入口；团队采购前应确认体验期结束后的续费与额度规则，避免预算外支出。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "豆包",
+      "sourceUrl": "https://mp.weixin.qq.com/s/SyRyGyX-5O_v--1z3msLgg",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "新用户可领 30 天订阅体验",
+        "活动信息发布于微信公号"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n17",
       "title": "Google 宣布异步编程 agent Jules 将关停",
       "category": "Agent",
-      "summary": "Google 在 Jules 文档更新中宣布，异步编程 agent Jules 将关停；输入未给出具体关停日期、用户数据迁移方案与受影响账户范围，现有用户需关注官方后续通知并评估替代工具。",
-      "whyItMatters": "对依赖 Jules 异步改代码的团队，需尽快盘点在跑任务并安排迁移，避免关停后工作流中断或代码托管权限失效。",
+      "summary": "Google 在 Jules 官方文档的变更日志中宣布，异步编程 agent Jules 将停止服务。使用该工具的用户需关注停服时间点与既有任务、代码数据的处理安排，并评估替代方案。",
+      "whyItMatters": "把 Jules 接入研发流程的团队需在停服前导出代码与任务记录，并改用其他编程 agent，迁移成本落在工程侧。",
       "sourceName": "Jules",
-      "sourceDisplayName": "Google Jules",
+      "sourceDisplayName": "Google",
       "sourceUrl": "https://jules.google/docs/changelog/2026-10-29",
       "publishedAt": "2026-10-30T01:23:51.000Z",
-      "impactScore": 81,
+      "impactScore": 77,
       "confidence": "high",
       "tags": [
         "Google",
@@ -59,176 +149,22 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Google 宣布 Jules 将关停",
-        "Jules 为异步编程 agent"
+        "Jules 为异步编程 agent",
+        "关停消息发布于官方 changelog"
       ],
       "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n4",
-      "title": "Google Antigravity 上线插件市场",
-      "category": "Agent",
-      "summary": "Google Antigravity 推出 Plugin Marketplace，为其 agent 开发环境增加插件分发入口；输入未披露首批插件数量、审核机制、是否收费以及支持的 Antigravity 版本，开发者需查看市场文档确认上架与安装流程。",
-      "whyItMatters": "对使用 Antigravity 的开发者，插件市场决定工具链扩展是否走官方分发；上架规则和收费方式未明前，团队应避免把关键流程绑在单一插件上。",
-      "sourceName": "Antigravity",
-      "sourceDisplayName": "Google Antigravity",
-      "sourceUrl": "https://antigravity.google/docs/marketplace",
-      "publishedAt": "2026-10-30T01:23:51.000Z",
-      "impactScore": 80,
-      "confidence": "high",
-      "tags": [
-        "Google"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Antigravity 推出 Plugin Marketplace",
-        "面向 agent 开发环境提供插件"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n24",
-      "title": "腾讯混元发布 Hy-Nomas 技术报告并开源评测集",
-      "category": "研究",
-      "summary": "腾讯混元发布 Hy-Nomas 技术报告，并在 Hugging Face 开源 Hy-Nomas-Bench 评测集；输入未披露模型参数、评测集题目数量、榜单成绩与许可证，研究者可先查阅数据集卡片了解任务范围。",
-      "whyItMatters": "对评测研究者，开源评测集可复现 Hy-Nomas 的测试条件；但缺少成绩与许可证细节前，不宜直接用于横向模型排名。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "腾讯混元",
-      "sourceUrl": "https://huggingface.co/datasets/tencent/Hy-Nomas-Bench",
-      "publishedAt": "2026-10-30T01:23:51.000Z",
-      "impactScore": 80,
-      "confidence": "high",
-      "tags": [
-        "开源"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "腾讯混元发布 Hy-Nomas 技术报告",
-        "在 Hugging Face 开源 Hy-Nomas-Bench"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n25",
-      "title": "Google 推出 Gemini 4 Carbon，限部分用户开放",
-      "category": "模型",
-      "summary": "Google 发布 Gemini 4 Carbon 模型，并先向部分用户开放；输入未披露参数规模、上下文长度、定价、开放地区与全面开放时间，开发者和企业需等待 API 与配额细节才能评估迁移。",
-      "whyItMatters": "对已接入 Gemini 的开发者，限量开放意味着暂时无法把生产流量切到新模型；先发用户可提前测试能力边界并反馈配额需求。",
-      "sourceName": "Google",
-      "sourceDisplayName": "Google",
-      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-      "publishedAt": "2026-10-29T02:02:41.000Z",
-      "impactScore": 79,
-      "confidence": "high",
-      "tags": [
-        "Google",
-        "Gemini"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Google 推出 Gemini 4 Carbon",
-        "先向部分用户开放"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n6",
-      "title": "Factory 发布 Droid 1.0，默认程序化工具调用",
-      "category": "Agent",
-      "summary": "Factory 发布 Droid 1.0，默认采用程序化工具调用方式，让 agent 以代码组织多步工具操作；输入未披露基准成绩、支持模型、定价与迁移指南，现有用户需确认配置和工具链适配方式。",
-      "whyItMatters": "对构建编码 agent 的团队，程序化调用可减少自然语言工具解析的中间环节，但需重写工具定义并验证错误处理与权限边界。",
-      "sourceName": "Factory",
-      "sourceDisplayName": "Factory",
-      "sourceUrl": "https://factory.com/news/frontier-harness",
-      "publishedAt": "2026-10-30T01:23:51.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Factory 发布 Droid 1.0",
-        "默认采用程序化工具调用"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n27",
-      "title": "OpenAI 员工称 ChatGPT 的 Chat 与 Work 将于今年整合",
-      "category": "模型",
-      "summary": "OpenAI 员工在 X 上表示，ChatGPT 的 Chat 与 Work 将在今年整合；输入未披露具体日期、整合形态、企业版权限与数据隔离方案，该消息来自个人账号而非 OpenAI 官方公告。",
-      "whyItMatters": "对企业采购者，若整合落地可减少聊天与工作空间切换；在官方文档确认权限和合规配置前，不宜据此调整年度采购合同。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2115588390414581916",
-      "publishedAt": "2026-10-29T02:02:41.000Z",
-      "impactScore": 77,
-      "confidence": "high",
-      "tags": [
-        "OpenAI",
-        "GPT"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "ChatGPT 的 Chat 与 Work 今年整合",
-        "信息来自 OpenAI 员工个人推文"
-      ],
-      "confidenceReason": "单一来源，员工推文"
     },
     {
       "id": "n1",
-      "title": "OpenAI 将 Pro 各档与 Business Premium 用量翻倍",
-      "category": "产品",
-      "summary": "OpenAI 将 Pro 各档与 Business Premium 的用量翻倍，dots 继续提供单独用量；输入未给出翻倍后的具体额度、生效时间、适用地区与计费变化，用户需查看账户实际配额确认权益。",
-      "whyItMatters": "对高频使用 ChatGPT 的个人与团队，配额翻倍降低触发限流的概率；采购时可重新比较各档单位用量成本，而非只看订阅价。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2115850175868727621",
-      "publishedAt": "2026-10-30T01:23:51.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "OpenAI"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Pro 各档与 Business Premium 用量翻倍",
-        "dots 继续提供单独用量"
-      ],
-      "confidenceReason": "单一来源，员工推文"
-    },
-    {
-      "id": "n2",
-      "title": "Claude Code 命令行恢复 ultrathink 功能",
-      "category": "Agent",
-      "summary": "Claude Code 命令行工具恢复 ultrathink 功能；输入未说明此前该功能的变更原因、恢复后的触发方式、是否影响计费与速率限制，命令行用户可再次在复杂任务中启用更深推理模式。",
-      "whyItMatters": "对依赖 Claude Code 的开发者，恢复深推理开关会影响复杂重构与调试任务的提示策略，团队需同步更新内部使用规范与成本预估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/dmwlff/status/2115614417689944066",
-      "publishedAt": "2026-10-30T01:23:51.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "Claude"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Claude Code 命令行工具恢复 ultrathink",
-        "工具形态为命令行"
-      ],
-      "confidenceReason": "单一来源，员工推文"
-    },
-    {
-      "id": "n12",
-      "title": "Anthropic 为 Claude Enterprise 推出智能报告",
-      "category": "产品",
-      "summary": "Anthropic 为 Claude Enterprise 推出智能报告功能；输入未披露报告类型、可用地区、价格、是否支持自定义数据源与权限控制，企业管理员需在后台确认功能开关和合规配置。",
-      "whyItMatters": "对企业知识管理团队，若智能报告能引用内部数据，可减少手工汇总；启用前需确认数据访问边界，避免报告生成绕过现有权限体系。",
+      "title": "Anthropic 更名 Claude 订阅方案，Ultra 账户五小时限制将逐步取消",
+      "category": "商业",
+      "summary": "Anthropic 更新 Claude 支持文档，对订阅方案进行更名，并计划逐步取消已验证 Ultra 账户的五小时使用限制。调整同时涉及套餐命名与用量规则，已订阅或准备升级的用户需按新名称核对权益与额度。",
+      "whyItMatters": "重度用户使用上限被放宽，但套餐命名变化会影响团队采购与额度规划，续费前需核对新方案条款。",
       "sourceName": "Anthropic",
       "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets",
-      "publishedAt": "2026-10-30T01:23:51.000Z",
-      "impactScore": 73,
+      "sourceUrl": "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 76,
       "confidence": "high",
       "tags": [
         "Claude",
@@ -236,55 +172,126 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Anthropic 为 Claude Enterprise 推出智能报告",
-        "功能面向企业版用户"
+        "Claude 订阅方案更名",
+        "已验证 Ultra 账户五小时限制逐步取消",
+        "说明发布于 Claude 支持文档"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n13",
-      "title": "Grok Bot 推出好友邀请，受邀者可试用两周",
-      "category": "产品",
-      "summary": "xAI 为 Grok Bot 推出好友邀请活动，受邀者可试用两周；输入未披露邀请名额上限、试用期结束后的定价、可用地区与功能限制，现有用户需通过官方文档确认参与条件。",
-      "whyItMatters": "对潜在用户，两周试用降低尝试门槛；对 xAI，邀请制可在控制容量的同时借助社交链获客，但转化取决于试用期功能是否完整。",
-      "sourceName": "xAI",
-      "sourceDisplayName": "xAI",
-      "sourceUrl": "https://docs.x.ai/x-subscription/referral-program",
-      "publishedAt": "2026-10-30T01:23:51.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [
-        "Grok"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Grok Bot 推出好友邀请活动",
-        "受邀者可试用两周"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n17",
-      "title": "Mistral 开源改进版 Mistral Large 4，总参数约 1 万亿",
+      "id": "n8",
+      "title": "商汤在 Hugging Face 开源 SenseNova-Loop-9B-Preview 多模态模型",
       "category": "模型",
-      "summary": "Mistral 开源改进版 Mistral Large 4，总参数约 1 万亿；输入未披露激活参数、上下文长度、许可证、量化方案与基准成绩，“约 1 万亿”为总参数而非推理激活量。",
-      "whyItMatters": "对自托管团队，万亿级总参数抬高显存与推理成本门槛，需先核对许可证和量化方案，再决定是否替代闭源 API。",
-      "sourceName": "Mistral AI",
-      "sourceDisplayName": "Mistral AI",
-      "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
-      "publishedAt": "2026-10-30T01:23:51.000Z",
-      "impactScore": 73,
+      "summary": "商汤在 Hugging Face 上线 SenseNova-Loop-9B-Preview，为 9B 级别的多模态模型开源预览版。模型权重与模型卡已公开，开发者可下载评估，正式版能力范围与许可条款以官方说明为准。",
+      "whyItMatters": "中小团队可在本地或私有环境评估商汤多模态能力，为模型选型与二次开发增加一个开源备选。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "商汤",
+      "sourceUrl": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 76,
       "confidence": "high",
       "tags": [
-        "Mistral",
+        "多模态",
         "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Mistral 开源改进版 Mistral Large 4",
-        "总参数约 1 万亿"
+        "模型名为 SenseNova-Loop-9B-Preview",
+        "托管于 Hugging Face 商汤主页",
+        "属于 9B 级多模态预览版本"
       ],
       "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n18",
+      "title": "Google Antigravity 上线插件市场 Plugin Marketplace",
+      "category": "Agent",
+      "summary": "Google 在 Antigravity 平台推出 Plugin Marketplace 插件市场，为平台提供集中的插件获取入口。官方文档已列出市场说明，插件类型、上架审核与计费方式仍需以文档为准。",
+      "whyItMatters": "在 Antigravity 上搭工作流的团队可复用现成插件降低集成成本，但需评估插件来源、权限范围与后续维护。",
+      "sourceName": "Antigravity",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://antigravity.google/docs/marketplace",
+      "publishedAt": "2026-10-30T01:23:51.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity 推出 Plugin Marketplace",
+        "相关说明发布于官方文档站"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n38",
+      "title": "腾讯混元发布 Hy-Nomas 技术报告并开源评测集",
+      "category": "研究",
+      "summary": "腾讯混元发布 Hy-Nomas 技术报告，并在 Hugging Face 开源配套评测集 Hy-Nomas-Bench。评测集供公开评估使用，任务构成与指标定义见数据集说明，报告细节需查阅原文。",
+      "whyItMatters": "研究与应用团队可用公开评测集横向对比模型，省去自建测试集成本，但需核对其任务覆盖是否匹配自身场景。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "腾讯混元",
+      "sourceUrl": "https://huggingface.co/datasets/tencent/Hy-Nomas-Bench",
+      "publishedAt": "2026-10-30T01:23:51.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发布 Hy-Nomas 技术报告",
+        "开源评测集 Hy-Nomas-Bench",
+        "托管于 Hugging Face 腾讯主页"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n2",
+      "title": "OpenCode Go 为 DeepSeek V4.1 Flash 提供每月 100 美元额度",
+      "category": "Agent",
+      "summary": "OpenCode Go 宣布为 DeepSeek V4.1 Flash 提供每月 100 美元的使用额度。消息由其社交账号发布，额度适用范围、领取条件与持续期限未在候选信息中说明，需以官方页面为准。",
+      "whyItMatters": "高频调用该模型的开发者可借此压低试用成本；额度能否长期维持未明，不宜据此制定长期预算或迁移计划。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenCode",
+      "sourceUrl": "https://x.com/opencode/status/2116209960673800474",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "每月额度为 100 美元",
+        "面向 DeepSeek V4.1 Flash 模型",
+        "消息来自 OpenCode 社交账号"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n3",
+      "title": "Anthropic 为 Claude Code 加入游戏重制限制",
+      "category": "Agent",
+      "summary": "据开发者转述，Anthropic 为 Claude Code 加入针对游戏重制内容的限制。限制条款的具体表述、触发方式与影响范围未在候选信息中给出，使用前应查阅官方使用政策。",
+      "whyItMatters": "用 Claude Code 处理游戏素材或复刻项目的团队需核对使用政策，避免生成内容触及版权与合规边界。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://x.com/addyosmani/status/2116213240363729013",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Claude",
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude Code 加入游戏重制限制",
+        "信息源自开发者社交平台转述"
+      ],
+      "confidenceReason": "单一来源"
     }
   ],
   "sources": [
@@ -292,7 +299,7 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 48,
+      "itemCount": 38,
       "note": "日报型来源，已拆解 2 期"
     },
     {
