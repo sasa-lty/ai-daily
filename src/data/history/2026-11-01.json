@@ -1,0 +1,331 @@
+{
+  "date": "2026-11-01",
+  "generatedAt": "2026-11-01T06:40:37.428Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "今日主线是入口与配额重构：苹果在华系统级 AI 接入千问，OpenAI 合并 ChatGPT 与 Codex 额度，DeepSeek 押注 Super-agent 架构。",
+    "keywords": [
+      "OpenAI",
+      "GPT",
+      "Agent"
+    ],
+    "heatIndex": 75,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n23",
+    "n1",
+    "n2"
+  ],
+  "items": [
+    {
+      "id": "n2",
+      "title": "DeepSeek 发文探讨 Super-agent 架构，并开源研究原型",
+      "category": "研究",
+      "summary": "DeepSeek 发文探讨 Super-agent（超级智能体）架构，并同步开源研究原型，供外部研究者复现与试验。内容聚焦多步骤任务的智能体组织方式，属于研究性质输出，而非可直接商用的产品发布。",
+      "whyItMatters": "对做 agent 的团队，开源原型提供了可对照的架构样本，能降低自研多智能体编排的试错成本，也便于判断是否跟进该路线。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "DeepSeek",
+      "sourceUrl": "https://mp.weixin.qq.com/s/zoS7GlReWPhfCjENGxXCdg",
+      "publishedAt": "2026-11-01T01:01:23.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek",
+        "Agent",
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发文探讨 Super-agent 架构",
+        "同步开源研究原型",
+        "属研究性质输出"
+      ],
+      "confidenceReason": "官方发布（官方公众号）"
+    },
+    {
+      "id": "n4",
+      "title": "ChatGPT 推出多账号切换，Codex 将提供可留存额度重置",
+      "category": "产品",
+      "summary": "ChatGPT 新增多账号切换能力，用户可在同一客户端内切换不同账号；Codex 随后将提供可留存的额度重置，重置后额度不再作废。两项改动分别围绕账号管理与用量弹性展开。",
+      "whyItMatters": "对多账号并用的用户与团队，切换成本和额度浪费同时下降，账号采购与额度分配的内部规范需要相应更新。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/thsottiaux/status/2116405414921384099",
+      "publishedAt": "2026-11-01T01:01:23.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "ChatGPT 上线多账号切换",
+        "Codex 将提供可留存额度重置",
+        "由 OpenAI 团队成员披露"
+      ],
+      "confidenceReason": "官方发布（员工动态）"
+    },
+    {
+      "id": "n6",
+      "title": "OpenAI 推出生命科学模型，仅向获批机构开放",
+      "category": "模型",
+      "summary": "OpenAI 上线面向生命科学的模型，通过 API 提供，但仅向获批机构开放，普通开发者无法直接调用。定价页按上下文长度列出规格，机构准入审核成为实际使用前提。",
+      "whyItMatters": "生物医药团队需先完成机构审批才能接入，短期不利于小团队试用；对合规要求高的药企，限定开放反而是可采购的前提。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://developers.openai.com/api/docs/pricing?life-sciences-context-length=short",
+      "publishedAt": "2026-11-01T01:01:23.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "推出生命科学专用模型",
+        "仅向获批机构开放",
+        "经 OpenAI API 提供"
+      ],
+      "confidenceReason": "官方发布（API 定价页）"
+    },
+    {
+      "id": "n23",
+      "title": "苹果宣布 Apple 智能在中国上线，接入阿里千问",
+      "category": "商业",
+      "summary": "苹果通过官方新闻稿宣布，首批 Apple 智能功能在中国市场推出，模型侧接入阿里千问。中国区用户可在系统层面使用相关 AI 能力，这是苹果在华首次落地系统级智能功能。",
+      "whyItMatters": "对国内手机厂商与模型厂商是一次基准重置：系统级入口由苹果与千问占据，其他厂商需重估自家助手的入口分发与模型合作策略。",
+      "sourceName": "Com",
+      "sourceDisplayName": "Apple",
+      "sourceUrl": "https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "Apple"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "首批 Apple 智能在中国推出",
+        "模型侧接入阿里千问",
+        "由苹果官方新闻稿发布"
+      ],
+      "confidenceReason": "官方发布（苹果新闻稿）"
+    },
+    {
+      "id": "n1",
+      "title": "OpenAI：12 月起 ChatGPT 与 Codex 共享额度",
+      "category": "模型",
+      "summary": "OpenAI 在帮助中心说明，自 12 月起 ChatGPT 与 Codex 将共享同一份额度。两项产品的用量将计入同一池子，用户需按合并后的额度重新规划开发与日常对话的使用。",
+      "whyItMatters": "直接影响同时使用 ChatGPT 与 Codex 的付费用户和团队：额度核算从两套变一套，采购与用量监控策略需提前调整。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+      "publishedAt": "2026-11-01T01:01:23.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "12 月起 ChatGPT 与 Codex 共享额度",
+        "信息来自 OpenAI 帮助中心",
+        "涉及付费用户的用量规划"
+      ],
+      "confidenceReason": "官方发布（帮助中心文档）"
+    },
+    {
+      "id": "n26",
+      "title": "OpenAI 承诺定期发布社区安全报告，首期定于 2027 年初",
+      "category": "商业",
+      "summary": "OpenAI 宣布将定期发布社区安全报告，首期计划于 2027 年初推出，并同步公布面向青少年的新保护措施。报告与青少年防护捆绑发布，把安全披露固定为周期性动作。",
+      "whyItMatters": "对监管方与家长群体，这是可预期的信息披露节奏；对教育类客户，青少年保护条款会进入其部署前的合规评估清单。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "定期发布社区安全报告",
+        "首期计划 2027 年初推出",
+        "同步推出青少年保护措施"
+      ],
+      "confidenceReason": "官方发布（官网公告）"
+    },
+    {
+      "id": "n3",
+      "title": "OpenAI 说明 ChatGPT 支付卡与设备限制",
+      "category": "产品",
+      "summary": "OpenAI 在帮助中心发文，说明 ChatGPT 在支付卡与登录设备方面的限制规则，明确哪些卡种与设备组合无法完成订阅或使用。对跨境订阅和多设备登录的用户，这些规则直接决定能否付款与保持会话。",
+      "whyItMatters": "跨境付费用户和多设备办公团队需据此调整支付方式与登录习惯，否则可能在续费或切换设备时被拒。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://help.openai.com/en/articles/20001559-understanding-card-and-device-limits-in-chatgpt",
+      "publishedAt": "2026-11-01T01:01:23.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "说明支付卡限制规则",
+        "说明设备限制规则",
+        "发布于 OpenAI 帮助中心"
+      ],
+      "confidenceReason": "官方发布（帮助中心文档）"
+    },
+    {
+      "id": "n20",
+      "title": "OpenAI Agents API 推出五项功能更新",
+      "category": "Agent",
+      "summary": "OpenAI 的 Agents API 推出五项功能更新，集中在智能体的构建与运行环节。消息由团队成员在社交平台披露，未给出完整接口清单，开发者需对照文档确认改动范围。",
+      "whyItMatters": "对已在 Agents API 上构建产品的团队，接口变动意味着需要回归测试；未接入者可据此评估自建编排与官方能力的取舍。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/stevendcoffey/status/2116303789649236048",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Agents API 推出五项更新",
+        "由团队成员披露",
+        "集中在智能体构建与运行"
+      ],
+      "confidenceReason": "官方发布（员工动态）"
+    },
+    {
+      "id": "n13",
+      "title": "报道称 OpenAI 新一轮融资获约 110 亿美元承诺",
+      "category": "商业",
+      "summary": "《华尔街日报》报道，OpenAI 新一轮融资已获得约 110 亿美元认购承诺，不足其 300 亿美元目标的一半。若按此规模完成，本轮实际募资额将明显低于原定计划。",
+      "whyItMatters": "募资低于目标会压缩 OpenAI 的算力与人才开支节奏，也影响上下游供应商与跟投方对 AI 一级市场估值的判断。",
+      "sourceName": "WSJ",
+      "sourceDisplayName": "The Wall Street Journal",
+      "sourceUrl": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+      "publishedAt": "2026-11-01T01:01:23.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "融资"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "获约 110 亿美元认购承诺",
+        "本轮目标为 300 亿美元",
+        "由 WSJ 报道"
+      ],
+      "confidenceReason": "单一来源（WSJ 报道）"
+    },
+    {
+      "id": "n21",
+      "title": "豆包推出新用户福利，可领 30 天订阅体验",
+      "category": "产品",
+      "summary": "豆包上线新用户福利活动，新用户可领取 30 天订阅体验。活动通过延长免费使用期拉新，用户可在不做付费决策的情况下完整体验其订阅功能，再决定是否付费。",
+      "whyItMatters": "对同类国内 AI 助手，30 天免费期会抬高获客成本门槛；对用户，这是一次零成本比较豆包与竞品日常体验的窗口。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "豆包",
+      "sourceUrl": "https://mp.weixin.qq.com/s/SyRyGyX-5O_v--1z3msLgg",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "新用户可领 30 天订阅体验",
+        "活动面向新注册用户",
+        "由豆包官方公众号发布"
+      ],
+      "confidenceReason": "官方发布（官方公众号）"
+    },
+    {
+      "id": "n5",
+      "title": "OpenAI 团队成员称 Prism 正逐步停止服务",
+      "category": "产品",
+      "summary": "OpenAI 团队成员在社交平台表示，Prism 正在逐步停止服务，但未给出完整下线时间表与迁移方案。使用该功能的用户需提前评估替代方案，避免工作流中断。",
+      "whyItMatters": "依赖 Prism 的用户和集成方需尽快寻找替代路径，涉及数据迁移与流程重建，越晚动作切换成本越高。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/feitong_yang/status/2116245744327995489",
+      "publishedAt": "2026-11-01T01:01:23.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Prism 正逐步停止服务",
+        "由团队成员披露",
+        "未公布完整下线时间表"
+      ],
+      "confidenceReason": "单一来源（员工动态）"
+    },
+    {
+      "id": "n15",
+      "title": "Anthropic 更名 Claude 订阅方案，逐步取消已验证 Ultra 账户五小时限制",
+      "category": "商业",
+      "summary": "Anthropic 调整 Claude 订阅体系：对订阅方案重新命名，并逐步取消已验证 Ultra 账户的五小时使用限制。改动同时涉及名称与限额两项，现有 Ultra 用户的实际可用时长将随验证状态变化。",
+      "whyItMatters": "重度用户此前受五小时窗口约束，取消后长任务可连续跑完；企业在采购前也应确认验证状态，否则额度体验不一致。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan",
+      "publishedAt": "2026-10-31T01:19:32.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "Claude",
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude 订阅方案更名",
+        "已验证 Ultra 账户逐步取消五小时限制",
+        "来源为 Anthropic 支持文档"
+      ],
+      "confidenceReason": "官方发布（支持文档）"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 28,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 894
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
