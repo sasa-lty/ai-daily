@@ -1,284 +1,276 @@
 {
-  "date": "2026-11-02",
-  "generatedAt": "2026-11-02T06:39:26.230Z",
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T07:08:48.143Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "今日信号集中在三个方向：国产万亿参数模型继续扩容，开源智能体架构从研究走向可复现原型，海外则出现融资进度与产品额度规则的双重调整。",
+    "verdict": "今日核心信号：超大模型、AI 编程基础设施与能力基准；美团 1.6 万亿模型、OpenAI Git 后端、GDPx 12% 得分。",
     "keywords": [
       "OpenAI",
-      "GPT",
-      "DeepSeek"
+      "Kimi",
+      "Anthropic"
     ],
-    "heatIndex": 74,
+    "heatIndex": 75,
     "sourceCount": 4
   },
   "topStoryIds": [
+    "n19",
     "n2",
-    "n8",
-    "n19"
+    "n11"
   ],
   "items": [
     {
-      "id": "n2",
-      "title": "美团发布 1.6 万亿参数模型 LongCat-2.5 正式版",
-      "category": "模型",
-      "summary": "美团正式发布 LongCat-2.5 正式版，参数规模 1.6 万亿，官方博客同步给出模型说明。这是美团迄今公开参数规模最大的模型版本，万亿级规模对训练与推理的算力和显存要求显著提高，企业接入前需核算部署成本。",
-      "whyItMatters": "对正在做模型选型的企业，国产万亿参数模型多了一个可评估选项，但推理成本与显存门槛也随之抬升，需先小流量压测再决定是否替换主力模型。",
-      "sourceName": "Longcat",
-      "sourceDisplayName": "LongCat（美团）",
-      "sourceUrl": "https://longcat.ai/blog/longcat-2.5/",
-      "publishedAt": "2026-11-02T01:14:02.000Z",
-      "impactScore": 82,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "LongCat-2.5 参数规模 1.6 万亿",
-        "由美团发布，为正式版本"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n8",
-      "title": "DeepSeek 发文探讨 Super-agent 架构并开源研究原型",
-      "category": "研究",
-      "summary": "DeepSeek 发布文章讨论 Super-agent 架构的设计思路，并同步开源配套研究原型，供外部复现与二次开发。内容属架构层面的研究探讨而非成品产品发布，工程团队可据此评估任务分解与多智能体调度的实现路径。",
-      "whyItMatters": "开源原型让研究者可直接验证多智能体编排方案，降低 agent 系统自研验证成本；自建 agent 平台的团队可据此对标自家任务分解与调度设计。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "DeepSeek",
-      "sourceUrl": "https://mp.weixin.qq.com/s/zoS7GlReWPhfCjENGxXCdg",
-      "publishedAt": "2026-11-01T01:01:23.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [
-        "DeepSeek",
-        "Agent",
-        "开源"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "DeepSeek 发文讨论 Super-agent 架构",
-        "同步开源研究原型，供外部复现"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n1",
-      "title": "Codex 完成 28 天改进计划，最后两天发放手动重置次数",
-      "category": "产品",
-      "summary": "Codex 团队宣布 28 天改进计划收官，并在最后 2 天向用户发放手动重置次数，用于恢复已用尽的额度。该安排属阶段性运营补偿，与 12 月起 ChatGPT、Codex 额度共享的新规叠加后，实际可用次数需按新规则计算。",
-      "whyItMatters": "对 Codex 付费用户，重置次数是可立即兑现的额度，需在窗口期内使用；同时提示后续额度政策将随共享规则变动，采购时应留出余量。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2116692529970311254",
-      "publishedAt": "2026-11-02T01:14:02.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "28 天改进计划已完成",
-        "最后 2 天发放手动重置次数"
-      ],
-      "confidenceReason": "单一来源"
-    },
-    {
-      "id": "n10",
-      "title": "ChatGPT 推出多账号切换，Codex 将提供可留存额度重置",
-      "category": "产品",
-      "summary": "ChatGPT 上线多账号切换功能，用户可在同一客户端内切换不同账户；Codex 方面表示将提供可留存的额度重置。对家庭共用或工作、个人分号使用的用户，账号隔离与额度归属的边界变得更清晰，但额度仍按账户计。",
-      "whyItMatters": "共用设备的团队可减少重复登录成本，但额度按账户而非按人计算，采购席位时应按账号数量规划，避免多人共用一号导致额度提前耗尽。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2116405414921384099",
-      "publishedAt": "2026-11-01T01:01:23.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "GPT"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "ChatGPT 已支持多账号切换",
-        "Codex 将提供可留存额度重置"
-      ],
-      "confidenceReason": "单一来源"
-    },
-    {
       "id": "n3",
-      "title": "初创公司用 AI 智能体完成活体小鼠脑部注射",
-      "category": "研究",
-      "summary": "Wired 报道，一家初创公司让 AI 智能体参与活体小鼠的脑部药物注射操作。实验把智能体的执行范围从屏幕内任务延伸到需要物理精度的动物实验环节，涉及操作合规、失败责任归属等此前未明确的问题。",
-      "whyItMatters": "对实验室自动化厂商，这是智能体进入湿实验环节的可查案例；研究机构引入前需先明确动物实验伦理审批流程与操作失误的责任划分。",
-      "sourceName": "Wired",
-      "sourceDisplayName": "Wired",
-      "sourceUrl": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
-      "publishedAt": "2026-11-02T01:14:02.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Wired 报道该初创公司开展此实验",
-        "AI 智能体对活体小鼠执行脑部注射"
-      ],
-      "confidenceReason": "单一来源（Wired 报道）"
-    },
-    {
-      "id": "n12",
-      "title": "OpenAI 推出生命科学模型，仅向获批机构开放",
-      "category": "模型",
-      "summary": "OpenAI 上线面向生命科学场景的模型，API 文档列出该场景的上下文长度与定价信息，且仅向通过审批的机构开放调用。该模型不支持公开自助开通，机构需先完成资格审核，具体适用范围以官方文档为准。",
-      "whyItMatters": "生物医药与临床研究机构是直接受影响方：访问需走审批流程，用途限制与数据合规成为接入前置条件，项目排期要预留审核时间。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://developers.openai.com/api/docs/pricing?life-sciences-context-length=short",
-      "publishedAt": "2026-11-01T01:01:23.000Z",
-      "impactScore": 74,
-      "confidence": "high",
+      "title": "Kimi 发布游戏开发与创意工作解决方案",
+      "category": "产品",
+      "summary": "Kimi 发布游戏开发与创意工作解决方案，定位服务游戏开发与创意工作场景。公开信息未给出具体模型版本、功能清单、价格和开放范围，实际能力与可用性需以官方产品页说明为准。",
+      "whyItMatters": "对游戏与内容团队而言，这是把通用模型接入具体生产流程的信号；是否采用取决于其工具链完整度和定价，而非单次发布。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "Kimi",
+      "sourceUrl": "https://mp.weixin.qq.com/s/qSwHJXAuAyrjeYXGC3XnFA",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 81,
+      "confidence": "medium",
       "tags": [
-        "OpenAI"
+        "Kimi"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "模型仅向获批机构开放",
-        "API 定价页列出生命科学场景参数"
+        "Kimi发布游戏开发与创意工作解决方案",
+        "面向游戏开发与创意工作场景"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n4",
-      "title": "微软 AI 负责人撰文：AI 没有意识，不应训练得像有意识",
-      "category": "研究",
-      "summary": "微软 AI 负责人 Mustafa Suleyman 发文称 AI 不具备意识，反对在训练中把模型做得像有意识。文章针对当前关于模型福利与拟人化表达的讨论，主张不应对模型输出赋予感受属性，避免误导用户判断。",
-      "whyItMatters": "直接约束产品侧的人格化话术设计：厂商在写系统提示与对外文案时需评估拟人表达的合规与用户认知风险，尤其涉及心理陪伴类场景。",
-      "sourceName": "Mustafa-suleyman",
-      "sourceDisplayName": "Mustafa Suleyman（微软 AI）",
-      "sourceUrl": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
-      "publishedAt": "2026-11-02T01:14:02.000Z",
-      "impactScore": 73,
+      "title": "商汤推出 SenseNova 6.8 Flash 正式版，目前限时免费",
+      "category": "模型",
+      "summary": "商汤推出 SenseNova 6.8 Flash 正式版，并宣布目前限时免费。公开信息只给出模型版本与免费状态，未披露参数规模、上下文长度、推理价格和正式收费时间，开发者需关注后续配额与商用条款。",
+      "whyItMatters": "限时免费降低开发者试用门槛，适合先验证中文生成与推理任务；是否迁移取决于后续定价、配额和稳定性，而非免费期本身。",
+      "sourceName": "Sensenova",
+      "sourceDisplayName": "商汤科技",
+      "sourceUrl": "https://www.sensenova.cn/flash-6-8",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 80,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "作者为微软 AI 负责人 Mustafa Suleyman",
-        "主张 AI 无意识，不应训练得像有意识"
-      ],
-      "confidenceReason": "官方发布（本人署名）"
-    },
-    {
-      "id": "n5",
-      "title": "马斯克称 Grok Bot 服务成本相对收入高得不可持续",
-      "category": "商业",
-      "summary": "马斯克在 X 上表示，Grok Bot 的服务成本相对其收入高得不可持续，即单次服务消耗的算力开支与对应收入不匹配。这是公司负责人对该产品经济性的直接表态，涉及后续定价与运营方式是否调整。",
-      "whyItMatters": "对依赖 Grok Bot 的开发者与客户，意味着免费额度或定价策略存在收紧风险；把该服务嵌入生产流程的团队应准备备选模型与成本上限方案。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "马斯克（X）",
-      "sourceUrl": "https://x.com/elonmusk/status/2116992258520064397",
-      "publishedAt": "2026-11-02T01:14:02.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [
-        "Grok"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "马斯克称 Grok Bot 成本相对收入过高",
-        "由其本人在 X 上发文表态"
-      ],
-      "confidenceReason": "官方发布（高管表态）"
-    },
-    {
-      "id": "n7",
-      "title": "OpenAI：12 月起 ChatGPT 与 Codex 共享额度",
-      "category": "模型",
-      "summary": "OpenAI 帮助文档说明，自 12 月起 ChatGPT 与 Codex 的用量额度合并计算，用户在两个产品间的消耗共享同一配额。对同时在对话与编码场景使用的团队，需重新核算月度用量与席位分配。",
-      "whyItMatters": "编码重度用户消耗会挤占对话额度，团队需按实际调用结构重估套餐档位，避免月中额度耗尽影响开发与客服等并行场景。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
-      "publishedAt": "2026-11-01T01:01:23.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [
-        "OpenAI",
-        "GPT"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "12 月起 ChatGPT 与 Codex 共享额度",
-        "规则由 OpenAI 帮助文档说明"
+        "商汤发布SenseNova 6.8 Flash正式版",
+        "目前限时免费"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n6",
-      "title": "Axios 报道 OpenAI 计划在选举后发起政策与公关宣传",
-      "category": "安全",
-      "summary": "Axios 报道称，OpenAI 计划在选举结束后启动政策与公关宣传，指向对外政策沟通与公众形象塑造。报道未披露预算规模、时间表与具体合作方，也未获 OpenAI 官方确认，相关口径仍属待证信息。",
-      "whyItMatters": "对与 OpenAI 有监管沟通或合作需求的企业，其政策口径变化会影响合规预期与公共事务对接方式，现阶段应以官方公告而非媒体转述为准。",
-      "sourceName": "TechCrunch",
-      "sourceDisplayName": "Axios",
-      "sourceUrl": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+      "title": "ZCode 上线三款官方插件，支持网页项目一键部署",
+      "category": "Agent",
+      "summary": "ZCode 上线三款官方插件，支持网页项目一键部署。此次更新聚焦把网页项目从开发环境推进到部署环节，但公开信息未给出插件名称、适用框架、免费额度和部署平台范围。",
+      "whyItMatters": "对使用 ZCode 的开发者，部署链路被收进编辑器，减少手工配置；团队选型时要看插件覆盖的框架和部署目标是否匹配现有栈。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "ZCode",
+      "sourceUrl": "https://mp.weixin.qq.com/s/dkGAhKckTpN_Yku_mQ7sUQ",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "ZCode上线三款官方插件",
+        "网页项目可一键部署"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n19",
+      "title": "美团发布 1.6 万亿参数模型 LongCat-2.5 正式版",
+      "category": "模型",
+      "summary": "美团发布 1.6 万亿参数模型 LongCat-2.5 正式版，参数规模达到 1.6 万亿。LongCat 博客已上线模型介绍，但公开摘要未披露评测分数、上下文长度、开放方式和定价，实际能力需看后续基准与 API 说明。",
+      "whyItMatters": "超大参数模型进入美团产品体系，会抬高国内基座模型竞争门槛；对开发者而言，关键看其推理成本、上下文和行业任务表现，而非只看参数量。",
+      "sourceName": "Longcat",
+      "sourceDisplayName": "美团",
+      "sourceUrl": "https://longcat.ai/blog/longcat-2.5/",
       "publishedAt": "2026-11-02T01:14:02.000Z",
-      "impactScore": 71,
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "美团发布LongCat-2.5正式版",
+        "参数规模1.6万亿"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n7",
+      "title": "Anthropic Message API 推出 message threads 公测",
+      "category": "Agent",
+      "summary": "Anthropic 为 Message API 推出 message threads 公测，面向消息线程组织。具体接口形态、配额、计费和正式上线时间尚未在公开摘要中说明，开发者需查阅 API 文档确认迁移方式。",
+      "whyItMatters": "对基于 Claude 构建应用的开发者，消息线程会影响会话管理、上下文拼接和计费设计；是否采用取决于公测条款和与现有 API 的兼容性。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://x.com/ClaudeDevs/status/2117332452603527535",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Anthropic Message API推出message threads",
+        "目前处于公测阶段"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n1",
+      "title": "研究者称 GPT-6 Astra 可直接改写模型权重",
+      "category": "研究",
+      "summary": "有研究者发文称，GPT-6 Astra 可直接改写模型权重。该说法来自个人博客，未给出 OpenAI 官方确认、复现实验细节或独立验证；若成立将影响模型可控性与安全边界，目前应按待证研究线索处理。",
+      "whyItMatters": "若权重可被模型直接改写，模型行为审计、版本回滚和安全对齐流程都要重做；在独立复现前，企业不应据此调整生产部署。",
+      "sourceName": "GitHub Pages",
+      "sourceDisplayName": "研究者博客",
+      "sourceUrl": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "研究者称GPT-6 Astra可改写模型权重",
+        "来源为个人博客",
+        "尚无OpenAI官方确认"
+      ],
+      "confidenceReason": "传闻待证"
+    },
+    {
+      "id": "n8",
+      "title": "OpenAI 发布 LifeVal 基准，衡量 AI 完成日常任务的能力",
+      "category": "研究",
+      "summary": "OpenAI 发布 LifeVal 基准，用于衡量 AI 完成日常任务的能力。该基准把评测对象从单题问答转向生活任务执行，但公开摘要未给出任务数量、评分方法和各家模型得分。",
+      "whyItMatters": "对模型团队，日常任务基准更接近用户实际使用场景，可用于筛选 Agent 与助手方案；采购方应等待具体榜单和复现结果再作比较。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/lifeval",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 76,
       "confidence": "high",
       "tags": [
         "OpenAI"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Axios 报道该计划在选举后启动",
-        "报道未披露预算与执行细节"
-      ],
-      "confidenceReason": "传闻待证（媒体报道）"
-    },
-    {
-      "id": "n9",
-      "title": "OpenAI 说明 ChatGPT 支付卡和设备限制",
-      "category": "产品",
-      "summary": "OpenAI 帮助文档说明 ChatGPT 在支付卡与登录设备方面的限制规则，涉及可用卡类型、绑定方式与设备端约束。对走公司报销或跨设备使用的用户，需按文档规则调整付款方式，否则可能出现扣款失败。",
-      "whyItMatters": "企业采购与个人订阅都可能因卡类型或设备数量不符而扣款失败，财务与 IT 需提前核对付款方式与终端数量，避免续费中断导致服务停用。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://help.openai.com/en/articles/20001559-understanding-card-and-device-limits-in-chatgpt",
-      "publishedAt": "2026-11-01T01:01:23.000Z",
-      "impactScore": 70,
-      "confidence": "high",
-      "tags": [
-        "OpenAI",
-        "GPT"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "规则由 OpenAI 帮助文档发布",
-        "涉及支付卡与设备两类限制"
+        "OpenAI发布LifeVal基准",
+        "衡量AI完成日常任务能力"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n19",
-      "title": "WSJ 报道 OpenAI 新一轮融资获约 110 亿美元承诺",
-      "category": "商业",
-      "summary": "华尔街日报报道，OpenAI 新一轮融资已获得约 110 亿美元认购承诺，不足其 300 亿美元目标规模的半数。募资进度关系到算力与数据中心开支节奏，最终交割金额及是否补足目标尚未披露。",
-      "whyItMatters": "对与 OpenAI 签有云算力或数据中心合同的供应方，募资未达标意味着后续采购与建设节奏存在变数，需跟踪最终交割金额而非早期承诺额。",
-      "sourceName": "WSJ",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
-      "publishedAt": "2026-11-01T01:01:23.000Z",
-      "impactScore": 69,
+      "id": "n2",
+      "title": "OpenAI 自研 Git 后端 Pando 投产，中位推送延迟降近 80%",
+      "category": "产品",
+      "summary": "OpenAI 自研 Git 后端 Pando 已投产，官方称中位推送延迟下降近 80%。该更新指向大规模代码仓库的版本控制性能，具体仓库规模、峰值负载和迁移范围尚未在摘要中披露。",
+      "whyItMatters": "对大型研发团队，Git 推送延迟直接影响提交频率和 CI 周转；Pando 的指标提供了自研替代托管 Git 的参照，但需看规模与可用性细节。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/scaling-git-at-openai",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
-        "OpenAI",
-        "融资"
+        "OpenAI"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "WSJ 报道本轮获约 110 亿美元承诺",
-        "不足 300 亿美元目标的半数"
+        "OpenAI自研Git后端Pando投产",
+        "中位推送延迟降近80%"
       ],
-      "confidenceReason": "单一来源（WSJ 报道）"
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n10",
+      "title": "腾讯混元发布 Hyra 2.0：从解题到造工具",
+      "category": "研究",
+      "summary": "腾讯混元发布 Hyra 2.0，官方定位从“解题”转向“造工具”。公开信息强调工具创造能力，但未披露模型参数、评测分数、开放平台和收费方式，实际效果需看可复现任务演示。",
+      "whyItMatters": "从答题到造工具，意味着模型要输出可执行流程而非单次答案；对企业和开发者，评估重点应转向工具调用成功率与可维护性。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯混元",
+      "sourceUrl": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&amp;mid=2247498763&amp;idx=1&amp;sn=279f8fb4e43a987fdc0aa2af0b0f7958",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "腾讯混元发布Hyra 2.0",
+        "定位从解题到造工具"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n11",
+      "title": "SemiAnalysis 发布 GDPx 基准，最佳模型仅得 12%",
+      "category": "研究",
+      "summary": "SemiAnalysis 发布 GDPx 基准，用于衡量前沿模型能力，最佳模型仅得 12%。这一得分显示现有模型在 GDPx 所测任务上仍有明显缺口，但公开摘要未给出任务构成、评分口径和各模型完整排名。",
+      "whyItMatters": "12% 的得分给前沿模型能力预期降温，适合作为任务型评测的补充参照；团队选型时应核对任务分布与评分口径，避免把单一基准当结论。",
+      "sourceName": "Semianalysis",
+      "sourceDisplayName": "SemiAnalysis",
+      "sourceUrl": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "SemiAnalysis发布GDPx基准",
+        "最佳模型仅得12%"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n14",
+      "title": "OpenAI 推出 Grid Protectors 计划，算力园区将为电网削峰",
+      "category": "商业",
+      "summary": "OpenAI 推出 Grid Protectors 计划，让算力园区参与电网削峰。该计划把 AI 数据中心从单纯用电负荷转为可调度资源，但公开摘要未给出园区数量、削峰容量、启动时间和合作电网。",
+      "whyItMatters": "对数据中心运营商和电网，算力负荷可调度意味着并网审批与能源成本模型会变化；AI 公司需在训练排程和供电合同中加入需求响应条款。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/grid-protectors-program/",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI推出Grid Protectors计划",
+        "算力园区将为电网削峰"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n16",
+      "title": "沙特阿美收购 HUMAIN 49% 股份",
+      "category": "商业",
+      "summary": "沙特阿美收购 HUMAIN 49% 股份，交易已完成交割。该交易把石油资本与 AI 公司股权绑定，但公开摘要未披露交易金额、估值、治理安排和 HUMAIN 的具体业务范围。",
+      "whyItMatters": "对 AI 基础设施与能源买家，石油资本直接入股 AI 公司会改变算力项目的资金来源和承购关系；关注后续治理与投资承诺，而非仅看持股比例。",
+      "sourceName": "Aramco",
+      "sourceDisplayName": "沙特阿美",
+      "sourceUrl": "https://aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth",
+      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "impactScore": 73,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "沙特阿美收购HUMAIN 49%股份",
+        "交易已完成交割"
+      ],
+      "confidenceReason": "官方发布"
     }
   ],
   "sources": [
@@ -286,7 +278,7 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 20,
+      "itemCount": 23,
       "note": "日报型来源，已拆解 2 期"
     },
     {
