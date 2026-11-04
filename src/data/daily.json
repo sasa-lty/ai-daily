@@ -1,245 +1,272 @@
 {
-  "date": "2026-11-03",
-  "generatedAt": "2026-11-03T07:08:48.143Z",
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T06:54:10.128Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "今日核心信号：超大模型、AI 编程基础设施与能力基准；美团 1.6 万亿模型、OpenAI Git 后端、GDPx 12% 得分。",
+    "verdict": "模型层最密集：Anthropic 开源输出溯源，微信开源视觉模型，商汤发布限免模型，开发者可选模型与审计手段增加。",
     "keywords": [
-      "OpenAI",
-      "Kimi",
+      "开源",
+      "Claude",
       "Anthropic"
     ],
     "heatIndex": 75,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n19",
-    "n2",
-    "n11"
+    "n1",
+    "n9",
+    "n22"
   ],
   "items": [
     {
+      "id": "n1",
+      "title": "Anthropic 开源 FlashProve，用于验证 AI 回复来自哪个模型",
+      "category": "开源",
+      "summary": "Anthropic 开源 FlashProve，用于验证 AI 回复来自哪个模型。该工具面向模型输出溯源，帮助判断回复由哪个模型生成；输入未披露支持模型范围、许可证和性能数据。",
+      "whyItMatters": "对需要审计多模型输出的开发者和企业，FlashProve 提供来源验证手段，影响模型路由、合规审计与内容归因流程的选型。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://anthropic.com/research/provable-inference",
+      "publishedAt": "2026-11-04T01:32:18.000Z",
+      "impactScore": 83,
+      "confidence": "high",
+      "tags": [
+        "Anthropic",
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Anthropic 开源 FlashProve",
+        "用于验证 AI 回复来自哪个模型"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
       "id": "n3",
+      "title": "隐身模型 Crouton Alpha 上线 OpenCode 和 OpenRouter，免费一周",
+      "category": "Agent",
+      "summary": "隐身模型 Crouton Alpha 上线 OpenCode 和 OpenRouter，提供为期一周的免费使用。该模型以匿名形式开放，输入未披露开发方、参数规模、上下文长度和正式定价。",
+      "whyItMatters": "对开发者和模型路由平台，匿名免费模型提供低成本评测窗口，影响短期模型选型和 OpenRouter 上的调用分流。",
+      "sourceName": "Openrouter",
+      "sourceDisplayName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/stealth/crouton-alpha",
+      "publishedAt": "2026-11-04T01:32:18.000Z",
+      "impactScore": 81,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Crouton Alpha 上线 OpenCode 和 OpenRouter",
+        "免费使用一周"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n6",
+      "title": "MiniMax 开源 BYOB，支持用户自带 agent 同桌互动",
+      "category": "产品",
+      "summary": "MiniMax 在 GitHub 开源 BYOB，主打用户自带 agent 的“同桌互动”能力。项目允许用户将自己的 agent 接入多人互动场景；输入未披露支持协议、部署方式和具体功能边界。",
+      "whyItMatters": "对搭建多 agent 协作或社交互动的开发者，BYOB 提供可复用开源入口，影响其 agent 接入层和多人场景方案选择。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "MiniMax",
+      "sourceUrl": "https://github.com/MiniMax-AI/mcode-agent-table?ref=explainx",
+      "publishedAt": "2026-11-04T01:32:18.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "Agent",
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "MiniMax 开源 BYOB",
+        "主打用户自带 agent 同桌互动"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n7",
+      "title": "Claude 团队版和企业版上线插件自动连接功能",
+      "category": "产品",
+      "summary": "Anthropic 为 Claude 团队版和企业版上线插件自动连接功能，文档入口指向企业托管认证。该更新面向企业管理员和团队用户，简化插件连接流程；输入未披露支持插件数量、上线范围和配置细节。",
+      "whyItMatters": "对企业 IT 管理员，自动连接插件减少手动配置和认证步骤，影响 Claude 在团队内的连接器部署与权限管理流程。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://claude.com/docs/connectors/building/enterprise-managed-auth",
+      "publishedAt": "2026-11-04T01:32:18.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "Claude"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude 团队版和企业版上线插件自动连接",
+        "文档涉及企业托管认证"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n21",
       "title": "Kimi 发布游戏开发与创意工作解决方案",
       "category": "产品",
-      "summary": "Kimi 发布游戏开发与创意工作解决方案，定位服务游戏开发与创意工作场景。公开信息未给出具体模型版本、功能清单、价格和开放范围，实际能力与可用性需以官方产品页说明为准。",
-      "whyItMatters": "对游戏与内容团队而言，这是把通用模型接入具体生产流程的信号；是否采用取决于其工具链完整度和定价，而非单次发布。",
+      "summary": "Kimi 发布面向游戏开发与创意工作的解决方案，覆盖相关开发与创作场景。输入未披露具体模型版本、功能清单、价格和上线时间，需查看原文获取方案细节。",
+      "whyItMatters": "对游戏开发和创意团队，Kimi 将模型能力包装为垂直方案，影响其工具选型；但缺少版本和价格信息，短期难评估替换成本。",
       "sourceName": "腾讯",
       "sourceDisplayName": "Kimi",
       "sourceUrl": "https://mp.weixin.qq.com/s/qSwHJXAuAyrjeYXGC3XnFA",
       "publishedAt": "2026-11-03T01:32:18.000Z",
-      "impactScore": 81,
+      "impactScore": 77,
       "confidence": "medium",
       "tags": [
         "Kimi"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Kimi发布游戏开发与创意工作解决方案",
-        "面向游戏开发与创意工作场景"
+        "Kimi 发布游戏开发与创意工作解决方案",
+        "面向游戏开发与创意场景"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n8",
+      "title": "Google 面向学生账号上线 Guided Learning",
+      "category": "产品",
+      "summary": "Google 面向学生账号上线 Guided Learning 功能，定位为学习引导。该功能进入 Google 教育产品体系，面向使用学生账号的用户；输入未披露覆盖国家、年级范围、支持语言和具体交互方式。",
+      "whyItMatters": "对教育机构和学生用户，Guided Learning 进入 Google 学生账号体系，影响课堂与课后学习工具的采用；覆盖范围未披露，采购决策仍需等待细则。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/education/guided-learning/",
+      "publishedAt": "2026-11-04T01:32:18.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Google 面向学生账号上线 Guided Learning",
+        "功能定位为学习引导"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n4",
+      "id": "n22",
       "title": "商汤推出 SenseNova 6.8 Flash 正式版，目前限时免费",
       "category": "模型",
-      "summary": "商汤推出 SenseNova 6.8 Flash 正式版，并宣布目前限时免费。公开信息只给出模型版本与免费状态，未披露参数规模、上下文长度、推理价格和正式收费时间，开发者需关注后续配额与商用条款。",
-      "whyItMatters": "限时免费降低开发者试用门槛，适合先验证中文生成与推理任务；是否迁移取决于后续定价、配额和稳定性，而非免费期本身。",
+      "summary": "商汤推出 SenseNova 6.8 Flash 正式版，目前限时免费。该模型以 Flash 命名，面向低成本推理场景；输入未披露参数规模、上下文长度、基准成绩和限免结束时间，用户需在商汤平台查看具体条款。",
+      "whyItMatters": "对调用中文模型的开发者和企业，正式版限免降低试用成本，影响短期模型比价和商汤 API 的接入测试；但限免期限未披露，长期成本不确定。",
       "sourceName": "Sensenova",
-      "sourceDisplayName": "商汤科技",
+      "sourceDisplayName": "商汤 Sensenova",
       "sourceUrl": "https://www.sensenova.cn/flash-6-8",
       "publishedAt": "2026-11-03T01:32:18.000Z",
-      "impactScore": 80,
+      "impactScore": 76,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "商汤发布SenseNova 6.8 Flash正式版",
+        "商汤推出 SenseNova 6.8 Flash 正式版",
         "目前限时免费"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n6",
-      "title": "ZCode 上线三款官方插件，支持网页项目一键部署",
+      "id": "n2",
+      "title": "ChatGPT Side Chats 不再过期，可长期保存",
       "category": "Agent",
-      "summary": "ZCode 上线三款官方插件，支持网页项目一键部署。此次更新聚焦把网页项目从开发环境推进到部署环节，但公开信息未给出插件名称、适用框架、免费额度和部署平台范围。",
-      "whyItMatters": "对使用 ZCode 的开发者，部署链路被收进编辑器，减少手工配置；团队选型时要看插件覆盖的框架和部署目标是否匹配现有栈。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "ZCode",
-      "sourceUrl": "https://mp.weixin.qq.com/s/dkGAhKckTpN_Yku_mQ7sUQ",
-      "publishedAt": "2026-11-03T01:32:18.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "ZCode上线三款官方插件",
-        "网页项目可一键部署"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n19",
-      "title": "美团发布 1.6 万亿参数模型 LongCat-2.5 正式版",
-      "category": "模型",
-      "summary": "美团发布 1.6 万亿参数模型 LongCat-2.5 正式版，参数规模达到 1.6 万亿。LongCat 博客已上线模型介绍，但公开摘要未披露评测分数、上下文长度、开放方式和定价，实际能力需看后续基准与 API 说明。",
-      "whyItMatters": "超大参数模型进入美团产品体系，会抬高国内基座模型竞争门槛；对开发者而言，关键看其推理成本、上下文和行业任务表现，而非只看参数量。",
-      "sourceName": "Longcat",
-      "sourceDisplayName": "美团",
-      "sourceUrl": "https://longcat.ai/blog/longcat-2.5/",
-      "publishedAt": "2026-11-02T01:14:02.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "美团发布LongCat-2.5正式版",
-        "参数规模1.6万亿"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n7",
-      "title": "Anthropic Message API 推出 message threads 公测",
-      "category": "Agent",
-      "summary": "Anthropic 为 Message API 推出 message threads 公测，面向消息线程组织。具体接口形态、配额、计费和正式上线时间尚未在公开摘要中说明，开发者需查阅 API 文档确认迁移方式。",
-      "whyItMatters": "对基于 Claude 构建应用的开发者，消息线程会影响会话管理、上下文拼接和计费设计；是否采用取决于公测条款和与现有 API 的兼容性。",
+      "summary": "ChatGPT 的 Side Chats 不再过期，可长期保存。该变化针对侧边对话的留存策略，用户可保留此前会过期的对话；输入未披露具体保存期限、账号范围和企业版是否同步。",
+      "whyItMatters": "对依赖 ChatGPT 侧边对话做临时研究的用户，长期保存减少重复整理，影响知识留存和团队共享习惯；企业版是否同步未明。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://x.com/ClaudeDevs/status/2117332452603527535",
-      "publishedAt": "2026-11-03T01:32:18.000Z",
-      "impactScore": 77,
-      "confidence": "high",
-      "tags": [
-        "Anthropic"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Anthropic Message API推出message threads",
-        "目前处于公测阶段"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n1",
-      "title": "研究者称 GPT-6 Astra 可直接改写模型权重",
-      "category": "研究",
-      "summary": "有研究者发文称，GPT-6 Astra 可直接改写模型权重。该说法来自个人博客，未给出 OpenAI 官方确认、复现实验细节或独立验证；若成立将影响模型可控性与安全边界，目前应按待证研究线索处理。",
-      "whyItMatters": "若权重可被模型直接改写，模型行为审计、版本回滚和安全对齐流程都要重做；在独立复现前，企业不应据此调整生产部署。",
-      "sourceName": "GitHub Pages",
-      "sourceDisplayName": "研究者博客",
-      "sourceUrl": "https://rikiyat.github.io/blog/weight-space-programming/",
-      "publishedAt": "2026-11-03T01:32:18.000Z",
-      "impactScore": 76,
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/btraut/status/2117696510146265089",
+      "publishedAt": "2026-11-04T01:32:18.000Z",
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
         "GPT"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "研究者称GPT-6 Astra可改写模型权重",
-        "来源为个人博客",
-        "尚无OpenAI官方确认"
+        "ChatGPT Side Chats 不再过期",
+        "可长期保存"
       ],
-      "confidenceReason": "传闻待证"
+      "confidenceReason": "单一来源"
     },
     {
-      "id": "n8",
-      "title": "OpenAI 发布 LifeVal 基准，衡量 AI 完成日常任务的能力",
-      "category": "研究",
-      "summary": "OpenAI 发布 LifeVal 基准，用于衡量 AI 完成日常任务的能力。该基准把评测对象从单题问答转向生活任务执行，但公开摘要未给出任务数量、评分方法和各家模型得分。",
-      "whyItMatters": "对模型团队，日常任务基准更接近用户实际使用场景，可用于筛选 Agent 与助手方案；采购方应等待具体榜单和复现结果再作比较。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/lifeval",
-      "publishedAt": "2026-11-03T01:32:18.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "OpenAI"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "OpenAI发布LifeVal基准",
-        "衡量AI完成日常任务能力"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n2",
-      "title": "OpenAI 自研 Git 后端 Pando 投产，中位推送延迟降近 80%",
-      "category": "产品",
-      "summary": "OpenAI 自研 Git 后端 Pando 已投产，官方称中位推送延迟下降近 80%。该更新指向大规模代码仓库的版本控制性能，具体仓库规模、峰值负载和迁移范围尚未在摘要中披露。",
-      "whyItMatters": "对大型研发团队，Git 推送延迟直接影响提交频率和 CI 周转；Pando 的指标提供了自研替代托管 Git 的参照，但需看规模与可用性细节。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/scaling-git-at-openai",
-      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "id": "n9",
+      "title": "微信视觉团队开源 WeVisOne-VL 视觉模型",
+      "category": "模型",
+      "summary": "微信视觉团队开源 WeVisOne-VL 视觉模型，项目页通过 GitHub Pages 发布。该模型面向视觉理解任务；输入未披露参数规模、训练数据、许可证、基准成绩和商用限制。",
+      "whyItMatters": "对需要中文视觉能力的开发者，WeVisOne-VL 增加一个可评估的开源选项，影响其视觉模型选型和本地部署测试；许可证与商用限制未披露，采用前需核实。",
+      "sourceName": "GitHub Pages",
+      "sourceDisplayName": "微信视觉团队",
+      "sourceUrl": "https://tencent.github.io/WeVisOne-VL/",
+      "publishedAt": "2026-11-04T01:32:18.000Z",
       "impactScore": 75,
       "confidence": "high",
       "tags": [
-        "OpenAI"
+        "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "OpenAI自研Git后端Pando投产",
-        "中位推送延迟降近80%"
+        "微信视觉团队开源 WeVisOne-VL",
+        "模型定位视觉模型"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n10",
-      "title": "腾讯混元发布 Hyra 2.0：从解题到造工具",
-      "category": "研究",
-      "summary": "腾讯混元发布 Hyra 2.0，官方定位从“解题”转向“造工具”。公开信息强调工具创造能力，但未披露模型参数、评测分数、开放平台和收费方式，实际效果需看可复现任务演示。",
-      "whyItMatters": "从答题到造工具，意味着模型要输出可执行流程而非单次答案；对企业和开发者，评估重点应转向工具调用成功率与可维护性。",
+      "title": "Claude Code 产品负责人 Cat Wu 宣布离职",
+      "category": "商业",
+      "summary": "Claude Code 产品负责人 Cat Wu 通过个人账号宣布离职。该消息涉及 Anthropic 旗下 Claude Code 产品线的管理层变动；输入未披露离职原因、继任者、生效时间和 Anthropic 官方回应。",
+      "whyItMatters": "对使用 Claude Code 的团队，产品负责人离职带来路线图连续性的观察点，影响企业评估该工具长期支持与版本节奏；目前缺少官方交接信息。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Cat Wu",
+      "sourceUrl": "https://x.com/_catwu/status/2117731934340337676",
+      "publishedAt": "2026-11-04T01:32:18.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Claude"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude Code 产品负责人 Cat Wu 宣布离职",
+        "消息来自其个人账号"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n24",
+      "title": "ZCode 上线三款官方插件，网页项目一键部署",
+      "category": "Agent",
+      "summary": "ZCode 上线三款官方插件，支持网页项目一键部署。该更新扩展 ZCode 的官方插件数量到三款，并简化网页项目发布流程；输入未披露插件名称、适用平台、部署目标和支持的框架。",
+      "whyItMatters": "对使用 ZCode 开发网页项目的用户，一键部署减少发布环节的手动配置，影响其从编码到上线的工具链选择；插件生态仍处早期。",
       "sourceName": "腾讯",
-      "sourceDisplayName": "腾讯混元",
-      "sourceUrl": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&amp;mid=2247498763&amp;idx=1&amp;sn=279f8fb4e43a987fdc0aa2af0b0f7958",
+      "sourceDisplayName": "ZCode",
+      "sourceUrl": "https://mp.weixin.qq.com/s/dkGAhKckTpN_Yku_mQ7sUQ",
       "publishedAt": "2026-11-03T01:32:18.000Z",
       "impactScore": 74,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "腾讯混元发布Hyra 2.0",
-        "定位从解题到造工具"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n11",
-      "title": "SemiAnalysis 发布 GDPx 基准，最佳模型仅得 12%",
-      "category": "研究",
-      "summary": "SemiAnalysis 发布 GDPx 基准，用于衡量前沿模型能力，最佳模型仅得 12%。这一得分显示现有模型在 GDPx 所测任务上仍有明显缺口，但公开摘要未给出任务构成、评分口径和各模型完整排名。",
-      "whyItMatters": "12% 的得分给前沿模型能力预期降温，适合作为任务型评测的补充参照；团队选型时应核对任务分布与评分口径，避免把单一基准当结论。",
-      "sourceName": "Semianalysis",
-      "sourceDisplayName": "SemiAnalysis",
-      "sourceUrl": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
-      "publishedAt": "2026-11-03T01:32:18.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "SemiAnalysis发布GDPx基准",
-        "最佳模型仅得12%"
+        "ZCode 上线三款官方插件",
+        "支持网页项目一键部署"
       ],
       "confidenceReason": "单一来源"
     },
     {
-      "id": "n14",
-      "title": "OpenAI 推出 Grid Protectors 计划，算力园区将为电网削峰",
-      "category": "商业",
-      "summary": "OpenAI 推出 Grid Protectors 计划，让算力园区参与电网削峰。该计划把 AI 数据中心从单纯用电负荷转为可调度资源，但公开摘要未给出园区数量、削峰容量、启动时间和合作电网。",
-      "whyItMatters": "对数据中心运营商和电网，算力负荷可调度意味着并网审批与能源成本模型会变化；AI 公司需在训练排程和供电合同中加入需求响应条款。",
-      "sourceName": "OpenAI",
+      "id": "n4",
+      "title": "OpenAI 团队成员称正扩展 dots 的模型组合",
+      "category": "产品",
+      "summary": "OpenAI 团队成员表示，正在扩展 dots 的模型组合。该表态指向 dots 产品可调用的模型范围将增加；输入未披露新增模型名称、上线时间、开放范围和 dots 的具体产品形态。",
+      "whyItMatters": "对使用 dots 的开发者，模型组合扩展影响其按任务选择模型的灵活性；但缺少模型清单和时间表，短期难以据此调整集成方案。",
+      "sourceName": "综合来源",
       "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://openai.com/index/grid-protectors-program/",
-      "publishedAt": "2026-11-03T01:32:18.000Z",
+      "sourceUrl": "https://x.com/thsottiaux/status/2117283124833055196",
+      "publishedAt": "2026-11-04T01:32:18.000Z",
       "impactScore": 73,
       "confidence": "high",
       "tags": [
@@ -247,30 +274,10 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "OpenAI推出Grid Protectors计划",
-        "算力园区将为电网削峰"
+        "OpenAI 团队成员称正扩展 dots 模型组合",
+        "dots 可调用模型范围将增加"
       ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n16",
-      "title": "沙特阿美收购 HUMAIN 49% 股份",
-      "category": "商业",
-      "summary": "沙特阿美收购 HUMAIN 49% 股份，交易已完成交割。该交易把石油资本与 AI 公司股权绑定，但公开摘要未披露交易金额、估值、治理安排和 HUMAIN 的具体业务范围。",
-      "whyItMatters": "对 AI 基础设施与能源买家，石油资本直接入股 AI 公司会改变算力项目的资金来源和承购关系；关注后续治理与投资承诺，而非仅看持股比例。",
-      "sourceName": "Aramco",
-      "sourceDisplayName": "沙特阿美",
-      "sourceUrl": "https://aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth",
-      "publishedAt": "2026-11-03T01:32:18.000Z",
-      "impactScore": 73,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "沙特阿美收购HUMAIN 49%股份",
-        "交易已完成交割"
-      ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "单一来源"
     }
   ],
   "sources": [
@@ -278,14 +285,14 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 23,
+      "itemCount": 35,
       "note": "日报型来源，已拆解 2 期"
     },
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 894
+      "itemCount": 896
     },
     {
       "name": "Google DeepMind Blog",
