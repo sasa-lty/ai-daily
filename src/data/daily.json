@@ -1,295 +1,223 @@
 {
-  "date": "2026-11-08",
-  "generatedAt": "2026-11-08T06:33:42.593Z",
-  "status": "ai",
-  "statusNote": "摘要与总评已由 AI 改写。",
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-09T07:03:04.891Z",
+  "status": "rule",
+  "statusNote": "未配置 API key 或 AI 增强失败，使用规则摘要。",
   "overview": {
-    "verdict": "Agent 落地信号最密集：从接管真实浏览器到评测后台桌面任务，登录与远程执行成新战场；订阅宣传口径同时被推上法庭。",
+    "verdict": "2026-11-09：今日信号集中在「Agent」「产品」方向，共筛选 12 条；热度最高的是「OpenCode 推出 Browse：AI agent 可控制你的真实浏览器」。",
     "keywords": [
       "Agent",
-      "Google",
-      "DeepSeek"
+      "OpenAI",
+      "DeepMind"
     ],
-    "heatIndex": 75,
+    "heatIndex": 73,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n2",
-    "n5",
+    "n10",
+    "n7",
     "n1"
   ],
   "items": [
     {
-      "id": "n2",
-      "title": "OpenCode 推出 Browse，AI agent 可直接控制用户真实浏览器",
+      "id": "n10",
+      "title": "OpenCode 推出 Browse：AI agent 可控制你的真实浏览器",
       "category": "Agent",
-      "summary": "OpenCode 推出 Browse，AI agent 可直接控制用户的真实浏览器。官方产品页已上线该功能，意味着 agent 的操作对象从模型内部环境扩展到用户日常浏览的网页会话；具体支持的浏览器范围、权限控制与计费方式尚未在给出的信息中说明。",
-      "whyItMatters": "对 Agent 产品团队：浏览器是多数 SaaS 与内部系统的唯一入口，直接操作用户已登录会话可省去逐系统 API 对接，但账号权限与操作审计风险同步上升。",
+      "summary": "OpenCode 推出 Browse：AI agent 可控制你的真实浏览器",
+      "whyItMatters": "Agent相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
       "sourceName": "Opencode",
-      "sourceDisplayName": "OpenCode",
+      "sourceDisplayName": "Opencode",
       "sourceUrl": "https://opencode.ai/product/browse",
       "publishedAt": "2026-11-08T02:08:44.000Z",
-      "impactScore": 82,
-      "confidence": "high",
-      "tags": [
-        "Agent"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "产品名为 OpenCode Browse",
-        "AI agent 可控制用户真实浏览器",
-        "官方产品页已上线"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n4",
-      "title": "Cua 联合 Scale AI 推出 Cua Driver Bench 评测 agent 桌面任务",
-      "category": "研究",
-      "summary": "Cua 联合 Scale AI 推出 Cua Driver Bench，用于评测 AI agent 在后台执行桌面任务的能力。该基准关注 agent 在不占用前台界面的情况下完成桌面操作的表现，为桌面类 agent 提供统一的比对口径；输入未给出任务数量与榜单结果。",
-      "whyItMatters": "桌面 agent 此前缺乏统一评测口径，采购方只能靠 Demo 判断；有第三方基准后可对照后台执行成功率做选型与验收。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "Cua",
-      "sourceUrl": "https://x.com/trycua/status/2118754889329230241",
-      "publishedAt": "2026-11-08T02:08:44.000Z",
-      "impactScore": 80,
-      "confidence": "high",
-      "tags": [
-        "Agent"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Cua 与 Scale AI 联合推出",
-        "基准名为 Cua Driver Bench",
-        "评测 agent 后台执行桌面任务"
-      ],
-      "confidenceReason": "官方发布，Cua 账号"
-    },
-    {
-      "id": "n9",
-      "title": "阿里在 Hugging Face 发布 MNN-Pocket-0.3B 模型",
-      "category": "模型",
-      "summary": "阿里在 Hugging Face 发布 MNN-Pocket-0.3B 模型，参数量为 0.3B，托管于 taobao-mnn 仓库，从命名与仓库归属看与 MNN 推理框架相关。输入未披露训练数据、评测成绩与许可证信息。",
-      "whyItMatters": "0.3B 级模型面向端侧部署，对在手机或嵌入式设备上跑本地推理的团队，可用更小参数换取内存与延迟，但实际效果需自行验证。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B",
-      "publishedAt": "2026-11-07T01:23:34.000Z",
       "impactScore": 78,
-      "confidence": "medium",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "模型名 MNN-Pocket-0.3B",
-        "参数量 0.3B",
-        "发布于 Hugging Face 的 taobao-mnn 仓库"
+      "confidence": "high",
+      "tags": [
+        "Agent"
       ],
-      "confidenceReason": "官方发布"
+      "aiEnhanced": false
     },
     {
-      "id": "n10",
-      "title": "Qoder CN 推出匿名模型 Qoduck 限时限量免费",
-      "category": "Agent",
-      "summary": "Qoder CN 推出匿名模型 Qoduck，并开启限时限量免费活动，用户可在活动期内免费调用该模型。活动细则见 Qoder 文档页；输入未给出模型参数量、上下文长度、免费额度上限与结束时间。",
-      "whyItMatters": "匿名模型限免降低试用门槛，但匿名意味着无法核对底层模型来源与数据条款，接入生产环境前需先评估合规与稳定性。",
-      "sourceName": "Qoder",
-      "sourceDisplayName": "Qoder",
-      "sourceUrl": "https://docs.qoder.cn/events/qoduck-free",
-      "publishedAt": "2026-11-07T01:23:34.000Z",
+      "id": "n7",
+      "title": "DeepMind 高管预告未来几周发布科学成果",
+      "category": "产品",
+      "summary": "DeepMind 高管预告未来几周发布科学成果",
+      "whyItMatters": "DeepMind的功能变化直接影响现有使用流程与替代方案评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/pushmeet/status/2119373171321196892",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
       "impactScore": 77,
       "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "匿名模型名为 Qoduck",
-        "限时限量免费",
-        "活动页位于 docs.qoder.cn"
+      "tags": [
+        "DeepMind"
       ],
-      "confidenceReason": "官方发布"
+      "aiEnhanced": false
     },
     {
       "id": "n1",
-      "title": "OpenAI 智能体 dots 被指可用验证码代用户登录",
-      "category": "Agent",
-      "summary": "有用户披露 OpenAI 智能体 dots 可在登录环节代为处理验证码，从而以用户身份完成登录流程。该信息来自个人在 X 上的描述，OpenAI 官方尚未就此发布说明，具体覆盖范围、账号类型与安全限制均待确认。",
-      "whyItMatters": "若属实，agent 可跨过登录这道最普遍的人机边界，账号安全与验证码作为防自动化手段的有效性都需重估，平台方要调整登录风控策略。",
+      "title": "恢复原价未及时公告，WorkBuddy 将返还积分差额",
+      "category": "产品",
+      "summary": "恢复原价未及时公告，WorkBuddy 将返还积分差额",
+      "whyItMatters": "腾讯的功能变化直接影响现有使用流程与替代方案评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/SoYZS-V1A1ysYNxfBXlO9Q",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n12",
+      "title": "Cua 联合 Scale AI 推出 Cua Driver Bench，评测 agent 后台执行桌面任务",
+      "category": "研究",
+      "summary": "Cua 联合 Scale AI 推出 Cua Driver Bench，评测 agent 后台执行桌面任务",
+      "whyItMatters": "该结果指向Agent方向的技术走向，通常领先产品化数月，用于判断投入方向。",
       "sourceName": "综合来源",
       "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/JamesZmSun/status/2119147164039618879",
+      "sourceUrl": "https://x.com/trycua/status/2118754889329230241",
       "publishedAt": "2026-11-08T02:08:44.000Z",
       "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Agent"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n2",
+      "title": "OpenAI 员工征询用户意见：是否增设 Pro 50 档位",
+      "category": "产品",
+      "summary": "OpenAI 员工征询用户意见：是否增设 Pro 50 档位",
+      "whyItMatters": "OpenAI的功能变化直接影响现有使用流程与替代方案评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2119305294291612140",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
         "OpenAI"
       ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "主体为 OpenAI 智能体 dots",
-        "可代用户处理验证码完成登录",
-        "信息来自 X 个人账号"
-      ],
-      "confidenceReason": "单一来源，个人 X 帖"
-    },
-    {
-      "id": "n11",
-      "title": "Google Antigravity 重置额度并上线语音模式",
-      "category": "Agent",
-      "summary": "Google 的 Antigravity 重置了用户额度，并上线语音模式，官方博客发布相关说明。两项更新同时落地，意味着该 agent 产品在配额与交互形态上均有调整；输入未给出新的额度数值与语音模式支持的语言。",
-      "whyItMatters": "对已在使用 Antigravity 的开发者，额度重置决定当前可跑多少任务，语音模式改变交互入口；是否迁移取决于新额度是否可预期。",
-      "sourceName": "Antigravity",
-      "sourceDisplayName": "Google Antigravity",
-      "sourceUrl": "https://antigravity.google/blog/antigravity-voice-mode",
-      "publishedAt": "2026-11-07T01:23:34.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "Google",
-        "语音"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Antigravity 重置额度",
-        "上线语音模式",
-        "官方博客发布说明"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n12",
-      "title": "Google 重新设计 Antigravity 并推出远程任务功能",
-      "category": "Agent",
-      "summary": "Google 对 Antigravity 进行重新设计，并推出远程任务功能，相关信息由 X 账号披露。改版与远程任务同时落地，指向该 agent 产品在界面与任务下发方式上的调整；输入未说明远程任务的执行环境、权限边界与可用地区。",
-      "whyItMatters": "远程任务让 agent 在用户不盯屏时执行，对长耗时流程是效率变量；但执行环境与权限边界不明前，不宜把敏感任务接入。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/_mohansolo/status/2118478787566588009",
-      "publishedAt": "2026-11-07T01:23:34.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "Google"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Antigravity 完成重新设计",
-        "推出远程任务功能",
-        "信息来自 X 账号"
-      ],
-      "confidenceReason": "单一来源，X 帖"
+      "aiEnhanced": false
     },
     {
       "id": "n3",
-      "title": "OpenCode 创始人回应模型卡顿，称正增加容量",
-      "category": "Agent",
-      "summary": "OpenCode 创始人就模型卡顿问题公开回应，称团队正在增加容量。该回应未给出扩容完成时间与具体容量数字，用户侧响应速度是否改善仍需观察；卡顿出现在 Browse 等新功能上线的同一时间窗口。",
-      "whyItMatters": "对依赖 OpenCode 跑日常开发的团队，卡顿直接决定可用性；官方承认容量瓶颈，意味着短期性能波动仍可能持续，重度使用需备好替代工具。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "OpenCode",
-      "sourceUrl": "https://x.com/thdxr/status/2118972258479927666",
-      "publishedAt": "2026-11-08T02:08:44.000Z",
+      "title": "NVIDIA 创始人黄仁勋承认对妻子不忠并道歉",
+      "category": "算力",
+      "summary": "NVIDIA 创始人黄仁勋承认对妻子不忠并道歉",
+      "whyItMatters": "算力供给与合作变化会传导至NVIDIA相关模型的训练成本与推理价格。",
+      "sourceName": "NVIDIA",
+      "sourceDisplayName": "NVIDIA",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
       "impactScore": 74,
       "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "创始人回应模型卡顿",
-        "正在增加容量",
-        "未给出完成时间"
+      "tags": [
+        "NVIDIA"
       ],
-      "confidenceReason": "单一来源，创始人 X 帖"
+      "aiEnhanced": false
     },
     {
-      "id": "n14",
-      "title": "OpenDesign 推出 DeepSeek V4.1 Flash Eco，每月提供 220 美元额度",
+      "id": "n4",
+      "title": "DeepSeek Harness 负责人回应插件作者：内置功能可被插件替换",
       "category": "Agent",
-      "summary": "OpenDesign 推出 DeepSeek V4.1 Flash Eco，并为用户每月提供 220 美元额度。该版本处于 DeepSeek V4.1 Flash 系列，与同期出现的 Ultrafast 版本形成不同档位；输入未给出具体速率、并发上限与限速规则。",
-      "whyItMatters": "每月 220 美元额度接近把中小团队的模型调用成本包干，选型时可与同价位 API 直接对比单价与吞吐，而不是只看模型版本名。",
+      "summary": "DeepSeek Harness 负责人回应插件作者：内置功能可被插件替换",
+      "whyItMatters": "DeepSeek相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "OpenDesign",
-      "sourceUrl": "https://x.com/OpenDesignDevs/status/2118659067728044361",
-      "publishedAt": "2026-11-07T01:23:34.000Z",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/tianyi/status/2119433744671273441",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
       "impactScore": 73,
       "confidence": "high",
       "tags": [
         "DeepSeek"
       ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "模型为 DeepSeek V4.1 Flash Eco",
-        "每月提供 220 美元额度",
-        "由 OpenDesign 推出"
-      ],
-      "confidenceReason": "单一来源，官方账号"
+      "aiEnhanced": false
     },
     {
       "id": "n5",
-      "title": "法院裁定 Anthropic 须应诉 Claude Max 宣传误导指控",
-      "category": "商业",
-      "summary": "法院裁定 Anthropic 须应诉有关 Claude Max 宣传误导用户的指控，案件进入实体审理阶段。诉由指向 Claude Max 的宣传表述与实际提供的服务是否相符；输入未给出索赔金额、陪审团安排与后续开庭时间。",
-      "whyItMatters": "订阅制 AI 产品的宣传口径被推到诉讼层面，直接影响厂商在额度、限速等条款上的表述方式，也提醒企业采购以合同条款而非营销页为准。",
-      "sourceName": "Courthousenews",
-      "sourceDisplayName": "Courthousenews",
-      "sourceUrl": "https://courthousenews.com/anthropic-must-face-claims-its-claude-max-pitch-misled-users",
+      "title": "GPT-6.1 Sol 连续 3 次参与活体小鼠脑手术，定位误差减半",
+      "category": "研究",
+      "summary": "GPT-6.1 Sol 连续 3 次参与活体小鼠脑手术，定位误差减半",
+      "whyItMatters": "该结果指向GPT方向的技术走向，通常领先产品化数月，用于判断投入方向。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/OcanaSantero/status/2118282298789650505",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n9",
+      "title": "OpenAI 智能体 dots 可用验证码代用户登录",
+      "category": "Agent",
+      "summary": "OpenAI 智能体 dots 可用验证码代用户登录",
+      "whyItMatters": "OpenAI相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/JamesZmSun/status/2119147164039618879",
       "publishedAt": "2026-11-08T02:08:44.000Z",
       "impactScore": 72,
       "confidence": "high",
       "tags": [
-        "Claude",
+        "OpenAI"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n6",
+      "title": "报道称 Anthropic 34 亿美元买燃气发电机组",
+      "category": "商业",
+      "summary": "报道称 Anthropic 34 亿美元买燃气发电机组",
+      "whyItMatters": "该交易明确了Anthropic方向的资金规模与估值锚点，影响对赛道空间的判断。",
+      "sourceName": "Financial Times",
+      "sourceDisplayName": "Financial Times",
+      "sourceUrl": "https://ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0?syn-25a6b1a6=1",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 71,
+      "confidence": "high",
+      "tags": [
         "Anthropic"
       ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Anthropic 须应诉",
-        "指控涉及 Claude Max 宣传误导",
-        "来源为 Courthousenews"
-      ],
-      "confidenceReason": "单一来源，法院报道"
+      "aiEnhanced": false
+    },
+    {
+      "id": "n11",
+      "title": "OpenCode 创始人回应模型卡顿，正增加容量",
+      "category": "Agent",
+      "summary": "OpenCode 创始人回应模型卡顿，正增加容量",
+      "whyItMatters": "综合来源相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thdxr/status/2118972258479927666",
+      "publishedAt": "2026-11-08T02:08:44.000Z",
+      "impactScore": 70,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
     },
     {
       "id": "n8",
-      "title": "Qwen 发海报预热新一代旗舰模型",
+      "title": "用户反映 Grok Bot 额度消耗加快，Elon Musk 称将核查用量",
       "category": "模型",
-      "summary": "Qwen 通过海报预热新一代旗舰模型，未在输入中披露模型名称、参数规模与发布时间。预热动作通常先于正式发布，但本次仅有一张海报，没有技术细节与评测数据可供核对。",
-      "whyItMatters": "旗舰更新会改变上一代模型的性价比曲线；在海报阶段不宜据此调整项目排期，应等参数与定价公布后再决定是否切换。",
+      "summary": "用户反映 Grok Bot 额度消耗加快，Elon Musk 称将核查用量",
+      "whyItMatters": "涉及Grok的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "Qwen",
-      "sourceUrl": "https://x.com/Alibaba_Qwen/status/2118674834632978755",
-      "publishedAt": "2026-11-07T01:23:34.000Z",
-      "impactScore": 72,
-      "confidence": "medium",
-      "tags": [
-        "Qwen"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Qwen 发布海报预热",
-        "指向新一代旗舰模型",
-        "未公布发布时间"
-      ],
-      "confidenceReason": "官方发布，信息有限"
-    },
-    {
-      "id": "n15",
-      "title": "Command Code 上线 DeepSeek V4.1 Flash Ultrafast",
-      "category": "Agent",
-      "summary": "Command Code 上线 DeepSeek V4.1 Flash Ultrafast，将该版本接入自身产品。Ultrafast 与同期 OpenDesign 提供的 Eco 同属 DeepSeek V4.1 Flash 系列，形成速度与成本的不同档位；输入未给出实测延迟与限速数据。",
-      "whyItMatters": "同一底层模型被不同平台包装成不同档位，开发者选型需比对真实延迟与限速，仅凭版本名判断快慢容易踩坑。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "Command Code",
-      "sourceUrl": "https://x.com/CommandCodeAI/status/2118824521314783243",
-      "publishedAt": "2026-11-07T01:23:34.000Z",
-      "impactScore": 72,
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/elonmusk/status/2119415029812609301",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 69,
       "confidence": "high",
       "tags": [
-        "DeepSeek"
+        "Grok"
       ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "上线 DeepSeek V4.1 Flash Ultrafast",
-        "平台为 Command Code",
-        "同系列另有 Eco 版本"
-      ],
-      "confidenceReason": "单一来源，官方账号"
+      "aiEnhanced": false
     }
   ],
   "sources": [
@@ -297,7 +225,7 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 30,
+      "itemCount": 15,
       "note": "日报型来源，已拆解 2 期"
     },
     {

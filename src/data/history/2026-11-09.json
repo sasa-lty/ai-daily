@@ -1,0 +1,250 @@
+{
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-09T07:03:04.891Z",
+  "status": "rule",
+  "statusNote": "未配置 API key 或 AI 增强失败，使用规则摘要。",
+  "overview": {
+    "verdict": "2026-11-09：今日信号集中在「Agent」「产品」方向，共筛选 12 条；热度最高的是「OpenCode 推出 Browse：AI agent 可控制你的真实浏览器」。",
+    "keywords": [
+      "Agent",
+      "OpenAI",
+      "DeepMind"
+    ],
+    "heatIndex": 73,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n10",
+    "n7",
+    "n1"
+  ],
+  "items": [
+    {
+      "id": "n10",
+      "title": "OpenCode 推出 Browse：AI agent 可控制你的真实浏览器",
+      "category": "Agent",
+      "summary": "OpenCode 推出 Browse：AI agent 可控制你的真实浏览器",
+      "whyItMatters": "Agent相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "Opencode",
+      "sourceDisplayName": "Opencode",
+      "sourceUrl": "https://opencode.ai/product/browse",
+      "publishedAt": "2026-11-08T02:08:44.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "Agent"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n7",
+      "title": "DeepMind 高管预告未来几周发布科学成果",
+      "category": "产品",
+      "summary": "DeepMind 高管预告未来几周发布科学成果",
+      "whyItMatters": "DeepMind的功能变化直接影响现有使用流程与替代方案评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/pushmeet/status/2119373171321196892",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "DeepMind"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n1",
+      "title": "恢复原价未及时公告，WorkBuddy 将返还积分差额",
+      "category": "产品",
+      "summary": "恢复原价未及时公告，WorkBuddy 将返还积分差额",
+      "whyItMatters": "腾讯的功能变化直接影响现有使用流程与替代方案评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/SoYZS-V1A1ysYNxfBXlO9Q",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n12",
+      "title": "Cua 联合 Scale AI 推出 Cua Driver Bench，评测 agent 后台执行桌面任务",
+      "category": "研究",
+      "summary": "Cua 联合 Scale AI 推出 Cua Driver Bench，评测 agent 后台执行桌面任务",
+      "whyItMatters": "该结果指向Agent方向的技术走向，通常领先产品化数月，用于判断投入方向。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/trycua/status/2118754889329230241",
+      "publishedAt": "2026-11-08T02:08:44.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Agent"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n2",
+      "title": "OpenAI 员工征询用户意见：是否增设 Pro 50 档位",
+      "category": "产品",
+      "summary": "OpenAI 员工征询用户意见：是否增设 Pro 50 档位",
+      "whyItMatters": "OpenAI的功能变化直接影响现有使用流程与替代方案评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2119305294291612140",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n3",
+      "title": "NVIDIA 创始人黄仁勋承认对妻子不忠并道歉",
+      "category": "算力",
+      "summary": "NVIDIA 创始人黄仁勋承认对妻子不忠并道歉",
+      "whyItMatters": "算力供给与合作变化会传导至NVIDIA相关模型的训练成本与推理价格。",
+      "sourceName": "NVIDIA",
+      "sourceDisplayName": "NVIDIA",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "NVIDIA"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n4",
+      "title": "DeepSeek Harness 负责人回应插件作者：内置功能可被插件替换",
+      "category": "Agent",
+      "summary": "DeepSeek Harness 负责人回应插件作者：内置功能可被插件替换",
+      "whyItMatters": "DeepSeek相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/tianyi/status/2119433744671273441",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n5",
+      "title": "GPT-6.1 Sol 连续 3 次参与活体小鼠脑手术，定位误差减半",
+      "category": "研究",
+      "summary": "GPT-6.1 Sol 连续 3 次参与活体小鼠脑手术，定位误差减半",
+      "whyItMatters": "该结果指向GPT方向的技术走向，通常领先产品化数月，用于判断投入方向。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/OcanaSantero/status/2118282298789650505",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n9",
+      "title": "OpenAI 智能体 dots 可用验证码代用户登录",
+      "category": "Agent",
+      "summary": "OpenAI 智能体 dots 可用验证码代用户登录",
+      "whyItMatters": "OpenAI相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/JamesZmSun/status/2119147164039618879",
+      "publishedAt": "2026-11-08T02:08:44.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n6",
+      "title": "报道称 Anthropic 34 亿美元买燃气发电机组",
+      "category": "商业",
+      "summary": "报道称 Anthropic 34 亿美元买燃气发电机组",
+      "whyItMatters": "该交易明确了Anthropic方向的资金规模与估值锚点，影响对赛道空间的判断。",
+      "sourceName": "Financial Times",
+      "sourceDisplayName": "Financial Times",
+      "sourceUrl": "https://ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0?syn-25a6b1a6=1",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 71,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n11",
+      "title": "OpenCode 创始人回应模型卡顿，正增加容量",
+      "category": "Agent",
+      "summary": "OpenCode 创始人回应模型卡顿，正增加容量",
+      "whyItMatters": "综合来源相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thdxr/status/2118972258479927666",
+      "publishedAt": "2026-11-08T02:08:44.000Z",
+      "impactScore": 70,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n8",
+      "title": "用户反映 Grok Bot 额度消耗加快，Elon Musk 称将核查用量",
+      "category": "模型",
+      "summary": "用户反映 Grok Bot 额度消耗加快，Elon Musk 称将核查用量",
+      "whyItMatters": "涉及Grok的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/elonmusk/status/2119415029812609301",
+      "publishedAt": "2026-11-09T01:16:29.000Z",
+      "impactScore": 69,
+      "confidence": "high",
+      "tags": [
+        "Grok"
+      ],
+      "aiEnhanced": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 15,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 899
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
