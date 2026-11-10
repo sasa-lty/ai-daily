@@ -1,223 +1,282 @@
 {
-  "date": "2026-11-09",
-  "generatedAt": "2026-11-09T07:03:04.891Z",
-  "status": "rule",
-  "statusNote": "未配置 API key 或 AI 增强失败，使用规则摘要。",
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T07:39:02.262Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "2026-11-09：今日信号集中在「Agent」「产品」方向，共筛选 12 条；热度最高的是「OpenCode 推出 Browse：AI agent 可控制你的真实浏览器」。",
+    "verdict": "今日信号集中在模型版本迭代与 Agent 工具链：Anthropic 双模型升级、字节图像模型强化长程改图、OpenAI 优化 Agent 缓存。",
     "keywords": [
+      "Anthropic",
       "Agent",
-      "OpenAI",
-      "DeepMind"
+      "开源"
     ],
-    "heatIndex": 73,
+    "heatIndex": 78,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n10",
-    "n7",
-    "n1"
+    "n1",
+    "n3",
+    "n10"
   ],
   "items": [
     {
-      "id": "n10",
-      "title": "OpenCode 推出 Browse：AI agent 可控制你的真实浏览器",
-      "category": "Agent",
-      "summary": "OpenCode 推出 Browse：AI agent 可控制你的真实浏览器",
-      "whyItMatters": "Agent相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "Opencode",
-      "sourceDisplayName": "Opencode",
-      "sourceUrl": "https://opencode.ai/product/browse",
-      "publishedAt": "2026-11-08T02:08:44.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [
-        "Agent"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n7",
-      "title": "DeepMind 高管预告未来几周发布科学成果",
-      "category": "产品",
-      "summary": "DeepMind 高管预告未来几周发布科学成果",
-      "whyItMatters": "DeepMind的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/pushmeet/status/2119373171321196892",
-      "publishedAt": "2026-11-09T01:16:29.000Z",
-      "impactScore": 77,
-      "confidence": "high",
-      "tags": [
-        "DeepMind"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n1",
-      "title": "恢复原价未及时公告，WorkBuddy 将返还积分差额",
-      "category": "产品",
-      "summary": "恢复原价未及时公告，WorkBuddy 将返还积分差额",
-      "whyItMatters": "腾讯的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "腾讯",
-      "sourceUrl": "https://mp.weixin.qq.com/s/SoYZS-V1A1ysYNxfBXlO9Q",
-      "publishedAt": "2026-11-09T01:16:29.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n12",
-      "title": "Cua 联合 Scale AI 推出 Cua Driver Bench，评测 agent 后台执行桌面任务",
-      "category": "研究",
-      "summary": "Cua 联合 Scale AI 推出 Cua Driver Bench，评测 agent 后台执行桌面任务",
-      "whyItMatters": "该结果指向Agent方向的技术走向，通常领先产品化数月，用于判断投入方向。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/trycua/status/2118754889329230241",
-      "publishedAt": "2026-11-08T02:08:44.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "Agent"
-      ],
-      "aiEnhanced": false
-    },
-    {
       "id": "n2",
-      "title": "OpenAI 员工征询用户意见：是否增设 Pro 50 档位",
-      "category": "产品",
-      "summary": "OpenAI 员工征询用户意见：是否增设 Pro 50 档位",
-      "whyItMatters": "OpenAI的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2119305294291612140",
-      "publishedAt": "2026-11-09T01:16:29.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "OpenAI"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n3",
-      "title": "NVIDIA 创始人黄仁勋承认对妻子不忠并道歉",
-      "category": "算力",
-      "summary": "NVIDIA 创始人黄仁勋承认对妻子不忠并道歉",
-      "whyItMatters": "算力供给与合作变化会传导至NVIDIA相关模型的训练成本与推理价格。",
-      "sourceName": "NVIDIA",
-      "sourceDisplayName": "NVIDIA",
-      "sourceUrl": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
-      "publishedAt": "2026-11-09T01:16:29.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [
-        "NVIDIA"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n4",
-      "title": "DeepSeek Harness 负责人回应插件作者：内置功能可被插件替换",
-      "category": "Agent",
-      "summary": "DeepSeek Harness 负责人回应插件作者：内置功能可被插件替换",
-      "whyItMatters": "DeepSeek相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/tianyi/status/2119433744671273441",
-      "publishedAt": "2026-11-09T01:16:29.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [
-        "DeepSeek"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n5",
-      "title": "GPT-6.1 Sol 连续 3 次参与活体小鼠脑手术，定位误差减半",
-      "category": "研究",
-      "summary": "GPT-6.1 Sol 连续 3 次参与活体小鼠脑手术，定位误差减半",
-      "whyItMatters": "该结果指向GPT方向的技术走向，通常领先产品化数月，用于判断投入方向。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/OcanaSantero/status/2118282298789650505",
-      "publishedAt": "2026-11-09T01:16:29.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [
-        "GPT"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n9",
-      "title": "OpenAI 智能体 dots 可用验证码代用户登录",
-      "category": "Agent",
-      "summary": "OpenAI 智能体 dots 可用验证码代用户登录",
-      "whyItMatters": "OpenAI相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/JamesZmSun/status/2119147164039618879",
-      "publishedAt": "2026-11-08T02:08:44.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [
-        "OpenAI"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n6",
-      "title": "报道称 Anthropic 34 亿美元买燃气发电机组",
+      "title": "Anthropic 为 Fable 5.2 上线推出限时优惠，高阶订阅最多可获 3 次重置",
       "category": "商业",
-      "summary": "报道称 Anthropic 34 亿美元买燃气发电机组",
-      "whyItMatters": "该交易明确了Anthropic方向的资金规模与估值锚点，影响对赛道空间的判断。",
-      "sourceName": "Financial Times",
-      "sourceDisplayName": "Financial Times",
-      "sourceUrl": "https://ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0?syn-25a6b1a6=1",
-      "publishedAt": "2026-11-09T01:16:29.000Z",
-      "impactScore": 71,
+      "summary": "Anthropic 在 Fable 5.2 上线同期推出限时优惠，高阶订阅用户最多可获得 3 次重置。该权益仅面向较高付费档位，用于模型更新期间的额度补偿，具体有效期与适用档位需查看官方支持文档。",
+      "whyItMatters": "对已购买高价位订阅的团队，重置次数直接决定新模型试用与压测的空间，可据此安排上线期的额度预算。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 89,
       "confidence": "high",
       "tags": [
         "Anthropic"
       ],
-      "aiEnhanced": false
+      "aiEnhanced": true,
+      "keyFacts": [
+        "随 Fable 5.2 上线推出限时优惠",
+        "高阶订阅最多可获 3 次重置"
+      ],
+      "confidenceReason": "官方发布，支持文档"
     },
     {
-      "id": "n11",
-      "title": "OpenCode 创始人回应模型卡顿，正增加容量",
-      "category": "Agent",
-      "summary": "OpenCode 创始人回应模型卡顿，正增加容量",
-      "whyItMatters": "综合来源相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thdxr/status/2118972258479927666",
-      "publishedAt": "2026-11-08T02:08:44.000Z",
-      "impactScore": 70,
+      "id": "n1",
+      "title": "Anthropic 发布 Fable 5.2 与 Mythos 5.2，称编程与科学评测提升",
+      "category": "研究",
+      "summary": "Anthropic 发布 Fable 5.2 和 Mythos 5.2 两个版本，官方称在编程与科学类评测上均有提升。两个版本同日更新，分别面向编码与科学推理场景，具体评测分数与上下文规格需查阅发布页原文。",
+      "whyItMatters": "正在选型的开发团队需要重跑自家编码与科研任务的对比测试，避免沿用旧版本的性能假设做采购与迁移决策。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://anthropic.com/claude-fable-and-mythos-5-2",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 83,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "同日发布 Fable 5.2 与 Mythos 5.2",
+        "官方称编程与科学评测提升"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "字节跳动发布 Seedream 5.5，称连续改图百轮不走样",
+      "category": "产品",
+      "summary": "字节跳动发布图像模型 Seedream 5.5，主打多轮编辑的一致性，官方称连续改图百轮仍不走样。该能力面向需要反复修图的创作与电商出图场景，目标是减少长链路编辑中的画面漂移与风格丢失。",
+      "whyItMatters": "电商与设计团队做多轮返修时不必每轮重出底图，可把长链修图放进同一会话，降低人工返工与重绘成本。",
+      "sourceName": "字节跳动",
+      "sourceDisplayName": "字节跳动",
+      "sourceUrl": "https://seed.bytedance.com/zh/seedream5_5",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 81,
       "confidence": "high",
       "tags": [],
-      "aiEnhanced": false
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发布图像模型 Seedream 5.5",
+        "主打多轮改图一致性，宣称百轮不走样"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n17",
+      "title": "钉钉发布千问办公 2.0：推出协作空间与数字员工小Q",
+      "category": "产品",
+      "summary": "钉钉发布千问办公 2.0，新增协作空间与数字员工小 Q。版本重心从单点问答转向团队协作与可执行任务的数字员工，具体开放范围、席位与计费方式在现有信息中尚未披露。",
+      "whyItMatters": "已用钉钉办公的企业需评估数字员工接入哪些流程与数据权限，这会改变协作工具的采购与权限治理方案。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "钉钉",
+      "sourceUrl": "https://mp.weixin.qq.com/s?new=1&amp;signature=WsAlCDU%2AkZymDtJJKpBstmU9mr6qalSPhltNuojPmJRmdt6zEI9ML7NDVp6td56cW49Wvd3T3cJ-69M7goAA9Ug39P8og2Lhs7uyB4aXMjdyv5WYspcMq0Ok94F9c3A9&amp;src=11&amp;timestamp=1794218499&amp;ver=7078",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发布千问办公 2.0",
+        "新增协作空间与数字员工小Q"
+      ],
+      "confidenceReason": "官方发布，公众号原文"
+    },
+    {
+      "id": "n6",
+      "title": "Meta 发布迄今最小模型 Muse Ember，专攻 agent 重复任务",
+      "category": "模型",
+      "summary": "Meta 发布其迄今最小的模型 Muse Ember，定位专攻 agent 的重复性任务。小体量意味着更低的推理成本与更容易的部署方式，适合高频、低复杂度的自动化调用，参数量与评测数据需查看研究博客。",
+      "whyItMatters": "批量跑 agent 的团队可把高频简单任务迁到小模型，用更低单次成本覆盖长尾调用，把大模型留给复杂环节。",
+      "sourceName": "Meta",
+      "sourceDisplayName": "Meta",
+      "sourceUrl": "https://research.meta.ai/blog/muse-ember",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "Meta",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Meta 迄今最小的模型",
+        "定位 agent 重复任务场景"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n7",
+      "title": "Adventists AI 开源全双工语音模型 Sophon-Realtime v1",
+      "category": "模型",
+      "summary": "Adventists AI 在 ModelScope 开源全双工语音模型 Sophon-Realtime v1。全双工指可边听边说、支持实时打断的语音交互形态，开源后开发者可直接获取权重进行二次开发与自托管部署。",
+      "whyItMatters": "做实时语音交互的团队可自托管验证打断与响应延迟，减少对闭源语音 API 的依赖，降低长期调用成本。",
+      "sourceName": "Modelscope",
+      "sourceDisplayName": "Adventists AI",
+      "sourceUrl": "https://modelscope.ai/models/AdventistsAI/Sophon-Realtime-v1",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "开源",
+        "语音"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "开源全双工语音模型",
+        "版本为 Sophon-Realtime v1"
+      ],
+      "confidenceReason": "官方发布，模型页"
     },
     {
       "id": "n8",
-      "title": "用户反映 Grok Bot 额度消耗加快，Elon Musk 称将核查用量",
+      "title": "美团开源 LongCat-2.5，MIT 协议可商用",
       "category": "模型",
-      "summary": "用户反映 Grok Bot 额度消耗加快，Elon Musk 称将核查用量",
-      "whyItMatters": "涉及Grok的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "summary": "美团开源 LongCat-2.5，采用 MIT 协议，允许商用。MIT 属宽松许可，企业可修改、分发并闭源集成，商用合规门槛较低；模型规模、训练细节与评测结果需查看官方发布说明。",
+      "whyItMatters": "有合规顾虑的企业可把该模型纳入自建推理方案，无需公开衍生代码，直接影响开源模型选型与法务评估流程。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "美团",
+      "sourceUrl": "https://mp.weixin.qq.com/s/EGLDrPxND-xGTyStJIDXrw",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "美团开源 LongCat-2.5",
+        "采用 MIT 协议，可商用"
+      ],
+      "confidenceReason": "官方发布，公众号原文"
+    },
+    {
+      "id": "n10",
+      "title": "OpenAI Agents API 推出三项新功能，prompt cache 可保留 12 小时",
+      "category": "Agent",
+      "summary": "OpenAI Agents API 新增三项功能，其中 prompt cache 保留时间延长至 12 小时。更长的缓存有效期可减少重复上下文的重算开销，对长会话与周期性触发的 agent 任务是直接的成本与时延优化。",
+      "whyItMatters": "跑周期性 agent 的开发者可把系统提示与工具描述常驻缓存，按 12 小时窗口重排任务调度以摊薄重复计费。",
       "sourceName": "综合来源",
       "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/elonmusk/status/2119415029812609301",
-      "publishedAt": "2026-11-09T01:16:29.000Z",
-      "impactScore": 69,
+      "sourceUrl": "https://x.com/AzianMike/status/2119876908066427244",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Agents API 推出三项新功能",
+        "prompt cache 可保留 12 小时"
+      ],
+      "confidenceReason": "单一来源，社媒转述"
+    },
+    {
+      "id": "n4",
+      "title": "阿里云 Token Plan 个人版额度上调，Pro 月费降至 312 元",
+      "category": "产品",
+      "summary": "阿里云 Token Plan 个人版上调额度，Pro 档月费降至 312 元。额度提升叠加月费下调，等于降低单位 token 的实际价格，对长期订阅的个人开发者与小型团队影响最直接。",
+      "whyItMatters": "已订阅或准备订阅的个人开发者可重算月度成本，把节省的预算转向更高频的调用或更大上下文的使用。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "阿里云",
+      "sourceUrl": "https://mp.weixin.qq.com/s/jHMi-kO0VpjQKqezGEiK9g",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "个人版 Token 额度上调",
+        "Pro 档月费降至 312 元"
+      ],
+      "confidenceReason": "官方发布，公众号原文"
+    },
+    {
+      "id": "n12",
+      "title": "Ollama 推出使用情况页面，每日花费与 token 用量可查",
+      "category": "Agent",
+      "summary": "Ollama 推出使用情况页面，可查看每日花费与 token 用量。本地模型工具此前缺少成本可视化入口，该页面让自建推理的团队能按日核对开销与调用规模，便于定位异常消耗。",
+      "whyItMatters": "自建推理的团队可按日核对成本与调用量，把预算异常定位到具体日期与用量峰值，便于调整模型分配。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Ollama",
+      "sourceUrl": "https://x.com/ollama/status/2119897229758788041",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Llama"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "新增使用情况页面",
+        "可查每日花费与 token 用量"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n13",
+      "title": "OpenCode 安卓应用上线，需连接电脑或服务器使用",
+      "category": "Agent",
+      "summary": "OpenCode 安卓应用上线，但需连接电脑或服务器才能使用，手机端本身不承担模型推理。产品定位是远程操控与查看编码任务，适合在离开工位时接管已配置好的开发环境。",
+      "whyItMatters": "依赖本地或自建环境的开发者可在外出时查看与推进任务，但是否值得部署取决于远程连接的安全与权限配置。",
+      "sourceName": "Google",
+      "sourceDisplayName": "OpenCode",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=ai.opencode.mobilecode",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenCode 安卓应用上线",
+        "需连接电脑或服务器使用"
+      ],
+      "confidenceReason": "官方发布，应用商店"
+    },
+    {
+      "id": "n14",
+      "title": "Grok Bot 宣布为所有用户重置每周限额",
+      "category": "产品",
+      "summary": "Grok Bot 宣布为所有用户重置每周限额。此举直接恢复本周已用尽的调用额度，对高频使用的个人用户是即时可用性提升；后续限额政策是否调整，现有信息未作说明。",
+      "whyItMatters": "本周额度已耗尽的用户可立即继续调用，重度依赖该工具的团队需重新安排本周剩余任务的排期。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Grok Bot",
+      "sourceUrl": "https://x.com/bot/status/2119871982946971659",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
         "Grok"
       ],
-      "aiEnhanced": false
+      "aiEnhanced": true,
+      "keyFacts": [
+        "为所有用户重置每周限额",
+        "面向全部用户，不限付费档位"
+      ],
+      "confidenceReason": "官方发布"
     }
   ],
   "sources": [
@@ -225,14 +284,14 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 15,
+      "itemCount": 29,
       "note": "日报型来源，已拆解 2 期"
     },
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 899
+      "itemCount": 900
     },
     {
       "name": "Google DeepMind Blog",
