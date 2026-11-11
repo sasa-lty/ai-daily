@@ -1,0 +1,313 @@
+{
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-11T06:58:19.885Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "模型侧信号最密集：谷歌开放 Gemini 4 Carbon、MiniMax 开放图像权重，Anthropic 则把 Claude 铺进表格、白板与数据场景。",
+    "keywords": [
+      "Anthropic",
+      "Google",
+      "Gemini"
+    ],
+    "heatIndex": 77,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n1",
+    "n2",
+    "n3"
+  ],
+  "items": [
+    {
+      "id": "n26",
+      "title": "Anthropic 随 Fable 5.2 上线推出限时优惠，高阶订阅最多 3 次重置",
+      "category": "商业",
+      "summary": "Anthropic 随 Fable 5.2 上线推出限时优惠，高阶订阅用户最多可获得 3 次额度重置。该优惠与模型版本发布同步，属于订阅侧的促销与额度安排，适用条件以支持页面为准。",
+      "whyItMatters": "高频使用 Claude 的付费团队可借此恢复额度，实际用量与订阅档位之间的性价比需要重新核算。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 85,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "随 Fable 5.2 上线推出限时优惠",
+        "高阶订阅最多获 3 次重置"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n2",
+      "title": "MiniMax 发布 H3-Image 并开放模型权重",
+      "category": "开源",
+      "summary": "MiniMax 在官方博客发布图像模型 H3-Image，并同步开放模型权重，第三方可自行下载部署或微调。开放权重意味着图像生成能力可以脱离官方 API，在本地或私有云环境中运行。",
+      "whyItMatters": "需要私有化图像生成的企业可自托管 H3-Image，减少对闭源 API 的依赖，推理成本与合规边界由自己掌握。",
+      "sourceName": "Minimax",
+      "sourceDisplayName": "MiniMax",
+      "sourceUrl": "https://www.minimax.io/blog/minimax-h3-image",
+      "publishedAt": "2026-11-11T02:05:17.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "MiniMax 发布图像模型 H3-Image",
+        "权重同步开放，可自行部署"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "Anthropic 推出 Claude Whiteboards、Sheets 与 Data",
+      "category": "模型",
+      "summary": "Anthropic 一次上线 Claude Whiteboards、Claude Sheets 与 Claude Data 三项能力，把 Claude 从对话界面延伸到白板、表格与数据连接场景，官方将其定位为与 Claude 协作的新工作方式。",
+      "whyItMatters": "团队在文档与表格内的日常协作可直接调用 Claude，企业采购办公 AI 时的对比对象从聊天机器人扩展到表格与白板工具。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+      "publishedAt": "2026-11-11T02:05:17.000Z",
+      "impactScore": 81,
+      "confidence": "high",
+      "tags": [
+        "Claude",
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "一次上线 Whiteboards、Sheets、Data",
+        "覆盖白板、表格与数据连接场景"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n25",
+      "title": "Anthropic 发布 Fable 5.2 与 Mythos 5.2，编程与科学评测提升",
+      "category": "研究",
+      "summary": "Anthropic 发布 Fable 5.2 与 Mythos 5.2 两个模型版本，官方称两者在编程与科学类评测上均有提升。两个版本面向不同使用侧重，具体分数与上下文规格以官方公告为准。",
+      "whyItMatters": "以编程和科研为主要负载的团队需要重跑自有评测，据此判断是否把线上模型切到 5.2 版本。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://anthropic.com/claude-fable-and-mythos-5-2",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发布 Fable 5.2 与 Mythos 5.2",
+        "编程与科学评测成绩提升"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n6",
+      "title": "Google DeepMind 推出 Gemini Robotics 2.5",
+      "category": "模型",
+      "summary": "Google DeepMind 发布 Gemini Robotics 2.5，定位加速真实世界物理智能，把 Gemini 的模型能力接到机器人的感知与动作环节。该版本面向机器人场景，具体能力边界与开放方式以官方博客为准。",
+      "whyItMatters": "做机器人整机与具身智能的团队多了一个通用模型底座选项，选型时需对比自研 VLA 与 Gemini 路线。",
+      "sourceName": "Google DeepMind",
+      "sourceDisplayName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "publishedAt": "2026-11-11T02:05:17.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Gemini",
+        "DeepMind"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "DeepMind 发布 Gemini Robotics 2.5",
+        "定位加速真实世界物理智能"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n7",
+      "title": "ElevenLabs 发布 Scribe v3 与 Scribe v3 Live 语音转写模型",
+      "category": "模型",
+      "summary": "ElevenLabs 发布语音转写模型 Scribe v3，并同步推出实时版本 Scribe v3 Live，覆盖离线转写与实时转写两类场景，与其既有语音生成产品线形成配套。",
+      "whyItMatters": "会议记录、客服质检等语音转写场景多了一个供应商选项，实时字幕类产品的延迟与成本可重新评估。",
+      "sourceName": "ElevenLabs",
+      "sourceDisplayName": "ElevenLabs",
+      "sourceUrl": "https://elevenlabs.io/blog/scribe-v3",
+      "publishedAt": "2026-11-11T02:05:17.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "语音"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发布 Scribe v3 与 Scribe v3 Live",
+        "覆盖离线与实时两类转写"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n27",
+      "title": "字节跳动发布 Seedream 5.5，主打多轮改图",
+      "category": "产品",
+      "summary": "字节跳动发布图像模型 Seedream 5.5，官方强调其多轮改图能力，称连续百轮编辑后画面仍保持一致、不走样。该版本面向图像编辑工作流，可用入口与开放范围以官方页面为准。",
+      "whyItMatters": "需要反复修改同一张图的电商与设计流程，可把多轮编辑交给模型，减少人工重绘与风格漂移带来的返工。",
+      "sourceName": "字节跳动",
+      "sourceDisplayName": "字节跳动",
+      "sourceUrl": "https://seed.bytedance.com/zh/seedream5_5",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "字节跳动发布 Seedream 5.5",
+        "主打多轮改图，百轮编辑不走样"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n1",
+      "title": "谷歌正式开放 Gemini 4 Carbon 模型",
+      "category": "模型",
+      "summary": "谷歌在官方博客宣布 Gemini 4 Carbon 正式开放，开发者可从官方发布页进入模型使用入口。这是 Gemini 4 系列面向开发者的一次正式开放动作，参数规模、定价与区域可用范围以官方页面为准。",
+      "whyItMatters": "开发者选型时可直接把 Gemini 4 Carbon 纳入候选，云与 API 侧的模型迁移、成本评估需要同步更新。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "publishedAt": "2026-11-11T02:05:17.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "官方博客宣布 Gemini 4 Carbon 开放",
+        "属 Gemini 4 系列正式开放"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n8",
+      "title": "Amazon 开源表格基础模型 Mitra-v2",
+      "category": "模型",
+      "summary": "Amazon 在 Hugging Face 开源表格基础模型 Mitra-v2，仓库以 mitra-classifier-2 命名。表格基础模型面向结构化数据的分类与预测任务，开源后可直接下载或在此基础上微调。",
+      "whyItMatters": "企业表格数据的分类与预测可基于开源权重自建，减少对通用大模型 API 的调用，数据留在本地。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "Amazon",
+      "sourceUrl": "https://huggingface.co/autogluon/mitra-classifier-2",
+      "publishedAt": "2026-11-11T02:05:17.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Amazon 开源表格基础模型 Mitra-v2",
+        "权重发布于 Hugging Face 仓库"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n41",
+      "title": "钉钉发布千问办公 2.0，推出协作空间与数字员工小Q",
+      "category": "产品",
+      "summary": "钉钉发布千问办公 2.0，在办公套件中加入协作空间与数字员工小Q，把千问的模型能力落到具体办公流程。数字员工小Q定位为承担事务性工作的办公助手角色。",
+      "whyItMatters": "已用钉钉的企业可在原工作台内试用 AI 协作与数字员工，办公 AI 的采购决策从单点工具转向套件升级。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "钉钉",
+      "sourceUrl": "https://mp.weixin.qq.com/s?new=1&amp;signature=WsAlCDU%2AkZymDtJJKpBstmU9mr6qalSPhltNuojPmJRmdt6zEI9ML7NDVp6td56cW49Wvd3T3cJ-69M7goAA9Ug39P8og2Lhs7uyB4aXMjdyv5WYspcMq0Ok94F9c3A9&amp;src=11&amp;timestamp=1794218499&amp;ver=7078",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "钉钉发布千问办公 2.0",
+        "新增协作空间与数字员工小Q"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n9",
+      "title": "Google Antigravity 推出 /swarm 预览，多 agent 并行开发",
+      "category": "Agent",
+      "summary": "Google Antigravity 推出 /swarm 预览功能，支持多个 agent 并行协作开发，开发者可在工具内以命令方式拉起多个 agent 分工完成任务。该能力目前处于预览状态。",
+      "whyItMatters": "使用 Antigravity 的开发者可把任务拆给多个 agent 并行执行，任务拆分方式与代码审查流程需要相应调整。",
+      "sourceName": "Antigravity",
+      "sourceDisplayName": "Google Antigravity",
+      "sourceUrl": "https://antigravity.google/docs/swarm",
+      "publishedAt": "2026-11-11T02:05:17.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity 上线 /swarm 预览",
+        "支持多 agent 并行协作开发"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n30",
+      "title": "Meta 发布迄今最小模型 Muse Ember，专攻 agent 重复任务",
+      "category": "模型",
+      "summary": "Meta 发布目前体积最小的模型 Muse Ember，主打 agent 的重复性任务场景。小模型面向高频、低复杂度的自动化调用，具体参数规模与开放方式以官方研究博客为准。",
+      "whyItMatters": "跑大量重复任务的 agent 系统可用更小模型压低单次调用成本，同时需评估小模型在边界情况下的稳定性。",
+      "sourceName": "Meta",
+      "sourceDisplayName": "Meta",
+      "sourceUrl": "https://research.meta.ai/blog/muse-ember",
+      "publishedAt": "2026-11-10T01:12:43.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Meta",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Meta 发布最小模型 Muse Ember",
+        "专攻 agent 重复任务场景"
+      ],
+      "confidenceReason": "官方发布"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 45,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 903
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
