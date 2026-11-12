@@ -1,0 +1,327 @@
+{
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T07:35:03.093Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "模型上新密集：Qwen4、Gemini Decisions 1、ERNIE 5.5 Flash 同日推进，编码与 Agent 工具同步扩容。",
+    "keywords": [
+      "Google",
+      "Qwen",
+      "Gemini"
+    ],
+    "heatIndex": 79,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n2",
+    "n1",
+    "n6"
+  ],
+  "items": [
+    {
+      "id": "n2",
+      "title": "通义千问宣布 Qwen4 即将推出，预览版已开放试用",
+      "category": "模型",
+      "summary": "通义千问宣布下一代模型 Qwen4 即将推出，预览版已可试用。官方未披露参数规模、上下文长度与定价，也未说明正式版时间表；开发者可先行体验，判断是否将现有调用迁往新版本。",
+      "whyItMatters": "开发者可提前试用 Qwen4 预览版，评估推理与调用成本，再决定是否将生产流量从现有 Qwen 版本迁移。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "通义千问",
+      "sourceUrl": "https://mp.weixin.qq.com/s/J_zbVHa2R3mmY5KD4v3-bw",
+      "publishedAt": "2026-11-12T01:14:22.000Z",
+      "impactScore": 89,
+      "confidence": "high",
+      "tags": [
+        "Qwen"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "通义千问宣布 Qwen4 即将推出",
+        "预览版已可试用",
+        "正式发布时间未公布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n6",
+      "title": "百度发布 ERNIE 5.5 Flash Preview，API 上线千帆",
+      "category": "模型",
+      "summary": "百度发布 ERNIE 5.5 Flash Preview，API 已在千帆平台上线。官方未公布定价、上下文长度与性能对比数据；企业用户可在千帆上直接接入该预览版模型，评估其在现有业务链路中的延迟与效果。",
+      "whyItMatters": "使用千帆的企业可在同一平台对比 ERNIE 5.5 Flash 预览版与现有模型，据此决定推理成本与模型选型。",
+      "sourceName": "百度",
+      "sourceDisplayName": "百度",
+      "sourceUrl": "https://ernie.baidu.com/research",
+      "publishedAt": "2026-11-12T01:14:22.000Z",
+      "impactScore": 85,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "百度发布 ERNIE 5.5 Flash Preview",
+        "API 已上线千帆平台",
+        "参数与定价未公开"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n1",
+      "title": "Google 推出 Gemini Decisions 1 模型",
+      "category": "模型",
+      "summary": "Google 发布 Gemini Decisions 1 模型，并同步上线面向开发者的 Gemini Decisions API。官方未披露模型规模与基准成绩，主要面向需要模型做出判断与决策输出的场景，开发者可通过该 API 直接调用。",
+      "whyItMatters": "对需要自动化判断的团队，多了一个专用 API 选项，需实测其决策稳定性后再决定是否替换现有通用模型方案。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "publishedAt": "2026-11-12T01:14:22.000Z",
+      "impactScore": 83,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Google 推出 Gemini Decisions 1 模型",
+        "同步上线 Gemini Decisions API",
+        "官方未公布基准分数"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n4",
+      "title": "Google DeepMind 发布 AlphaGenome 2，解析细胞读取 DNA 机制",
+      "category": "模型",
+      "summary": "Google DeepMind 发布 AlphaGenome 2，聚焦细胞如何读取 DNA，以更好理解疾病。官方未公布模型规模与评测细节；该版本延续基因组方向，供研究机构用于变异与基因调控相关分析。",
+      "whyItMatters": "基因组研究者可用新版模型分析非编码变异与基因调控，影响疾病机制研究的建模工具选择。",
+      "sourceName": "Google DeepMind",
+      "sourceDisplayName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease",
+      "publishedAt": "2026-11-12T01:14:22.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "DeepMind"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Google DeepMind 发布 AlphaGenome 2",
+        "方向为细胞如何读取 DNA",
+        "目标是更好理解疾病"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n5",
+      "title": "上海创智学院开源 Nex-N2.6 模型",
+      "category": "模型",
+      "summary": "上海创智学院开源 Nex-N2.6 模型，权重对外公开。输入未披露参数规模、训练数据与评测成绩；开源属性意味着团队可自行部署与微调，但需自行验证其能力边界与合规使用范围。",
+      "whyItMatters": "需要私有化部署的团队可将 Nex-N2.6 纳入备选，降低对闭源 API 的依赖，但须自行完成能力与合规评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "上海创智学院",
+      "sourceUrl": "https://mp.weixin.qq.com/s/66z00kTlSRPMsc1jSDlX3Q",
+      "publishedAt": "2026-11-12T01:14:22.000Z",
+      "impactScore": 79,
+      "confidence": "medium",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "上海创智学院开源 Nex-N2.6",
+        "权重对外公开",
+        "参数规模未披露"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n23",
+      "title": "MiniMax 发布 H3-Image 并开放权重",
+      "category": "开源",
+      "summary": "MiniMax 发布图像模型 H3-Image，并同步开放模型权重。输入未给出参数规模、生成分辨率与评测指标；开放权重后，开发者可本地部署或二次微调，用于自建图像生成流程。",
+      "whyItMatters": "做图像生成的团队可基于开放权重自建推理服务，减少对闭源接口的调用成本和内容审核依赖。",
+      "sourceName": "Minimax",
+      "sourceDisplayName": "MiniMax",
+      "sourceUrl": "https://www.minimax.io/blog/minimax-h3-image",
+      "publishedAt": "2026-11-11T02:05:17.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "MiniMax 发布 H3-Image",
+        "模型权重已开放",
+        "参数规模未披露"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n24",
+      "title": "Anthropic 推出 Claude Whiteboards、Claude Sheets 和 Claude Data",
+      "category": "模型",
+      "summary": "Anthropic 为 Claude 增加 Whiteboards、Sheets 和 Data 三项能力，向协作办公场景延伸。官方未公布各功能的定价与开放范围；用户可在 Claude 内完成白板、表格与数据处理类任务，减少在多个工具间切换。",
+      "whyItMatters": "已用 Claude 的团队可把表格与数据任务收进同一对话入口，据此评估是否削减独立的协作工具订阅。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+      "publishedAt": "2026-11-11T02:05:17.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "Claude",
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "推出 Claude Whiteboards",
+        "推出 Claude Sheets 与 Claude Data",
+        "定价与开放范围未公布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n9",
+      "title": "DeepL 发布语音模型 Aure，实时还原语气与情绪",
+      "category": "模型",
+      "summary": "DeepL 发布语音模型 Aure，主打实时还原说话者的语气与情绪。官方未公布延迟、支持语种与上线时间；该模型把 DeepL 的能力从文本翻译扩展到语音表达层面，面向实时语音场景。",
+      "whyItMatters": "依赖翻译的客服与会议场景可评估语音层方案，决定是否在文本翻译之外增加带情绪表达的语音链路。",
+      "sourceName": "Deepl",
+      "sourceDisplayName": "DeepL",
+      "sourceUrl": "https://www.deepl.com/en/press-release/aure-voice-ai-model",
+      "publishedAt": "2026-11-12T01:14:22.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "语音"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "DeepL 发布语音模型 Aure",
+        "主打实时还原语气与情绪",
+        "支持语种与延迟未公布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "OpenAI 成员暗示周四可能重置 Codex 储备",
+      "category": "产品",
+      "summary": "OpenAI 一名成员在社交平台暗示，本周四可能进行 Codex 储备重置。该说法未附带官方公告、重置范围与生效规则；对依赖 Codex 配额的开发者而言，目前只能视为待确认的时间点提示。",
+      "whyItMatters": "使用 Codex 的开发者需关注配额是否重置，以安排批量生成与测试任务，避免在额度不确定时排期。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2120410006273380750",
+      "publishedAt": "2026-11-12T01:14:22.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 成员在 X 上暗示",
+        "时间指向本周四",
+        "无官方公告确认"
+      ],
+      "confidenceReason": "传闻待证"
+    },
+    {
+      "id": "n10",
+      "title": "阿里发布 Qwen Code 1.0 Preview",
+      "category": "Agent",
+      "summary": "阿里发布 Qwen Code 1.0 Preview，面向代码场景提供预览版本。输入未披露支持语言、上下文长度与IDE 集成方式；开发者可先行试用，评估其在补全、生成与仓库级理解上的实际表现。",
+      "whyItMatters": "编码工具选型方可将 Qwen Code 预览版与现有方案对比，据此判断是否在团队内试点替换部分编码助手。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "阿里",
+      "sourceUrl": "https://mp.weixin.qq.com/s/CXUnh_CP0S4gKV5MYwWWtw",
+      "publishedAt": "2026-11-12T01:14:22.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Qwen"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "阿里发布 Qwen Code 1.0 Preview",
+        "定位代码场景",
+        "支持语言与上下文未公布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n27",
+      "title": "Google DeepMind 推出 Gemini Robotics 2.5",
+      "category": "模型",
+      "summary": "Google DeepMind 发布 Gemini Robotics 2.5，继续推进真实世界物理智能。官方未公布支持机型、成功率与开放范围；该版本面向机器人感知与动作决策，供研究与合作方在实体环境中验证。",
+      "whyItMatters": "机器人研发团队需据此评估是否采用新版模型做抓取与操作任务，影响其硬件适配与训练数据投入。",
+      "sourceName": "Google DeepMind",
+      "sourceDisplayName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "publishedAt": "2026-11-11T02:05:17.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Gemini",
+        "DeepMind"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "推出 Gemini Robotics 2.5",
+        "方向为真实世界物理智能",
+        "支持机型与成功率未公布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n11",
+      "title": "Google Antigravity 推出浏览器操作能力 Browser use",
+      "category": "Agent",
+      "summary": "Google Antigravity 上线 Browser use 功能，让智能体可操作浏览器。官方文档未披露支持的浏览器版本与权限边界；该能力把网页交互纳入 Agent 执行范围，用于自动化点击、填写与信息抓取类任务。",
+      "whyItMatters": "做网页自动化的团队可评估用 Browser use 替代自研脚本，但需先确认其权限控制是否满足内部安全要求。",
+      "sourceName": "Antigravity",
+      "sourceDisplayName": "Google Antigravity",
+      "sourceUrl": "https://antigravity.google/docs/browser",
+      "publishedAt": "2026-11-12T01:14:22.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity 推出 Browser use",
+        "面向浏览器操作",
+        "权限边界未披露"
+      ],
+      "confidenceReason": "官方发布"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 45,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 904
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
