@@ -1,0 +1,308 @@
+{
+  "date": "2026-11-14",
+  "generatedAt": "2026-11-14T06:54:47.285Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "今日信号集中在模型与编排同步升级：Gemini 4 Hydrogen 接入 Antigravity 编排选项，OpenAI 在 ChatGPT 内嵌钱包，llama.cpp 首发 1.0 稳定版。",
+    "keywords": [
+      "Google",
+      "Gemini",
+      "OpenAI"
+    ],
+    "heatIndex": 76,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n23",
+    "n2",
+    "n12"
+  ],
+  "items": [
+    {
+      "id": "n2",
+      "title": "OpenAI 推出 ChatGPT Wallet 支付功能",
+      "category": "模型",
+      "summary": "OpenAI 通过官网发布 ChatGPT Wallet 支付功能，把钱包与支付能力引入 ChatGPT 产品内，官方页面只给出功能名称，未披露支持地区、结算币种与费率等规则细节。",
+      "whyItMatters": "对 ChatGPT 用户与企业采购方，支付入口内嵌后订阅与付费调用可在同一产品内完成，现有账单归集与合规审批流程需要重新对接。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "publishedAt": "2026-11-14T00:29:10.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 推出 ChatGPT Wallet 支付功能",
+        "发布渠道为 OpenAI 官网"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n4",
+      "title": "腾讯发布混元实时语音模型 Hy Realtime",
+      "category": "模型",
+      "summary": "腾讯发布混元实时语音模型 Hy Realtime，面向实时语音交互场景。发布信息通过微信公众号公布，官方未给出延迟指标、支持语种与开放接口形式。",
+      "whyItMatters": "对做语音客服与实时对话产品的团队，这是新增的可选底座，但缺少公开延迟与语种指标，选型前仍需自行压测中文场景。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/bFxAT04ohJs9hPcjjin3bg",
+      "publishedAt": "2026-11-14T00:29:10.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "语音"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "腾讯发布混元实时语音模型 Hy Realtime",
+        "信息通过微信公众号发布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n5",
+      "title": "Antigravity 推出 Dynamic Workflows 功能",
+      "category": "Agent",
+      "summary": "Antigravity 在官方文档站上线 Dynamic Workflows 功能，用于在智能体执行过程中动态组织工作流。文档只给出功能入口，未说明计费方式与适用套餐范围。",
+      "whyItMatters": "对已用 Antigravity 搭多步 Agent 的团队，工作流改为动态生成后，编排逻辑的调试与可观测性方案需要重新设计。",
+      "sourceName": "Antigravity",
+      "sourceDisplayName": "Antigravity",
+      "sourceUrl": "https://antigravity.google/docs/dynamic-workflows",
+      "publishedAt": "2026-11-14T00:29:10.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity 推出 Dynamic Workflows",
+        "功能说明发布于官方文档站"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n23",
+      "title": "Google 推出 Gemini 4 Hydrogen",
+      "category": "模型",
+      "summary": "Google 在官方博客发布 Gemini 4 Hydrogen 模型，同日 Google Antigravity 上线与该模型关联的 Orchestrator 选项。官方未在发布内容中披露参数规模、上下文长度与定价。",
+      "whyItMatters": "对使用 Gemini 的开发者与企业，新模型与多智能体编排同日上线，选型评估需同时考虑模型能力与编排层的调用方式和额度消耗。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "publishedAt": "2026-11-13T01:14:40.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Google 官方博客发布 Gemini 4 Hydrogen",
+        "同日 Antigravity 推出关联 Orchestrator 选项"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n24",
+      "title": "Google Antigravity 推出 Orchestrator 选项",
+      "category": "产品",
+      "summary": "Google Antigravity 发布 Orchestrator 选项，官方博客页面与 Gemini 4 Hydrogen 同篇关联，用于多智能体任务的编排调度，未说明额度消耗规则与开放范围。",
+      "whyItMatters": "对使用 Antigravity 的开发者，编排器决定多 Agent 任务的调度权，需先确认它与既有 Dynamic Workflows 的兼容性和额度消耗。",
+      "sourceName": "Antigravity",
+      "sourceDisplayName": "Google Antigravity",
+      "sourceUrl": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity",
+      "publishedAt": "2026-11-13T01:14:40.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity 上线 Orchestrator 选项",
+        "官方博客与 Gemini 4 Hydrogen 关联"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n1",
+      "title": "DeepSeek 开放 TTS、ASR 和 OCR 等 API",
+      "category": "模型",
+      "summary": "DeepSeek 在 API 文档中开放 TTS、ASR 与 OCR 等能力接口，从文本对话扩展到语音合成、语音识别与文字识别，文档以构建聊天机器人作为示例场景。",
+      "whyItMatters": "对基于 DeepSeek 做应用的开发者，语音与文档识别链路可收敛到同一套鉴权与计费，减少多供应商对接与结算成本。",
+      "sourceName": "DeepSeek",
+      "sourceDisplayName": "DeepSeek",
+      "sourceUrl": "https://api-docs.deepseek.com/guides/build_a_chatbot",
+      "publishedAt": "2026-11-14T00:29:10.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "DeepSeek 开放 TTS、ASR、OCR 等 API",
+        "接口说明见 DeepSeek API 文档"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n9",
+      "title": "Cognition 将 SWE-2 免费纳入 Devin 订阅权益",
+      "category": "Agent",
+      "summary": "Cognition 宣布 SWE-2 免费成为 Devin 订阅用户的永久权益，订阅者可持续使用该模型而无需额外付费。官方公告未说明额度上限与权益生效时间。",
+      "whyItMatters": "对已购或考虑 Devin 的工程团队，模型成本包进订阅后按席位核算比按 token 计费更可预测，采购时需比对实际任务吞吐。",
+      "sourceName": "Devin",
+      "sourceDisplayName": "Cognition（Devin）",
+      "sourceUrl": "https://devin.ai/blog/devin-teams-plan",
+      "publishedAt": "2026-11-14T00:29:10.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "SWE-2 对 Devin 订阅用户免费",
+        "该权益被定义为永久性质"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "Antigravity 重置用户 Gemini 使用额度",
+      "category": "模型",
+      "summary": "Antigravity 重置用户的 Gemini 使用额度，信息由相关人士在 X 平台发布，未说明重置覆盖的用户范围、适用套餐与后续额度政策安排。",
+      "whyItMatters": "对依赖 Antigravity 跑 Gemini 的开发者，额度回补影响近期批量实验排期，但缺少书面政策难以做长期容量规划。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/_mohansolo/status/2121380918355234957",
+      "publishedAt": "2026-11-14T00:29:10.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity 重置用户 Gemini 使用额度",
+        "信息由 X 平台账号发布"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n28",
+      "title": "火山引擎发布 Seedance 2.5 flash",
+      "category": "产品",
+      "summary": "火山引擎发布 Seedance 2.5 flash，版本号延续 Seedance 系列，发布信息通过微信公众号公布。官方未披露单次生成时长、分辨率与定价等参数。",
+      "whyItMatters": "对使用火山引擎做视频生成的团队，flash 档位通常对应更低单次成本，需实测画质与时长后再决定是否替换现有生成档位。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "火山引擎",
+      "sourceUrl": "https://mp.weixin.qq.com/s/lTZS2oV6BuORvK_Shgb-Ag",
+      "publishedAt": "2026-11-13T01:14:40.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "火山引擎发布 Seedance 2.5 flash",
+        "发布渠道为微信公众号"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n12",
+      "title": "llama.cpp 发布 v1.0.0 首个稳定主版本",
+      "category": "Agent",
+      "summary": "据 Hugging Face 博客消息，llama.cpp 发布 v1.0.0，这是该项目首个稳定主版本。稳定版本号的确立，为依赖它的本地推理与量化部署提供了可固定的版本基线。",
+      "whyItMatters": "对本地部署与端侧推理团队，有了 1.0 稳定版可锁定依赖版本，减少滚动更新带来的接口变动与回归测试成本。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "llama.cpp",
+      "sourceUrl": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "publishedAt": "2026-11-14T00:29:10.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Llama"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "llama.cpp 发布 v1.0.0",
+        "这是该项目首个稳定主版本"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n15",
+      "title": "Anthropic 发布自动化红队系统 Anvil",
+      "category": "研究",
+      "summary": "Anthropic 在安全站点发布自动化红队系统 Anvil，用于对模型进行自动化对抗测试。官方未披露覆盖的攻击类别数量与对外可用时间。",
+      "whyItMatters": "对企业安全团队，自动化红队可把模型上线前的对抗测试变成可重复流程，评估重点从一次性渗透转向持续回归验证。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://safeguards.anthropic.com/2026/automated-red-teaming/",
+      "publishedAt": "2026-11-14T00:29:10.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Anthropic 发布自动化红队系统 Anvil",
+        "信息发布于 Anthropic 安全站点"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n19",
+      "title": "Sierra 发布个人智能体开放标准 Poppy 1.0",
+      "category": "商业",
+      "summary": "Sierra 发布个人智能体开放标准 Poppy 1.0，版本号定为 1.0，定位为个人智能体的互操作规范。官方博客未说明已有采用方与配套实现。",
+      "whyItMatters": "对做智能体产品的团队，标准若被采用可降低跨平台智能体的身份与权限对接成本，当前需先评估其规范覆盖范围再决定跟进。",
+      "sourceName": "Sierra",
+      "sourceDisplayName": "Sierra",
+      "sourceUrl": "https://sierra.ai/blog/releasing-poppy",
+      "publishedAt": "2026-11-14T00:29:10.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Sierra 发布 Poppy 1.0 开放标准",
+        "定位为个人智能体互操作规范"
+      ],
+      "confidenceReason": "官方发布"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 43,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 907
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
