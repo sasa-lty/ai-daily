@@ -1,0 +1,313 @@
+{
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T07:08:21.024Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "今日信号集中在开源多模态模型、Agent 基础设施与云 API 成本政策三条线。",
+    "keywords": [
+      "开源",
+      "Claude",
+      "多模态"
+    ],
+    "heatIndex": 76,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n2",
+    "n8",
+    "n9"
+  ],
+  "items": [
+    {
+      "id": "n1",
+      "title": "华为云上线 openPangu-2.1-Pro 模型",
+      "category": "模型",
+      "summary": "华为云上线 openPangu-2.1-Pro 模型，加入其云端模型供给。当前公开信息仅说明上线，未给出参数规模、评测成绩、定价和开放区域，实际可用性需查华为云文档。",
+      "whyItMatters": "对使用华为云模型服务的团队，这是一项新的国产模型供给；选型时需核对参数、价格和区域可用性，避免按名称直接替换。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "华为云",
+      "sourceUrl": "https://mp.weixin.qq.com/s/8JfFmscBTDl_mPQMycD8Nw",
+      "publishedAt": "2026-11-16T00:20:11.000Z",
+      "impactScore": 83,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "模型名称为 openPangu-2.1-Pro",
+        "上线平台为华为云"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n2",
+      "title": "Agnes AI 开源 187.8B 多模态 MoE 模型",
+      "category": "模型",
+      "summary": "Agnes AI 在 Hugging Face 开源 187.8B 参数多模态 MoE 模型 Agnes-2.5-Pro-Theta。该发布提供可获取的模型权重，具体许可证、评测和部署要求需查看模型页。",
+      "whyItMatters": "需要多模态能力的团队多了一个可获取权重的开源选项，但 187.8B 参数意味着部署资源要求高，选型需先评估许可证与推理成本。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "Agnes AI",
+      "sourceUrl": "https://huggingface.co/Agnes-AI/Agnes-2.5-Pro-Theta",
+      "publishedAt": "2026-11-16T00:20:11.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "多模态",
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Agnes AI 开源 187.8B 参数模型",
+        "模型为多模态 MoE 架构",
+        "发布平台为 Hugging Face"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n4",
+      "title": "OpenAI 开设科学博客并发布 Standard Model 研究解读",
+      "category": "研究",
+      "summary": "OpenAI 开设 science blog，并发布对 Standard Model 研究的解读文章。该博客面向科学研究传播，当前信息未披露模型能力或产品更新，主要增加 OpenAI 对基础科学议题的官方输出。",
+      "whyItMatters": "对关注 OpenAI 研究动向的研究者和开发者，该博客提供官方解读入口；它不改变现有 API 或模型产品，短期影响限于信息获取。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/our-new-blog-for-science/",
+      "publishedAt": "2026-11-16T00:20:11.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 开设 science blog",
+        "发布 Standard Model 研究解读"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n6",
+      "title": "Grok Bot 多项优化上线，订阅用量增约 7%",
+      "category": "Agent",
+      "summary": "Grok Bot 多项优化上线，相关订阅用量随之增长约 7%。这是产品迭代后的使用数据变化，当前信息未披露具体优化项、统计口径和观察周期。",
+      "whyItMatters": "对使用 Grok Bot 的运营和订阅团队，优化后用量上升约 7% 可作为留存与活跃观察信号；但缺少统计口径，不宜直接外推收入。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/mattyp/status/2121624592326480311",
+      "publishedAt": "2026-11-15T00:40:48.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [
+        "Grok"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Grok Bot 多项优化上线",
+        "订阅用量增长约 7%"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n7",
+      "title": "Claude Code 桌面版推出 mods 自定义主题",
+      "category": "Agent",
+      "summary": "Claude Code 桌面版推出 mods 自定义主题，用户可调整界面外观。该更新属于桌面端个性化功能，未涉及模型能力、价格或企业管控策略变化。",
+      "whyItMatters": "对 Claude Code 桌面版用户，主题自定义只改善界面偏好，不影响编码代理能力；企业采购更应关注权限、审计和模型调用策略。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://code.claude.com/docs/en/plugins/mods/interface",
+      "publishedAt": "2026-11-15T00:40:48.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "Claude"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude Code 桌面版推出 mods",
+        "支持自定义主题"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n9",
+      "title": "Cloudflare 开源 Kitesurf 浏览器，支持自行部署",
+      "category": "Agent",
+      "summary": "Cloudflare 开源 Kitesurf 浏览器，并支持用户自行部署。该发布把浏览器运行环境交给自己托管，具体许可证、功能边界与资源要求需查看 Cloudflare 博客。",
+      "whyItMatters": "对构建浏览器代理或自动化流程的团队，自部署选项影响数据驻留与运维方式；需先确认开源许可证和浏览器兼容范围。",
+      "sourceName": "Cloudflare",
+      "sourceDisplayName": "Cloudflare",
+      "sourceUrl": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "publishedAt": "2026-11-15T00:40:48.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Cloudflare 开源 Kitesurf 浏览器",
+        "支持自行部署"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n10",
+      "title": "Claude 发布 always-on agents 构建指南",
+      "category": "研究",
+      "summary": "Claude 发布 always-on agents 指南，面向持续运行的代理场景给出构建方法。当前信息为指南资源，未披露配套模型版本、价格或服务等级承诺。",
+      "whyItMatters": "对计划构建常驻代理的团队，该指南提供官方方法论入口，可影响架构设计与运行策略；目前没有配套产品发布信息。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://claude.com/resources/articles/building-always-on-agents",
+      "publishedAt": "2026-11-15T00:40:48.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "Claude",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude 发布 always-on agents 指南",
+        "内容面向常驻代理构建"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "OpenCode Go 订阅支持微信支付",
+      "category": "Agent",
+      "summary": "OpenCode Go 订阅现已支持微信支付付款，为国内用户增加一种支付方式。该变化属于订阅结算通道更新，未涉及套餐价格、模型额度或产品功能调整。",
+      "whyItMatters": "对国内用户和小团队，微信支付降低订阅付款门槛，可能提升 OpenCode Go 的购买转化；但不改变模型额度与价格。",
+      "sourceName": "Opencode",
+      "sourceDisplayName": "OpenCode",
+      "sourceUrl": "https://opencode.ai/console/changelog/wechat-pay-go",
+      "publishedAt": "2026-11-16T00:20:11.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenCode Go 订阅支持微信支付",
+        "支付方式更新"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n11",
+      "title": "Anthropic 发布 10 项安全评测建议",
+      "category": "研究",
+      "summary": "Anthropic 发布 10 项安全评测建议，面向 AI 系统安全评估提出操作要点。当前信息未给出具体评测基准、适用范围和合规要求，需结合原文判断落地方式。",
+      "whyItMatters": "对做模型安全评估的团队，这 10 项建议可作为评测设计清单；若用于合规，仍需映射到具体监管要求和基准测试。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://anthropic.com/research/building-strong-safety-evaluations",
+      "publishedAt": "2026-11-15T00:40:48.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Anthropic 发布 10 项安全评测建议",
+        "建议面向安全评测"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n5",
+      "title": "报道称黄仁勋考虑重返英伟达担任 CEO",
+      "category": "算力",
+      "summary": "有报道称黄仁勋考虑重返英伟达担任 CEO，并称其盟友组建游说团队、相关请愿签名超过 15.6 万。该消息目前仅见单一媒体报道，需等待官方确认。",
+      "whyItMatters": "若消息属实，将影响英伟达管理层与战略连续性；当前仅为单一媒体报道，投资者和合作方应等待公司公告后再做判断。",
+      "sourceName": "Wccftech",
+      "sourceDisplayName": "Wccftech",
+      "sourceUrl": "https://wccftech.com/jensen-huang-considers-returning-to-nvidia-as-his-allies-assemble-a-war-room-to-lobby-on-his-behalf-and-a-petition-in-his-favor-crosses-156000-signatures",
+      "publishedAt": "2026-11-16T00:20:11.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "NVIDIA"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "报道称黄仁勋考虑重返英伟达任 CEO",
+        "请愿签名超过 15.6 万"
+      ],
+      "confidenceReason": "传闻待证"
+    },
+    {
+      "id": "n8",
+      "title": "谷歌 300 美元赠金将不再覆盖 Gemini 调用费用",
+      "category": "Agent",
+      "summary": "谷歌调整免费云资源政策，300 美元赠金将不再覆盖 Gemini 调用费用。使用赠金测试 Gemini 的开发者需要重新核算调用预算，具体适用范围以 Google Cloud 文档为准。",
+      "whyItMatters": "对依赖赠金试用 Gemini 的开发者，调用成本将更早进入预算；项目选型时需把 Gemini 费用与替代模型价格并列核算。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google Cloud",
+      "sourceUrl": "https://docs.cloud.google.com/free/docs/free-cloud-features",
+      "publishedAt": "2026-11-15T00:40:48.000Z",
+      "impactScore": 70,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "谷歌 300 美元赠金政策调整",
+        "Gemini 调用费用不再覆盖"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n37",
+      "title": "苹果推出新应用，研究人们如何用 AI 处理健康问题",
+      "category": "研究",
+      "summary": "苹果推出一款新应用，用于研究人们如何用 AI 回答日常医疗问题。该应用服务于健康研究，当前信息未披露上线地区、参与者规模和是否接入第三方模型。",
+      "whyItMatters": "对健康 AI 研究者和苹果生态开发者，该研究应用将提供真实使用观察样本；但当前未披露设计细节，产品路线影响尚不可判断。",
+      "sourceName": "TechCrunch",
+      "sourceDisplayName": "Apple",
+      "sourceUrl": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "publishedAt": "2026-11-16T01:30:00.000Z",
+      "impactScore": 67,
+      "confidence": "medium",
+      "tags": [
+        "Apple"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "苹果推出 AI 健康研究应用",
+        "应用回答日常医疗问题"
+      ],
+      "confidenceReason": "单一来源"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 12,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 907
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
