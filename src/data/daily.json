@@ -1,55 +1,119 @@
 {
-  "date": "2026-11-16",
-  "generatedAt": "2026-11-16T07:08:21.024Z",
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T08:21:26.746Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "今日信号集中在开源多模态模型、Agent 基础设施与云 API 成本政策三条线。",
+    "verdict": "模型价格竞争与安全治理同步升温，AI 资本风险进入宏观监管视野。",
     "keywords": [
       "开源",
-      "Claude",
-      "多模态"
+      "OpenAI",
+      "Qwen"
     ],
     "heatIndex": 76,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n2",
-    "n8",
-    "n9"
+    "n1",
+    "n4",
+    "n22"
   ],
   "items": [
     {
       "id": "n1",
-      "title": "华为云上线 openPangu-2.1-Pro 模型",
+      "title": "阿里巴巴发布 Qwen4-Max，官方称成本降 58%",
       "category": "模型",
-      "summary": "华为云上线 openPangu-2.1-Pro 模型，加入其云端模型供给。当前公开信息仅说明上线，未给出参数规模、评测成绩、定价和开放区域，实际可用性需查华为云文档。",
-      "whyItMatters": "对使用华为云模型服务的团队，这是一项新的国产模型供给；选型时需核对参数、价格和区域可用性，避免按名称直接替换。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "华为云",
-      "sourceUrl": "https://mp.weixin.qq.com/s/8JfFmscBTDl_mPQMycD8Nw",
-      "publishedAt": "2026-11-16T00:20:11.000Z",
+      "summary": "阿里巴巴发布 Qwen4-Max 模型，官方给出的成本降幅为 58%。这是 Qwen 系列的新旗舰更新，发布信息来自 Qwen 官方博客，核心卖点集中在成本下降，具体能力与定价细节需以官方页面为准。",
+      "whyItMatters": "对正在选型的企业，58% 的成本降幅会直接影响 API 预算与模型迁移评估；价格竞争从参数转向单位成本。",
+      "sourceName": "Qwen",
+      "sourceDisplayName": "Qwen",
+      "sourceUrl": "https://qwen.ai/blog?id=qwen4-max",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
       "impactScore": 83,
       "confidence": "high",
-      "tags": [],
+      "tags": [
+        "Qwen"
+      ],
       "aiEnhanced": true,
       "keyFacts": [
-        "模型名称为 openPangu-2.1-Pro",
-        "上线平台为华为云"
+        "阿里发布 Qwen4-Max 模型",
+        "官方称成本降低 58%"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n2",
+      "title": "腾讯混元推出 Hy4 flash，官方称迄今最高性价比",
+      "category": "产品",
+      "summary": "腾讯混元推出 Hy4 flash 模型，官方将其定位为迄今最高性价比。发布信息来自腾讯混元官网，重点在成本与性能组合，面向需要大规模调用的开发者；具体定价、上下文和评测数据需查看官方页面。",
+      "whyItMatters": "对高频调用团队，性价比定位会影响推理预算与供应商比价，尤其与同日低价模型形成直接替代评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯混元",
+      "sourceUrl": "https://hunyuan.tencent.com/research/100145?langVersion=zh",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "腾讯混元发布 Hy4 flash",
+        "官方称其为迄今最高性价比"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n24",
+      "title": "华为云上线 openPangu-2.1-Pro 模型",
+      "category": "模型",
+      "summary": "华为云上线 openPangu-2.1-Pro 模型，发布信息来自华为云相关公众号。该版本进入云上模型服务，面向企业开发者提供盘古系列的新选择；输入未披露参数、定价与评测成绩，需以华为云页面为准。",
+      "whyItMatters": "对使用华为云的企业，模型清单新增盘古版本，会影响既有云上模型选型与迁移测试排期。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "华为云",
+      "sourceUrl": "https://mp.weixin.qq.com/s/8JfFmscBTDl_mPQMycD8Nw",
+      "publishedAt": "2026-11-16T00:20:11.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "华为云上线 openPangu-2.1-Pro",
+        "版本号为 2.1-Pro"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n6",
+      "title": "上海AI实验室开源书生-S2.1 Flash",
+      "category": "模型",
+      "summary": "上海AI实验室开源书生-S2.1 Flash 模型，项目页面已上线。该版本以 Flash 命名，延续书生开源系列，供开发者下载与部署；输入未给出参数量、许可证和基准分数，实际可用性需以项目页说明为准。",
+      "whyItMatters": "对需要本地部署的团队，开源模型清单增加一个 Flash 选项，会影响微调与私有化推理的成本测算。",
+      "sourceName": "GitHub Pages",
+      "sourceDisplayName": "上海AI实验室",
+      "sourceUrl": "https://internlm.github.io/Sage-S2.1-Flash/",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "上海AI实验室开源书生-S2.1 Flash",
+        "项目页已上线"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n25",
       "title": "Agnes AI 开源 187.8B 多模态 MoE 模型",
       "category": "模型",
-      "summary": "Agnes AI 在 Hugging Face 开源 187.8B 参数多模态 MoE 模型 Agnes-2.5-Pro-Theta。该发布提供可获取的模型权重，具体许可证、评测和部署要求需查看模型页。",
-      "whyItMatters": "需要多模态能力的团队多了一个可获取权重的开源选项，但 187.8B 参数意味着部署资源要求高，选型需先评估许可证与推理成本。",
+      "summary": "Agnes AI 在 Hugging Face 开源 187.8B 多模态 MoE 模型 Agnes-2.5-Pro-Theta。模型规模达 1878 亿参数，采用多模态混合专家架构；输入未披露许可证、激活参数和评测结果，部署门槛需以模型卡为准。",
+      "whyItMatters": "对开源大模型部署方，187.8B 规模意味着更高的显存与并行要求，会影响是否采用及推理集群规划。",
       "sourceName": "Hugging Face",
       "sourceDisplayName": "Agnes AI",
       "sourceUrl": "https://huggingface.co/Agnes-AI/Agnes-2.5-Pro-Theta",
       "publishedAt": "2026-11-16T00:20:11.000Z",
-      "impactScore": 82,
+      "impactScore": 78,
       "confidence": "high",
       "tags": [
         "多模态",
@@ -57,23 +121,23 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Agnes AI 开源 187.8B 参数模型",
-        "模型为多模态 MoE 架构",
-        "发布平台为 Hugging Face"
+        "Agnes AI 开源 187.8B 模型",
+        "模型名为 Agnes-2.5-Pro-Theta",
+        "采用多模态 MoE 架构"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n4",
+      "id": "n27",
       "title": "OpenAI 开设科学博客并发布 Standard Model 研究解读",
       "category": "研究",
-      "summary": "OpenAI 开设 science blog，并发布对 Standard Model 研究的解读文章。该博客面向科学研究传播，当前信息未披露模型能力或产品更新，主要增加 OpenAI 对基础科学议题的官方输出。",
-      "whyItMatters": "对关注 OpenAI 研究动向的研究者和开发者，该博客提供官方解读入口；它不改变现有 API 或模型产品，短期影响限于信息获取。",
+      "summary": "OpenAI 开设 science blog，并发布对 Standard Model 研究的解读文章。新博客用于集中呈现科学相关研究与进展，首篇内容围绕 Standard Model；输入未给出研究合作方、论文编号或具体结论，需以 OpenAI 原文为准。",
+      "whyItMatters": "对科研用户，OpenAI 新增官方科学内容渠道，会影响其跟踪模型能力与科研合作信息的入口选择。",
       "sourceName": "OpenAI",
       "sourceDisplayName": "OpenAI",
       "sourceUrl": "https://openai.com/index/our-new-blog-for-science/",
       "publishedAt": "2026-11-16T00:20:11.000Z",
-      "impactScore": 80,
+      "impactScore": 76,
       "confidence": "high",
       "tags": [
         "OpenAI"
@@ -86,199 +150,132 @@
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n6",
-      "title": "Grok Bot 多项优化上线，订阅用量增约 7%",
-      "category": "Agent",
-      "summary": "Grok Bot 多项优化上线，相关订阅用量随之增长约 7%。这是产品迭代后的使用数据变化，当前信息未披露具体优化项、统计口径和观察周期。",
-      "whyItMatters": "对使用 Grok Bot 的运营和订阅团队，优化后用量上升约 7% 可作为留存与活跃观察信号；但缺少统计口径，不宜直接外推收入。",
+      "id": "n3",
+      "title": "Antigravity 上下文窗口翻倍，压缩次数大减",
+      "category": "产品",
+      "summary": "Antigravity 宣布上下文窗口翻倍，压缩次数大幅减少。信息来自一条 X 帖文，属于产品能力更新；输入未给出具体窗口数值、适用版本和压缩策略细节，实际效果需以产品内表现为准。",
+      "whyItMatters": "对长文档与多轮任务用户，窗口翻倍会减少上下文截断和重复压缩，影响长任务工作流的设计。",
       "sourceName": "综合来源",
       "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/mattyp/status/2121624592326480311",
-      "publishedAt": "2026-11-15T00:40:48.000Z",
-      "impactScore": 79,
-      "confidence": "high",
-      "tags": [
-        "Grok"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Grok Bot 多项优化上线",
-        "订阅用量增长约 7%"
-      ],
-      "confidenceReason": "单一来源"
-    },
-    {
-      "id": "n7",
-      "title": "Claude Code 桌面版推出 mods 自定义主题",
-      "category": "Agent",
-      "summary": "Claude Code 桌面版推出 mods 自定义主题，用户可调整界面外观。该更新属于桌面端个性化功能，未涉及模型能力、价格或企业管控策略变化。",
-      "whyItMatters": "对 Claude Code 桌面版用户，主题自定义只改善界面偏好，不影响编码代理能力；企业采购更应关注权限、审计和模型调用策略。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://code.claude.com/docs/en/plugins/mods/interface",
-      "publishedAt": "2026-11-15T00:40:48.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [
-        "Claude"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Claude Code 桌面版推出 mods",
-        "支持自定义主题"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n9",
-      "title": "Cloudflare 开源 Kitesurf 浏览器，支持自行部署",
-      "category": "Agent",
-      "summary": "Cloudflare 开源 Kitesurf 浏览器，并支持用户自行部署。该发布把浏览器运行环境交给自己托管，具体许可证、功能边界与资源要求需查看 Cloudflare 博客。",
-      "whyItMatters": "对构建浏览器代理或自动化流程的团队，自部署选项影响数据驻留与运维方式；需先确认开源许可证和浏览器兼容范围。",
-      "sourceName": "Cloudflare",
-      "sourceDisplayName": "Cloudflare",
-      "sourceUrl": "https://blog.cloudflare.com/kitesurf-open-source/",
-      "publishedAt": "2026-11-15T00:40:48.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "开源"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Cloudflare 开源 Kitesurf 浏览器",
-        "支持自行部署"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n10",
-      "title": "Claude 发布 always-on agents 构建指南",
-      "category": "研究",
-      "summary": "Claude 发布 always-on agents 指南，面向持续运行的代理场景给出构建方法。当前信息为指南资源，未披露配套模型版本、价格或服务等级承诺。",
-      "whyItMatters": "对计划构建常驻代理的团队，该指南提供官方方法论入口，可影响架构设计与运行策略；目前没有配套产品发布信息。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://claude.com/resources/articles/building-always-on-agents",
-      "publishedAt": "2026-11-15T00:40:48.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "Claude",
-        "Agent"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Claude 发布 always-on agents 指南",
-        "内容面向常驻代理构建"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n3",
-      "title": "OpenCode Go 订阅支持微信支付",
-      "category": "Agent",
-      "summary": "OpenCode Go 订阅现已支持微信支付付款，为国内用户增加一种支付方式。该变化属于订阅结算通道更新，未涉及套餐价格、模型额度或产品功能调整。",
-      "whyItMatters": "对国内用户和小团队，微信支付降低订阅付款门槛，可能提升 OpenCode Go 的购买转化；但不改变模型额度与价格。",
-      "sourceName": "Opencode",
-      "sourceDisplayName": "OpenCode",
-      "sourceUrl": "https://opencode.ai/console/changelog/wechat-pay-go",
-      "publishedAt": "2026-11-16T00:20:11.000Z",
+      "sourceUrl": "https://x.com/_mohansolo/status/2122119826575646918",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
       "impactScore": 74,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "OpenCode Go 订阅支持微信支付",
-        "支付方式更新"
+        "Antigravity 上下文窗口翻倍",
+        "压缩次数大减"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n4",
+      "title": "OpenAI 启动嵌入式评估，引入外部机构审查安全",
+      "category": "安全",
+      "summary": "OpenAI 启动首阶段嵌入式评估，引入外部机构参与安全审查。该机制把第三方评估嵌入模型发布流程，目标是增强安全审查的独立性；输入未披露参与机构名单、评估范围和首批模型，需以 OpenAI 原文为准。",
+      "whyItMatters": "对模型发布方与合规团队，第三方嵌入评估会影响上线前的安全审查流程、证据准备和发布节奏。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 启动嵌入式评估",
+        "引入外部机构审查安全"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n11",
-      "title": "Anthropic 发布 10 项安全评测建议",
-      "category": "研究",
-      "summary": "Anthropic 发布 10 项安全评测建议，面向 AI 系统安全评估提出操作要点。当前信息未给出具体评测基准、适用范围和合规要求，需结合原文判断落地方式。",
-      "whyItMatters": "对做模型安全评估的团队，这 10 项建议可作为评测设计清单；若用于合规，仍需映射到具体监管要求和基准测试。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://anthropic.com/research/building-strong-safety-evaluations",
-      "publishedAt": "2026-11-15T00:40:48.000Z",
-      "impactScore": 74,
+      "title": "ChatGPT for Healthcare 宣布升级",
+      "category": "产品",
+      "summary": "OpenAI 宣布升级 ChatGPT for Healthcare。该产品面向医疗场景，官方页面称将提供更多推进护理工作的方式；输入未列出新增功能、适用机构、合规认证或上线地区，具体能力需以 OpenAI 原文为准。",
+      "whyItMatters": "对医疗机构，升级意味着需要重新评估数据合规、临床使用边界与采购条款，而非仅看功能清单。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
-        "Anthropic"
+        "GPT"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Anthropic 发布 10 项安全评测建议",
-        "建议面向安全评测"
+        "ChatGPT for Healthcare 宣布升级",
+        "面向医疗护理场景"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n5",
-      "title": "报道称黄仁勋考虑重返英伟达担任 CEO",
-      "category": "算力",
-      "summary": "有报道称黄仁勋考虑重返英伟达担任 CEO，并称其盟友组建游说团队、相关请愿签名超过 15.6 万。该消息目前仅见单一媒体报道，需等待官方确认。",
-      "whyItMatters": "若消息属实，将影响英伟达管理层与战略连续性；当前仅为单一媒体报道，投资者和合作方应等待公司公告后再做判断。",
-      "sourceName": "Wccftech",
-      "sourceDisplayName": "Wccftech",
-      "sourceUrl": "https://wccftech.com/jensen-huang-considers-returning-to-nvidia-as-his-allies-assemble-a-war-room-to-lobby-on-his-behalf-and-a-petition-in-his-favor-crosses-156000-signatures",
-      "publishedAt": "2026-11-16T00:20:11.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [
-        "NVIDIA"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "报道称黄仁勋考虑重返英伟达任 CEO",
-        "请愿签名超过 15.6 万"
-      ],
-      "confidenceReason": "传闻待证"
-    },
-    {
-      "id": "n8",
-      "title": "谷歌 300 美元赠金将不再覆盖 Gemini 调用费用",
-      "category": "Agent",
-      "summary": "谷歌调整免费云资源政策，300 美元赠金将不再覆盖 Gemini 调用费用。使用赠金测试 Gemini 的开发者需要重新核算调用预算，具体适用范围以 Google Cloud 文档为准。",
-      "whyItMatters": "对依赖赠金试用 Gemini 的开发者，调用成本将更早进入预算；项目选型时需把 Gemini 费用与替代模型价格并列核算。",
+      "id": "n13",
+      "title": "Google 为 Gemini 应用推出 66 种地区语音",
+      "category": "产品",
+      "summary": "Google 为 Gemini 应用推出 66 种地区语音。此次更新集中在语音覆盖，面向不同地区口音与语言使用习惯；输入未说明上线国家、是否全部免费及具体语音质量，需以 Google 博客说明为准。",
+      "whyItMatters": "对面向多地区用户的团队，语音覆盖会直接影响 Gemini 在本地化客服、教育和无障碍场景的可用性。",
       "sourceName": "Google",
-      "sourceDisplayName": "Google Cloud",
-      "sourceUrl": "https://docs.cloud.google.com/free/docs/free-cloud-features",
-      "publishedAt": "2026-11-15T00:40:48.000Z",
-      "impactScore": 70,
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/regional-voices/",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
-        "Gemini"
+        "Google",
+        "Gemini",
+        "语音"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "谷歌 300 美元赠金政策调整",
-        "Gemini 调用费用不再覆盖"
+        "Gemini 应用新增 66 种地区语音",
+        "更新来自 Google 官方博客"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n37",
-      "title": "苹果推出新应用，研究人们如何用 AI 处理健康问题",
-      "category": "研究",
-      "summary": "苹果推出一款新应用，用于研究人们如何用 AI 回答日常医疗问题。该应用服务于健康研究，当前信息未披露上线地区、参与者规模和是否接入第三方模型。",
-      "whyItMatters": "对健康 AI 研究者和苹果生态开发者，该研究应用将提供真实使用观察样本；但当前未披露设计细节，产品路线影响尚不可判断。",
-      "sourceName": "TechCrunch",
-      "sourceDisplayName": "Apple",
-      "sourceUrl": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
-      "publishedAt": "2026-11-16T01:30:00.000Z",
-      "impactScore": 67,
-      "confidence": "medium",
+      "id": "n15",
+      "title": "豆包工作上线工作台，首批覆盖 21 个专业场景",
+      "category": "产品",
+      "summary": "豆包工作独家上线工作台，首批覆盖 21 个专业场景。该更新把工作台能力嵌入豆包工作产品，面向专业办公任务；输入未披露具体场景清单、收费方式和开放范围，实际可用性需以产品页面为准。",
+      "whyItMatters": "对办公场景用户，21 个专业场景决定其能否把豆包用于具体流程，影响采购与员工培训范围。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "豆包工作",
+      "sourceUrl": "https://mp.weixin.qq.com/s?new=1&amp;signature=xV6XWmvavYCVevcDnXEOOrZytw61tNTNWlqNFkWlUhtBnP7mF4pwWJQ-aOKOey9T%2Aw0UmpmPRhy5h8Zf2OOaay9G09JrzT7HkgUDmqDPiJaH%2AqsVqMmPHaMCd-HmrRwD&amp;src=11&amp;timestamp=1794805510&amp;ver=7091",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "豆包工作上线工作台",
+        "首批覆盖 21 个专业场景"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n22",
+      "title": "IMF：全球经济过度依赖 AI，循环融资超 1 万亿美元",
+      "category": "商业",
+      "summary": "IMF 警告全球经济过度依赖 AI，并称循环融资规模超过 1 万亿美元。相关表态由 CNBC 报道，核心指向 AI 投资链条中的相互融资风险；输入未给出完整报告口径、统计区间和覆盖机构，需以 IMF 原文为准。",
+      "whyItMatters": "对投资人与政策制定者，万亿级循环融资提示 AI 资本开支与金融稳定风险需纳入尽调和监管讨论。",
+      "sourceName": "Cnbc",
+      "sourceDisplayName": "IMF",
+      "sourceUrl": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
+      "impactScore": 73,
+      "confidence": "high",
       "tags": [
-        "Apple"
+        "融资"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "苹果推出 AI 健康研究应用",
-        "应用回答日常医疗问题"
+        "IMF 警告经济过度依赖 AI",
+        "循环融资规模超 1 万亿美元"
       ],
       "confidenceReason": "单一来源"
     }
@@ -288,14 +285,14 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 12,
+      "itemCount": 28,
       "note": "日报型来源，已拆解 2 期"
     },
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 907
+      "itemCount": 908
     },
     {
       "name": "Google DeepMind Blog",
