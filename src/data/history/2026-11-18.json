@@ -1,0 +1,313 @@
+{
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T07:51:23.413Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "模型发布今日最密集：OpenAI 把 GPT-6.2 拆成复杂任务与日常使用两条模型线，微软一次公布七款模型，阿里称成本下降 58%，竞争重心落在分层定价与单位成本。",
+    "keywords": [
+      "开源",
+      "Claude",
+      "OpenAI"
+    ],
+    "heatIndex": 75,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n1",
+    "n25",
+    "n11"
+  ],
+  "items": [
+    {
+      "id": "n1",
+      "title": "OpenAI 发布 GPT-6.2 Astra 与 Sol，分别面向复杂任务与日常工作",
+      "category": "模型",
+      "summary": "OpenAI 发布 GPT-6.2 系列两款模型 Astra 与 Sol，官方定位分别为复杂任务与日常工作。同一版本号下拆出两条产品线，用户需按任务复杂度选择模型，而非默认调用最强档。",
+      "whyItMatters": "模型按任务复杂度分线后，企业选型从“一律用最强模型”转为按场景配比，直接影响推理成本与调用路由策略。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 83,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "GPT-6.2 系列含 Astra 与 Sol 两款",
+        "Astra 面向复杂任务，Sol 面向日常工作",
+        "发布方为 OpenAI"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n25",
+      "title": "阿里巴巴发布 Qwen4-Max，官方称成本下降 58%",
+      "category": "模型",
+      "summary": "阿里巴巴发布 Qwen4-Max 模型，官方称其成本降低 58%，发布信息未给出对比基准与具体价格口径。对按调用量计价的企业用户，需自行核验成本口径后再决定是否迁移现有业务。",
+      "whyItMatters": "若 58% 降本可复现，国内高频调用场景的模型替换门槛下降，采购方会要求供应商按同口径重算报价。",
+      "sourceName": "Qwen",
+      "sourceDisplayName": "Qwen（阿里巴巴）",
+      "sourceUrl": "https://qwen.ai/blog?id=qwen4-max",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [
+        "Qwen"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "阿里巴巴发布 Qwen4-Max",
+        "官方称成本降低 58%"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n6",
+      "title": "可灵 AI 发布 Kling Image 4.0",
+      "category": "模型",
+      "summary": "可灵 AI 发布图像模型 Kling Image 4.0，为 Kling 图像产品线的第四代版本，发布信息未披露具体能力指标与开放范围。内容团队需实测出图质量后再决定是否替换现有流程。",
+      "whyItMatters": "以视频起家的可灵持续迭代图像模型，直接影响短视频与电商素材团队的工具选型与批量出图成本。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "可灵 AI",
+      "sourceUrl": "https://mp.weixin.qq.com/s/p3_DIBRUUgmxShjD5Wp27w",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "可灵 AI 发布 Kling Image 4.0",
+        "属 Kling 图像线新版本"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n26",
+      "title": "腾讯混元推出 Hy4 flash，官方称迄今最高性价比",
+      "category": "产品",
+      "summary": "腾讯混元推出 Hy4 flash 模型，官方称其为迄今最高性价比产品，发布信息未给出具体定价与基准分数。该定位指向高并发、低单价调用场景，适合先在小流量业务验证效果。",
+      "whyItMatters": "主打性价比的 flash 档模型面向高频低价值任务，企业可把客服、批处理等场景迁移过去以压低单次调用单价。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯混元",
+      "sourceUrl": "https://hunyuan.tencent.com/research/100145?langVersion=zh",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "腾讯混元推出 Hy4 flash",
+        "官方称其为迄今最高性价比"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n7",
+      "title": "商汤正式开源 SenseNova-Loop-9B",
+      "category": "模型",
+      "summary": "商汤正式开源 9B 参数模型 SenseNova-Loop，代码与权重托管在 GitHub 的 OpenSenseNova 组织仓库。9B 规模便于单卡或端侧部署，团队可自行微调与私有化落地。",
+      "whyItMatters": "9B 开源权重让中小团队在自有算力上私有部署，减少对 API 的依赖，也便于做行业数据微调。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "商汤（OpenSenseNova）",
+      "sourceUrl": "https://github.com/OpenSenseNova/SenseNova-Loop",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 77,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "商汤开源 SenseNova-Loop-9B",
+        "仓库位于 GitHub OpenSenseNova 组织"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n2",
+      "title": "微软在 Ignite 公布七款新模型",
+      "category": "模型",
+      "summary": "微软在 Ignite 大会上公布七款新模型，均归入 Microsoft AI 体系。一次铺开七款意味着其自有模型矩阵加密，但各模型参数规模、上线区域与定价未在发布信息中说明。",
+      "whyItMatters": "微软补齐自有模型矩阵后，Azure 客户的模型组合与议价空间变化，需重新评估与 OpenAI 模型的搭配方案。",
+      "sourceName": "Microsoft",
+      "sourceDisplayName": "Microsoft",
+      "sourceUrl": "https://microsoft.ai/news/microsoft-ignite-2026-mai-keynote/",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 75,
+      "confidence": "medium",
+      "tags": [
+        "微软"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "微软 Ignite 公布七款新模型",
+        "发布方为微软自身模型体系"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "Gemini Tasks 在美日韩加澳印六国免费开放",
+      "category": "模型",
+      "summary": "Google 将 Gemini 内的 Tasks 功能在美、日、韩、加、澳、印六国免费开放，并同步上线新功能。免费覆盖六个主要市场，意味着任务管理类能力直接进入 Gemini 主应用。",
+      "whyItMatters": "任务能力免费进入 Gemini 主应用，直接挤压独立待办与日程类工具，第三方效率应用面临用户流失。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Gemini Tasks 在六国免费开放",
+        "覆盖美日韩加澳印",
+        "发布方为 Google"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n10",
+      "title": "Google DeepMind 推出机器人插件",
+      "category": "Agent",
+      "summary": "Google DeepMind 推出机器人插件，信息由官方 X 账号发布，支持的机型、接口形式与开放范围尚未说明。以插件形态切入，意味着模型能力被直接接入机器人开发链路。",
+      "whyItMatters": "插件形态减少把大模型接入机器人本体的工程量，机器人团队可少写一层胶水代码，但需先确认硬件适配清单。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Google DeepMind",
+      "sourceUrl": "https://x.com/GoogleDeepMind/status/2122767528933925363",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "DeepMind",
+        "机器人"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Google DeepMind 推出机器人插件",
+        "信息由官方 X 账号发布"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n30",
+      "title": "上海 AI 实验室开源书生-S2.1 Flash",
+      "category": "模型",
+      "summary": "上海人工智能实验室开源书生 S2.1 Flash 模型，项目页面已在 internlm.github.io 上线。Flash 命名指向轻量高吞吐版本，开源后可用于本地部署与二次训练。",
+      "whyItMatters": "轻量开源模型增加国内可私有化选项，教育与科研团队可在受限算力下完成部署与微调实验。",
+      "sourceName": "GitHub Pages",
+      "sourceDisplayName": "上海人工智能实验室",
+      "sourceUrl": "https://internlm.github.io/Sage-S2.1-Flash/",
+      "publishedAt": "2026-11-17T00:47:27.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "上海AI实验室开源书生-S2.1 Flash",
+        "项目页面已上线"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n4",
+      "title": "Antigravity 重置所有模型配额，Carbon 首词元响应提速",
+      "category": "模型",
+      "summary": "Antigravity 重置平台所有模型的调用配额，同时 Carbon 实现首词元响应提速。配额重置与延迟优化同时发生，对依赖该平台的开发者是可直接感知的体验变化。",
+      "whyItMatters": "首词元延迟决定交互式产品的体感速度，配额重置则让开发者可重新压测并调整限流阈值与重试策略。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/_mohansolo/status/2122836883877347836",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity 重置所有模型配额",
+        "Carbon 首词元响应提速"
+      ],
+      "confidenceReason": "单一来源"
+    },
+    {
+      "id": "n11",
+      "title": "Claude Code 上线实验性 Code Mode",
+      "category": "Agent",
+      "summary": "Anthropic 为 Claude Code 上线实验性 Code Mode，官方文档已在 code.claude.com 发布。实验标签意味着接口与行为仍可能调整，适合先在非关键仓库试用再推广。",
+      "whyItMatters": "编码代理新增运行模式，开发团队需先在自有代码库评估稳定性与误改风险，再决定是否纳入日常提交流程。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "http://code.claude.com/docs/en/code-mode",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Claude"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude Code 上线实验性 Code Mode",
+        "官方文档已在站点发布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n12",
+      "title": "Claude Platform 上线关联计费测试版",
+      "category": "Agent",
+      "summary": "Anthropic 在 Claude Platform 上线关联计费测试版，当前处于 beta 阶段。关联计费面向需要把用量归集到统一账户的团队，便于按项目或组织拆分成本。",
+      "whyItMatters": "计费可关联后，企业能把 API 成本按团队或项目归集，直接影响内部成本核算与预算分配方式。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://claude.com/blog/linked-billing-on-claude-platform",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Claude"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude Platform 上线关联计费测试版",
+        "当前为测试版阶段"
+      ],
+      "confidenceReason": "官方发布"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 47,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 908
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
