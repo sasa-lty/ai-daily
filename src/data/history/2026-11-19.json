@@ -1,0 +1,316 @@
+{
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T07:47:36.470Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "模型版本迭代与智能体调用成本同时变化：Google、OpenAI 发布新模型，DeepSeek 调整搜索抓取计费。",
+    "keywords": [
+      "Google",
+      "GPT",
+      "Gemini"
+    ],
+    "heatIndex": 75,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n1",
+    "n25",
+    "n3"
+  ],
+  "items": [
+    {
+      "id": "n1",
+      "title": "Google 发布 Gemini 4 Neon",
+      "category": "模型",
+      "summary": "Google 发布 Gemini 4 Neon，官方博客同步上线发布信息。Gemini 4 Neon 进入 Google 模型产品线，具体能力、开放范围和接口价格需以官方页面为准；开发者和企业需把它纳入模型选型与迁移成本评估。",
+      "whyItMatters": "Google 新增 Gemini 4 Neon，开发者和企业需要重新比较模型能力、价格与接口迁移成本，现有 Gemini 调用方案也可能需要适配。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "publishedAt": "2026-11-19T00:39:58.000Z",
+      "impactScore": 83,
+      "confidence": "high",
+      "tags": [
+        "Google",
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Google 发布 Gemini 4 Neon",
+        "发布信息来自 Google 官方博客",
+        "具体能力与开放范围看官方"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n15",
+      "title": "Arena 推出智能体新总榜与六个细分指数",
+      "category": "研究",
+      "summary": "Arena 推出智能体新总榜，并同步上线六个细分指数，用于从不同维度比较智能体表现。总榜与细分指数并行，使团队选型时可参考更细粒度结果，而不只依赖单一综合分数；具体指标定义需看官方说明。",
+      "whyItMatters": "智能体评测从单一榜单扩展到六个细分维度，开发团队在选型、采购和内部验收时可按任务类型对照指标，减少只凭总榜做决策的风险。",
+      "sourceName": "Arena",
+      "sourceDisplayName": "Arena",
+      "sourceUrl": "https://arena.ai/blog/introducing-the-agent-arena-index",
+      "publishedAt": "2026-11-19T00:39:58.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Arena 推出智能体新总榜",
+        "六个细分指数同步上线",
+        "具体指标定义以官方为准"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n25",
+      "title": "OpenAI 发布 GPT-6.2 Astra 与 Sol",
+      "category": "模型",
+      "summary": "OpenAI 发布 GPT-6.2 的 Astra 与 Sol 两个版本，Astra 面向复杂任务，Sol 面向日常工作。双版本划分让用户按任务复杂度选择模型，API 与企业采购需要分别评估能力、成本与适用场景。",
+      "whyItMatters": "OpenAI 将 GPT-6.2 拆分为复杂任务与日常工作两条产品线，开发者和企业需要按场景选择模型，并重新核算调用成本与工作流配置。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 发布 GPT-6.2 Astra 与 Sol",
+        "Astra 面向复杂任务",
+        "Sol 面向日常工作"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n6",
+      "title": "Perplexity 推出 Context API",
+      "category": "Agent",
+      "summary": "Perplexity 推出 Context API，官方页面说明可从任意网页提取完整上下文。该接口面向需要网页内容理解的智能体与检索应用，开发者可把整页上下文接入自有流程，减少自行抓取和清洗网页的工程投入。",
+      "whyItMatters": "网页上下文提取被封装为 API，智能体和检索产品可直接接入，减少自建抓取与清洗链路的工作量，也会影响数据合规与内容授权评估。",
+      "sourceName": "Perplexity",
+      "sourceDisplayName": "Perplexity",
+      "sourceUrl": "https://www.perplexity.ai/hub/blog/context-api-extracts-full-context-from-any-web-page",
+      "publishedAt": "2026-11-19T00:39:58.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Perplexity 推出 Context API",
+        "可从任意网页提取完整上下文",
+        "面向网页上下文接入场景"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n8",
+      "title": "ChatGPT 推出会计插件，协助结账和对账",
+      "category": "产品",
+      "summary": "OpenAI 为 ChatGPT 推出会计插件，用于协助结账和对账等财务流程。该插件把 ChatGPT 的能力延伸到企业财务操作场景，财务团队采用前需评估数据权限、准确性责任与现有会计系统的集成方式。",
+      "whyItMatters": "ChatGPT 进入结账与对账流程，财务团队需要判断哪些环节可交给 AI 辅助，并明确数据隔离、复核责任和系统对接边界。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/business/solutions/accounting",
+      "publishedAt": "2026-11-19T00:39:58.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "ChatGPT 推出会计插件",
+        "用于协助结账和对账",
+        "面向企业财务操作场景"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n2",
+      "title": "谷歌新版 Project Genie 开放 Genie 4",
+      "category": "产品",
+      "summary": "谷歌新版 Project Genie 开放 Genie 4，Google DeepMind 官方博客发布可用信息。Genie 4 通过 Project Genie 提供访问，具体功能、配额与开放地区需以官方说明为准；开发者需评估是否接入现有生成式应用。",
+      "whyItMatters": "Genie 4 通过 Project Genie 开放，使用户和开发者多了一个可测试的 Google 模型入口，接入前需核对配额、地区限制与现有管线兼容性。",
+      "sourceName": "Google DeepMind",
+      "sourceDisplayName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available",
+      "publishedAt": "2026-11-19T00:39:58.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "谷歌新版 Project Genie 开放 Genie 4",
+        "DeepMind 官方博客发布信息",
+        "具体开放条件以官方为准"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "DeepSeek：模型触发的搜索和抓取不再单独计费",
+      "category": "Agent",
+      "summary": "DeepSeek 更新 API 计费说明，模型触发的搜索和抓取不再单独计费。对使用搜索增强能力的开发者而言，调用成本结构被简化，预算评估需转向模型用量本身；具体计费边界仍应以官方文档为准。",
+      "whyItMatters": "搜索与抓取不再单独计费，会降低带联网能力应用的边际成本，开发者在设计检索增强流程时可减少对额外调用费用的顾虑，但需确认用量限制。",
+      "sourceName": "DeepSeek",
+      "sourceDisplayName": "DeepSeek",
+      "sourceUrl": "https://api-docs.deepseek.com/zh-cn/guides/search/",
+      "publishedAt": "2026-11-19T00:39:58.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "模型触发的搜索不再单独计费",
+        "抓取也不再单独计费",
+        "变更见 DeepSeek API 文档"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n30",
+      "title": "可灵 AI 发布 Kling Image 4.0",
+      "category": "模型",
+      "summary": "可灵 AI 发布 Kling Image 4.0，官方微信文章公布版本更新。作为图像生成模型的新版本，Kling Image 4.0 的具体能力、可用入口和付费方案需以官方页面为准；内容创作者需重新比较生成质量与使用成本。",
+      "whyItMatters": "图像生成模型更新会直接影响创作者与营销团队的工具选型，团队需对比 Kling Image 4.0 的生成质量、授权条款和调用成本后再决定是否迁移。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "可灵 AI",
+      "sourceUrl": "https://mp.weixin.qq.com/s/p3_DIBRUUgmxShjD5Wp27w",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "可灵 AI 发布 Kling Image 4.0",
+        "官方微信文章公布更新",
+        "具体能力以官方页面为准"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n4",
+      "title": "Antigravity Pro 免费试用仅剩 3.8 Flash",
+      "category": "Agent",
+      "summary": "Antigravity 官方文档显示，Antigravity Pro 免费试用仅剩 3.8 Flash。该信息涉及 Pro 试用可用的模型范围，用户在选择试用方案时需核对官方模型列表；是否长期保留及后续价格需以官方说明为准。",
+      "whyItMatters": "免费试用可用的模型范围收窄，会直接影响开发者在试用期内评估 Pro 能力的选择，采购前需确认正式版模型清单与价格。",
+      "sourceName": "Antigravity",
+      "sourceDisplayName": "Antigravity",
+      "sourceUrl": "https://antigravity.google/docs/models",
+      "publishedAt": "2026-11-19T00:39:58.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity Pro 免费试用仅剩 3.8 Flash",
+        "信息见 Antigravity 官方文档",
+        "后续可用性以官方为准"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n11",
+      "title": "Google 推出 Stitch Loop 持续改进产品",
+      "category": "产品",
+      "summary": "Google 推出 Stitch Loop，官方博客称用于持续改进产品。该工具面向产品迭代流程，具体功能、适用平台与使用门槛需以 Google Labs 页面为准；团队需评估它与现有设计、开发和反馈闭环的衔接方式。",
+      "whyItMatters": "Stitch Loop 把持续改进产品作为卖点，产品与设计团队需判断它能否接入现有迭代流程，并核对 Labs 产品的可用范围与数据政策。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/?ref=testingcatalog.com",
+      "publishedAt": "2026-11-19T00:39:58.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Google 推出 Stitch Loop",
+        "官方博客发布产品信息",
+        "面向持续改进产品流程"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n31",
+      "title": "商汤正式开源 SenseNova-Loop-9B",
+      "category": "模型",
+      "summary": "商汤正式开源 SenseNova-Loop-9B，代码与模型信息发布在 GitHub。作为 9B 参数开源模型，它面向可自行部署的开发者场景；采用前需核对许可证、权重获取方式与推理硬件要求，并与现有开源基线比较。",
+      "whyItMatters": "9B 开源模型为私有化部署和二次开发提供新选项，团队需核对许可证与硬件成本，并评估其在目标任务上的效果是否优于现有模型。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "商汤",
+      "sourceUrl": "https://github.com/OpenSenseNova/SenseNova-Loop",
+      "publishedAt": "2026-11-18T01:33:42.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "商汤正式开源 SenseNova-Loop-9B",
+        "模型信息发布于 GitHub",
+        "参数规模为 9B"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n5",
+      "title": "OpenCode 称 10 美元可购 500 美元 GLM 5.3",
+      "category": "Agent",
+      "summary": "OpenCode 在 X 上发布信息称，可用 10 美元购买价值 500 美元的 GLM 5.3。该说法涉及额度或优惠活动，具体适用条件、有效期与使用限制需以官方活动页为准；开发者应核对是否适合自身调用量。",
+      "whyItMatters": "若优惠可用，会显著降低 GLM 5.3 的试用与迁移成本，但团队仍需确认额度有效期、限速和合规条款，避免按宣传价做长期预算。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenCode",
+      "sourceUrl": "https://x.com/opencode/status/2122969474571583885",
+      "publishedAt": "2026-11-19T00:39:58.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenCode 称 10 美元可购 500 美元 GLM 5.3",
+        "信息发布于 X",
+        "适用条件需核对官方"
+      ],
+      "confidenceReason": "单一来源，待活动页确认"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 48,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 913
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
