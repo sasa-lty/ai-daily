@@ -1,261 +1,254 @@
 {
-  "date": "2026-11-20",
-  "generatedAt": "2026-11-20T07:39:34.969Z",
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-21T07:37:00.316Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "信号最密集在模型与工具入口：Google 连发 Gemini 4 Neon 与 Genie 4，OpenAI 扩平台覆盖，Perplexity 补网页上下文 API。",
+    "verdict": "开源侧信号最密集：腾讯 770B 旗舰与视频全模态模型同日开放权重，模型规模与多模态两条线同时抬升。",
     "keywords": [
+      "开源",
       "Gemini",
-      "Google",
-      "GPT"
+      "OpenAI"
     ],
-    "heatIndex": 74,
+    "heatIndex": 76,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n22",
-    "n2"
+    "n5",
+    "n1",
+    "n27"
   ],
   "items": [
     {
-      "id": "n4",
-      "title": "Mac 版 Gemini 应用上线 computer use 功能",
-      "category": "Agent",
-      "summary": "Google 在 Mac 版 Gemini 应用中上线 computer use 功能，用户可让 Gemini 直接操作电脑界面来执行任务，官方博客已给出功能介绍页面。输入未披露该功能支持的模型版本、可用地区与是否需要特定订阅。",
-      "whyItMatters": "桌面端可被模型直接操作后，自动化任务从浏览器扩展到本地应用，企业与个人用户需先明确授权范围和数据边界再启用。",
-      "sourceName": "Google",
-      "sourceDisplayName": "Google",
-      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
-      "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 80,
+      "id": "n2",
+      "title": "Thinking Machines 发布并开源 Inkling 2 Mini",
+      "category": "开源",
+      "summary": "Thinking Machines 发布并开源 Inkling 2 Mini，发布信息以官方新闻页形式给出。该模型属于 Inkling 2 系列中的小尺寸版本，官方未在发布页摘要中披露参数规模与评测分数，权重许可条款与部署要求需查阅原始页面。",
+      "whyItMatters": "对小团队和自部署用户，这是又一个可本地运行的开放权重选项；选型时应比对许可条款与推理成本，而非只看榜单名次。",
+      "sourceName": "Thinkingmachines",
+      "sourceDisplayName": "Thinking Machines",
+      "sourceUrl": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 89,
       "confidence": "high",
       "tags": [
-        "Gemini"
+        "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Mac 版 Gemini 应用新增 computer use 能力",
-        "消息由 Google 官方博客发布",
-        "具体模型版本与开放范围未披露"
+        "Thinking Machines 发布 Inkling 2 Mini",
+        "同步开源，摘要未披露参数规模"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n5",
+      "title": "腾讯混元开源旗舰模型 Hy4，总参数 770B",
+      "category": "模型",
+      "summary": "腾讯混元开源旗舰模型 Hy4，总参数 770B，发布信息经官方微信公众号发出。770B 级参数意味着完整权重部署需要大规模推理集群，多数团队实际会通过 API 或量化版本使用，具体激活参数与上下文长度见原文。",
+      "whyItMatters": "770B 级模型开放权重，把可自建模型的规模上限推高一个量级；企业评估私有化部署时需重新核算显存与推理集群成本。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/M0TIIvCzizkLw7_A3MCSjA",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "混元 Hy4 总参数 770B",
+        "以开源形式发布，腾讯官方公众号发出"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n6",
+      "title": "微信开源全模态模型系列 WeMM-Video",
+      "category": "模型",
+      "summary": "微信在 GitHub 的 Tencent 组织下开源全模态模型系列 WeMM-Video，代码与模型托管于公开仓库。该系列面向视频相关的多模态任务，开发者可直接对照仓库说明复现；参数规模、训练数据与评测指标需以仓库文档为准。",
+      "whyItMatters": "视频全模态模型开放权重后，做视频理解与生成的团队可自建基座并微调，减少对闭源视频 API 的长期依赖与单价约束。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "微信",
+      "sourceUrl": "https://github.com/Tencent/WeMM-Video",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "微信开源 WeMM-Video 系列",
+        "仓库位于 GitHub Tencent 组织下"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n1",
+      "title": "数学家称与 Claude 合作证明黎曼猜想",
+      "category": "模型",
+      "summary": "一位数学家在 alpo.ge 发布 PDF 手稿，声称与 Anthropic 的 Claude 合作完成了黎曼猜想的证明。目前这仅是作者单方面公开的文稿，未经同行评议，也未获 Anthropic 或数学研究机构确认，结论有待专业社区核验。",
+      "whyItMatters": "若成立将是数学界重大事件，但当前只有一份未评审手稿；研究者和媒体应等待同行评议，不宜在核验前当作既定结论引用。",
+      "sourceName": "Alpo",
+      "sourceDisplayName": "Alpo",
+      "sourceUrl": "https://alpo.ge/remark.pdf",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Claude"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "作者以 PDF 形式公开证明手稿",
+        "称与 Claude 合作完成",
+        "尚未经同行评议"
+      ],
+      "confidenceReason": "传闻待证：仅一份 PDF"
+    },
+    {
+      "id": "n27",
+      "title": "Mac 版 Gemini 应用上线 computer use 功能",
+      "category": "Agent",
+      "summary": "Google 在官方博客宣布，Mac 版 Gemini 应用上线 computer use 功能，Gemini 可代用户操作电脑界面来完成任务。该能力随 macOS 桌面客户端提供，可操作范围、授权方式与安全限制以官方博客说明为准。",
+      "whyItMatters": "桌面代理操作落到 Mac 客户端后，重复性界面操作可交给模型执行；IT 管理员需先划定本地文件与账号权限边界再放开使用。",
+      "sourceName": "Google",
+      "sourceDisplayName": "Google",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+      "publishedAt": "2026-11-20T01:09:07.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Mac 版 Gemini 应用新增 computer use",
+        "由 Google 官方博客发布"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n28",
       "title": "Gemini API 预览推出工具按需加载功能",
       "category": "Agent",
-      "summary": "Gemini API 在预览阶段上线工具按需加载（tool retrieval）能力，开发者可按需检索并加载工具定义，官方博客面向开发者工具链给出说明。输入未提及配额、计费方式与正式版时间表。",
-      "whyItMatters": "工具数量多的 Agent 应用可减少一次性传入的工具定义，直接关系到上下文占用和调用成本，接入方需调整工具注册与调用链。",
+      "summary": "Google 在 Gemini API 预览中推出工具按需加载能力，开发者不必一次性把全部工具定义塞进请求，模型可按需检索并加载所需工具。这降低了工具数量多时的上下文占用，具体接口形态与限制见官方博客。",
+      "whyItMatters": "工具规模大的 Agent 可省下大量 schema token，并减少模型误选工具；直接影响 API 调用成本与工具编排的工程设计。",
       "sourceName": "Google",
       "sourceDisplayName": "Google",
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
       "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 79,
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
         "Gemini"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Gemini API 以预览形式提供工具按需加载",
-        "官方博客面向开发者工具链发布",
-        "配额与计费未在输入中披露"
+        "Gemini API 预览上线工具按需加载",
+        "面向开发者的 API 能力更新"
       ],
       "confidenceReason": "官方发布"
     },
     {
-      "id": "n22",
-      "title": "Google 发布 Gemini 4 Neon 模型",
-      "category": "模型",
-      "summary": "Google 发布 Gemini 4 Neon，官方博客已上线该模型的介绍页面，是 Gemini 4 系列新增的一个版本。输入未披露参数规模、上下文长度、评测分数、定价与具体上线渠道，需查阅原文确认。",
-      "whyItMatters": "前沿模型新增版本会直接影响开发者的模型选型与迁移成本，接入方需先确认定价、上下文长度和可用区域再决定是否切换。",
-      "sourceName": "Google",
+      "id": "n3",
+      "title": "Antigravity 扩大 cache pool，任务完成后重置配额",
+      "category": "产品",
+      "summary": "Antigravity 宣布扩大 cache pool 容量，并在任务完成后重置配额。消息由相关负责人在 X 上发布，属于容量与配额机制调整，帖文未给出完整额度数值与生效范围，实际体验需以产品内显示为准。",
+      "whyItMatters": "缓存池扩容提升重复请求命中率，重度用户等待更少；任务完成后即重置配额，连续跑多轮任务时不必担心额度被旧会话长期占用。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/_mohansolo/status/2123848516581892181",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "扩大 cache pool 容量",
+        "任务完成后重置配额"
+      ],
+      "confidenceReason": "单一来源：X 帖文"
+    },
+    {
+      "id": "n4",
+      "title": "OpenAI 向 Plus 用户开放 Space 协作空间",
+      "category": "产品",
+      "summary": "OpenAI 通过 ChatGPT 官方 X 账号宣布，向 Plus 用户开放 Space 协作空间，订阅者可建立共享对话空间用于多人协作。消息未说明人数上限、权限层级与数据保留策略，这些细节需参考官方说明。",
+      "whyItMatters": "共享对话下放到个人订阅档，个人用户可把团队协作搬进 ChatGPT，减少在聊天工具与文档之间来回搬运上下文；比较订阅档位时多一项权益。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/ChatGPT/status/2123850912867471807",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Space 协作空间向 Plus 用户开放",
+        "消息来自 ChatGPT 官方 X 账号"
+      ],
+      "confidenceReason": "官方发布：官方账号"
+    },
+    {
+      "id": "n11",
+      "title": "Google 黑五早鸟优惠上线，AI 订阅最高五折",
+      "category": "Agent",
+      "summary": "Google 黑五早鸟优惠上线，覆盖其 AI 订阅服务，折扣最高五折。信息由 Google 相关负责人在 X 发布，属限时促销，具体参与地区、适用订阅档位与截止时间需以官方活动页为准。",
+      "whyItMatters": "对准备订阅 Google AI 服务的个人与团队，折扣直接改变年度支出；采购方可据此安排集中下单时间，但需先确认所在地区是否参与。",
+      "sourceName": "综合来源",
       "sourceDisplayName": "Google",
-      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "publishedAt": "2026-11-19T00:39:58.000Z",
-      "impactScore": 79,
-      "confidence": "high",
-      "tags": [
-        "Google",
-        "Gemini"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Google 正式发布 Gemini 4 Neon",
-        "官方博客已上线介绍页面",
-        "参数规模与评测数据未在输入中给出"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n7",
-      "title": "ChatGPT 新版移动端界面向部分 Pro 用户开放",
-      "category": "产品",
-      "summary": "ChatGPT 推出新版移动端界面，首批面向部分 Pro 订阅用户开放。消息由 X 平台账号 @thsottiaux 发布，输入未说明界面具体改动内容、灰度规模以及向全部用户推送的时间。",
-      "whyItMatters": "移动端是 ChatGPT 使用时长最高的入口，界面改版会改变用户的功能触达路径，Pro 用户可先验证交互变化再做团队内部推广。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2123557171321561133",
-      "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 77,
-      "confidence": "high",
-      "tags": [
-        "GPT"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "ChatGPT 上线新移动端界面",
-        "首批仅面向部分 Pro 用户",
-        "全面推送时间未公布"
-      ],
-      "confidenceReason": "单一来源（X 账号）"
-    },
-    {
-      "id": "n1",
-      "title": "ChatGPT dots 向 Business Standard 用户及部分 Plus 开放",
-      "category": "模型",
-      "summary": "ChatGPT dots 扩大开放范围，面向 Business Standard 用户以及部分 Plus 用户推送。消息由 X 平台账号 @thsottiaux 发布，输入未说明 dots 的具体能力、地区限制与推送完成时间。",
-      "whyItMatters": "付费档位下放后，更多团队账号可直接使用该功能，企业采购方需确认自身套餐是否在灰度范围内，再决定是否调整协作流程。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2123556256392847657",
-      "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "GPT"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "ChatGPT dots 扩大至 Business Standard",
-        "部分 Plus 用户同步获得",
-        "推送范围与地区未披露"
-      ],
-      "confidenceReason": "单一来源（X 账号）"
-    },
-    {
-      "id": "n8",
-      "title": "Google AI Studio 上线元素周期表式模型选择器",
-      "category": "产品",
-      "summary": "Google AI Studio 上线以元素周期表形式排布的模型选择器，将可用模型集中陈列，便于在多个 Gemini 模型之间对比和切换。消息由 X 平台账号 @ammaar 发布，输入未给出官方文档入口。",
-      "whyItMatters": "可选模型变多后，挑选与对比成本上升；这一交互改动影响直接在 AI Studio 做原型验证的开发者，选型路径会相应改变。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/ammaar/status/2123209472227061800",
-      "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 76,
+      "sourceUrl": "https://x.com/vikaskansalHQ/status/2123833450297995624",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
         "Google"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "AI Studio 模型选择器改为元素周期表布局",
-        "消息来自 X 平台账号 @ammaar",
-        "涉及模型清单未在输入中列出"
+        "黑五早鸟优惠覆盖 Google AI 订阅",
+        "折扣最高五折"
       ],
-      "confidenceReason": "单一来源（X 账号）"
+      "confidenceReason": "单一来源：X 帖文"
     },
     {
-      "id": "n36",
-      "title": "Arena 推出智能体总榜与六个细分指数",
-      "category": "研究",
-      "summary": "Arena 上线智能体排行榜总榜，并同步推出六个细分指数，用于从不同维度对智能体产品进行排名对比。官方博客给出榜单说明，输入未披露各指数的具体评测方法、样本量与首批参评名单。",
-      "whyItMatters": "智能体选型长期缺少统一横向对比来源，采购方可据此初步筛选，但需先看清六个指数的计算口径与样本来源再作判断。",
-      "sourceName": "Arena",
-      "sourceDisplayName": "Arena",
-      "sourceUrl": "https://arena.ai/blog/introducing-the-agent-arena-index",
-      "publishedAt": "2026-11-19T00:39:58.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Arena 新增智能体总榜",
-        "同步上线六个细分指数",
-        "评测口径与参评名单未披露"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n2",
-      "title": "ChatGPT 健康功能扩展至桌面端、Android 与 dots",
-      "category": "模型",
-      "summary": "OpenAI 将 ChatGPT 的健康相关功能扩展至桌面端、Android 以及 dots，覆盖此前未支持的平台。更新记录由 OpenAI 帮助中心发布，输入未说明是否需要订阅、覆盖地区范围与健康数据的合规限制。",
-      "whyItMatters": "健康属于高频个人场景，覆盖桌面与 Android 后用户使用路径更短，做健康管理类产品的团队需要重新评估与 ChatGPT 的功能重叠。",
-      "sourceName": "OpenAI",
+      "id": "n12",
+      "title": "OpenAI 上线 CarPlay Dot 通话功能",
+      "category": "产品",
+      "summary": "OpenAI 上线 CarPlay 端的 Dot 通话功能，用户可在车载 CarPlay 界面直接发起通话。消息由 OpenAI 相关人员在 X 发布，属产品端小步更新，支持车型、地区可用性与账号要求以官方说明为准。",
+      "whyItMatters": "开车时可直接用车机通话式调用 AI，减少手持手机操作；常跑长途的用户和车机集成方需关注车型兼容与地区限制。",
+      "sourceName": "综合来源",
       "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-      "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 75,
+      "sourceUrl": "https://x.com/romainhuet/status/2123924316110966824",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
-        "GPT"
+        "OpenAI"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "ChatGPT 健康功能扩展到桌面端和 Android",
-        "dots 同步获得该功能",
-        "订阅与地区限制未在输入中说明"
+        "CarPlay 端上线 Dot 通话功能",
+        "消息由 OpenAI 相关人员在 X 发布"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "单一来源：员工帖文"
     },
     {
-      "id": "n9",
-      "title": "Grok Bot 社区目录上线一天收到超 1200 个提交",
+      "id": "n13",
+      "title": "Google Gemini 推出 GIF 生成功能",
       "category": "产品",
-      "summary": "Grok Bot 社区目录上线一天内收到超过 1200 个提交，显示第三方开发者对 Grok 机器人生态的提交意愿较高。目录由 grok-bot.directory 运营，输入未说明审核机制与已实际上架的数量。",
-      "whyItMatters": "提交量反映早期供给热度，想做 Grok 机器人分发的开发者可据此判断是否提前布局入口，同时要留意目录的审核与质量筛选规则。",
-      "sourceName": "Grok-bot",
-      "sourceDisplayName": "Grok Bot",
-      "sourceUrl": "https://grok-bot.directory",
-      "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "Grok"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Grok Bot 社区目录上线一天",
-        "收到超过 1200 个提交",
-        "已上架数量与审核机制未披露"
-      ],
-      "confidenceReason": "单一来源"
-    },
-    {
-      "id": "n3",
-      "title": "Antigravity 桌面应用新增 SSH 连接功能",
-      "category": "产品",
-      "summary": "Antigravity 桌面应用新增 SSH 连接能力，用户可通过 SSH 连接远程环境进行操作。官方文档已给出配置说明，输入未披露支持的认证方式、目标系统平台以及与企业网络策略的兼容情况。",
-      "whyItMatters": "支持 SSH 后，开发类桌面工具可直接在远程服务器上工作，团队在本地与远端环境之间的切换成本降低，但需要重新审视远程权限管控。",
-      "sourceName": "Antigravity",
-      "sourceDisplayName": "Antigravity",
-      "sourceUrl": "https://antigravity.google/docs/ssh",
-      "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Antigravity 桌面应用加入 SSH 连接",
-        "官方文档已提供配置说明",
-        "认证方式与平台范围未披露"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n10",
-      "title": "Google 将 Genie 4 上线 Gemini API 和 AI Studio",
-      "category": "模型",
-      "summary": "Google 将 Genie 4 上线到 Gemini API 和 AI Studio，开发者可通过 API 接口与 AI Studio 两个入口接入该模型。官方博客给出接入说明，输入未提供定价、速率限制与可用区域信息。",
-      "whyItMatters": "同时进入 API 与 AI Studio 意味着该模型从试用走向可集成，开发者可以开始做接入验证，但需先确认配额、计费和区域可用性。",
-      "sourceName": "Google",
+      "summary": "Google Gemini 应用推出 GIF 生成功能，用户可在应用内直接生成动图。消息由 Gemini 官方 X 账号发布，属消费端功能更新，支持的生成方式、动图时长与导出格式需以官方说明为准。",
+      "whyItMatters": "动图生成进入聊天应用内，普通用户做表情包与短动效不必再跳第三方工具；对个人订阅者，权益清单因此多出一项可比较项。",
+      "sourceName": "综合来源",
       "sourceDisplayName": "Google",
-      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/",
-      "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 74,
+      "sourceUrl": "https://x.com/GeminiApp/status/2123813017855103449",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
         "Google",
@@ -263,26 +256,33 @@
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Genie 4 已上线 Gemini API 与 AI Studio",
-        "官方博客发布接入说明",
-        "定价与速率限制未披露"
+        "Gemini 应用新增 GIF 生成",
+        "由 Gemini 官方 X 账号发布"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "官方发布：官方账号"
     },
     {
-      "id": "n27",
-      "title": "Perplexity 推出 Context API",
-      "category": "Agent",
-      "summary": "Perplexity 推出 Context API",
-      "whyItMatters": "Perplexity相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "Perplexity",
-      "sourceDisplayName": "Perplexity",
-      "sourceUrl": "https://www.perplexity.ai/hub/blog/context-api-extracts-full-context-from-any-web-page",
-      "publishedAt": "2026-11-19T00:39:58.000Z",
-      "impactScore": 74,
+      "id": "n15",
+      "title": "Meta 个人 AI agent Muse 推出邮箱功能",
+      "category": "产品",
+      "summary": "Meta 为其个人 AI agent Muse 推出邮箱功能，相关说明已上线 Meta 帮助中心。Muse 由此可接入邮件场景处理个人事务，支持的邮箱类型、授权范围与可用地区需查阅该帮助文档。",
+      "whyItMatters": "个人 agent 接入邮箱后可读写邮件流，用户授权前需确认数据可见范围；这也把 agent 的用途从对话推进到日常事务代办。",
+      "sourceName": "Meta",
+      "sourceDisplayName": "Meta",
+      "sourceUrl": "https://meta.com/help/superintelligence/1149305437517250",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 73,
       "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
+      "tags": [
+        "Meta",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Muse 新增邮箱功能",
+        "说明文档位于 Meta 帮助中心"
+      ],
+      "confidenceReason": "官方发布"
     }
   ],
   "sources": [
@@ -290,14 +290,14 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 45,
+      "itemCount": 44,
       "note": "日报型来源，已拆解 2 期"
     },
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 913
+      "itemCount": 915
     },
     {
       "name": "Google DeepMind Blog",
