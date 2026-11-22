@@ -1,35 +1,35 @@
 {
-  "date": "2026-11-21",
-  "generatedAt": "2026-11-21T07:37:00.316Z",
+  "date": "2026-11-22",
+  "generatedAt": "2026-11-22T07:18:39.915Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "开源侧信号最密集：腾讯 770B 旗舰与视频全模态模型同日开放权重，模型规模与多模态两条线同时抬升。",
+    "verdict": "今日主线：开源旗舰模型、企业 Agent 与调用降价。腾讯 Hy4 开源，OpenAI 开放企业 Agent，GLM 5.3 与 DeepSeek Flash 降价。",
     "keywords": [
       "开源",
-      "Gemini",
-      "OpenAI"
+      "OpenAI",
+      "Gemini"
     ],
-    "heatIndex": 76,
+    "heatIndex": 75,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n5",
-    "n1",
-    "n27"
+    "n17",
+    "n7",
+    "n4"
   ],
   "items": [
     {
-      "id": "n2",
+      "id": "n14",
       "title": "Thinking Machines 发布并开源 Inkling 2 Mini",
       "category": "开源",
-      "summary": "Thinking Machines 发布并开源 Inkling 2 Mini，发布信息以官方新闻页形式给出。该模型属于 Inkling 2 系列中的小尺寸版本，官方未在发布页摘要中披露参数规模与评测分数，权重许可条款与部署要求需查阅原始页面。",
-      "whyItMatters": "对小团队和自部署用户，这是又一个可本地运行的开放权重选项；选型时应比对许可条款与推理成本，而非只看榜单名次。",
+      "summary": "Thinking Machines 于 11 月 21 日发布并开源 Inkling 2 Mini。该消息仅给出模型名称和开源动作，未披露参数规模、许可证、训练数据与基准成绩，开发者需以发布页信息为准。",
+      "whyItMatters": "为需要本地或低成本部署的团队增加一个小型开源模型选项，但参数和许可证未明，选型前需核对发布页。",
       "sourceName": "Thinkingmachines",
       "sourceDisplayName": "Thinking Machines",
       "sourceUrl": "https://thinkingmachines.ai/news/inkling-2-mini/",
       "publishedAt": "2026-11-21T00:53:02.000Z",
-      "impactScore": 89,
+      "impactScore": 85,
       "confidence": "high",
       "tags": [
         "开源"
@@ -37,252 +37,264 @@
       "aiEnhanced": true,
       "keyFacts": [
         "Thinking Machines 发布 Inkling 2 Mini",
-        "同步开源，摘要未披露参数规模"
+        "该模型已开源",
+        "输入未披露参数与许可证"
       ],
       "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n4",
+      "title": "OpenCode 宣布 GLM 5.3 与 DeepSeek Flash 降价 60%",
+      "category": "Agent",
+      "summary": "OpenCode 宣布 GLM 5.3 和 DeepSeek Flash 两款模型价格下调 60%。消息来自其 X 账号，未说明降价生效时间、适用区域和计费口径，使用这两款模型的 Agent 开发者需核对账单。",
+      "whyItMatters": "直接降低依赖这两款模型的编码 Agent 调用成本，开发团队可重新评估模型路由与批量任务预算。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenCode",
+      "sourceUrl": "https://x.com/thdxr/status/2124265777217802707",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "GLM 5.3 降价 60%",
+        "DeepSeek Flash 降价 60%",
+        "OpenCode 发布降价消息"
+      ],
+      "confidenceReason": "单一来源"
     },
     {
       "id": "n5",
-      "title": "腾讯混元开源旗舰模型 Hy4，总参数 770B",
-      "category": "模型",
-      "summary": "腾讯混元开源旗舰模型 Hy4，总参数 770B，发布信息经官方微信公众号发出。770B 级参数意味着完整权重部署需要大规模推理集群，多数团队实际会通过 API 或量化版本使用，具体激活参数与上下文长度见原文。",
-      "whyItMatters": "770B 级模型开放权重，把可自建模型的规模上限推高一个量级；企业评估私有化部署时需重新核算显存与推理集群成本。",
-      "sourceName": "腾讯",
-      "sourceDisplayName": "腾讯",
-      "sourceUrl": "https://mp.weixin.qq.com/s/M0TIIvCzizkLw7_A3MCSjA",
-      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "title": "OpenAI 语音团队成员称 Dots 通话后可查看文字转录",
+      "category": "产品",
+      "summary": "OpenAI 语音团队成员在 X 上表示，Dots 通话结束后可查看文字转录。该功能面向通话记录场景，但输入未说明支持语言、保存时长、是否默认开启及企业版可用性。",
+      "whyItMatters": "通话转录便于会后检索和留档，但默认开启与保存策略未明，企业用户需先确认隐私和合规设置。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI 语音团队",
+      "sourceUrl": "https://x.com/athyuttamre/status/2123937435411431529",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
       "impactScore": 79,
       "confidence": "high",
       "tags": [
-        "开源"
+        "OpenAI",
+        "语音"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "混元 Hy4 总参数 770B",
-        "以开源形式发布，腾讯官方公众号发出"
+        "Dots 支持通话后查看转录",
+        "消息来自 OpenAI 语音团队成员",
+        "未说明语言与保存时长"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "单一来源"
     },
     {
-      "id": "n6",
-      "title": "微信开源全模态模型系列 WeMM-Video",
-      "category": "模型",
-      "summary": "微信在 GitHub 的 Tencent 组织下开源全模态模型系列 WeMM-Video，代码与模型托管于公开仓库。该系列面向视频相关的多模态任务，开发者可直接对照仓库说明复现；参数规模、训练数据与评测指标需以仓库文档为准。",
-      "whyItMatters": "视频全模态模型开放权重后，做视频理解与生成的团队可自建基座并微调，减少对闭源视频 API 的长期依赖与单价约束。",
-      "sourceName": "GitHub",
-      "sourceDisplayName": "微信",
-      "sourceUrl": "https://github.com/Tencent/WeMM-Video",
-      "publishedAt": "2026-11-21T00:53:02.000Z",
-      "impactScore": 78,
+      "id": "n7",
+      "title": "OpenAI 允许美国以外企业在 ChatGPT 认领业务并发布 Agent",
+      "category": "产品",
+      "summary": "OpenAI 开放美国以外企业在 ChatGPT 中认领业务并发布 agent。企业可把业务信息接入 ChatGPT，并通过 agent 承接用户交互；输入未给出开放国家清单、收费方式和上线时间。",
+      "whyItMatters": "把 ChatGPT 的企业入口扩展到美国之外，跨国品牌需决定是否入驻并配置 agent，同时评估客服与线索转化流程。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/business/businesses-in-chatgpt/",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 77,
       "confidence": "high",
       "tags": [
-        "开源"
+        "OpenAI",
+        "GPT",
+        "Agent"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "微信开源 WeMM-Video 系列",
-        "仓库位于 GitHub Tencent 组织下"
+        "美国以外企业可在 ChatGPT 认领业务",
+        "认领后可发布 agent",
+        "未披露国家清单与收费"
       ],
       "confidenceReason": "官方发布"
     },
     {
       "id": "n1",
-      "title": "数学家称与 Claude 合作证明黎曼猜想",
-      "category": "模型",
-      "summary": "一位数学家在 alpo.ge 发布 PDF 手稿，声称与 Anthropic 的 Claude 合作完成了黎曼猜想的证明。目前这仅是作者单方面公开的文稿，未经同行评议，也未获 Anthropic 或数学研究机构确认，结论有待专业社区核验。",
-      "whyItMatters": "若成立将是数学界重大事件，但当前只有一份未评审手稿；研究者和媒体应等待同行评议，不宜在核验前当作既定结论引用。",
-      "sourceName": "Alpo",
-      "sourceDisplayName": "Alpo",
-      "sourceUrl": "https://alpo.ge/remark.pdf",
-      "publishedAt": "2026-11-21T00:53:02.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "Claude"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "作者以 PDF 形式公开证明手稿",
-        "称与 Claude 合作完成",
-        "尚未经同行评议"
-      ],
-      "confidenceReason": "传闻待证：仅一份 PDF"
-    },
-    {
-      "id": "n27",
-      "title": "Mac 版 Gemini 应用上线 computer use 功能",
+      "title": "Antigravity 重置全部用户的 Gemini 配额",
       "category": "Agent",
-      "summary": "Google 在官方博客宣布，Mac 版 Gemini 应用上线 computer use 功能，Gemini 可代用户操作电脑界面来完成任务。该能力随 macOS 桌面客户端提供，可操作范围、授权方式与安全限制以官方博客说明为准。",
-      "whyItMatters": "桌面代理操作落到 Mac 客户端后，重复性界面操作可交给模型执行；IT 管理员需先划定本地文件与账号权限边界再放开使用。",
-      "sourceName": "Google",
-      "sourceDisplayName": "Google",
-      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
-      "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "Gemini"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Mac 版 Gemini 应用新增 computer use",
-        "由 Google 官方博客发布"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n28",
-      "title": "Gemini API 预览推出工具按需加载功能",
-      "category": "Agent",
-      "summary": "Google 在 Gemini API 预览中推出工具按需加载能力，开发者不必一次性把全部工具定义塞进请求，模型可按需检索并加载所需工具。这降低了工具数量多时的上下文占用，具体接口形态与限制见官方博客。",
-      "whyItMatters": "工具规模大的 Agent 可省下大量 schema token，并减少模型误选工具；直接影响 API 调用成本与工具编排的工程设计。",
-      "sourceName": "Google",
-      "sourceDisplayName": "Google",
-      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-      "publishedAt": "2026-11-20T01:09:07.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "Gemini"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Gemini API 预览上线工具按需加载",
-        "面向开发者的 API 能力更新"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n3",
-      "title": "Antigravity 扩大 cache pool，任务完成后重置配额",
-      "category": "产品",
-      "summary": "Antigravity 宣布扩大 cache pool 容量，并在任务完成后重置配额。消息由相关负责人在 X 上发布，属于容量与配额机制调整，帖文未给出完整额度数值与生效范围，实际体验需以产品内显示为准。",
-      "whyItMatters": "缓存池扩容提升重复请求命中率，重度用户等待更少；任务完成后即重置配额，连续跑多轮任务时不必担心额度被旧会话长期占用。",
+      "summary": "Antigravity 宣布重置全部用户的 Gemini 配额。该动作影响使用 Antigravity 调用 Gemini 的开发者，但输入未说明重置原因、配额额度和下次重置时间。",
+      "whyItMatters": "已耗尽配额的开发者可恢复调用，但额度规则不透明，依赖该平台的团队需预留备用模型或预算。",
       "sourceName": "综合来源",
       "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/_mohansolo/status/2123848516581892181",
-      "publishedAt": "2026-11-21T00:53:02.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "扩大 cache pool 容量",
-        "任务完成后重置配额"
-      ],
-      "confidenceReason": "单一来源：X 帖文"
-    },
-    {
-      "id": "n4",
-      "title": "OpenAI 向 Plus 用户开放 Space 协作空间",
-      "category": "产品",
-      "summary": "OpenAI 通过 ChatGPT 官方 X 账号宣布，向 Plus 用户开放 Space 协作空间，订阅者可建立共享对话空间用于多人协作。消息未说明人数上限、权限层级与数据保留策略，这些细节需参考官方说明。",
-      "whyItMatters": "共享对话下放到个人订阅档，个人用户可把团队协作搬进 ChatGPT，减少在聊天工具与文档之间来回搬运上下文；比较订阅档位时多一项权益。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://x.com/ChatGPT/status/2123850912867471807",
-      "publishedAt": "2026-11-21T00:53:02.000Z",
-      "impactScore": 73,
+      "sourceUrl": "https://x.com/_mohansolo/status/2124070033534161407",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 76,
       "confidence": "high",
       "tags": [
-        "OpenAI"
+        "Gemini"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Space 协作空间向 Plus 用户开放",
-        "消息来自 ChatGPT 官方 X 账号"
+        "Antigravity 重置全部用户配额",
+        "涉及 Gemini 配额",
+        "未说明重置原因与额度"
       ],
-      "confidenceReason": "官方发布：官方账号"
+      "confidenceReason": "单一来源"
     },
     {
-      "id": "n11",
-      "title": "Google 黑五早鸟优惠上线，AI 订阅最高五折",
+      "id": "n2",
+      "title": "Google Antigravity 更新 /btw 支持另开支线且保留进度",
       "category": "Agent",
-      "summary": "Google 黑五早鸟优惠上线，覆盖其 AI 订阅服务，折扣最高五折。信息由 Google 相关负责人在 X 发布，属限时促销，具体参与地区、适用订阅档位与截止时间需以官方活动页为准。",
-      "whyItMatters": "对准备订阅 Google AI 服务的个人与团队，折扣直接改变年度支出；采购方可据此安排集中下单时间，但需先确认所在地区是否参与。",
+      "summary": "Google Antigravity 更新 /btw 命令，用户可另开支线处理问题且不丢失当前进度。该功能面向多任务协作和临时提问，输入未说明支线数量、合并方式与可用版本。",
+      "whyItMatters": "减少开发者在长任务中因临时提问打断主流程的成本，适合需要并行排查的 Agent 工作流。",
       "sourceName": "综合来源",
-      "sourceDisplayName": "Google",
-      "sourceUrl": "https://x.com/vikaskansalHQ/status/2123833450297995624",
-      "publishedAt": "2026-11-21T00:53:02.000Z",
-      "impactScore": 73,
+      "sourceDisplayName": "Google Antigravity",
+      "sourceUrl": "https://x.com/antigravity/status/2123921833883840650",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
         "Google"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "黑五早鸟优惠覆盖 Google AI 订阅",
-        "折扣最高五折"
+        "Antigravity 更新 /btw 命令",
+        "可另开支线",
+        "不丢失当前进度"
       ],
-      "confidenceReason": "单一来源：X 帖文"
+      "confidenceReason": "官方发布"
     },
     {
-      "id": "n12",
-      "title": "OpenAI 上线 CarPlay Dot 通话功能",
-      "category": "产品",
-      "summary": "OpenAI 上线 CarPlay 端的 Dot 通话功能，用户可在车载 CarPlay 界面直接发起通话。消息由 OpenAI 相关人员在 X 发布，属产品端小步更新，支持车型、地区可用性与账号要求以官方说明为准。",
-      "whyItMatters": "开车时可直接用车机通话式调用 AI，减少手持手机操作；常跑长途的用户和车机集成方需关注车型兼容与地区限制。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://x.com/romainhuet/status/2123924316110966824",
+      "id": "n17",
+      "title": "腾讯混元开源旗舰模型 Hy4，总参数 770B",
+      "category": "模型",
+      "summary": "腾讯混元开源旗舰模型 Hy4，总参数为 770B。该模型以旗舰定位开源，但输入未披露激活参数、上下文长度、许可证和基准成绩，落地成本需结合部署条件评估。",
+      "whyItMatters": "770B 旗舰模型开源会抬高企业私有化部署的选型门槛，团队需先核算显存、推理成本和许可证限制。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯混元",
+      "sourceUrl": "https://mp.weixin.qq.com/s/M0TIIvCzizkLw7_A3MCSjA",
       "publishedAt": "2026-11-21T00:53:02.000Z",
-      "impactScore": 73,
+      "impactScore": 75,
       "confidence": "high",
       "tags": [
-        "OpenAI"
+        "开源"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "CarPlay 端上线 Dot 通话功能",
-        "消息由 OpenAI 相关人员在 X 发布"
+        "腾讯混元开源 Hy4",
+        "总参数 770B",
+        "未披露许可证与上下文"
       ],
-      "confidenceReason": "单一来源：员工帖文"
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "博主称 Cursor 即将更名为 Grok Build",
+      "category": "Agent",
+      "summary": "有博主称 Cursor 即将更名为 Grok Build。该说法仅来自 X 账号，未获 Cursor 官方确认，也未说明更名时间、产品边界和现有订阅如何处理。",
+      "whyItMatters": "若更名属实将影响 Cursor 用户对产品归属和订阅连续性的判断，但当前仅为传闻，企业采购不宜据此决策。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "GrokInsider",
+      "sourceUrl": "https://x.com/GrokInsider/status/2123867269553938671",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Grok"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "博主称 Cursor 将更名",
+        "新名称为 Grok Build",
+        "未获官方确认"
+      ],
+      "confidenceReason": "传闻待证"
+    },
+    {
+      "id": "n18",
+      "title": "微信开源全模态模型系列 WeMM-Video",
+      "category": "模型",
+      "summary": "微信在 GitHub 开源全模态模型系列 WeMM-Video。该系列以视频为名，输入未披露参数规模、许可证、训练数据和基准结果，实际能力需查看仓库。",
+      "whyItMatters": "为视频理解与多模态研究增加开源选项，但许可证和规模未明，团队在商用前需核对仓库条款。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "微信",
+      "sourceUrl": "https://github.com/Tencent/WeMM-Video",
+      "publishedAt": "2026-11-21T00:53:02.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "微信开源 WeMM-Video",
+        "属全模态模型系列",
+        "未披露参数与许可证"
+      ],
+      "confidenceReason": "官方发布"
     },
     {
       "id": "n13",
-      "title": "Google Gemini 推出 GIF 生成功能",
-      "category": "产品",
-      "summary": "Google Gemini 应用推出 GIF 生成功能，用户可在应用内直接生成动图。消息由 Gemini 官方 X 账号发布，属消费端功能更新，支持的生成方式、动图时长与导出格式需以官方说明为准。",
-      "whyItMatters": "动图生成进入聊天应用内，普通用户做表情包与短动效不必再跳第三方工具；对个人订阅者，权益清单因此多出一项可比较项。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "Google",
-      "sourceUrl": "https://x.com/GeminiApp/status/2123813017855103449",
+      "title": "数学家称与 Claude 合作证明黎曼猜想",
+      "category": "模型",
+      "summary": "一名数学家发布论文，称与 Claude 合作证明了黎曼猜想。该声明仅来自单一 PDF，未列出同行评议或形式化验证结果，数学界仍需独立审查证明过程。",
+      "whyItMatters": "若证明成立将影响数论与密码学基础，但当前仅有个人声明，研究者和媒体应等待同行评议再引用。",
+      "sourceName": "Alpo",
+      "sourceDisplayName": "Alpo",
+      "sourceUrl": "https://alpo.ge/remark.pdf",
       "publishedAt": "2026-11-21T00:53:02.000Z",
-      "impactScore": 73,
+      "impactScore": 72,
       "confidence": "high",
       "tags": [
-        "Google",
+        "Claude"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "数学家称已证明黎曼猜想",
+        "称使用 Claude 合作",
+        "仅有单一 PDF 来源"
+      ],
+      "confidenceReason": "传闻待证"
+    },
+    {
+      "id": "n6",
+      "title": "Gemini 网页版被曝隐藏元素周期表切换器",
+      "category": "产品",
+      "summary": "有账号发现 Gemini 网页版存在隐藏的元素周期表切换器。该功能疑似处于未发布状态，输入未说明入口、适用范围和正式上线时间，可能只是实验性界面。",
+      "whyItMatters": "暗示 Gemini 可能在准备科学或教育交互功能，但未上线功能不应纳入教学或企业采购评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "LuminaBench",
+      "sourceUrl": "https://x.com/LuminaBench/status/2124084959459873080",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 71,
+      "confidence": "high",
+      "tags": [
         "Gemini"
       ],
       "aiEnhanced": true,
       "keyFacts": [
-        "Gemini 应用新增 GIF 生成",
-        "由 Gemini 官方 X 账号发布"
+        "Gemini 网页版含隐藏切换器",
+        "与元素周期表相关",
+        "未正式上线"
       ],
-      "confidenceReason": "官方发布：官方账号"
+      "confidenceReason": "单一来源"
     },
     {
       "id": "n15",
-      "title": "Meta 个人 AI agent Muse 推出邮箱功能",
+      "title": "Antigravity 扩大 Cache Pool 并在完成后重置配额",
       "category": "产品",
-      "summary": "Meta 为其个人 AI agent Muse 推出邮箱功能，相关说明已上线 Meta 帮助中心。Muse 由此可接入邮件场景处理个人事务，支持的邮箱类型、授权范围与可用地区需查阅该帮助文档。",
-      "whyItMatters": "个人 agent 接入邮箱后可读写邮件流，用户授权前需确认数据可见范围；这也把 agent 的用途从对话推进到日常事务代办。",
-      "sourceName": "Meta",
-      "sourceDisplayName": "Meta",
-      "sourceUrl": "https://meta.com/help/superintelligence/1149305437517250",
+      "summary": "Antigravity 表示已扩大 cache pool，并将在完成后重置配额。该更新影响使用其 Agent 和 Gemini 配额的开发者，但输入未给出扩容幅度、完成时间和重置范围。",
+      "whyItMatters": "缓存容量提升可减少高峰期限流，但重置时点未明，依赖该平台的团队应关注配额恢复通知。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/_mohansolo/status/2123848516581892181",
       "publishedAt": "2026-11-21T00:53:02.000Z",
-      "impactScore": 73,
+      "impactScore": 70,
       "confidence": "high",
-      "tags": [
-        "Meta",
-        "Agent"
-      ],
+      "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "Muse 新增邮箱功能",
-        "说明文档位于 Meta 帮助中心"
+        "Antigravity 扩大 cache pool",
+        "完成后重置配额",
+        "未披露扩容幅度"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "单一来源"
     }
   ],
   "sources": [
@@ -290,7 +302,7 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 44,
+      "itemCount": 35,
       "note": "日报型来源，已拆解 2 期"
     },
     {
