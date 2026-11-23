@@ -1,0 +1,324 @@
+{
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T08:02:01.385Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "资金与合规信号最密集：甲骨文称 OpenAI 算力合同获全额资金，OpenRouter 收紧数据条款，医疗模型开源扩围。",
+    "keywords": [
+      "OpenAI",
+      "GPT",
+      "开源"
+    ],
+    "heatIndex": 73,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n6",
+    "n5",
+    "n2"
+  ],
+  "items": [
+    {
+      "id": "n2",
+      "title": "蚂蚁集团开源医疗模型 LingSante 3.1 Flash 与 air-VL",
+      "category": "模型",
+      "summary": "蚂蚁集团在 Hugging Face 开源医疗模型 LingSante 3.1 Flash 与 air-VL，发布页面归属 inclusionAI。输入未披露参数量、评测分数与许可证细节，医疗场景的可用范围和部署成本仍需查阅模型卡确认。",
+      "whyItMatters": "医疗机构和开发者可评估开源医疗模型替代闭源 API，采购前需核对模型卡、许可与评测，避免把通用模型结论直接套到临床。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "蚂蚁集团",
+      "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
+      "publishedAt": "2026-11-23T01:14:09.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "蚂蚁集团开源 LingSante 3.1 Flash",
+        "同步开源 air-VL 医疗模型",
+        "发布页位于 Hugging Face"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n1",
+      "title": "OpenAI 公开内部指标 Perplexity，提议设共同开发限制",
+      "category": "产品",
+      "summary": "OpenAI 在官网公开内部指标 Perplexity，并提议设置共同开发限制。输入未说明指标口径、限制对象和执行方式，当前更像政策与方法论信号，而非可直接落地的产品更新，企业需等待完整文档再判断影响。",
+      "whyItMatters": "若共同开发限制进入合作条款，使用 OpenAI 接口或联合开发的企业需重新评估数据与模型使用边界；目前细节不足，暂不宜据此调整采购。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/perplexity-and-intelligence",
+      "publishedAt": "2026-11-23T01:14:09.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 公开内部指标 Perplexity",
+        "提议设置共同开发限制",
+        "细节未说明"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n11",
+      "title": "OpenCode 宣布 GLM 5.3 和 DeepSeek Flash 降价 60%",
+      "category": "Agent",
+      "summary": "OpenCode 宣布 GLM 5.3 和 DeepSeek Flash 降价 60%，消息来自其 X 账号。输入未给出新价格、生效时间与适用范围，开发者实际成本需以平台计费页为准，降价会直接影响 Agent 调用与路由比价。",
+      "whyItMatters": "经常调用这两款模型的 Agent 开发者可重新测算每任务成本，并在 OpenCode 与现有供应商之间切换；切换前需核对计费页确认新价格。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenCode",
+      "sourceUrl": "https://x.com/thdxr/status/2124265777217802707",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenCode 宣布两款模型降价 60%",
+        "涉及 GLM 5.3 与 DeepSeek Flash",
+        "新价格与生效时间未披露"
+      ],
+      "confidenceReason": "单一来源（OpenCode 账号）"
+    },
+    {
+      "id": "n12",
+      "title": "OpenAI 语音团队成员宣布 Dots 通话结束后可查看文字转录",
+      "category": "产品",
+      "summary": "OpenAI 语音团队成员宣布，Dots 通话结束后可查看文字转录。输入未说明支持语言、保存时长、是否默认开启及企业数据策略；该功能把语音通话转为可检索文本，影响会议记录和隐私设置。",
+      "whyItMatters": "使用 Dots 的团队可把通话内容沉淀为文本，但也需检查转录保存与访问权限，避免敏感通话内容默认留痕。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/athyuttamre/status/2123937435411431529",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 75,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "语音"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Dots 通话结束后可查看文字转录",
+        "由 OpenAI 语音团队成员宣布",
+        "支持语言与保存时长未披露"
+      ],
+      "confidenceReason": "单一来源（成员推文）"
+    },
+    {
+      "id": "n3",
+      "title": "马斯克披露 Tesla Reality View 技术细节",
+      "category": "研究",
+      "summary": "马斯克在 X 披露 Tesla Reality View 技术细节。输入未给出具体版本、功能边界和上线时间，仅确认细节由马斯克本人发布；关注特斯拉辅助驾驶与可视化的人需等待官方文档确认适用车型和交付状态。",
+      "whyItMatters": "关注特斯拉辅助驾驶可视化与车队数据的人可跟踪后续说明；在官方文档发布前，不宜把推文细节当作可交付功能。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Tesla",
+      "sourceUrl": "https://x.com/elonmusk/status/2124458557525397780",
+      "publishedAt": "2026-11-23T01:14:09.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "马斯克披露 Tesla Reality View 细节",
+        "信息来自其 X 账号",
+        "版本与上线时间未披露"
+      ],
+      "confidenceReason": "单一来源（马斯克推文）"
+    },
+    {
+      "id": "n4",
+      "title": "Elon Musk 预警 AI 行业明年严重资金短缺",
+      "category": "商业",
+      "summary": "Elon Musk 在 X 预警 AI 行业明年将出现严重资金短缺。输入未给出判断依据、受影响环节和具体规模，属于个人公开预警而非机构预测；对算力采购和初创融资而言，这是一条风险信号，需结合融资与订单数据验证。",
+      "whyItMatters": "AI 初创和算力采购方需重新检查现金储备与融资节奏；单一推文不足以改变预算，但可作为压力测试情景。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Elon Musk",
+      "sourceUrl": "https://x.com/elonmusk/status/2124271725927903388",
+      "publishedAt": "2026-11-23T01:14:09.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Musk 预警 AI 行业明年严重资金短缺",
+        "信息来自其 X 账号",
+        "具体规模与依据未披露"
+      ],
+      "confidenceReason": "单一来源（马斯克推文）"
+    },
+    {
+      "id": "n14",
+      "title": "OpenAI 开放美国以外企业在 ChatGPT 认领业务并发布 agent",
+      "category": "产品",
+      "summary": "OpenAI 开放美国以外企业在 ChatGPT 认领业务并发布 agent。输入未说明覆盖国家、收费方式和 agent 能力边界；非美企业因此可在 ChatGPT 内建立业务入口并部署 agent，需关注品牌认领审核与数据使用条款。",
+      "whyItMatters": "非美本地服务商多了一个 ChatGPT 内的获客与自动化入口，决策重点是认领审核、agent 权限和客户数据是否进入 OpenAI 系统。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/business/businesses-in-chatgpt/",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT",
+        "Agent"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 向美国以外企业开放业务认领",
+        "企业可在 ChatGPT 发布 agent",
+        "覆盖国家与收费未披露"
+      ],
+      "confidenceReason": "官方发布（OpenAI）"
+    },
+    {
+      "id": "n5",
+      "title": "OpenRouter 终止 3 家供应商合作，移除 125 个端点的 ZDR 资格",
+      "category": "商业",
+      "summary": "OpenRouter 宣布终止与 3 家供应商合作，并移除 125 个推理端点的 ZDR 资格。输入未披露受影响供应商名称、事件细节和迁移方案；使用 OpenRouter 路由的企业需排查依赖这些端点的应用，并重新评估数据保留与供应商尽调。",
+      "whyItMatters": "依赖 OpenRouter 多供应商路由的团队必须排查受影响端点，尤其是有数据保留约束的合规场景；否则请求可能落到不再满足 ZDR 的供应商。",
+      "sourceName": "Openrouter",
+      "sourceDisplayName": "OpenRouter",
+      "sourceUrl": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "publishedAt": "2026-11-23T01:14:09.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "终止 3 家供应商合作",
+        "移除 125 个端点 ZDR 资格",
+        "受影响供应商名称未披露"
+      ],
+      "confidenceReason": "官方发布（博客）"
+    },
+    {
+      "id": "n8",
+      "title": "Antigravity 重置全部用户的 Gemini 配额",
+      "category": "Agent",
+      "summary": "Antigravity 重置全部用户的 Gemini 配额。输入未说明重置原因、配额上限和是否补偿；对开发者而言，短期可继续调用 Gemini，但需确认账户实际额度和后续计费规则，避免把临时重置当作长期容量。",
+      "whyItMatters": "正在用 Antigravity 跑 Gemini 任务的开发者可恢复或扩大测试，但应检查控制台额度与计费，防止后续配额再次收紧影响上线。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Antigravity",
+      "sourceUrl": "https://x.com/_mohansolo/status/2124070033534161407",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity 重置全部用户 Gemini 配额",
+        "涉及所有用户",
+        "原因与上限未披露"
+      ],
+      "confidenceReason": "单一来源（Antigravity）"
+    },
+    {
+      "id": "n6",
+      "title": "甲骨文称与 OpenAI 基础设施合同已获全额资金支持",
+      "category": "商业",
+      "summary": "甲骨文称与 OpenAI 的基础设施合同已获全额资金支持。输入未披露合同金额、期限和资金来源；这是对算力项目融资确定性的官方表态，直接关系到 OpenAI 基础设施交付节奏和甲骨文相关资本开支安排。",
+      "whyItMatters": "为 OpenAI 提供算力或依赖其模型的企业可把交付确定性纳入规划；同时应关注甲骨文资本开支与合同执行披露，不能仅凭一句声明判断全部风险消失。",
+      "sourceName": "Oracle",
+      "sourceDisplayName": "Oracle",
+      "sourceUrl": "https://www.oracle.com/news/announcement/oracle-statement-2026-11-20/",
+      "publishedAt": "2026-11-23T01:14:09.000Z",
+      "impactScore": 71,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "甲骨文称合同已获全额资金支持",
+        "合同对象为 OpenAI 基础设施",
+        "金额与期限未披露"
+      ],
+      "confidenceReason": "官方发布（甲骨文公告）"
+    },
+    {
+      "id": "n9",
+      "title": "Google Antigravity 更新 /btw：可另开支线且不丢进度",
+      "category": "Agent",
+      "summary": "Google Antigravity 更新 /btw 功能，可另开分支且不丢当前进度。输入未说明可用范围、版本号和计费影响；该更新让开发者在同一任务中并行探索不同指令或方案，减少来回切换造成的上下文丢失。",
+      "whyItMatters": "用 Antigravity 做多步骤 Agent 开发的团队可减少分支实验的成本，但需确认支线结果如何合并和计费，避免上下文与配额混乱。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Google Antigravity",
+      "sourceUrl": "https://x.com/antigravity/status/2123921833883840650",
+      "publishedAt": "2026-11-22T00:54:18.000Z",
+      "impactScore": 71,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Antigravity 更新 /btw",
+        "可另开支线且不丢进度",
+        "版本与范围未披露"
+      ],
+      "confidenceReason": "官方发布（产品账号）"
+    },
+    {
+      "id": "n7",
+      "title": "OpenAI 团队：ChatGPT/Codex 桌面应用又将迎来重大更新",
+      "category": "模型",
+      "summary": "OpenAI 团队成员称 ChatGPT/Codex 桌面应用将迎来重大更新。输入未给出更新时间、具体功能和版本号；对依赖桌面端写代码或处理文件的用户，需等待正式发布说明，当前只能视为即将更新的预告。",
+      "whyItMatters": "重度使用 ChatGPT/Codex 桌面端的开发者应暂缓围绕现有交互设计工作流，待更新说明确认后再调整插件、快捷键和权限配置。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/thsottiaux/status/2124322968499282388",
+      "publishedAt": "2026-11-23T01:14:09.000Z",
+      "impactScore": 70,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 团队称桌面应用将重大更新",
+        "涉及 ChatGPT 与 Codex",
+        "功能与时间未披露"
+      ],
+      "confidenceReason": "单一来源（团队推文）"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 19,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 915
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
