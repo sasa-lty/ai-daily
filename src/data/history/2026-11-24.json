@@ -1,0 +1,323 @@
+{
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-24T10:18:58.998Z",
+  "status": "ai",
+  "statusNote": "摘要与总评已由 AI 改写。",
+  "overview": {
+    "verdict": "旗舰模型迭代、ChatGPT 对话升级与编程 Agent 落地，构成今日最密集的产品信号。",
+    "keywords": [
+      "OpenAI",
+      "GPT",
+      "开源"
+    ],
+    "heatIndex": 77,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n1",
+    "n2",
+    "n10"
+  ],
+  "items": [
+    {
+      "id": "n1",
+      "title": "智谱发布旗舰模型 GLM-5.4",
+      "category": "模型",
+      "summary": "智谱发布旗舰模型 GLM-5.4，输入信息未给出参数规模、上下文长度、定价或开放平台安排。作为旗舰版本更新，它直接影响开发者对新模型能力与 API 调用成本的评估。",
+      "whyItMatters": "旗舰模型更新会进入开发者和企业的模型选型清单，影响 API 采购、私有化部署与国产模型替换决策。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "智谱",
+      "sourceUrl": "https://mp.weixin.qq.com/s/D-IZr-QaT1or_chminK8IQ",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 83,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "发布方为智谱",
+        "模型版本为 GLM-5.4",
+        "来源为腾讯"
+      ],
+      "confidenceReason": "单一来源，来源为腾讯"
+    },
+    {
+      "id": "n2",
+      "title": "OpenAI 在 ChatGPT 上线日常对话版 GPT-6.2 Sol",
+      "category": "模型",
+      "summary": "OpenAI 在 ChatGPT 上线日常对话版 GPT-6.2 Sol，定位日常对话场景。输入未给出上下文长度、定价或 API 开放信息；ChatGPT 用户将直接接触该版本，开发者需关注后续 API 同步安排。",
+      "whyItMatters": "ChatGPT 默认对话体验更新会影响海量用户的使用习惯，也促使开发者在应用中选择与之匹配的模型版本。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "ChatGPT 上线 GPT-6.2 Sol",
+        "版本定位为日常对话",
+        "发布方为 OpenAI"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n4",
+      "title": "Qoder 独家上线匿名模型 HungerG，免费试用 7 天",
+      "category": "模型",
+      "summary": "Qoder 独家上线匿名模型 HungerG，并提供 7 天免费试用。输入未披露模型参数、能力评测与后续正式名称；该活动主要用于吸引开发者在 IDE 中试用并收集反馈。",
+      "whyItMatters": "匿名模型加限时免费试用，会吸引开发者在编码场景测试新模型，并影响其对 Qoder 的留存与付费转化。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Qoder",
+      "sourceUrl": "https://x.com/qoder_ai_ide/status/2124899980632822148",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Qoder 独家上线匿名模型 HungerG",
+        "免费试用期为 7 天",
+        "来源为综合来源"
+      ],
+      "confidenceReason": "单一来源，X帖子"
+    },
+    {
+      "id": "n17",
+      "title": "OpenAI 与 Cisco 发布并开源 AI 安全运行时 Shirudo",
+      "category": "研究",
+      "summary": "OpenAI 与 Cisco 发布并开源 AI 安全运行时 Shirudo。输入未给出许可证、支持平台与部署要求；双方联合开源意味着企业可在自有环境中评估 AI 安全运行时，而不仅依赖闭源服务。",
+      "whyItMatters": "企业部署 AI 应用时需要运行时安全控制，开源方案会进入安全团队的技术评估与采购清单。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-shirudo",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 与 Cisco 联合发布 Shirudo",
+        "Shirudo 为 AI 安全运行时",
+        "项目已开源"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n5",
+      "title": "ChatGPT 宣布 12 月 23 日下线 GPT-5.6 Sol 与 Terra",
+      "category": "Agent",
+      "summary": "ChatGPT 宣布将于 12 月 23 日下线 GPT-5.6 Sol 与 Terra。输入未说明替代模型和迁移指引；依赖这两个版本的 ChatGPT 用户与集成方需要在截止日前调整工作流。",
+      "whyItMatters": "模型下线会迫使使用旧版本的团队在截止日前迁移，影响提示词、评测基线和应用稳定性。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "ChatGPT",
+      "sourceUrl": "https://x.com/ChatGPT/status/2124981905380569283",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "下线日期为 12 月 23 日",
+        "涉及 GPT-5.6 Sol 与 Terra",
+        "发布方为 ChatGPT"
+      ],
+      "confidenceReason": "单一来源，X帖子"
+    },
+    {
+      "id": "n23",
+      "title": "蚂蚁集团开源医疗模型 LingSante 3.1 Flash 与 air-VL",
+      "category": "模型",
+      "summary": "蚂蚁集团开源医疗模型 LingSante 3.1 Flash 与 air-VL。输入未给出参数规模、许可证和评测结果；医疗模型开源后，开发者和医疗机构可直接在 Hugging Face 获取并评估其垂直场景能力。",
+      "whyItMatters": "医疗垂直模型开源会降低机构试用门槛，影响医疗 AI 团队的模型选型与合规评估流程。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "蚂蚁集团",
+      "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
+      "publishedAt": "2026-11-23T01:14:09.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "蚂蚁集团开源 LingSante 3.1 Flash",
+        "同时开源 air-VL",
+        "发布平台为 Hugging Face"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n8",
+      "title": "谷歌为 Gemini API 推出文件切片控制，仅按实际处理内容付费",
+      "category": "Agent",
+      "summary": "谷歌为 Gemini API 推出文件切片控制，称仅按实际处理内容付费。输入未给出支持文件类型与计费细则；对开发者而言，这提供了更细粒度的成本控制，影响大文件处理任务的计费方式。",
+      "whyItMatters": "大文件与长文档处理成本更可控，开发者在构建检索、审核和文档分析应用时会重新核算 API 预算。",
+      "sourceName": "Google",
+      "sourceDisplayName": "谷歌",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Gemini API 新增文件切片控制",
+        "仅按实际处理内容付费",
+        "发布方为谷歌"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n3",
+      "title": "Antigravity 重置所有用户 Gemini 配额并向付费 Pro 开放 Carbon",
+      "category": "模型",
+      "summary": "Antigravity 重置所有用户 Gemini 配额，并向付费 Pro 开放 Carbon。输入未说明配额额度与 Carbon 的具体能力；该调整直接影响 Antigravity 用户的可用额度与付费权益。",
+      "whyItMatters": "配额重置会刺激用户增加调用，Carbon 仅向付费 Pro 开放则影响用户是否升级订阅的决策。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "Antigravity",
+      "sourceUrl": "https://x.com/_mohansolo/status/2124971131312734707",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "重置所有用户 Gemini 配额",
+        "付费 Pro 可开放 Carbon",
+        "发布方为 Antigravity"
+      ],
+      "confidenceReason": "单一来源，X帖子"
+    },
+    {
+      "id": "n10",
+      "title": "Anthropic 推出测试版 Claude Ship：审查、修复并批准 PR",
+      "category": "Agent",
+      "summary": "Anthropic 推出测试版 Claude Ship，可审查、修复并批准 PR。输入未给出支持语言、仓库权限和定价；该工具把代码审查与修复纳入 Agent 流程，直接影响开发团队的 PR 处理方式。",
+      "whyItMatters": "PR 审查与修复被 Agent 接管一部分，开发团队需评估权限边界、代码质量责任和人工复核流程。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://code.claude.com/docs/en/claude-ship",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 74,
+      "confidence": "high",
+      "tags": [
+        "Claude",
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Claude Ship 为测试版",
+        "功能包括审查、修复并批准 PR",
+        "发布方为 Anthropic"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n15",
+      "title": "蚂蚁阿福发布新版App：实时视频看健康，升级AI健康管家",
+      "category": "产品",
+      "summary": "蚂蚁阿福发布新版 App，支持实时视频看健康，并升级 AI 健康管家。输入未给出覆盖医院、服务范围与收费信息；健康管家能力升级将影响用户在问诊、健康管理场景的使用。",
+      "whyItMatters": "健康类 AI 产品进入视频与管家形态，会影响用户健康咨询入口，也带来医疗合规与数据隐私要求。",
+      "sourceName": "Com",
+      "sourceDisplayName": "蚂蚁阿福",
+      "sourceUrl": "https://www.nbd.com.cn/articles/2026-11-23/4655588.html",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "蚂蚁阿福发布新版 App",
+        "支持实时视频看健康",
+        "升级 AI 健康管家"
+      ],
+      "confidenceReason": "单一来源，媒体报道"
+    },
+    {
+      "id": "n20",
+      "title": "NVIDIA 董事会宣布即日起恢复黄仁勋总裁、CEO 及董事职务",
+      "category": "商业",
+      "summary": "NVIDIA 董事会宣布，即日起恢复黄仁勋总裁、CEO 及董事职务。输入未说明此前离任原因与过渡安排；该人事变动直接关系公司治理与 AI 芯片业务的战略连续性。",
+      "whyItMatters": "CEO 职务恢复影响公司治理与对外沟通，投资者和供应链伙伴需关注后续战略与执行是否变化。",
+      "sourceName": "NVIDIA",
+      "sourceDisplayName": "NVIDIA",
+      "sourceUrl": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "NVIDIA"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "NVIDIA 董事会宣布恢复职务",
+        "恢复职务包括总裁、CEO 及董事",
+        "即日起生效"
+      ],
+      "confidenceReason": "官方发布"
+    },
+    {
+      "id": "n21",
+      "title": "OpenAI 推出 OpenWorks，资助专家免费帮美国小企业用 AI",
+      "category": "商业",
+      "summary": "OpenAI 推出 OpenWorks，资助专家免费帮美国小企业用 AI。输入未给出资助规模、申请门槛与覆盖行业；该计划把专家服务与小企业 AI 采用连接起来，影响小企业的工具选型和培训路径。",
+      "whyItMatters": "小企业采用 AI 的障碍常在于实施能力，免费专家服务会改变其采购与培训路径，也为服务商带来入口。",
+      "sourceName": "OpenAI",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://openai.com/form/openworks-partner/",
+      "publishedAt": "2026-11-24T00:59:51.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "OpenAI 推出 OpenWorks",
+        "资助专家免费服务",
+        "目标为美国小企业"
+      ],
+      "confidenceReason": "官方发布"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 28,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 916
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
