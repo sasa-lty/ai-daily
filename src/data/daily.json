@@ -1,56 +1,207 @@
 {
-  "date": "2026-11-24",
-  "generatedAt": "2026-11-24T10:18:58.998Z",
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T08:59:54.995Z",
   "status": "ai",
   "statusNote": "摘要与总评已由 AI 改写。",
   "overview": {
-    "verdict": "旗舰模型迭代、ChatGPT 对话升级与编程 Agent 落地，构成今日最密集的产品信号。",
+    "verdict": "今日模型更新最密集：OpenAI GPT-6.2 Sol 与智谱 GLM-5.4 同日迭代旗舰，国内开源权重集中释出。",
     "keywords": [
+      "开源",
       "OpenAI",
-      "GPT",
-      "开源"
+      "GPT"
     ],
-    "heatIndex": 77,
+    "heatIndex": 78,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n1",
-    "n2",
-    "n10"
+    "n26",
+    "n25",
+    "n41"
   ],
   "items": [
     {
-      "id": "n1",
+      "id": "n7",
+      "title": "腾讯混元开源第三代翻译模型 Hy MT3",
+      "category": "模型",
+      "summary": "腾讯混元在 Hugging Face 发布并开源第三代翻译模型 Hy MT3，模型合集页已上线，开发者可直接下载权重用于多语翻译的自部署与二次开发。",
+      "whyItMatters": "需要多语翻译的团队可直接取用权重自部署，减少调用闭源翻译接口的成本与数据外流顾虑。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "腾讯混元",
+      "sourceUrl": "https://huggingface.co/collections/tencent/hy-mt3",
+      "publishedAt": "2026-11-25T01:14:24.000Z",
+      "impactScore": 84,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "腾讯混元开源第三代翻译模型 Hy MT3",
+        "模型合集已上线 Hugging Face"
+      ],
+      "confidenceReason": "官方发布（Hugging Face 模型页）"
+    },
+    {
+      "id": "n2",
+      "title": "OpenAI 员工称 Business 套餐 Fast mode 免费至年底",
+      "category": "产品",
+      "summary": "OpenAI 员工在社交平台宣布，Business 套餐的 Fast mode 将免费开放至年底；已订阅该套餐的企业在此期间使用加速模式无需额外付费，消息由员工个人账号发布。",
+      "whyItMatters": "已订阅 Business 的团队可把高响应场景切到 Fast mode，据此调整第四季度的用量规划与预算安排。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/thsottiaux/status/2125299248782778588",
+      "publishedAt": "2026-11-25T01:14:24.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "OpenAI"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Business 套餐 Fast mode 免费至年底",
+        "消息由 OpenAI 员工在 X 发布"
+      ],
+      "confidenceReason": "单一来源（员工社交账号）"
+    },
+    {
+      "id": "n9",
+      "title": "百灵大模型开源 Ling-3.2-air",
+      "category": "模型",
+      "summary": "百灵大模型在 Hugging Face 发布并开源 Ling-3.2-air，权重已公开可下载；开发者可直接获取该版本用于本地部署或二次微调，无需另行申请授权。",
+      "whyItMatters": "为新开源模型选项，开发者可在私有环境部署并与现有同规模模型做效果与推理成本对比。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "百灵大模型",
+      "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.2-air",
+      "publishedAt": "2026-11-25T01:14:24.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "百灵开源 Ling-3.2-air",
+        "权重托管于 Hugging Face"
+      ],
+      "confidenceReason": "官方发布（Hugging Face 模型页）"
+    },
+    {
+      "id": "n10",
+      "title": "蚂蚁百灵开源生理信号基础模型 LingSante-Pulse",
+      "category": "模型",
+      "summary": "蚂蚁百灵团队在 Hugging Face 发布并开源生理信号基础模型 LingSante-Pulse 1.0，权重公开可下载，面向生理信号类数据的建模与下游任务微调。",
+      "whyItMatters": "做可穿戴与医疗信号分析的团队可基于该权重微调，省去从零预训练生理信号模型的算力投入。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "蚂蚁百灵",
+      "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-Pulse-1.0",
+      "publishedAt": "2026-11-25T01:14:24.000Z",
+      "impactScore": 81,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "开源生理信号基础模型 LingSante-Pulse",
+        "版本号 1.0，托管于 Hugging Face"
+      ],
+      "confidenceReason": "官方发布（Hugging Face 模型页）"
+    },
+    {
+      "id": "n11",
+      "title": "商汤开源 SenseNova U1.6",
+      "category": "模型",
+      "summary": "商汤在 Hugging Face 发布并开源 SenseNova U1.6，公开的权重为 8B 参数的 MoT Native 版本，开发者可直接下载部署或在此基础上做二次微调。",
+      "whyItMatters": "8B 级开源权重让单卡与端侧部署成为可选项，团队可据此评估商汤模型在自有业务上的落地成本。",
+      "sourceName": "Hugging Face",
+      "sourceDisplayName": "商汤",
+      "sourceUrl": "https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT-Native/tree/ed98cc5ca5a1891028db2041f665b43b96a43cfa",
+      "publishedAt": "2026-11-25T01:14:24.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "商汤开源 SenseNova U1.6",
+        "公开版本为 8B MoT Native"
+      ],
+      "confidenceReason": "官方发布（Hugging Face 模型页）"
+    },
+    {
+      "id": "n5",
+      "title": "Anthropic 测试 artifacts 安装为桌面应用",
+      "category": "产品",
+      "summary": "Anthropic 为 Claude 推出测试功能：artifacts 可安装为桌面应用，用户能把生成的交互产物从浏览器页面转为本地可启动的应用，目前该能力处于测试阶段。",
+      "whyItMatters": "用 Claude 生成小工具的团队可把产物直接交付为可启动应用，缩短从原型到内部工具的交付链路。",
+      "sourceName": "Anthropic",
+      "sourceDisplayName": "Anthropic",
+      "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+      "publishedAt": "2026-11-25T01:14:24.000Z",
+      "impactScore": 79,
+      "confidence": "high",
+      "tags": [
+        "Anthropic"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "artifacts 可安装为桌面应用",
+        "该功能目前处于测试阶段"
+      ],
+      "confidenceReason": "官方发布（Anthropic 文档页）"
+    },
+    {
+      "id": "n25",
       "title": "智谱发布旗舰模型 GLM-5.4",
       "category": "模型",
-      "summary": "智谱发布旗舰模型 GLM-5.4，输入信息未给出参数规模、上下文长度、定价或开放平台安排。作为旗舰版本更新，它直接影响开发者对新模型能力与 API 调用成本的评估。",
-      "whyItMatters": "旗舰模型更新会进入开发者和企业的模型选型清单，影响 API 采购、私有化部署与国产模型替换决策。",
+      "summary": "智谱发布旗舰模型 GLM-5.4，官方公众号公布该版本信息，定位为新一代旗舰模型；开发者可通过官方渠道了解接入方式与能力说明。",
+      "whyItMatters": "国内 API 用户可把 GLM-5.4 纳入旗舰档选型对比，重新评估中文任务的模型采购与自研配比。",
       "sourceName": "腾讯",
       "sourceDisplayName": "智谱",
       "sourceUrl": "https://mp.weixin.qq.com/s/D-IZr-QaT1or_chminK8IQ",
       "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 83,
+      "impactScore": 79,
       "confidence": "medium",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
-        "发布方为智谱",
-        "模型版本为 GLM-5.4",
-        "来源为腾讯"
+        "智谱发布旗舰模型 GLM-5.4",
+        "信息经官方公众号发布"
       ],
-      "confidenceReason": "单一来源，来源为腾讯"
+      "confidenceReason": "官方发布（官方公众号）"
     },
     {
-      "id": "n2",
+      "id": "n6",
+      "title": "Cognition 发布编码模型 SWE-2.1",
+      "category": "模型",
+      "summary": "Cognition 通过官方博客发布编码模型 SWE-2.1，作为 SWE 系列的新版本面向软件工程任务；具体能力说明与评测结果以官方博客披露内容为准。",
+      "whyItMatters": "使用其编码代理的团队需核对新版本在自有仓库任务上的通过率，再决定是否切换生产默认模型。",
+      "sourceName": "Cognition",
+      "sourceDisplayName": "Cognition",
+      "sourceUrl": "https://cognition.com/blog/swe-2-1",
+      "publishedAt": "2026-11-25T01:14:24.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Cognition 发布编码模型 SWE-2.1",
+        "详情见官方博客"
+      ],
+      "confidenceReason": "官方发布（官方博客）"
+    },
+    {
+      "id": "n26",
       "title": "OpenAI 在 ChatGPT 上线日常对话版 GPT-6.2 Sol",
       "category": "模型",
-      "summary": "OpenAI 在 ChatGPT 上线日常对话版 GPT-6.2 Sol，定位日常对话场景。输入未给出上下文长度、定价或 API 开放信息；ChatGPT 用户将直接接触该版本，开发者需关注后续 API 同步安排。",
-      "whyItMatters": "ChatGPT 默认对话体验更新会影响海量用户的使用习惯，也促使开发者在应用中选择与之匹配的模型版本。",
+      "summary": "OpenAI 在 ChatGPT 上线日常对话版 GPT-6.2 Sol，相关更新已写入 ChatGPT 发布说明；该版本面向日常对话场景，具体开放范围与能力说明以官方说明为准。",
+      "whyItMatters": "默认对话体验随之变化，企业在客服与日常问答场景需重测新版本回答质量，再决定是否沿用旧版配置。",
       "sourceName": "OpenAI",
       "sourceDisplayName": "OpenAI",
       "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
       "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 82,
+      "impactScore": 78,
       "confidence": "high",
       "tags": [
         "OpenAI",
@@ -59,43 +210,64 @@
       "aiEnhanced": true,
       "keyFacts": [
         "ChatGPT 上线 GPT-6.2 Sol",
-        "版本定位为日常对话",
-        "发布方为 OpenAI"
+        "定位为日常对话版本",
+        "更新已写入发布说明"
       ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "官方发布（ChatGPT 发布说明）"
     },
     {
-      "id": "n4",
+      "id": "n1",
+      "title": "ChatGPT 合并 Chat 与 Work 入口，部分用户先行体验",
+      "category": "模型",
+      "summary": "ChatGPT 将 Chat 与 Work 两个入口合并，部分用户已可率先体验；合并后日常对话与工作内容在同一入口处理，不再分为两个独立界面，变动由 OpenAI 员工披露。",
+      "whyItMatters": "企业管理员需重新确认工作区数据边界与权限配置，避免个人对话与工作内容混用带来的合规风险。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "OpenAI",
+      "sourceUrl": "https://x.com/thsottiaux/status/2125284868414394550",
+      "publishedAt": "2026-11-25T01:14:24.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "GPT"
+      ],
+      "aiEnhanced": true,
+      "keyFacts": [
+        "Chat 与 Work 入口合并",
+        "部分用户已可优先体验"
+      ],
+      "confidenceReason": "单一来源（员工社交账号）"
+    },
+    {
+      "id": "n28",
       "title": "Qoder 独家上线匿名模型 HungerG，免费试用 7 天",
       "category": "模型",
-      "summary": "Qoder 独家上线匿名模型 HungerG，并提供 7 天免费试用。输入未披露模型参数、能力评测与后续正式名称；该活动主要用于吸引开发者在 IDE 中试用并收集反馈。",
-      "whyItMatters": "匿名模型加限时免费试用，会吸引开发者在编码场景测试新模型，并影响其对 Qoder 的留存与付费转化。",
+      "summary": "Qoder 独家上线匿名模型 HungerG，并提供 7 天免费试用；开发者可在其 IDE 内直接调用该模型验证编码任务表现，模型以匿名形式上架。",
+      "whyItMatters": "想压低编码模型成本的团队可先免费试 7 天，用真实仓库任务测效果，再决定是否替换现有编码模型。",
       "sourceName": "综合来源",
       "sourceDisplayName": "Qoder",
       "sourceUrl": "https://x.com/qoder_ai_ide/status/2124899980632822148",
       "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 80,
+      "impactScore": 76,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": true,
       "keyFacts": [
         "Qoder 独家上线匿名模型 HungerG",
-        "免费试用期为 7 天",
-        "来源为综合来源"
+        "免费试用 7 天"
       ],
-      "confidenceReason": "单一来源，X帖子"
+      "confidenceReason": "单一来源（官方社交账号）"
     },
     {
-      "id": "n17",
-      "title": "OpenAI 与 Cisco 发布并开源 AI 安全运行时 Shirudo",
+      "id": "n41",
+      "title": "OpenAI 与 Cisco 联合发布并开源 AI 安全运行时 Shirudo",
       "category": "研究",
-      "summary": "OpenAI 与 Cisco 发布并开源 AI 安全运行时 Shirudo。输入未给出许可证、支持平台与部署要求；双方联合开源意味着企业可在自有环境中评估 AI 安全运行时，而不仅依赖闭源服务。",
-      "whyItMatters": "企业部署 AI 应用时需要运行时安全控制，开源方案会进入安全团队的技术评估与采购清单。",
+      "summary": "OpenAI 与 Cisco 联合发布并开源 AI 安全运行时 Shirudo，用于在 AI 应用运行时提供安全防护，相关代码与说明已在 OpenAI 官网公开，企业可自行集成。",
+      "whyItMatters": "部署 AI 应用的企业可把 Shirudo 接入现有安全链路，在运行时拦截风险调用，减少自研安全中间件的投入。",
       "sourceName": "OpenAI",
       "sourceDisplayName": "OpenAI",
       "sourceUrl": "https://openai.com/index/introducing-shirudo",
       "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 80,
+      "impactScore": 76,
       "confidence": "high",
       "tags": [
         "OpenAI",
@@ -104,193 +276,10 @@
       "aiEnhanced": true,
       "keyFacts": [
         "OpenAI 与 Cisco 联合发布 Shirudo",
-        "Shirudo 为 AI 安全运行时",
+        "定位 AI 安全运行时",
         "项目已开源"
       ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n5",
-      "title": "ChatGPT 宣布 12 月 23 日下线 GPT-5.6 Sol 与 Terra",
-      "category": "Agent",
-      "summary": "ChatGPT 宣布将于 12 月 23 日下线 GPT-5.6 Sol 与 Terra。输入未说明替代模型和迁移指引；依赖这两个版本的 ChatGPT 用户与集成方需要在截止日前调整工作流。",
-      "whyItMatters": "模型下线会迫使使用旧版本的团队在截止日前迁移，影响提示词、评测基线和应用稳定性。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "ChatGPT",
-      "sourceUrl": "https://x.com/ChatGPT/status/2124981905380569283",
-      "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 79,
-      "confidence": "high",
-      "tags": [
-        "GPT"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "下线日期为 12 月 23 日",
-        "涉及 GPT-5.6 Sol 与 Terra",
-        "发布方为 ChatGPT"
-      ],
-      "confidenceReason": "单一来源，X帖子"
-    },
-    {
-      "id": "n23",
-      "title": "蚂蚁集团开源医疗模型 LingSante 3.1 Flash 与 air-VL",
-      "category": "模型",
-      "summary": "蚂蚁集团开源医疗模型 LingSante 3.1 Flash 与 air-VL。输入未给出参数规模、许可证和评测结果；医疗模型开源后，开发者和医疗机构可直接在 Hugging Face 获取并评估其垂直场景能力。",
-      "whyItMatters": "医疗垂直模型开源会降低机构试用门槛，影响医疗 AI 团队的模型选型与合规评估流程。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "蚂蚁集团",
-      "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash",
-      "publishedAt": "2026-11-23T01:14:09.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [
-        "开源"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "蚂蚁集团开源 LingSante 3.1 Flash",
-        "同时开源 air-VL",
-        "发布平台为 Hugging Face"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n8",
-      "title": "谷歌为 Gemini API 推出文件切片控制，仅按实际处理内容付费",
-      "category": "Agent",
-      "summary": "谷歌为 Gemini API 推出文件切片控制，称仅按实际处理内容付费。输入未给出支持文件类型与计费细则；对开发者而言，这提供了更细粒度的成本控制，影响大文件处理任务的计费方式。",
-      "whyItMatters": "大文件与长文档处理成本更可控，开发者在构建检索、审核和文档分析应用时会重新核算 API 预算。",
-      "sourceName": "Google",
-      "sourceDisplayName": "谷歌",
-      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
-      "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 76,
-      "confidence": "high",
-      "tags": [
-        "Gemini"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Gemini API 新增文件切片控制",
-        "仅按实际处理内容付费",
-        "发布方为谷歌"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n3",
-      "title": "Antigravity 重置所有用户 Gemini 配额并向付费 Pro 开放 Carbon",
-      "category": "模型",
-      "summary": "Antigravity 重置所有用户 Gemini 配额，并向付费 Pro 开放 Carbon。输入未说明配额额度与 Carbon 的具体能力；该调整直接影响 Antigravity 用户的可用额度与付费权益。",
-      "whyItMatters": "配额重置会刺激用户增加调用，Carbon 仅向付费 Pro 开放则影响用户是否升级订阅的决策。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "Antigravity",
-      "sourceUrl": "https://x.com/_mohansolo/status/2124971131312734707",
-      "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [
-        "Gemini"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "重置所有用户 Gemini 配额",
-        "付费 Pro 可开放 Carbon",
-        "发布方为 Antigravity"
-      ],
-      "confidenceReason": "单一来源，X帖子"
-    },
-    {
-      "id": "n10",
-      "title": "Anthropic 推出测试版 Claude Ship：审查、修复并批准 PR",
-      "category": "Agent",
-      "summary": "Anthropic 推出测试版 Claude Ship，可审查、修复并批准 PR。输入未给出支持语言、仓库权限和定价；该工具把代码审查与修复纳入 Agent 流程，直接影响开发团队的 PR 处理方式。",
-      "whyItMatters": "PR 审查与修复被 Agent 接管一部分，开发团队需评估权限边界、代码质量责任和人工复核流程。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://code.claude.com/docs/en/claude-ship",
-      "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 74,
-      "confidence": "high",
-      "tags": [
-        "Claude",
-        "Anthropic"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "Claude Ship 为测试版",
-        "功能包括审查、修复并批准 PR",
-        "发布方为 Anthropic"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n15",
-      "title": "蚂蚁阿福发布新版App：实时视频看健康，升级AI健康管家",
-      "category": "产品",
-      "summary": "蚂蚁阿福发布新版 App，支持实时视频看健康，并升级 AI 健康管家。输入未给出覆盖医院、服务范围与收费信息；健康管家能力升级将影响用户在问诊、健康管理场景的使用。",
-      "whyItMatters": "健康类 AI 产品进入视频与管家形态，会影响用户健康咨询入口，也带来医疗合规与数据隐私要求。",
-      "sourceName": "Com",
-      "sourceDisplayName": "蚂蚁阿福",
-      "sourceUrl": "https://www.nbd.com.cn/articles/2026-11-23/4655588.html",
-      "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "蚂蚁阿福发布新版 App",
-        "支持实时视频看健康",
-        "升级 AI 健康管家"
-      ],
-      "confidenceReason": "单一来源，媒体报道"
-    },
-    {
-      "id": "n20",
-      "title": "NVIDIA 董事会宣布即日起恢复黄仁勋总裁、CEO 及董事职务",
-      "category": "商业",
-      "summary": "NVIDIA 董事会宣布，即日起恢复黄仁勋总裁、CEO 及董事职务。输入未说明此前离任原因与过渡安排；该人事变动直接关系公司治理与 AI 芯片业务的战略连续性。",
-      "whyItMatters": "CEO 职务恢复影响公司治理与对外沟通，投资者和供应链伙伴需关注后续战略与执行是否变化。",
-      "sourceName": "NVIDIA",
-      "sourceDisplayName": "NVIDIA",
-      "sourceUrl": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/",
-      "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [
-        "NVIDIA"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "NVIDIA 董事会宣布恢复职务",
-        "恢复职务包括总裁、CEO 及董事",
-        "即日起生效"
-      ],
-      "confidenceReason": "官方发布"
-    },
-    {
-      "id": "n21",
-      "title": "OpenAI 推出 OpenWorks，资助专家免费帮美国小企业用 AI",
-      "category": "商业",
-      "summary": "OpenAI 推出 OpenWorks，资助专家免费帮美国小企业用 AI。输入未给出资助规模、申请门槛与覆盖行业；该计划把专家服务与小企业 AI 采用连接起来，影响小企业的工具选型和培训路径。",
-      "whyItMatters": "小企业采用 AI 的障碍常在于实施能力，免费专家服务会改变其采购与培训路径，也为服务商带来入口。",
-      "sourceName": "OpenAI",
-      "sourceDisplayName": "OpenAI",
-      "sourceUrl": "https://openai.com/form/openworks-partner/",
-      "publishedAt": "2026-11-24T00:59:51.000Z",
-      "impactScore": 73,
-      "confidence": "high",
-      "tags": [
-        "OpenAI"
-      ],
-      "aiEnhanced": true,
-      "keyFacts": [
-        "OpenAI 推出 OpenWorks",
-        "资助专家免费服务",
-        "目标为美国小企业"
-      ],
-      "confidenceReason": "官方发布"
+      "confidenceReason": "官方发布（OpenAI 官网）"
     }
   ],
   "sources": [
@@ -298,7 +287,7 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 28,
+      "itemCount": 45,
       "note": "日报型来源，已拆解 2 期"
     },
     {
