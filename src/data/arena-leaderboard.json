@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T09:00:35.530Z",
+  "updatedAt": "2026-11-26T08:47:02.208Z",
   "status": "ok",
   "sourceUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
   "boards": [
@@ -706,7 +706,7 @@
       "config": "vision_style_control",
       "dim": "vision",
       "label": "视觉理解",
-      "publishDate": "2026-11-19",
+      "publishDate": "2026-11-25",
       "models": [
         {
           "name": "Claude Fable 5 (High)",
@@ -715,25 +715,25 @@
           "score": 1309,
           "ciLower": 1302,
           "ciUpper": 1316,
-          "voteCount": 15449
+          "voteCount": 15428
         },
         {
           "name": "Claude Fable 5.2 (Max)",
           "organization": "anthropic",
           "rank": 2,
-          "score": 1305,
+          "score": 1302,
           "ciLower": 1287,
-          "ciUpper": 1323,
-          "voteCount": 1176
+          "ciUpper": 1317,
+          "voteCount": 1776
         },
         {
           "name": "Claude Opus 4.7",
           "organization": "anthropic",
           "rank": 3,
           "score": 1299,
-          "ciLower": 1292,
+          "ciLower": 1293,
           "ciUpper": 1305,
-          "voteCount": 24930
+          "voteCount": 25450
         },
         {
           "name": "Claude Opus 4.6 (High)",
@@ -741,98 +741,98 @@
           "rank": 4,
           "score": 1298,
           "ciLower": 1292,
-          "ciUpper": 1305,
-          "voteCount": 22067
+          "ciUpper": 1304,
+          "voteCount": 22041
         },
         {
           "name": "Claude Opus 4.7 (High)",
           "organization": "anthropic",
           "rank": 5,
           "score": 1298,
-          "ciLower": 1292,
-          "ciUpper": 1305,
-          "voteCount": 22530
-        },
-        {
-          "name": "Gemini 3.7 Flash (High)",
-          "organization": "google",
-          "rank": 6,
-          "score": 1294,
-          "ciLower": 1286,
-          "ciUpper": 1303,
-          "voteCount": 6776
-        },
-        {
-          "name": "Muse Spark",
-          "organization": "meta",
-          "rank": 7,
-          "score": 1294,
-          "ciLower": 1285,
-          "ciUpper": 1303,
-          "voteCount": 5835
+          "ciLower": 1291,
+          "ciUpper": 1304,
+          "voteCount": 22504
         },
         {
           "name": "Qwen3.8-Max",
           "organization": "alibaba",
-          "rank": 8,
-          "score": 1294,
-          "ciLower": 1286,
-          "ciUpper": 1301,
-          "voteCount": 10833
+          "rank": 6,
+          "score": 1295,
+          "ciLower": 1287,
+          "ciUpper": 1302,
+          "voteCount": 11466
         },
         {
-          "name": "Claude Opus 5.5 (High)",
+          "name": "Gemini 3.7 Flash (High)",
+          "organization": "google",
+          "rank": 7,
+          "score": 1294,
+          "ciLower": 1286,
+          "ciUpper": 1303,
+          "voteCount": 6769
+        },
+        {
+          "name": "Muse Spark",
+          "organization": "meta",
+          "rank": 8,
+          "score": 1294,
+          "ciLower": 1285,
+          "ciUpper": 1303,
+          "voteCount": 5824
+        },
+        {
+          "name": "Claude Opus 4.6",
           "organization": "anthropic",
           "rank": 9,
           "score": 1293,
-          "ciLower": 1284,
-          "ciUpper": 1302,
-          "voteCount": 5903
+          "ciLower": 1287,
+          "ciUpper": 1299,
+          "voteCount": 26527
         },
         {
           "name": "Muse Spark 1.2 (xHigh)",
           "organization": "meta",
           "rank": 10,
           "score": 1293,
-          "ciLower": 1279,
+          "ciLower": 1278,
           "ciUpper": 1307,
-          "voteCount": 1922
+          "voteCount": 1921
         },
         {
-          "name": "Claude Opus 4.6",
+          "name": "Claude Opus 5.5 (High)",
           "organization": "anthropic",
           "rank": 11,
-          "score": 1293,
-          "ciLower": 1287,
-          "ciUpper": 1299,
-          "voteCount": 26552
+          "score": 1292,
+          "ciLower": 1283,
+          "ciUpper": 1301,
+          "voteCount": 6457
         },
         {
           "name": "Gemini 3.8 Flash (High)",
           "organization": "google",
           "rank": 12,
-          "score": 1293,
-          "ciLower": 1285,
-          "ciUpper": 1300,
-          "voteCount": 9782
+          "score": 1292,
+          "ciLower": 1284,
+          "ciUpper": 1299,
+          "voteCount": 10812
+        },
+        {
+          "name": "Muse Spark 1.3 (xHigh)",
+          "organization": "meta",
+          "rank": 13,
+          "score": 1290,
+          "ciLower": 1283,
+          "ciUpper": 1297,
+          "voteCount": 10812
         },
         {
           "name": "GPT-6.1 Sol (Max)",
           "organization": "openai",
-          "rank": 13,
-          "score": 1290,
-          "ciLower": 1280,
-          "ciUpper": 1300,
-          "voteCount": 5043
-        },
-        {
-          "name": "Claude Fable 5.1 (Max)",
-          "organization": "anthropic",
           "rank": 14,
-          "score": 1290,
-          "ciLower": 1282,
+          "score": 1289,
+          "ciLower": 1280,
           "ciUpper": 1298,
-          "voteCount": 7185
+          "voteCount": 5555
         },
         {
           "name": "Gemini 3 Pro",
@@ -841,34 +841,34 @@
           "score": 1289,
           "ciLower": 1282,
           "ciUpper": 1296,
-          "voteCount": 13482
+          "voteCount": 13465
         },
         {
-          "name": "Muse Spark 1.3 (Max)",
-          "organization": "meta",
+          "name": "Claude Fable 5.1 (Max)",
+          "organization": "anthropic",
           "rank": 16,
-          "score": 1288,
+          "score": 1289,
           "ciLower": 1281,
-          "ciUpper": 1296,
-          "voteCount": 9287
+          "ciUpper": 1297,
+          "voteCount": 7598
         },
         {
           "name": "GPT-5.6 Sol (xHigh)",
           "organization": "openai",
           "rank": 17,
           "score": 1288,
-          "ciLower": 1281,
-          "ciUpper": 1295,
-          "voteCount": 12244
-        },
-        {
-          "name": "Muse Spark 1.3 (xHigh)",
-          "organization": "meta",
-          "rank": 18,
-          "score": 1288,
           "ciLower": 1280,
           "ciUpper": 1295,
-          "voteCount": 9809
+          "voteCount": 12237
+        },
+        {
+          "name": "Muse Spark 1.3 (Max)",
+          "organization": "meta",
+          "rank": 18,
+          "score": 1287,
+          "ciLower": 1280,
+          "ciUpper": 1294,
+          "voteCount": 10036
         },
         {
           "name": "Claude Opus 4.8 (High)",
@@ -877,16 +877,16 @@
           "score": 1285,
           "ciLower": 1279,
           "ciUpper": 1292,
-          "voteCount": 18113
+          "voteCount": 18104
         },
         {
           "name": "Claude Opus 5 (High)",
           "organization": "anthropic",
           "rank": 20,
           "score": 1285,
-          "ciLower": 1279,
-          "ciUpper": 1292,
-          "voteCount": 19229
+          "ciLower": 1278,
+          "ciUpper": 1291,
+          "voteCount": 19202
         },
         {
           "name": "GPT-5.5",
@@ -895,7 +895,7 @@
           "score": 1285,
           "ciLower": 1279,
           "ciUpper": 1290,
-          "voteCount": 29925
+          "voteCount": 29897
         },
         {
           "name": "GPT-5.5 (High)",
@@ -903,17 +903,17 @@
           "rank": 22,
           "score": 1284,
           "ciLower": 1278,
-          "ciUpper": 1290,
-          "voteCount": 28221
+          "ciUpper": 1289,
+          "voteCount": 28198
         },
         {
           "name": "Gemini 3.5 Flash (Medium)",
           "organization": "google",
           "rank": 23,
           "score": 1282,
-          "ciLower": 1276,
-          "ciUpper": 1289,
-          "voteCount": 15320
+          "ciLower": 1275,
+          "ciUpper": 1288,
+          "voteCount": 15316
         },
         {
           "name": "GPT-5.4 (High)",
@@ -921,17 +921,17 @@
           "rank": 24,
           "score": 1282,
           "ciLower": 1276,
-          "ciUpper": 1288,
-          "voteCount": 31907
+          "ciUpper": 1287,
+          "voteCount": 31848
         },
         {
           "name": "Gemini 3.5 Flash (High)",
           "organization": "google",
           "rank": 25,
-          "score": 1281,
-          "ciLower": 1275,
-          "ciUpper": 1288,
-          "voteCount": 15228
+          "score": 1280,
+          "ciLower": 1274,
+          "ciUpper": 1287,
+          "voteCount": 15221
         }
       ]
     },
