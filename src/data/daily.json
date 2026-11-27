@@ -1,26 +1,26 @@
 {
-  "date": "2026-11-26",
-  "generatedAt": "2026-11-26T08:47:00.906Z",
+  "date": "2026-11-27",
+  "generatedAt": "2026-11-27T08:57:56.104Z",
   "status": "rule",
   "statusNote": "未配置 API key 或 AI 增强失败，使用规则摘要。",
   "overview": {
-    "verdict": "2026-11-26：今日信号集中在「模型」「产品」方向，共筛选 12 条；热度最高的是「Sand.ai发布MAGI-2视频模型，独家上线Higgsfield」。",
+    "verdict": "2026-11-27：今日信号集中在「模型」「产品」方向，共筛选 12 条；热度最高的是「Sand.ai发布MAGI-2视频模型，独家上线Higgsfield」。",
     "keywords": [
       "开源",
       "OpenAI",
-      "Kimi"
+      "GPT"
     ],
     "heatIndex": 78,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n3",
-    "n5",
-    "n22"
+    "n10",
+    "n2",
+    "n12"
   ],
   "items": [
     {
-      "id": "n3",
+      "id": "n10",
       "title": "Sand.ai发布MAGI-2视频模型，独家上线Higgsfield",
       "category": "模型",
       "summary": "Sand.ai发布MAGI-2视频模型，独家上线Higgsfield",
@@ -29,13 +29,31 @@
       "sourceDisplayName": "Higgsfield",
       "sourceUrl": "https://higgsfield.ai/announcing-magi-2",
       "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 88,
+      "impactScore": 84,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": false
     },
     {
-      "id": "n5",
+      "id": "n2",
+      "title": "OpenAI 修复 GPT-6.2 计费错误，补偿已上线",
+      "category": "模型",
+      "summary": "OpenAI 修复 GPT-6.2 计费错误，补偿已上线",
+      "whyItMatters": "涉及OpenAI的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2125784147889393806",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
+      "impactScore": 82,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n12",
       "title": "PrismML 发布并开源 5.9 GB 三值模型 Bonsai 2.5 27B",
       "category": "模型",
       "summary": "PrismML 发布并开源 5.9 GB 三值模型 Bonsai 2.5 27B",
@@ -44,7 +62,7 @@
       "sourceDisplayName": "Prismml",
       "sourceUrl": "https://prismml.com/news/bonsai-2-5-27b",
       "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 86,
+      "impactScore": 82,
       "confidence": "high",
       "tags": [
         "开源"
@@ -52,15 +70,32 @@
       "aiEnhanced": false
     },
     {
-      "id": "n22",
-      "title": "腾讯混元发布并开源第三代翻译模型 Hy MT3",
+      "id": "n3",
+      "title": "腾讯混元开源草稿模型 DFly2",
       "category": "模型",
-      "summary": "腾讯混元发布并开源第三代翻译模型 Hy MT3",
+      "summary": "腾讯混元开源草稿模型 DFly2",
       "whyItMatters": "涉及开源的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/collections/tencent/hy-mt3",
-      "publishedAt": "2026-11-25T01:14:24.000Z",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/d1HMHrSEChCJiBRZ0tNOyg",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
+      "impactScore": 81,
+      "confidence": "medium",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n4",
+      "title": "蚂蚁百灵开源 Ming-Image-0.2-Design，并预告图层分解版",
+      "category": "模型",
+      "summary": "蚂蚁百灵开源 Ming-Image-0.2-Design，并预告图层分解版",
+      "whyItMatters": "涉及开源的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "Modelscope",
+      "sourceDisplayName": "Modelscope",
+      "sourceUrl": "https://modelscope.cn/models/inclusionAI/Ming-Image-0.2-Design",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
       "impactScore": 80,
       "confidence": "high",
       "tags": [
@@ -69,7 +104,24 @@
       "aiEnhanced": false
     },
     {
-      "id": "n6",
+      "id": "n1",
+      "title": "Antigravity 为所有用户重置 Gemini 额度",
+      "category": "模型",
+      "summary": "Antigravity 为所有用户重置 Gemini 额度",
+      "whyItMatters": "涉及Gemini的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/_mohansolo/status/2125851902009311306",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n13",
       "title": "Antigravity 工程师宣布开发 banked reset 功能",
       "category": "Agent",
       "summary": "Antigravity 工程师宣布开发 banked reset 功能",
@@ -78,47 +130,13 @@
       "sourceDisplayName": "综合来源",
       "sourceUrl": "https://x.com/eliza_huang/status/2125509510630678798",
       "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 78,
+      "impactScore": 74,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": false
     },
     {
-      "id": "n17",
-      "title": "OpenAI 员工宣布 Business 套餐 Fast mode 免费至年底",
-      "category": "产品",
-      "summary": "OpenAI 员工宣布 Business 套餐 Fast mode 免费至年底",
-      "whyItMatters": "OpenAI的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2125299248782778588",
-      "publishedAt": "2026-11-25T01:14:24.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [
-        "OpenAI"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n24",
-      "title": "百灵大模型发布并开源 Ling-3.2-air",
-      "category": "模型",
-      "summary": "百灵大模型发布并开源 Ling-3.2-air",
-      "whyItMatters": "涉及开源的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.2-air",
-      "publishedAt": "2026-11-25T01:14:24.000Z",
-      "impactScore": 78,
-      "confidence": "high",
-      "tags": [
-        "开源"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n7",
+      "id": "n14",
       "title": "OpenCode 推出 Gimme Kimi：10 美元得 60 美元额度",
       "category": "Agent",
       "summary": "OpenCode 推出 Gimme Kimi：10 美元得 60 美元额度",
@@ -127,7 +145,7 @@
       "sourceDisplayName": "综合来源",
       "sourceUrl": "https://x.com/opencode/status/2125413495629926551",
       "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 77,
+      "impactScore": 73,
       "confidence": "high",
       "tags": [
         "Kimi"
@@ -135,24 +153,22 @@
       "aiEnhanced": false
     },
     {
-      "id": "n25",
-      "title": "蚂蚁百灵团队发布并开源生理信号基础模型 LingSante-Pulse",
-      "category": "模型",
-      "summary": "蚂蚁百灵团队发布并开源生理信号基础模型 LingSante-Pulse",
-      "whyItMatters": "涉及开源的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-Pulse-1.0",
-      "publishedAt": "2026-11-25T01:14:24.000Z",
-      "impactScore": 77,
+      "id": "n5",
+      "title": "Antigravity banked resets 开发中，被曝现身 CLI",
+      "category": "安全",
+      "summary": "Antigravity banked resets 开发中，被曝现身 CLI",
+      "whyItMatters": "该动态划定了综合来源相关产品的合规边界与潜在限制，影响可用性预期。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/_mohansolo/status/2124962746844565692",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
+      "impactScore": 72,
       "confidence": "high",
-      "tags": [
-        "开源"
-      ],
+      "tags": [],
       "aiEnhanced": false
     },
     {
-      "id": "n1",
+      "id": "n8",
       "title": "Antigravity 称再度提升 Neon 缓存命中率，额度内任务增 28%",
       "category": "产品",
       "summary": "Antigravity 称再度提升 Neon 缓存命中率，额度内任务增 28%",
@@ -161,30 +177,28 @@
       "sourceDisplayName": "综合来源",
       "sourceUrl": "https://x.com/_mohansolo/status/2125641696377712968",
       "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 76,
+      "impactScore": 72,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": false
     },
     {
-      "id": "n26",
-      "title": "商汤发布并开源 SenseNova U1.6",
-      "category": "模型",
-      "summary": "商汤发布并开源 SenseNova U1.6",
-      "whyItMatters": "涉及开源的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Hugging Face",
-      "sourceDisplayName": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/sensenova/SenseNova-U1.6-8B-MoT-Native/tree/ed98cc5ca5a1891028db2041f665b43b96a43cfa",
-      "publishedAt": "2026-11-25T01:14:24.000Z",
-      "impactScore": 76,
+      "id": "n6",
+      "title": "报道称智谱 GLM-5.5 进度受阻，智谱否认",
+      "category": "产品",
+      "summary": "报道称智谱 GLM-5.5 进度受阻，智谱否认",
+      "whyItMatters": "Reuters的功能变化直接影响现有使用流程与替代方案评估。",
+      "sourceName": "Reuters",
+      "sourceDisplayName": "Reuters",
+      "sourceUrl": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
+      "impactScore": 71,
       "confidence": "high",
-      "tags": [
-        "开源"
-      ],
+      "tags": [],
       "aiEnhanced": false
     },
     {
-      "id": "n2",
+      "id": "n9",
       "title": "OpenAI 邮件称部分 Codex 请求少扣额度已修正，用户或更快达限额",
       "category": "产品",
       "summary": "OpenAI 邮件称部分 Codex 请求少扣额度已修正，用户或更快达限额",
@@ -193,27 +207,10 @@
       "sourceDisplayName": "综合来源",
       "sourceUrl": "https://linux.do/t/topic/3239841",
       "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 75,
+      "impactScore": 71,
       "confidence": "high",
       "tags": [
         "OpenAI"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n20",
-      "title": "Anthropic 推出测试功能：artifacts 可装成桌面应用",
-      "category": "产品",
-      "summary": "Anthropic 推出测试功能：artifacts 可装成桌面应用",
-      "whyItMatters": "Anthropic的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "Anthropic",
-      "sourceDisplayName": "Anthropic",
-      "sourceUrl": "https://claude.com/resources/articles/install-as-app",
-      "publishedAt": "2026-11-25T01:14:24.000Z",
-      "impactScore": 75,
-      "confidence": "high",
-      "tags": [
-        "Anthropic"
       ],
       "aiEnhanced": false
     }
@@ -223,14 +220,14 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 39,
+      "itemCount": 22,
       "note": "日报型来源，已拆解 2 期"
     },
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 917
+      "itemCount": 918
     },
     {
       "name": "Google DeepMind Blog",
