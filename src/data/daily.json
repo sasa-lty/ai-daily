@@ -1,68 +1,35 @@
 {
-  "date": "2026-11-27",
-  "generatedAt": "2026-11-27T08:57:56.104Z",
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T08:18:59.683Z",
   "status": "rule",
   "statusNote": "未配置 API key 或 AI 增强失败，使用规则摘要。",
   "overview": {
-    "verdict": "2026-11-27：今日信号集中在「模型」「产品」方向，共筛选 12 条；热度最高的是「Sand.ai发布MAGI-2视频模型，独家上线Higgsfield」。",
+    "verdict": "2026-11-28：今日信号集中在「模型」「Agent」方向，共筛选 12 条；热度最高的是「Qoder 上线 Developer Pass：开源贡献者免费享 1 个月 Ultra」。",
     "keywords": [
       "开源",
-      "OpenAI",
-      "GPT"
+      "DeepSeek",
+      "OpenAI"
     ],
-    "heatIndex": 78,
+    "heatIndex": 76,
     "sourceCount": 4
   },
   "topStoryIds": [
-    "n10",
-    "n2",
-    "n12"
+    "n5",
+    "n3",
+    "n4"
   ],
   "items": [
     {
-      "id": "n10",
-      "title": "Sand.ai发布MAGI-2视频模型，独家上线Higgsfield",
-      "category": "模型",
-      "summary": "Sand.ai发布MAGI-2视频模型，独家上线Higgsfield",
-      "whyItMatters": "涉及Higgsfield的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Higgsfield",
-      "sourceDisplayName": "Higgsfield",
-      "sourceUrl": "https://higgsfield.ai/announcing-magi-2",
-      "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 84,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n2",
-      "title": "OpenAI 修复 GPT-6.2 计费错误，补偿已上线",
-      "category": "模型",
-      "summary": "OpenAI 修复 GPT-6.2 计费错误，补偿已上线",
-      "whyItMatters": "涉及OpenAI的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/thsottiaux/status/2125784147889393806",
-      "publishedAt": "2026-11-27T01:24:40.000Z",
-      "impactScore": 82,
-      "confidence": "high",
-      "tags": [
-        "OpenAI",
-        "GPT"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n12",
-      "title": "PrismML 发布并开源 5.9 GB 三值模型 Bonsai 2.5 27B",
-      "category": "模型",
-      "summary": "PrismML 发布并开源 5.9 GB 三值模型 Bonsai 2.5 27B",
-      "whyItMatters": "涉及开源的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
-      "sourceName": "Prismml",
-      "sourceDisplayName": "Prismml",
-      "sourceUrl": "https://prismml.com/news/bonsai-2-5-27b",
-      "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 82,
+      "id": "n5",
+      "title": "Qoder 上线 Developer Pass：开源贡献者免费享 1 个月 Ultra",
+      "category": "Agent",
+      "summary": "Qoder 上线 Developer Pass：开源贡献者免费享 1 个月 Ultra",
+      "whyItMatters": "开源相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "Qoder",
+      "sourceDisplayName": "Qoder",
+      "sourceUrl": "https://qoder.com/zh/open-source-activity",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 86,
       "confidence": "high",
       "tags": [
         "开源"
@@ -71,6 +38,56 @@
     },
     {
       "id": "n3",
+      "title": "知乎宣布与 DeepSeek 展开内容合作，提供内容检索",
+      "category": "模型",
+      "summary": "知乎宣布与 DeepSeek 展开内容合作，提供内容检索",
+      "whyItMatters": "涉及DeepSeek的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/eMnIqTFFM3ml9WNlyCpQNw",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 81,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n4",
+      "title": "腾讯混元发布 3D 大模型 Hy3D 3.6",
+      "category": "模型",
+      "summary": "腾讯混元发布 3D 大模型 Hy3D 3.6",
+      "whyItMatters": "涉及腾讯的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/idKcOSLWE_wd5cBloQsR_Q",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n16",
+      "title": "OpenAI 修复 GPT-6.2 计费错误，补偿已上线",
+      "category": "模型",
+      "summary": "OpenAI 修复 GPT-6.2 计费错误，补偿已上线",
+      "whyItMatters": "涉及OpenAI的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2125784147889393806",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n17",
       "title": "腾讯混元开源草稿模型 DFly2",
       "category": "模型",
       "summary": "腾讯混元开源草稿模型 DFly2",
@@ -79,7 +96,7 @@
       "sourceDisplayName": "腾讯",
       "sourceUrl": "https://mp.weixin.qq.com/s/d1HMHrSEChCJiBRZ0tNOyg",
       "publishedAt": "2026-11-27T01:24:40.000Z",
-      "impactScore": 81,
+      "impactScore": 77,
       "confidence": "medium",
       "tags": [
         "开源"
@@ -87,7 +104,24 @@
       "aiEnhanced": false
     },
     {
-      "id": "n4",
+      "id": "n1",
+      "title": "pi 提交新 PR 拟接入 Google AI Ultra 订阅",
+      "category": "商业",
+      "summary": "pi 提交新 PR 拟接入 Google AI Ultra 订阅",
+      "whyItMatters": "该交易明确了Google方向的资金规模与估值锚点，影响对赛道空间的判断。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "GitHub",
+      "sourceUrl": "https://github.com/earendil-works/pi/pull/12614/files",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n18",
       "title": "蚂蚁百灵开源 Ming-Image-0.2-Design，并预告图层分解版",
       "category": "模型",
       "summary": "蚂蚁百灵开源 Ming-Image-0.2-Design，并预告图层分解版",
@@ -96,7 +130,7 @@
       "sourceDisplayName": "Modelscope",
       "sourceUrl": "https://modelscope.cn/models/inclusionAI/Ming-Image-0.2-Design",
       "publishedAt": "2026-11-27T01:24:40.000Z",
-      "impactScore": 80,
+      "impactScore": 76,
       "confidence": "high",
       "tags": [
         "开源"
@@ -104,7 +138,37 @@
       "aiEnhanced": false
     },
     {
-      "id": "n1",
+      "id": "n2",
+      "title": "豆包工作独家接入剪映官方插件",
+      "category": "产品",
+      "summary": "豆包工作独家接入剪映官方插件",
+      "whyItMatters": "腾讯的功能变化直接影响现有使用流程与替代方案评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/gwpuHRMWvJyYcYf_EfBqzQ",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 75,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n11",
+      "title": "硅基流动限免上线中国电信 Xing4.1-Preview",
+      "category": "Agent",
+      "summary": "硅基流动限免上线中国电信 Xing4.1-Preview",
+      "whyItMatters": "腾讯相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/r-OZvIbVp59CrVzvJXlH-Q",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n15",
       "title": "Antigravity 为所有用户重置 Gemini 额度",
       "category": "模型",
       "summary": "Antigravity 为所有用户重置 Gemini 额度",
@@ -113,7 +177,7 @@
       "sourceDisplayName": "综合来源",
       "sourceUrl": "https://x.com/_mohansolo/status/2125851902009311306",
       "publishedAt": "2026-11-27T01:24:40.000Z",
-      "impactScore": 76,
+      "impactScore": 72,
       "confidence": "high",
       "tags": [
         "Gemini"
@@ -121,96 +185,34 @@
       "aiEnhanced": false
     },
     {
-      "id": "n13",
-      "title": "Antigravity 工程师宣布开发 banked reset 功能",
+      "id": "n6",
+      "title": "Qoder 科研支持计划第一期开放申请：通过可获 2 万顶级模型积分",
       "category": "Agent",
-      "summary": "Antigravity 工程师宣布开发 banked reset 功能",
-      "whyItMatters": "综合来源相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/eliza_huang/status/2125509510630678798",
-      "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 74,
+      "summary": "Qoder 科研支持计划第一期开放申请：通过可获 2 万顶级模型积分",
+      "whyItMatters": "Dingtalk相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "Dingtalk",
+      "sourceDisplayName": "Dingtalk",
+      "sourceUrl": "https://alidocs.dingtalk.com/notable/share/form/v01maOgB4wyEm37KqWN_wqiGk2F_MeCQLdV?sessionid=&amp;source=link",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 71,
       "confidence": "high",
       "tags": [],
       "aiEnhanced": false
     },
     {
-      "id": "n14",
-      "title": "OpenCode 推出 Gimme Kimi：10 美元得 60 美元额度",
+      "id": "n7",
+      "title": "月之暗面开放 Kimi for Science：入选最高 2 万美元 API 额度",
       "category": "Agent",
-      "summary": "OpenCode 推出 Gimme Kimi：10 美元得 60 美元额度",
+      "summary": "月之暗面开放 Kimi for Science：入选最高 2 万美元 API 额度",
       "whyItMatters": "Kimi相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/opencode/status/2125413495629926551",
-      "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 73,
+      "sourceName": "Kimi",
+      "sourceDisplayName": "Kimi",
+      "sourceUrl": "https://www.kimi.com/news/kimi-for-science-program",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 70,
       "confidence": "high",
       "tags": [
         "Kimi"
-      ],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n5",
-      "title": "Antigravity banked resets 开发中，被曝现身 CLI",
-      "category": "安全",
-      "summary": "Antigravity banked resets 开发中，被曝现身 CLI",
-      "whyItMatters": "该动态划定了综合来源相关产品的合规边界与潜在限制，影响可用性预期。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/_mohansolo/status/2124962746844565692",
-      "publishedAt": "2026-11-27T01:24:40.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n8",
-      "title": "Antigravity 称再度提升 Neon 缓存命中率，额度内任务增 28%",
-      "category": "产品",
-      "summary": "Antigravity 称再度提升 Neon 缓存命中率，额度内任务增 28%",
-      "whyItMatters": "综合来源的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://x.com/_mohansolo/status/2125641696377712968",
-      "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 72,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n6",
-      "title": "报道称智谱 GLM-5.5 进度受阻，智谱否认",
-      "category": "产品",
-      "summary": "报道称智谱 GLM-5.5 进度受阻，智谱否认",
-      "whyItMatters": "Reuters的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "Reuters",
-      "sourceDisplayName": "Reuters",
-      "sourceUrl": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
-      "publishedAt": "2026-11-27T01:24:40.000Z",
-      "impactScore": 71,
-      "confidence": "high",
-      "tags": [],
-      "aiEnhanced": false
-    },
-    {
-      "id": "n9",
-      "title": "OpenAI 邮件称部分 Codex 请求少扣额度已修正，用户或更快达限额",
-      "category": "产品",
-      "summary": "OpenAI 邮件称部分 Codex 请求少扣额度已修正，用户或更快达限额",
-      "whyItMatters": "OpenAI的功能变化直接影响现有使用流程与替代方案评估。",
-      "sourceName": "综合来源",
-      "sourceDisplayName": "综合来源",
-      "sourceUrl": "https://linux.do/t/topic/3239841",
-      "publishedAt": "2026-11-26T01:08:42.000Z",
-      "impactScore": 71,
-      "confidence": "high",
-      "tags": [
-        "OpenAI"
       ],
       "aiEnhanced": false
     }
@@ -220,14 +222,14 @@
       "name": "Juya 编辑参考",
       "url": "https://daily.juya.uk",
       "ok": true,
-      "itemCount": 22,
+      "itemCount": 21,
       "note": "日报型来源，已拆解 2 期"
     },
     {
       "name": "Hugging Face Blog",
       "url": "https://huggingface.co/blog",
       "ok": true,
-      "itemCount": 918
+      "itemCount": 919
     },
     {
       "name": "Google DeepMind Blog",

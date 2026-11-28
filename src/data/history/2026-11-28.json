@@ -1,0 +1,247 @@
+{
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T08:18:59.683Z",
+  "status": "rule",
+  "statusNote": "未配置 API key 或 AI 增强失败，使用规则摘要。",
+  "overview": {
+    "verdict": "2026-11-28：今日信号集中在「模型」「Agent」方向，共筛选 12 条；热度最高的是「Qoder 上线 Developer Pass：开源贡献者免费享 1 个月 Ultra」。",
+    "keywords": [
+      "开源",
+      "DeepSeek",
+      "OpenAI"
+    ],
+    "heatIndex": 76,
+    "sourceCount": 4
+  },
+  "topStoryIds": [
+    "n5",
+    "n3",
+    "n4"
+  ],
+  "items": [
+    {
+      "id": "n5",
+      "title": "Qoder 上线 Developer Pass：开源贡献者免费享 1 个月 Ultra",
+      "category": "Agent",
+      "summary": "Qoder 上线 Developer Pass：开源贡献者免费享 1 个月 Ultra",
+      "whyItMatters": "开源相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "Qoder",
+      "sourceDisplayName": "Qoder",
+      "sourceUrl": "https://qoder.com/zh/open-source-activity",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 86,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n3",
+      "title": "知乎宣布与 DeepSeek 展开内容合作，提供内容检索",
+      "category": "模型",
+      "summary": "知乎宣布与 DeepSeek 展开内容合作，提供内容检索",
+      "whyItMatters": "涉及DeepSeek的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/eMnIqTFFM3ml9WNlyCpQNw",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 81,
+      "confidence": "high",
+      "tags": [
+        "DeepSeek"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n4",
+      "title": "腾讯混元发布 3D 大模型 Hy3D 3.6",
+      "category": "模型",
+      "summary": "腾讯混元发布 3D 大模型 Hy3D 3.6",
+      "whyItMatters": "涉及腾讯的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/idKcOSLWE_wd5cBloQsR_Q",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 80,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n16",
+      "title": "OpenAI 修复 GPT-6.2 计费错误，补偿已上线",
+      "category": "模型",
+      "summary": "OpenAI 修复 GPT-6.2 计费错误，补偿已上线",
+      "whyItMatters": "涉及OpenAI的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/thsottiaux/status/2125784147889393806",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
+      "impactScore": 78,
+      "confidence": "high",
+      "tags": [
+        "OpenAI",
+        "GPT"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n17",
+      "title": "腾讯混元开源草稿模型 DFly2",
+      "category": "模型",
+      "summary": "腾讯混元开源草稿模型 DFly2",
+      "whyItMatters": "涉及开源的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/d1HMHrSEChCJiBRZ0tNOyg",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
+      "impactScore": 77,
+      "confidence": "medium",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n1",
+      "title": "pi 提交新 PR 拟接入 Google AI Ultra 订阅",
+      "category": "商业",
+      "summary": "pi 提交新 PR 拟接入 Google AI Ultra 订阅",
+      "whyItMatters": "该交易明确了Google方向的资金规模与估值锚点，影响对赛道空间的判断。",
+      "sourceName": "GitHub",
+      "sourceDisplayName": "GitHub",
+      "sourceUrl": "https://github.com/earendil-works/pi/pull/12614/files",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "Google"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n18",
+      "title": "蚂蚁百灵开源 Ming-Image-0.2-Design，并预告图层分解版",
+      "category": "模型",
+      "summary": "蚂蚁百灵开源 Ming-Image-0.2-Design，并预告图层分解版",
+      "whyItMatters": "涉及开源的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "Modelscope",
+      "sourceDisplayName": "Modelscope",
+      "sourceUrl": "https://modelscope.cn/models/inclusionAI/Ming-Image-0.2-Design",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
+      "impactScore": 76,
+      "confidence": "high",
+      "tags": [
+        "开源"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n2",
+      "title": "豆包工作独家接入剪映官方插件",
+      "category": "产品",
+      "summary": "豆包工作独家接入剪映官方插件",
+      "whyItMatters": "腾讯的功能变化直接影响现有使用流程与替代方案评估。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/gwpuHRMWvJyYcYf_EfBqzQ",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 75,
+      "confidence": "medium",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n11",
+      "title": "硅基流动限免上线中国电信 Xing4.1-Preview",
+      "category": "Agent",
+      "summary": "硅基流动限免上线中国电信 Xing4.1-Preview",
+      "whyItMatters": "腾讯相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "腾讯",
+      "sourceDisplayName": "腾讯",
+      "sourceUrl": "https://mp.weixin.qq.com/s/r-OZvIbVp59CrVzvJXlH-Q",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 73,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n15",
+      "title": "Antigravity 为所有用户重置 Gemini 额度",
+      "category": "模型",
+      "summary": "Antigravity 为所有用户重置 Gemini 额度",
+      "whyItMatters": "涉及Gemini的模型能力或供给变化，直接影响模型选型、接入成本与能力上限评估。",
+      "sourceName": "综合来源",
+      "sourceDisplayName": "综合来源",
+      "sourceUrl": "https://x.com/_mohansolo/status/2125851902009311306",
+      "publishedAt": "2026-11-27T01:24:40.000Z",
+      "impactScore": 72,
+      "confidence": "high",
+      "tags": [
+        "Gemini"
+      ],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n6",
+      "title": "Qoder 科研支持计划第一期开放申请：通过可获 2 万顶级模型积分",
+      "category": "Agent",
+      "summary": "Qoder 科研支持计划第一期开放申请：通过可获 2 万顶级模型积分",
+      "whyItMatters": "Dingtalk相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "Dingtalk",
+      "sourceDisplayName": "Dingtalk",
+      "sourceUrl": "https://alidocs.dingtalk.com/notable/share/form/v01maOgB4wyEm37KqWN_wqiGk2F_MeCQLdV?sessionid=&amp;source=link",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 71,
+      "confidence": "high",
+      "tags": [],
+      "aiEnhanced": false
+    },
+    {
+      "id": "n7",
+      "title": "月之暗面开放 Kimi for Science：入选最高 2 万美元 API 额度",
+      "category": "Agent",
+      "summary": "月之暗面开放 Kimi for Science：入选最高 2 万美元 API 额度",
+      "whyItMatters": "Kimi相关的工具链进展，关系到自动化工作流能否稳定落地及接入方式选择。",
+      "sourceName": "Kimi",
+      "sourceDisplayName": "Kimi",
+      "sourceUrl": "https://www.kimi.com/news/kimi-for-science-program",
+      "publishedAt": "2026-11-28T01:31:16.000Z",
+      "impactScore": 70,
+      "confidence": "high",
+      "tags": [
+        "Kimi"
+      ],
+      "aiEnhanced": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Juya 编辑参考",
+      "url": "https://daily.juya.uk",
+      "ok": true,
+      "itemCount": 21,
+      "note": "日报型来源，已拆解 2 期"
+    },
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog",
+      "ok": true,
+      "itemCount": 919
+    },
+    {
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/discover/blog/",
+      "ok": true,
+      "itemCount": 100
+    },
+    {
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "ok": true,
+      "itemCount": 20
+    }
+  ]
+}
